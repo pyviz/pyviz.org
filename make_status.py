@@ -1,3 +1,6 @@
+import subprocess
+import shutil
+
 TEMPLATE_ROW = """
   <tr>
     <td>
@@ -50,5 +53,11 @@ for project in PROJECTS:
 
 content = TEMPLATE_TABLE.format(rows=rows)
 
+subprocess.call('git checkout gh-pages', shell=True)
+
 with open('status.html', 'w') as f:
     f.write(content)
+
+subprocess.call('git add status.html', shell=True)
+subprocess.call('git commit -m "Latest build"', shell=True)
+subprocess.call('git checkout master', shell=True)
