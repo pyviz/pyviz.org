@@ -2,10 +2,18 @@ import subprocess
 import shutil
 from jinja2 import Template
 
-PROJECTS = ['astropy/astropy', 'astrofrog/reproject', 'astrofrog/wcsaxes',
-            'aplpy/aplpy', 'astropy/montage-wrapper', 'astropy/ccdproc',
-            'astropy/imageutils', 'astropy/photutils', 'astropy/specutils',
-            'gammapy/gammapy', 'sncosmo/sncosmo']
+PROJECTS = ['astropy/astropy',
+            'astrofrog/reproject',
+            'astrofrog/wcsaxes',
+            'aplpy/aplpy',
+            'astropy/montage-wrapper',
+            'astropy/ccdproc',
+            'astropy/imageutils',
+            'astropy/photutils',
+            'astropy/specutils',
+            'gammapy/gammapy',
+            'sncosmo/sncosmo',
+            'weaverba137/pydl']
 
 rows = ""
 
