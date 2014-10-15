@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <link href='style.css' rel='stylesheet' type="text/css">
+  </head>
+  <body>
+    <div id="wrapper">
+    <h1>Astropy Project Dashboard</h1>
+    <table align='center'>
+      {% for package in packages %}
+      <tr>
+        <td>
+          {{ package.display_name }}
+        </td>
+        <td>
+          <a href="https://travis-ci.org/{{ package.user }}/{{ package.name }}">
+            <img src="https://travis-ci.org/{{ package.user }}/{{ package.name }}.png?branch=master">
+          </a>
+        </td>
+        <td>
+          <a href="https://coveralls.io/r/{{ package.user }}/{{ package.name }}?branch=master">
+            <img src="https://coveralls.io/repos/{{ package.user }}/{{ package.name }}/badge.png?branch=master">
+          </a>
+        </td>
+        <td>
+          <a href="https://readthedocs.org/projects/{{ package.name }}/?badge=latest">
+            <img src="https://readthedocs.org/projects/{{ package.name }}/badge/?version=latest">
+          </a>
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+    </div>
+  </body>
+</html>
