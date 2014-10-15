@@ -13,7 +13,10 @@ PROJECTS = ['astropy/astropy',
             'astropy/specutils',
             'gammapy/gammapy',
             'sncosmo/sncosmo',
-            'weaverba137/pydl']
+            'spacetelescope/sphere',
+            'weaverba137/pydl',
+            'radio-astro-tools/pvextractor',
+            'radio-astro-tools/spectral-cube']
 
 rows = ""
 
