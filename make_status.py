@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import subprocess
 import shutil
 from jinja2 import Template
