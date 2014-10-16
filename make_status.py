@@ -3,6 +3,7 @@ import shutil
 from jinja2 import Template
 
 PROJECTS = ['astropy/astropy',
+            'astropy/astroquery',
             'astrofrog/reproject',
             'astrofrog/wcsaxes',
             'aplpy/aplpy',
