@@ -3,12 +3,16 @@ import shutil
 from jinja2 import Template
 
 PROJECTS = ['astropy/astropy',
+            'astropy/package-template',
             'astropy/astroquery',
             'astrofrog/reproject',
             'astrofrog/wcsaxes',
             'aplpy/aplpy',
+            'pyvirtobs/pyvo',
+            'eteq/astropysics',
             'astropy/montage-wrapper',
             'astropy/ccdproc',
+            'ejeschke/ginga',
             'astropy/imageutils',
             'astropy/photutils',
             'astropy/specutils',
