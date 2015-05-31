@@ -1,1 +1,1 @@
-The dashboard can be seen [here](http://astrofrog.github.io/astropy-dashboard/status.html)
+The dashboard can be seen [here](http://www.astropy.org/astropy-dashboard/status.html)
