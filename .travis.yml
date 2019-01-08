@@ -9,6 +9,8 @@ install:
   - pip install pyyaml jinja2
   - git config --global user.name "astrobot"
   - git config --global user.email "astrobot"
+  - git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
+  - git fetch
 
 # This auto-deploys the generated website to the gh-pages branch. This requires the
 # GITHUB_USER and GITHUB_API_KEY variables to be set as secure variables through
@@ -20,7 +22,6 @@ script:
   - mkdir deploy
   - mv status.html deploy/
   - cp static/style.css deploy/
-  - git fetch origin
   - git checkout gh-pages
   - cp deploy/* .
   - git add status.html style.css
