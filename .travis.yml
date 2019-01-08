@@ -20,6 +20,7 @@ script:
   - mkdir deploy
   - mv status.html deploy/
   - cp static/style.css deploy/
+  - git fetch origin
   - git checkout gh-pages
   - cp deploy/* .
   - git add status.html style.css
