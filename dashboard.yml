@@ -3,29 +3,29 @@
   packages:
 
   - repo: astropy/astropy
-    badges: travis, appveyor, circleci, codecov, rtd, pypi
+    badges: travis, appveyor, circleci, codecov, rtd, pypi, conda
 
   - repo: astropy/astropy-healpix
-    badges: travis, appveyor, circleci, coveralls, rtd, pypi
+    badges: travis, appveyor, circleci, coveralls, rtd, pypi, conda
 
   - repo: astropy/astroquery
-    badges: travis, appveyor, codecov, rtd, pypi
+    badges: travis, appveyor, codecov, rtd, pypi, conda
 
   - repo: astropy/ccdproc
-    badges: travis, appveyor, coveralls, rtd, pypi
+    badges: travis, appveyor, coveralls, rtd, pypi, conda
     appveyor_project: Astropy/ccdproc-iqpau
 
   - repo: astropy/photutils
-    badges: travis, appveyor, circleci, coveralls, rtd, pypi
+    badges: travis, appveyor, circleci, coveralls, rtd, pypi, conda
 
   - repo: astropy/regions
-    badges: travis, appveyor, circleci, coveralls, rtd, pypi
+    badges: travis, appveyor, circleci, coveralls, rtd, pypi, conda
 
   - repo: astropy/reproject
-    badges: travis, appveyor, circleci, codecov, rtd, pypi
+    badges: travis, appveyor, circleci, codecov, rtd, pypi, conda
 
   - repo: astropy/specutils
-    badges: travis, circleci, coveralls, rtd, pypi
+    badges: travis, circleci, coveralls, rtd, pypi, conda
 
 - name: Infrastructure
 
@@ -38,13 +38,13 @@
     badges: travis, circleci, rtd
 
   - repo: astropy/astropy-changelog
-    badges: travis, codecov, pypi
+    badges: travis, codecov, pypi, conda
 
   - repo: astropy/astropy-helpers
-    badges: travis, appveyor, codecov, pypi
+    badges: travis, appveyor, codecov, pypi, conda
 
   - repo: astropy/astropy-sphinx-theme
-    badges: circleci, pypi
+    badges: circleci, pypi, conda
 
   - repo: astropy/package-template
     badges: travis, appveyor, coveralls, rtd
@@ -52,25 +52,25 @@
     rtd_name: astropy-package-template
 
   - repo: astropy/pytest-arraydiff
-    badges: travis, appveyor, codecov, pypi
+    badges: travis, appveyor, codecov, pypi, conda
 
   - repo: astropy/pytest-astropy
-    badges: pypi
+    badges: pypi, conda
 
   - repo: astropy/pytest-doctestplus
-    badges: travis, appveyor, pypi
+    badges: travis, appveyor, pypi, conda
 
   - repo: astropy/pytest-openfiles
-    badges: travis, appveyor, pypi
+    badges: travis, appveyor, pypi, conda
 
   - repo: astropy/pytest-remotedata
-    badges: travis, appveyor, pypi
+    badges: travis, appveyor, pypi, conda
 
   - repo: astropy/sphinx-astropy
-    badges: circleci, pypi
+    badges: circleci, pypi, conda
 
   - repo: astropy/sphinx-automodapi
-    badges: travis, appveyor, coveralls, rtd, pypi
+    badges: travis, appveyor, coveralls, rtd, pypi, conda
 
 - name: Affiliated Packages
 
@@ -82,38 +82,39 @@
   packages:
 
   - repo: glue-viz/glue
-    badges: travis, circleci, appveyor, codecov, rtd, pypi
+    badges: travis, circleci, appveyor, codecov, rtd, pypi, conda
     pypi_name: glue-core
+    conda_project: glueviz/glue-core
 
   - repo: astropy/astroplan
-    badges: travis, appveyor, coveralls, rtd, pypi
+    badges: travis, appveyor, coveralls, rtd, pypi, conda
 
   - repo: APLpy/APLpy
-    badges: travis, circleci, codecov, rtd, pypi
+    badges: travis, circleci, codecov, rtd, pypi, conda
     appveyor_project: astrofrog/APLpy
     circleci_project: aplpy/aplpy
     travis_project: aplpy/aplpy
 
   - repo: adrn/gala
-    badges: travis, appveyor, coveralls, rtd, pypi
+    badges: travis, appveyor, coveralls, rtd, pypi, conda
 
   - repo: jobovy/galpy
-    badges: travis, appveyor, codecov, rtd, pypi
+    badges: travis, appveyor, codecov, rtd, pypi, conda
 
   - repo: astropy/halotools
-    badges: travis, appveyor, coveralls, rtd, pypi
+    badges: travis, appveyor, coveralls, rtd, pypi, conda
 
   - repo: spacetelescope/imexam
-    badges: travis, appveyor, coveralls, rtd, pypi
+    badges: travis, appveyor, coveralls, rtd, pypi, conda
 
   - repo: zblz/naima
-    badges: travis, appveyor, coveralls, rtd, pypi
+    badges: travis, appveyor, coveralls, rtd, pypi, conda
 
   - repo: astropy/pyregion
-    badges: travis, appveyor, coveralls, rtd, pypi
+    badges: travis, appveyor, coveralls, rtd, pypi, conda
 
   - repo: StingraySoftware/stingray
-    badges: travis, appveyor, coveralls, rtd, pypi
+    badges: travis, appveyor, coveralls, rtd, pypi, conda
 
   - repo: poliastro/poliastro
-    badges: travis, circleci, codecov, rtd, pypi
+    badges: travis, circleci, codecov, rtd, pypi, conda

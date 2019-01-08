@@ -33,7 +33,7 @@ for package in registry:
     if 'pypi_name' not in entry:
         entry['pypi_name'] = package['pypi_name']
     if 'badges' not in entry:
-        entry['badges'] = 'travis, coveralls, rtd, pypi'
+        entry['badges'] = 'travis, coveralls, rtd, pypi, conda'
     if package['name'].lower() not in existing:
         affiliated['packages'].append(entry)
 
@@ -51,6 +51,8 @@ for section in config:
             package['circleci_project'] = package['repo']
         if 'travis' in package['badges'] and 'travis_project' not in package:
             package['travis_project'] = package['repo']
+        if 'conda' in package['badges'] and 'conda_project' not in package:
+            package['conda_project'] = 'astropy/' + package['name']
 
 affiliated['packages'] = sorted(affiliated['packages'], key=lambda x: x['name'].lower())
 
