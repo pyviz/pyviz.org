@@ -1,4 +1,4 @@
-- repo: Core and Coordinated packages
+- name: Core and Coordinated packages
 
   packages:
 
@@ -27,7 +27,7 @@
   - repo: astropy/specutils
     badges: travis, circleci, coveralls, rtd, pypi
 
-- repo: Infrastructure
+- name: Infrastructure
 
   packages:
 
@@ -71,3 +71,44 @@
 
   - repo: astropy/sphinx-automodapi
     badges: travis, appveyor, coveralls, rtd, pypi
+
+- name: Affiliated Packages
+
+  packages:
+
+  - repo: glue-viz/glue
+    badges: travis, circleci, appveyor, codecov, rtd, pypi
+    pypi_name: glue-core
+
+  - repo: astropy/astroplan
+    badges: travis, appveyor, coveralls, rtd, pypi
+
+  - repo: APLpy/APLpy
+    badges: travis, circleci, codecov, rtd, pypi
+    appveyor_project: astrofrog/APLpy
+    circleci_project: aplpy/aplpy
+    travis_project: aplpy/aplpy
+
+  - repo: adrn/gala
+    badges: travis, appveyor, coveralls, rtd, pypi
+
+  - repo: jobovy/galpy
+    badges: travis, appveyor, codecov, rtd, pypi
+
+  - repo: astropy/halotools
+    badges: travis, appveyor, coveralls, rtd, pypi
+
+  - repo: spacetelescope/imexam
+    badges: travis, appveyor, coveralls, rtd, pypi
+
+  - repo: zblz/naima
+    badges: travis, appveyor, coveralls, rtd, pypi
+
+  - repo: astropy/pyregion
+    badges: travis, appveyor, coveralls, rtd, pypi
+
+  - repo: StingraySoftware/stingray
+    badges: travis, appveyor, coveralls, rtd, pypi
+
+  - repo: poliastro/poliastro
+    badges: travis, circleci, codecov, rtd, pypi

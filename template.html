@@ -24,8 +24,8 @@
         </td>
         <td align='center'>
           {% if 'travis' in package.badges %}
-          <a href="https://travis-ci.org/{{ package.repo }}">
-            <img src="https://travis-ci.org/{{ package.repo }}.svg?branch=master">
+          <a href="https://travis-ci.org/{{ package.travis_project }}">
+            <img src="https://travis-ci.org/{{ package.travis_project }}.svg?branch=master">
           </a>
           {% else %}
           -
@@ -33,8 +33,8 @@
         </td>
         <td align='center'>
           {% if 'circleci' in package.badges %}
-          <a href="https://circleci.com/gh/{{ package.repo }}">
-            <img src="https://circleci.com/gh/{{ package.repo }}.svg?style=svg">
+          <a href="https://circleci.com/gh/{{ package.circleci_project }}">
+            <img src="https://circleci.com/gh/{{ package.circleci_project }}.svg?style=svg">
           </a>
           {% else %}
           -
