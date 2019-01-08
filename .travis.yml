@@ -1,0 +1,27 @@
+language: python
+
+sudo: false
+
+python:
+  - 3.6
+
+install:
+  - pip install pyyaml jinja2
+  - git config --global user.name "astrobot"
+  - git config --global user.email "astrobot"
+
+# This auto-deploys the generated website to the gh-pages branch. This requires the
+# GITHUB_USER and GITHUB_API_KEY variables to be set as secure variables through
+# the Travis web interface. The former should be set to a GitHub username, and the
+# second to a personal access token with scope 'public_repo'
+
+script:
+  - python make_status.py
+  - mkdir deploy
+  - mv status.html deploy/
+  - cp static/style.css deploy/
+  - git checkout gh-pages
+  - cp deploy/* .
+  - git add status.html style.css
+  - git commit -m "Updated dashboard"
+  - if [[ $TRAVIS_EVENT_TYPE != pull_request && $TRAVIS_BRANCH == master ]]; then git push -q -f https://$GITHUB_USER:$GITHUB_API_KEY@github.com/$TRAVIS_REPO_SLUG gh-pages; fi
