@@ -13,7 +13,7 @@ install:
   - git config --global user.name "astrobot"
   - git config --global user.email "astrobot"
   - git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
-  - git fetch
+  - git fetch --all
 
 # This auto-deploys the generated website to the gh-pages branch. This requires the
 # GITHUB_USER and GITHUB_API_KEY variables to be set as secure variables through
