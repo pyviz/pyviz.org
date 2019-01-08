@@ -33,7 +33,7 @@ for package in registry:
     if 'pypi_name' not in entry:
         entry['pypi_name'] = package['pypi_name']
     if 'badges' not in entry:
-        entry['badges'] = 'travis,, coveralls, rtd, pypi'
+        entry['badges'] = 'travis, coveralls, rtd, pypi'
     if package['name'].lower() not in existing:
         affiliated['packages'].append(entry)
 
