@@ -5,35 +5,85 @@
   <body>
     <div id="wrapper">
     <h1>Astropy Project Dashboard</h1>
+    {% for section in config %}
+    <h2>{{ section.name }}</h2>
     <table align='center'>
-      {% for package in packages %}
       <tr>
-        <td>
-          {{ package.display_name }}
+        <th>Name</th>
+        <th>Travis</th>
+        <th>CircleCI</th>
+        <th>AppVeyor</th>
+        <th>Coverage</th>
+        <th>ReadTheDocs</th>
+        <th>PyPI</th>
+      </tr>
+      {% for package in section.packages %}
+      <tr>
+        <td align='left'>
+          <a href="http://github.com/{{ package.repo }}">{{ package.name }}</a>
         </td>
-        <td>
-          <a href="https://travis-ci.org/{{ package.user }}/{{ package.name }}">
-            <img src="https://travis-ci.org/{{ package.user }}/{{ package.name }}.svg?branch=master">
+        <td align='center'>
+          {% if 'travis' in package.badges %}
+          <a href="https://travis-ci.org/{{ package.repo }}">
+            <img src="https://travis-ci.org/{{ package.repo }}.svg?branch=master">
           </a>
+          {% else %}
+          -
+          {% endif %}
         </td>
-        <td>
-          <a href="https://coveralls.io/r/{{ package.user }}/{{ package.name }}?branch=master">
-            <img src="https://coveralls.io/repos/{{ package.user }}/{{ package.name }}/badge.svg?branch=master">
+        <td align='center'>
+          {% if 'circleci' in package.badges %}
+          <a href="https://circleci.com/gh/{{ package.repo }}">
+            <img src="https://circleci.com/gh/{{ package.repo }}.svg?style=svg">
           </a>
+          {% else %}
+          -
+          {% endif %}
         </td>
-        <td>
-          <a href="https://readthedocs.org/projects/{{ package.name }}/?badge=latest">
-            <img src="https://readthedocs.org/projects/{{ package.name }}/badge/?version=latest">
+        <td align='center'>
+          {% if 'appveyor' in package.badges %}
+          <a href="https://ci.appveyor.com/project/{{ package.appveyor_project }}?branch=master">
+            <img src="https://img.shields.io/appveyor/ci/{{ package.appveyor_project }}/master.svg">
           </a>
+          {% else %}
+          -
+          {% endif %}
         </td>
-        <td>
-          <a href="https://pypi.python.org/pypi/{{ package.name }}">
-            <img src="https://pypip.in/v/{{ package.name }}/badge.svg">
+        <td align='center'>
+          {% if 'coveralls' in package.badges %}
+          <a href="https://coveralls.io/r/{{ package.repo }}?branch=master">
+            <img src="https://coveralls.io/repos/{{ package.repo }}/badge.svg?branch=master">
           </a>
+          {% elif 'codecov' in package.badges %}
+          <a href="https://codecov.io/gh/{{ package.repo }}?branch=master">
+            <img src="https://codecov.io/gh/{{ package.repo }}/branch/master/graph/badge.svg">
+          </a>
+          {% else %}
+          -
+          {% endif %}
+        </td>
+        <td align='center'>
+          {% if 'rtd' in package.badges %}
+          <a href="https://readthedocs.org/projects/{{ package.rtd_name }}/?badge=latest">
+            <img src="https://readthedocs.org/projects/{{ package.rtd_name }}/badge/?version=latest">
+          </a>
+          {% else %}
+          -
+          {% endif %}
+        </td>
+        <td align='center'>
+          {% if 'pypi' in package.badges %}
+          <a href="https://pypi.python.org/pypi/{{ package.pypi_name }}">
+            <img src="https://pypip.in/v/{{ package.pypi_name }}/badge.svg">
+          </a>
+          {% else %}
+          -
+          {% endif %}
         </td>
       </tr>
       {% endfor %}
     </table>
+    {% endfor %}
     </div>
   </body>
 </html>

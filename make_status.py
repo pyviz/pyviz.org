@@ -3,46 +3,24 @@
 import subprocess
 import shutil
 from jinja2 import Template
+from yaml import load
 
-PROJECTS = ['astropy/astropy',
-            'astropy/package-template',
-            'astropy/astroquery',
-            'astrofrog/reproject',
-            'astrofrog/wcsaxes',
-            'aplpy/aplpy',
-            'pyvirtobs/pyvo',
-            'eteq/astropysics',
-            'astropy/montage-wrapper',
-            'astropy/ccdproc',
-            'ejeschke/ginga',
-            'astropy/imageutils',
-            'astropy/photutils',
-            'astropy/specutils',
-            'astropy/pyregion',
-            'gammapy/gammapy',
-            'sncosmo/sncosmo',
-            'spacetelescope/sphere',
-            'weaverba137/pydl',
-            'radio-astro-tools/pvextractor',
-            'radio-astro-tools/spectral-cube']
+with open('dashboard.yml') as f:
+    config = load(f)
 
-rows = ""
-
-packages = []
-
-for package_url in PROJECTS:
-    package = {}
-    package['display_name'] = package_url
-    package['user'], package['name'] = package_url.split('/')
-    packages.append(package)
+for section in config:
+    for package in section['packages']:
+        package['user'], package['name'] = package['repo'].split('/')
+        package['badges'] = [x.strip() for x in package['badges'].split(',')]
+        if 'rtd_name' not in package:
+            package['rtd_name'] = package['name']
+        if 'pypi_name' not in package:
+            package['pypi_name'] = package['name']
+        if 'appveyor' in package['badges'] and 'appveyor_project' not in package:
+            package['appveyor_project'] = package['repo']
 
 template = Template(open('template.html', 'r').read())
 
-subprocess.call('git checkout gh-pages', shell=True)
 
 with open('status.html', 'w') as f:
-    f.write(template.render(packages=packages))
-
-subprocess.call('git add status.html', shell=True)
-subprocess.call('git commit -m "Latest build"', shell=True)
-subprocess.call('git checkout master', shell=True)
+    f.write(template.render(config=config))

@@ -1,0 +1,73 @@
+- repo: Core and Coordinated packages
+
+  packages:
+
+  - repo: astropy/astropy
+    badges: travis, appveyor, circleci, codecov, rtd, pypi
+
+  - repo: astropy/astropy-healpix
+    badges: travis, appveyor, circleci, coveralls, rtd, pypi
+
+  - repo: astropy/astroquery
+    badges: travis, appveyor, codecov, rtd, pypi
+
+  - repo: astropy/ccdproc
+    badges: travis, appveyor, coveralls, rtd, pypi
+    appveyor_project: Astropy/ccdproc-iqpau
+
+  - repo: astropy/photutils
+    badges: travis, appveyor, circleci, coveralls, rtd, pypi
+
+  - repo: astropy/regions
+    badges: travis, appveyor, circleci, coveralls, rtd, pypi
+
+  - repo: astropy/reproject
+    badges: travis, appveyor, circleci, codecov, rtd, pypi
+
+  - repo: astropy/specutils
+    badges: travis, circleci, coveralls, rtd, pypi
+
+- repo: Infrastructure
+
+  packages:
+
+  - repo: astropy/astropy.github.com
+    badges: travis, circleci
+
+  - repo: astropy/astropy-tutorials
+    badges: travis, circleci, rtd
+
+  - repo: astropy/astropy-changelog
+    badges: travis, codecov, pypi
+
+  - repo: astropy/astropy-helpers
+    badges: travis, appveyor, codecov, pypi
+
+  - repo: astropy/astropy-sphinx-theme
+    badges: circleci, pypi
+
+  - repo: astropy/package-template
+    badges: travis, appveyor, coveralls, rtd
+    appveyor_project: Astropy/package-template-615
+    rtd_name: astropy-package-template
+
+  - repo: astropy/pytest-arraydiff
+    badges: travis, appveyor, codecov, pypi
+
+  - repo: astropy/pytest-astropy
+    badges: pypi
+
+  - repo: astropy/pytest-doctestplus
+    badges: travis, appveyor, pypi
+
+  - repo: astropy/pytest-openfiles
+    badges: travis, appveyor, pypi
+
+  - repo: astropy/pytest-remotedata
+    badges: travis, appveyor, pypi
+
+  - repo: astropy/sphinx-astropy
+    badges: circleci, pypi
+
+  - repo: astropy/sphinx-automodapi
+    badges: travis, appveyor, coveralls, rtd, pypi
