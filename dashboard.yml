@@ -74,6 +74,11 @@
 
 - name: Affiliated Packages
 
+  # By default, we fetch the list of affiliated packages from the affiliated
+  # package JSON registry file and we assume that 'badges' is set to
+  # travis, coveralls, rtd, pypi. We also fetch pypi_name from the registry.
+  # to override these or other settings, you can add an entry below.
+
   packages:
 
   - repo: glue-viz/glue
