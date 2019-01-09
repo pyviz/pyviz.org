@@ -73,7 +73,7 @@
     badges: circleci, pypi, conda
 
   - repo: astropy/sphinx-automodapi
-    badges: travis, appveyor, coveralls, rtd, pypi, conda
+    badges: travis, appveyor, codecov, rtd, pypi, conda
 
 - name: Affiliated Packages
 
