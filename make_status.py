@@ -21,8 +21,12 @@ else:
     sys.exit(1)
 
 for package in registry:
-    if package['name'].lower() in existing:
-        entry = existing[package['name'].lower()]
+    # Not all repo name is actual package name.
+    # This should be consistent with how existing is constructed above.
+    pkg_name = package['repo_url'].split('/')[1].lower()
+    
+    if pkg_name in existing:
+        entry = existing[pkg_name]
     else:
         entry = {}
     if 'repo' not in entry:
@@ -34,7 +38,7 @@ for package in registry:
         entry['pypi_name'] = package['pypi_name']
     if 'badges' not in entry:
         entry['badges'] = 'travis, coveralls, rtd, pypi, conda'
-    if package['name'].lower() not in existing:
+    if pkg_name not in existing:
         affiliated['packages'].append(entry)
 
 for section in config:
