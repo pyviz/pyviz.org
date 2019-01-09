@@ -71,6 +71,9 @@
 
   - repo: astropy/sphinx-automodapi
     badges: travis, appveyor, coveralls, rtd, pypi, conda
+    
+  - repo: astropy/astropy-bot
+    badges: travis, codecov
 
 - name: Affiliated Packages
 
@@ -121,4 +124,6 @@
 
   - repo: spacetelescope/synphot_refactor
     badges: travis, appveyor, coveralls, rtd, pypi
+    pypi_name: synphot
+    rtd_name: synphot
     appveyor_project: pllim/synphot-refactor
