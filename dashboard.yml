@@ -37,6 +37,9 @@
   - repo: astropy/astropy-tutorials
     badges: travis, circleci, rtd
 
+  - repo: astropy/astropy-bot
+    badges: travis, codecov
+
   - repo: astropy/astropy-changelog
     badges: travis, codecov, pypi, conda
 
@@ -71,9 +74,6 @@
 
   - repo: astropy/sphinx-automodapi
     badges: travis, appveyor, coveralls, rtd, pypi, conda
-    
-  - repo: astropy/astropy-bot
-    badges: travis, codecov
 
 - name: Affiliated Packages
 
