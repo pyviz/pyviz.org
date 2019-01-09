@@ -21,9 +21,8 @@ else:
     sys.exit(1)
 
 for package in registry:
-    # Not all repo name is actual package name.
-    # This should be consistent with how existing is constructed above.
-    pkg_name = package['repo_url'].split('/')[1].lower()
+    # FIXME: Not all repo name is actual package name.
+    pkg_name = package['name'].lower()
     
     if pkg_name in existing:
         entry = existing[pkg_name]
