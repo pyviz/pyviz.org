@@ -118,3 +118,7 @@
 
   - repo: poliastro/poliastro
     badges: travis, circleci, codecov, rtd, pypi, conda
+
+  - repo: spacetelescope/synphot_refactor
+    badges: travis, appveyor, coveralls, rtd, pypi
+    appveyor_project: pllim/synphot-refactor
