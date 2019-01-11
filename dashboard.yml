@@ -20,6 +20,7 @@
 
   - repo: astropy/regions
     badges: travis, appveyor, circleci, coveralls, rtd, pypi, conda
+    rtd_name: astropy-regions
 
   - repo: astropy/reproject
     badges: travis, appveyor, circleci, codecov, rtd, pypi, conda
