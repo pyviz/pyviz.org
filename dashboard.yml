@@ -36,7 +36,7 @@
     badges: travis, circleci
 
   - repo: astropy/astropy-tutorials
-    badges: travis, circleci, rtd
+    badges: travis, circleci
 
   - repo: astropy/astropy-bot
     badges: travis, codecov
