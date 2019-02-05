@@ -56,7 +56,7 @@ for section in config:
         if 'travis' in package['badges'] and 'travis_project' not in package:
             package['travis_project'] = package['repo']
         if 'conda' in package['badges'] and 'conda_channel' not in package:
-            package['conda_channel'] = 'intake'
+            package['conda_channel'] = 'pyviz'
 
 # affiliated['packages'] = sorted(affiliated['packages'], key=lambda x: x['name'].lower())
 
