@@ -4,17 +4,15 @@
   </head>
   <body>
     <div id="wrapper">
-    <h1>Intake Project Dashboard</h1>
+    <h1>PyViz Project Dashboard</h1>
     {% for section in config %}
     <h2>{{ section.name }}</h2>
     <table align='center'>
       <tr>
         <th>Name</th>
         <th>Travis</th>
-        <th>CircleCI</th>
         <th>AppVeyor</th>
         <th>Coverage</th>
-        <th>ReadTheDocs</th>
         <th>PyPI</th>
         <th>Conda</th>
       </tr>
@@ -27,15 +25,6 @@
           <td align='left'>
             <a href="https://travis-ci.org/{{ package.travis_project }}">
               <img src="https://travis-ci.org/{{ package.travis_project }}.svg?branch=master">
-            </a>
-          </td>
-          {% else %}
-          <td align='center'>-</td>
-          {% endif %}
-          {% if 'circleci' in package.badges %}
-          <td align='left'>
-            <a href="https://circleci.com/gh/{{ package.circleci_project }}">
-              <img src="https://circleci.com/gh/{{ package.circleci_project }}.svg?style=svg">
             </a>
           </td>
           {% else %}
@@ -60,15 +49,6 @@
           <td align='left'>
             <a href="https://codecov.io/gh/{{ package.repo }}?branch=master">
               <img src="https://codecov.io/gh/{{ package.repo }}/branch/master/graph/badge.svg">
-            </a>
-          </td>
-          {% else %}
-          <td align='center'>-</td>
-          {% endif %}
-          {% if 'rtd' in package.badges %}
-          <td align='left'>
-            <a href="https://readthedocs.org/projects/{{ package.rtd_name }}/?badge=latest">
-              <img src="https://readthedocs.org/projects/{{ package.rtd_name }}/badge/?version=latest">
             </a>
           </td>
           {% else %}

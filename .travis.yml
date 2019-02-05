@@ -10,8 +10,8 @@ python:
 
 install:
   - pip install pyyaml jinja2 requests
-  - git config --global user.name "intakebot"
-  - git config --global user.email "intakebot"
+  - git config --global user.name "pyvizbot"
+  - git config --global user.email "pyvizbot"
   - git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
   - git fetch --all
 
@@ -23,7 +23,7 @@ install:
 script:
   - python make_status.py
   - mkdir deploy
-  - mv status.html deploy/
+  - mv status.html deploy/index.html
   - cp static/style.css deploy/
   - git checkout gh-pages
   - cp deploy/* .

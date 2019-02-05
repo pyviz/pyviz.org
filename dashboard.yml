@@ -2,87 +2,104 @@
 
   packages:
 
-  - repo: ContinuumIO/intake
-    badges: travis, appveyor, rtd, pypi, conda, conda-forge, defaults
-    pypi_name: intake
-    rtd_name: intake
-    appveyor_project: jsignell/intake
+  - repo: pyviz/panel
+    badges: travis, appveyor, pypi, conda, conda-forge, defaults
 
-  - repo: ContinuumIO/intake-xarray
-    badges: travis, appveyor, rtd, pypi, conda, conda-forge, defaults
-    appveyor_project: jsignell/intake-xarray
+  - repo: pyviz/hvplot
+    badges: travis, appveyor, pypi, conda, conda-forge, defaults
 
-  - repo: ContinuumIO/intake-parquet
-    badges: travis, rtd, pypi, conda, conda-forge
+  - repo: pyviz/datashader
+    badges: travis, appveyor, pypi, conda, conda-forge, defaults
 
-  - repo: ContinuumIO/intake-spark
-    badges: travis, rtd, pypi, conda, conda-forge
+  - repo: pyviz/geoviews
+    badges: travis, appveyor, pypi, conda, conda-forge, defaults
 
-  - repo: ContinuumIO/intake-accumulo
-    badges: travis, rtd, pypi, conda, conda-forge
+  - repo: ioam/holoviews
+    appveyor_project: pyviz/holoviews
+    badges: travis, appveyor, coveralls, pypi, conda, conda-forge, defaults
 
-  - repo: ContinuumIO/intake-sql
-    badges: travis, rtd, pypi, conda, conda-forge
+  - repo: pyviz/colorcet
+    badges: pypi, conda-forge, defaults
 
-  - repo: ContinuumIO/intake-elasticsearch
-    badges: travis, rtd, pypi, conda, conda-forge
+  - repo: pyviz/param
+    badges: travis, appveyor, pypi, conda, conda-forge, defaults
 
-  - repo: ContinuumIO/intake-avro
-    badges: travis, rtd, pypi, conda, conda-forge
+  - repo: ioam/paramtk
+    badges: travis, appveyor, pypi, conda, conda-forge
 
-  - repo: ContinuumIO/intake-astro
-    badges: travis, rtd, pypi, conda, conda-forge
+  - repo: ioam/parambokeh
+    appveyor_project: Ioam/parambokeh
+    badges: travis, appveyor, pypi, conda, conda-forge
 
-  - repo: ContinuumIO/intake-netflow
-    badges: travis, rtd, conda
+  - repo: ioam/paramnb
+    badges: travis, appveyor, pypi, conda, conda-forge
 
-  - repo: ContinuumIO/intake-mongo
-    badges: travis, rtd, conda
+- name: Metapackages and Example packages
 
-  - repo: ContinuumIO/intake-postgres
-    badges: travis, rtd, conda
+  packages:
 
-  - repo: ContinuumIO/intake-odbc
-    badges: travis, rtd, conda
+  - repo: pyviz/pyviz
+    badges: travis, appveyor, pypi, conda, conda-forge, defaults
 
-  - repo: ContinuumIO/intake-solr
-    badges: travis, rtd, conda
+  - repo: pyviz/EarthSim
+    badges: travis, appveyor, conda-forge
 
-  - repo: ContinuumIO/intake-splunk
-    badges: travis, rtd, conda
+  - repo: pyviz-topics/EarthML
+    appveyor_project: jsignell/earthml
+    badges: travis, appveyor
 
-  - repo: ContinuumIO/intake-hbase
-    badges: travis, rtd, conda
 
+- name: Tooling and Infrastructure packages
+
+  packages:
+
+  - repo: pyviz/nbsite
+    badges: travis, pypi, conda, conda-forge
+
+  - repo: pyviz/nbsmoke
+    badges: travis, appveyor, pypi, conda, conda-forge
+
+  - repo: pyviz/autover
+    badges: travis, appveyor, pypi, conda, conda-forge
+
+  - repo: pyviz/pyct
+    badges: travis, pypi, conda, conda-forge
+
+  - repo: pyviz/pyctdev
+    badges: travis, pypi, conda, conda-forge
 
 - name: Associated packages
 
   packages:
 
+  - repo: ContinuumIO/intake
+    badges: travis, appveyor, pypi, conda, conda-forge, defaults
+    pypi_name: intake
+    conda_channel: intake
+    appveyor_project: jsignell/intake
+
+  - repo: ContinuumIO/intake-xarray
+    badges: travis, appveyor, pypi, conda, conda-forge, defaults
+    conda_channel: intake
+    appveyor_project: jsignell/intake-xarray
+
+  - repo: ContinuumIO/intake-parquet
+    conda_channel: intake
+    badges: travis, pypi, conda, conda-forge
+
   - repo: dask/dask
     appveyor_project: daskdev/dask
-    badges: travis, appveyor, coveralls, rtd, pypi, conda-forge, defaults
+    badges: travis, appveyor, coveralls, pypi, conda-forge, defaults
 
   - repo: pandas-dev/pandas
-    badges: travis, appveyor, codecov, rtd, pypi, conda-forge, defaults
+    badges: travis, appveyor, codecov, pypi, conda-forge, defaults
 
   - repo: pydata/xarray
     appveyor_project: shoyer/xray
-    badges: travis, appveyor, coveralls, rtd, pypi, conda-forge, defaults
-
-  - repo: pyviz/hvplot
-    conda_channel: pyviz
-    appveyor_project: philippjfr/hvplot
-    badges: travis, appveyor, coveralls, rtd, pypi, conda, conda-forge, defaults
+    badges: travis, appveyor, coveralls, pypi, conda-forge, defaults
 
   - repo: zarr-developers/zarr
-    badges: travis, appveyor, coveralls, rtd, pypi, conda-forge, defaults
-
-  - repo: Unidata/netcdf4-python
-    pypi_name: netCDF4
-    conda_package: netCDF4
-    appveyor_project: jswhit/netcdf4-python
-    badges: travis, appveyor, pypi, conda-forge, defaults
+    badges: travis, appveyor, coveralls, pypi, conda-forge, defaults
 
   - repo: dask/fastparquet
-    badges: travis, rtd, pypi, conda-forge, defaults
+    badges: travis, pypi, conda-forge, defaults
