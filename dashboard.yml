@@ -2,129 +2,87 @@
 
   packages:
 
-  - repo: astropy/astropy
-    badges: travis, appveyor, circleci, codecov, rtd, pypi, conda
+  - repo: ContinuumIO/intake
+    badges: travis, appveyor, rtd, pypi, conda, conda-forge, defaults
+    pypi_name: intake
+    rtd_name: intake
+    appveyor_project: jsignell/intake
 
-  - repo: astropy/astropy-healpix
-    badges: travis, appveyor, circleci, coveralls, rtd, pypi, conda
+  - repo: ContinuumIO/intake-xarray
+    badges: travis, appveyor, rtd, pypi, conda, conda-forge, defaults
+    appveyor_project: jsignell/intake-xarray
 
-  - repo: astropy/astroquery
-    badges: travis, appveyor, codecov, rtd, pypi, conda
+  - repo: ContinuumIO/intake-parquet
+    badges: travis, rtd, pypi, conda, conda-forge
 
-  - repo: astropy/ccdproc
-    badges: travis, appveyor, coveralls, rtd, pypi, conda
-    appveyor_project: Astropy/ccdproc-iqpau
+  - repo: ContinuumIO/intake-spark
+    badges: travis, rtd, pypi, conda, conda-forge
 
-  - repo: astropy/photutils
-    badges: travis, appveyor, circleci, coveralls, rtd, pypi, conda
+  - repo: ContinuumIO/intake-accumulo
+    badges: travis, rtd, pypi, conda, conda-forge
 
-  - repo: astropy/regions
-    badges: travis, appveyor, circleci, coveralls, rtd, pypi, conda
-    rtd_name: astropy-regions
+  - repo: ContinuumIO/intake-sql
+    badges: travis, rtd, pypi, conda, conda-forge
 
-  - repo: astropy/reproject
-    badges: travis, appveyor, circleci, codecov, rtd, pypi, conda
+  - repo: ContinuumIO/intake-elasticsearch
+    badges: travis, rtd, pypi, conda, conda-forge
 
-  - repo: astropy/specutils
-    badges: travis, circleci, coveralls, rtd, pypi, conda
+  - repo: ContinuumIO/intake-avro
+    badges: travis, rtd, pypi, conda, conda-forge
 
-- name: Infrastructure
+  - repo: ContinuumIO/intake-astro
+    badges: travis, rtd, pypi, conda, conda-forge
 
-  packages:
+  - repo: ContinuumIO/intake-netflow
+    badges: travis, rtd, conda
 
-  - repo: astropy/astropy.github.com
-    badges: travis, circleci
+  - repo: ContinuumIO/intake-mongo
+    badges: travis, rtd, conda
 
-  - repo: astropy/astropy-tutorials
-    badges: travis, circleci
+  - repo: ContinuumIO/intake-postgres
+    badges: travis, rtd, conda
 
-  - repo: astropy/astropy-bot
-    badges: travis, codecov
+  - repo: ContinuumIO/intake-odbc
+    badges: travis, rtd, conda
 
-  - repo: astropy/astropy-changelog
-    badges: travis, codecov, pypi, conda
+  - repo: ContinuumIO/intake-solr
+    badges: travis, rtd, conda
 
-  - repo: astropy/astropy-helpers
-    badges: travis, appveyor, codecov, pypi, conda
+  - repo: ContinuumIO/intake-splunk
+    badges: travis, rtd, conda
 
-  - repo: astropy/astropy-sphinx-theme
-    badges: circleci, pypi, conda
+  - repo: ContinuumIO/intake-hbase
+    badges: travis, rtd, conda
 
-  - repo: astropy/package-template
-    badges: travis, appveyor, coveralls, rtd
-    appveyor_project: Astropy/package-template-615
-    rtd_name: astropy-package-template
 
-  - repo: astropy/pytest-arraydiff
-    badges: travis, appveyor, codecov, pypi, conda
-
-  - repo: astropy/pytest-astropy
-    badges: pypi, conda
-
-  - repo: astropy/pytest-doctestplus
-    badges: travis, appveyor, pypi, conda
-
-  - repo: astropy/pytest-openfiles
-    badges: travis, appveyor, pypi, conda
-
-  - repo: astropy/pytest-remotedata
-    badges: travis, appveyor, pypi, conda
-
-  - repo: astropy/sphinx-astropy
-    badges: circleci, pypi, conda
-
-  - repo: astropy/sphinx-automodapi
-    badges: travis, appveyor, codecov, rtd, pypi, conda
-
-- name: Affiliated Packages
-
-  # By default, we fetch the list of affiliated packages from the affiliated
-  # package JSON registry file and we assume that 'badges' is set to
-  # travis, coveralls, rtd, pypi. We also fetch pypi_name from the registry.
-  # to override these or other settings, you can add an entry below.
+- name: Associated packages
 
   packages:
 
-  - repo: glue-viz/glue
-    badges: travis, circleci, appveyor, codecov, rtd, pypi, conda
-    pypi_name: glue-core
-    conda_project: glueviz/glue-core
+  - repo: dask/dask
+    appveyor_project: daskdev/dask
+    badges: travis, appveyor, coveralls, rtd, pypi, conda-forge, defaults
 
-  - repo: astropy/astroplan
-    badges: travis, appveyor, coveralls, rtd, pypi, conda
+  - repo: pandas-dev/pandas
+    badges: travis, appveyor, codecov, rtd, pypi, conda-forge, defaults
 
-  - repo: APLpy/APLpy
-    badges: travis, circleci, codecov, rtd, pypi, conda
-    appveyor_project: astrofrog/APLpy
-    circleci_project: aplpy/aplpy
-    travis_project: aplpy/aplpy
+  - repo: pydata/xarray
+    appveyor_project: shoyer/xray
+    badges: travis, appveyor, coveralls, rtd, pypi, conda-forge, defaults
 
-  - repo: adrn/gala
-    badges: travis, appveyor, coveralls, rtd, pypi, conda
+  - repo: pyviz/hvplot
+    conda_channel: pyviz
+    appveyor_project: philippjfr/hvplot
+    badges: travis, appveyor, coveralls, rtd, pypi, conda, conda-forge, defaults
 
-  - repo: jobovy/galpy
-    badges: travis, appveyor, codecov, rtd, pypi, conda
+  - repo: zarr-developers/zarr
+    badges: travis, appveyor, coveralls, rtd, pypi, conda-forge, defaults
 
-  - repo: astropy/halotools
-    badges: travis, appveyor, coveralls, rtd, pypi, conda
+  - repo: Unidata/netcdf4-python
+    pypi_name: netCDF4
+    conda_package: netCDF4
+    appveyor_project: jswhit/netcdf4-python
+    badges: travis, appveyor, pypi, conda-forge, defaults
 
-  - repo: spacetelescope/imexam
-    badges: travis, appveyor, coveralls, rtd, pypi, conda
-
-  - repo: zblz/naima
-    badges: travis, appveyor, coveralls, rtd, pypi, conda
-
-  - repo: astropy/pyregion
-    badges: travis, appveyor, coveralls, rtd, pypi, conda
-
-  - repo: StingraySoftware/stingray
-    badges: travis, appveyor, coveralls, rtd, pypi, conda
-
-  - repo: poliastro/poliastro
-    badges: travis, circleci, codecov, rtd, pypi, conda
-
-  - repo: spacetelescope/synphot_refactor
-    badges: travis, appveyor, coveralls, rtd, pypi
-    pypi_name: synphot
-    rtd_name: synphot
-    appveyor_project: pllim/synphot-refactor
+  - repo: dask/fastparquet
+    badges: travis, rtd, pypi, conda-forge, defaults
