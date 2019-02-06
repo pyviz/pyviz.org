@@ -13,6 +13,7 @@
         <th>Travis</th>
         <th>AppVeyor</th>
         <th>Coverage</th>
+        <th>Docs</th>
         <th>PyPI</th>
         <th>Conda</th>
       </tr>
@@ -49,6 +50,21 @@
           <td align='left'>
             <a href="https://codecov.io/gh/{{ package.repo }}?branch=master">
               <img src="https://codecov.io/gh/{{ package.repo }}/branch/master/graph/badge.svg">
+            </a>
+          </td>
+          {% else %}
+          <td align='center'>-</td>
+          {% endif %}
+          {% if 'gh-pages' in package.badges %}
+          <td align='left'>
+            <a href="https://github.com/{{ package.repo }}/tree/gh-pages">
+              <img src="https://img.shields.io/github/last-commit/{{ package.repo }}/gh-pages.svg">
+            </a>
+          </td>
+          {% elif 'rtd' in package.badges %}
+          <td align='left'>
+            <a href="https://readthedocs.org/projects/{{ package.rtd_name }}/?badge=latest">
+              <img src="https://readthedocs.org/projects/{{ package.rtd_name }}/badge/?version=latest">
             </a>
           </td>
           {% else %}
