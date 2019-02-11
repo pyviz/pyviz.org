@@ -57,15 +57,13 @@
           <td align='center'>-</td>
           {% endif %}
           {% if 'gh-pages' in package.badges or 'site' in package.badges %}
-            <td align='left'>
+          <td align='left'>
+            <a href="{{ package.site_protocol }}://{{ package.site }}">
+              <img src="https://img.shields.io/website-up-down-green-red/{{ package.site_protocol }}/{{ package.site }}.svg">
+            </a>
             {% if 'gh-pages' in package.badges %}
             <a href="https://github.com/{{ package.repo }}/tree/gh-pages">
               <img src="https://img.shields.io/github/last-commit/{{ package.repo }}/gh-pages.svg">
-            </a>
-            {% endif %}
-            {% if 'site' in package.badges %}
-            <a href="{{ package.site_protocol }}://{{ package.site }}">
-              <img src="https://img.shields.io/website-up-down-green-red/{{ package.site_protocol }}/{{ package.site }}.svg">
             </a>
             {% endif %}
           </td>
@@ -81,10 +79,10 @@
           {% if 'release' in package.badges %}
           <td align='left'>
             <a href="https://github.com/{{ package.repo }}/tags">
-              <img src="https://img.shields.io/github/tag/{{ package.repo }}.svg?label=dev_tag&colorB=11ccbb">
+              <img src="https://img.shields.io/github/tag/{{ package.repo }}.svg?label=dev-tag&colorB=11ccbb">
             </a>
             <a href="https://github.com/{{ package.repo }}/releases">
-              <img src="https://img.shields.io/github/release/{{ package.repo }}.svg?label=rel_tag&colorB=11ccbb">
+              <img src="https://img.shields.io/github/release/{{ package.repo }}.svg?label=rel-tag&colorB=11ccbb">
             </a>
           </td>
           {% else %}
