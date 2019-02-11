@@ -57,6 +57,9 @@ for section in config:
             package['travis_project'] = package['repo']
         if 'conda' in package['badges'] and 'conda_channel' not in package:
             package['conda_channel'] = 'pyviz'
+        if 'site' in package['badges']:
+            package['site_protocol'] = package.get('site_protocol', 'http')
+            package['site'] = package.get('site', '{}.pyviz.org'.format(package['name']))
 
 # affiliated['packages'] = sorted(affiliated['packages'], key=lambda x: x['name'].lower())
 

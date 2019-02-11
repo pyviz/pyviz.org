@@ -14,6 +14,7 @@
         <th>AppVeyor</th>
         <th>Coverage</th>
         <th>Docs</th>
+        <th>Release</th>
         <th>PyPI</th>
         <th>Conda</th>
       </tr>
@@ -55,16 +56,35 @@
           {% else %}
           <td align='center'>-</td>
           {% endif %}
-          {% if 'gh-pages' in package.badges %}
-          <td align='left'>
+          {% if 'gh-pages' in package.badges or 'site' in package.badges %}
+            <td align='left'>
+            {% if 'gh-pages' in package.badges %}
             <a href="https://github.com/{{ package.repo }}/tree/gh-pages">
               <img src="https://img.shields.io/github/last-commit/{{ package.repo }}/gh-pages.svg">
             </a>
+            {% endif %}
+            {% if 'site' in package.badges %}
+            <a href="{{ package.site_protocol }}://{{ package.site }}">
+              <img src="https://img.shields.io/website-up-down-green-red/{{ package.site_protocol }}/{{ package.site }}.svg">
+            </a>
+            {% endif %}
           </td>
           {% elif 'rtd' in package.badges %}
           <td align='left'>
             <a href="https://readthedocs.org/projects/{{ package.rtd_name }}/?badge=latest">
               <img src="https://readthedocs.org/projects/{{ package.rtd_name }}/badge/?version=latest">
+            </a>
+          </td>
+          {% else %}
+          <td align='center'>-</td>
+          {% endif %}
+          {% if 'release' in package.badges %}
+          <td align='left'>
+            <a href="https://github.com/{{ package.repo }}/tags">
+              <img src="https://img.shields.io/github/tag/{{ package.repo }}.svg?label=dev_tag&colorB=11ccbb">
+            </a>
+            <a href="https://github.com/{{ package.repo }}/releases">
+              <img src="https://img.shields.io/github/release/{{ package.repo }}.svg?label=rel_tag&colorB=11ccbb">
             </a>
           </td>
           {% else %}

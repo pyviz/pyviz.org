@@ -3,51 +3,58 @@
   packages:
 
   - repo: pyviz/panel
-    badges: travis, appveyor, codecov, pypi, conda, conda-forge, defaults, gh-pages
+    badges: travis, appveyor, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site
 
   - repo: pyviz/hvplot
-    badges: travis, appveyor, pypi, conda, conda-forge, defaults, gh-pages
+    badges: travis, appveyor, release, pypi, conda, conda-forge, defaults, gh-pages, site
 
   - repo: pyviz/datashader
-    badges: travis, appveyor, pypi, conda, conda-forge, defaults
+    site: datashader.org
+    badges: travis, appveyor, release, pypi, conda, conda-forge, defaults, site
 
   - repo: pyviz/geoviews
-    badges: travis, appveyor, pypi, conda, conda-forge, defaults, gh-pages
+    site: geoviews.org
+    badges: travis, appveyor, release, pypi, conda, conda-forge, defaults, gh-pages, site
 
-  - repo: ioam/holoviews
-    appveyor_project: pyviz/holoviews
-    badges: travis, coveralls, pypi, conda, conda-forge, defaults
+  - repo: pyviz/holoviews
+    appveyor_project: pyviz/holoviews-ginxt
+    site: holoviews.org
+    badges: travis, appveyor, coveralls, release, pypi, conda, conda-forge, defaults, site
 
   - repo: pyviz/colorcet
-    badges: pypi, conda-forge, defaults, gh-pages
+    badges: pypi, release, conda-forge, defaults, gh-pages, site
 
   - repo: pyviz/param
     appveyor_project: Ioam/param
-    badges: travis, appveyor, pypi, conda, conda-forge, defaults
+    badges: travis, appveyor, coveralls, release, pypi, conda, conda-forge, defaults, gh-pages, site
 
   - repo: ioam/paramtk
     badges: pypi
 
   - repo: ioam/parambokeh
     appveyor_project: Ioam/parambokeh
-    badges: travis, appveyor, pypi, conda, conda-forge
+    badges: travis, appveyor, release, pypi, conda, conda-forge, gh-pages, site
 
   - repo: ioam/paramnb
-    badges: travis, appveyor, pypi, conda, conda-forge
+    badges: travis, appveyor, release, pypi, conda, conda-forge, gh-pages, site
+
+  - repo: pyviz/imagen
+    badges: travis, release, pypi, gh-pages, site
 
 - name: Metapackages and Example packages
 
   packages:
 
   - repo: pyviz/pyviz
-    badges: travis, appveyor, pypi, conda, conda-forge, defaults, gh-pages
+    site: pyviz.org
+    badges: travis, appveyor, release, pypi, conda, conda-forge, defaults, gh-pages, site
 
   - repo: pyviz/EarthSim
-    badges: travis, appveyor, conda-forge, gh-pages
+    badges: travis, appveyor, release, conda-forge, gh-pages, site
 
   - repo: pyviz-topics/EarthML
     appveyor_project: jsignell/earthml
-    badges: travis, appveyor, gh-pages
+    badges: travis, appveyor, gh-pages, site
 
 
 - name: Tooling and Infrastructure packages
@@ -55,74 +62,74 @@
   packages:
 
   - repo: pyviz/nbsite
-    badges: travis, pypi, conda, conda-forge, gh-pages
+    badges: travis, release, release, pypi, conda, conda-forge, gh-pages, site
 
   - repo: pyviz/nbsmoke
-    badges: travis, appveyor, pypi, conda, conda-forge, gh-pages
+    badges: travis, appveyor, release, pypi, conda, conda-forge
 
   - repo: pyviz/autover
-    badges: travis, appveyor, pypi, conda, conda-forge
+    badges: travis, appveyor, release, pypi, conda, conda-forge
 
   - repo: pyviz/pyct
-    badges: travis, pypi, conda, conda-forge
+    badges: travis, release, pypi, conda, conda-forge
 
   - repo: pyviz/pyctdev
-    badges: travis, pypi, conda, conda-forge
+    badges: travis, release, pypi, conda, conda-forge
 
 - name: Associated packages
 
   packages:
 
   - repo: bokeh/bokeh
-    badges: travis, appveyor, pypi, conda, conda-forge, defaults
+    badges: travis, appveyor, release, pypi, conda, conda-forge, defaults
     conda_channel: bokeh
     appveyor_project: bokeh-integrations/bokeh
 
   - repo: dask/dask
     appveyor_project: daskdev/dask
-    badges: travis, appveyor, coveralls, rtd, pypi, conda-forge, defaults
+    badges: travis, appveyor, coveralls, rtd, release, pypi, conda-forge, defaults
 
   - repo: numpy/numpy
     appveyor_project: charris/numpy
-    badges: travis, appveyor, codecov, rtd, pypi, conda-forge, defaults
+    badges: travis, appveyor, codecov, rtd, release, pypi, conda-forge, defaults
 
   - repo: pandas-dev/pandas
-    badges: travis, appveyor, codecov, rtd, pypi, conda-forge, defaults
+    badges: travis, appveyor, codecov, rtd, release, pypi, conda-forge, defaults
 
   - repo: pydata/xarray
     appveyor_project: shoyer/xray
-    badges: travis, appveyor, coveralls, rtd, pypi, conda-forge, defaults
+    badges: travis, appveyor, coveralls, rtd, release, pypi, conda-forge, defaults
 
 - name: Data Ingestion packages
 
   packages:
 
   - repo: ContinuumIO/intake
-    badges: travis, appveyor, rtd, pypi, conda, conda-forge, defaults
+    badges: travis, appveyor, rtd, release, pypi, conda, conda-forge, defaults
     pypi_name: intake
     conda_channel: intake
     appveyor_project: jsignell/intake
 
   - repo: ContinuumIO/intake-xarray
-    badges: travis, appveyor, rtd, pypi, conda, conda-forge, defaults
+    badges: travis, appveyor, rtd, release, pypi, conda, conda-forge, defaults
     conda_channel: intake
     appveyor_project: jsignell/intake-xarray
 
   - repo: ContinuumIO/intake-parquet
     conda_channel: intake
-    badges: travis, rtd, pypi, conda, conda-forge
+    badges: travis, rtd, release, pypi, conda, conda-forge
 
   - repo: zarr-developers/zarr
-    badges: travis, appveyor, coveralls, rtd, pypi, conda-forge, defaults
+    badges: travis, appveyor, coveralls, rtd, release, pypi, conda-forge, defaults
 
   - repo: dask/fastparquet
-    badges: travis, rtd, pypi, conda-forge, defaults
+    badges: travis, rtd, release, pypi, conda-forge, defaults
 
   - repo: Unidata/netcdf4-python
     pypi_name: netCDF4
     conda_package: netCDF4
     appveyor_project: jswhit/netcdf4-python
-    badges: travis, appveyor, pypi, conda-forge, defaults
+    badges: travis, appveyor, release, pypi, conda-forge, defaults
 
 
 - name: Niche packages
@@ -131,13 +138,13 @@
 
   - repo: networkx/networkx
     appveyor_project: dschult/networkx-pqott
-    badges: travis, appveyor, codecov, pypi, conda-forge, defaults
+    badges: travis, appveyor, codecov, release, pypi, conda-forge, defaults
 
   - repo: scikit-image/scikit-image
-    badges: travis, appveyor, codecov, pypi, conda-forge, defaults
+    badges: travis, appveyor, codecov, release, pypi, conda-forge, defaults
 
   - repo: SciTools/cartopy
-    badges: travis, appveyor, coveralls, pypi, conda-forge, defaults
+    badges: travis, appveyor, coveralls, release, pypi, conda-forge, defaults
 
   - repo: geopandas/geopandas
-    badges: travis, coveralls, rtd, pypi, conda-forge, defaults
+    badges: travis, coveralls, rtd, release, pypi, conda-forge, defaults
