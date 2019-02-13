@@ -22,21 +22,11 @@
     badges: travis, appveyor, coveralls, release, pypi, conda, conda-forge, defaults, site
 
   - repo: pyviz/colorcet
-    badges: pypi, release, conda-forge, defaults, gh-pages, site
+    badges: travis, appveyor, release, pypi, conda, conda-forge, defaults, gh-pages, site
 
   - repo: pyviz/param
     appveyor_project: Ioam/param
     badges: travis, appveyor, coveralls, release, pypi, conda, conda-forge, defaults, gh-pages, site
-
-  - repo: ioam/paramtk
-    badges: pypi
-
-  - repo: ioam/parambokeh
-    appveyor_project: Ioam/parambokeh
-    badges: travis, appveyor, release, pypi, conda, conda-forge, gh-pages, site
-
-  - repo: ioam/paramnb
-    badges: travis, appveyor, release, pypi, conda, conda-forge, gh-pages, site
 
   - repo: pyviz/imagen
     badges: travis, release, pypi, gh-pages, site
