@@ -14,7 +14,7 @@
 
   - repo: pyviz/geoviews
     site: geoviews.org
-    badges: travis, appveyor, release, pypi, conda, conda-forge, defaults, gh-pages, site
+    badges: travis, appveyor, release, pypi, conda, conda-forge, defaults, site
 
   - repo: pyviz/holoviews
     appveyor_project: pyviz/holoviews-ginxt
@@ -39,7 +39,8 @@
     site: pyviz.org
     badges: travis, appveyor, release, pypi, conda, conda-forge, defaults, gh-pages, site
 
-  - repo: pyviz/EarthSim
+  - repo: pyviz-topics/EarthSim
+    appveyor_project: pyviz/EarthSim
     badges: travis, appveyor, release, conda-forge, gh-pages, site
 
   - repo: pyviz-topics/EarthML
