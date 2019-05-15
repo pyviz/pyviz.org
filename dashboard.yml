@@ -51,9 +51,12 @@
 - name: Tooling and Infrastructure packages
 
   packages:
+  
+  - repo: pyviz-dev/sphinx_pyviz_theme
+    badges: travis, release, pypi, conda
 
   - repo: pyviz/nbsite
-    badges: travis, release, release, pypi, conda, conda-forge, gh-pages, site
+    badges: travis, release, pypi, conda, conda-forge, gh-pages, site
 
   - repo: pyviz/nbsmoke
     badges: travis, appveyor, release, pypi, conda, conda-forge
