@@ -15,7 +15,7 @@ jobs:
       install: pip install nbsite m2r
       script:
         - nbsite generate-rst --org pyviz --project-name pyviz --examples notebooks
-        - nbsite build --assets assets
+        - nbsite build
       deploy:
         - provider: pages
           skip_cleanup: true
