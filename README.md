@@ -1,2 +1,3 @@
-# website
-Source for new pyviz website
+# PyViz.org
+
+Source materials to build site

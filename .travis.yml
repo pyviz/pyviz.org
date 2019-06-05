@@ -1,0 +1,28 @@
+
+language: python
+sudo: false
+os:
+  - linux
+
+stages:
+  - name: website_release
+    if: commit_message =~ /^.*(website_release).*$/
+
+jobs:
+  include:
+    - &website_release
+      stage: website_release
+      install: pip install nbsite m2r
+      script:
+        - nbsite generate-rst --org pyviz --project-name pyviz --examples notebooks
+        - nbsite build --assets assets
+      deploy:
+        - provider: pages
+          skip_cleanup: true
+          github_token: $GITHUB_TOKEN
+          local_dir: ./builtdocs
+          on:
+            all_branches: true
+
+notifications:
+  email: false
