@@ -29,7 +29,7 @@ jobs:
     - &website_release
       <<: *test
       stage: website_release
-      script: doit website_build
+      script: doit build_website
       deploy:
         - provider: pages
           skip_cleanup: true
