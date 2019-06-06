@@ -1,3 +1,4 @@
+# noqa
 from nbsite.shared_conf import *
 
 project = u'PyViz'

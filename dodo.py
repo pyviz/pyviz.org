@@ -5,6 +5,7 @@ if "PYCTDEV_ECOSYSTEM" not in os.environ:
 
 from pyctdev import *  # noqa: api
 
+
 def task_ecosystem_setup():
     """Set up conda with updated version, and yes set to always"""
     return {'actions': [
@@ -21,9 +22,10 @@ def task_env_create():
         "conda env update -f environment-dev.yml -n pyviz",
     ]}
 
+
 def task_build_website():
     """Build website using nbsite"""
-    return {'actions':[
-        "nbsite generate-rst --org pyviz --project-name pyviz --examples notebooks",
+    return {'actions': [
+        "nbsite generate-rst --org pyviz --project-name pyviz --examples notebooks",  # noqa
         "nbsite build --what=html --output=builtdocs",
     ]}
