@@ -1,21 +1,35 @@
-
-language: python
 sudo: false
+language: generic
 os:
   - linux
 
+env:
+  global:
+    - PYENV_VERSION=3.6
+
 stages:
+  - test
   - name: website_release
     if: commit_message =~ /^.*(website_release).*$/
 
 jobs:
   include:
+    - &test
+      stage: test
+      before_install:
+        - pip install pyctdev && doit miniconda_install
+        - export PATH="$HOME/miniconda/bin:$PATH" && hash -r
+        - doit ecosystem_setup
+      install:
+        - doit env_create
+        - source activate pyviz
+        - doit env_capture
+      script: doit test_all
+
     - &website_release
+      <<: *test
       stage: website_release
-      install: pip install nbsite m2r
-      script:
-        - nbsite generate-rst --org pyviz --project-name pyviz --examples notebooks
-        - nbsite build
+      script: doit website_build
       deploy:
         - provider: pages
           skip_cleanup: true
