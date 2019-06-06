@@ -8,3 +8,4 @@ dependencies:
   - pyviz::nbsmoke
   - pyviz::pyctdev
   - pytest
+  - tornado<6
