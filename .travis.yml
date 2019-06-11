@@ -24,7 +24,11 @@ jobs:
         - doit env_create
         - source activate pyviz
         - doit env_capture
-      script: doit test_all
+      script:
+        - if ! [ $(ls -A ./notebooks/**/*.ipynb) ]; then
+            echo 'No notebooks found' && exit 0;
+          fi;
+        - doit test_all
 
     - &website_release
       <<: *test
