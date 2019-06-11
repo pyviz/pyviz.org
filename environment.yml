@@ -1,0 +1,6 @@
+name: pyviz
+channels:
+  - conda-forge
+dependencies:
+  - bokeh
+  - matplotlib

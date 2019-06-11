@@ -1,0 +1,46 @@
+sudo: false
+language: generic
+os:
+  - linux
+
+env:
+  global:
+    - PYENV_VERSION=3.6
+
+stages:
+  - test
+  - name: website_release
+    if: commit_message =~ /^.*(website_release).*$/
+
+jobs:
+  include:
+    - &test
+      stage: test
+      before_install:
+        - pip install pyctdev && doit miniconda_install
+        - export PATH="$HOME/miniconda/bin:$PATH" && hash -r
+        - doit ecosystem_setup
+      install:
+        - doit env_create
+        - source activate pyviz
+        - doit env_capture
+      script:
+        - if ! [ $(ls -A ./notebooks/**/*.ipynb) ]; then
+            echo 'No notebooks found' && exit 0;
+          fi;
+        - doit test_all
+
+    - &website_release
+      <<: *test
+      stage: website_release
+      script: doit build_website
+      deploy:
+        - provider: pages
+          skip_cleanup: true
+          github_token: $GITHUB_TOKEN
+          local_dir: ./builtdocs
+          on:
+            all_branches: true
+
+notifications:
+  email: false

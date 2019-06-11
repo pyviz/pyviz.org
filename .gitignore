@@ -1,0 +1,5 @@
+# Jupyter notebook
+*.ipynb_checkpoints/
+
+# nbsite output
+builtdocs/

@@ -1,0 +1,11 @@
+name: pyviz
+channels:
+  - conda-forge
+dependencies:
+  - flake8
+  - m2r
+  - pyviz::nbsite
+  - pyviz::nbsmoke
+  - pyviz::pyctdev
+  - pytest
+  - tornado<6
