@@ -13,4 +13,4 @@ If you are a part of the Python data visualization landscape, then this is _your
 Please open an issue or
 PR on [this GitHub repo](https://github.com/pyviz/pyviz) to start a conversation.
 
-**NOTE:** Some of the material previously hosted under Tutorials on this site is now hosted by metaplot.org and is linked from the "Metaplot" section of the Tutorials heading on this site.
+**NOTE:** Some of the material previously hosted under Tutorials on this site is now hosted by holoviz.org and is linked from the "HoloViz" section of the Tutorials heading on this site.
