@@ -15,4 +15,4 @@ This PyViz.org website contains:
 ## This site
 If you are a part of the Python data visualization landscape, then this is _your_ site!  All content has been contributed by individual library authors and users, and you could be next! Please open an issue or PR on [this GitHub repo](https://github.com/pyviz/website) to start a conversation. The goal is to make everyone doing viz in Python more productive, have more power, and make a greater impact from their work.
 
-**NOTE:** Some of the material previously hosted under Tutorials on this site is now hosted by holoviz.org and is linked from the "HoloViz" section of the Tutorials heading on this site.
+**NOTE:** Some of the material previously hosted on this site is now at [HoloViz](https://holoviz.org) and is linked from the "HoloViz" section of the Tutorials heading on this site.
