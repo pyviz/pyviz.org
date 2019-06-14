@@ -58,9 +58,11 @@ for section in config:
         if 'site' in package['badges'] and 'site_protocol' not in package:
             package['site_protocol'] = 'https'
 
-# affiliated['packages'] = sorted(affiliated['packages'], key=lambda x: x['name'].lower())
 
 template = Template(open(os.path.join(here, 'template.html'), 'r').read())
 
-with open(os.path.join(here, 'index.html'), 'w') as f:
+with open(os.path.join(here, 'index.rst'), 'w') as f:
+    f.write("All Tools\n")
+    f.write("=========\n\n")
+    f.write(".. raw:: html\n\n")
     f.write(template.render(config=config))

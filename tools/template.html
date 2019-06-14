@@ -1,12 +1,6 @@
-<html>
-  <head>
-    <link href='_static/tools.css' rel='stylesheet' type="text/css">
-  </head>
-  <body>
-    <div id="wrapper">
-    <h1>PyViz Tools</h1>
+    <div id="tools-wrapper">
     {% for section in config %}
-    <h2>{{ section.name }}</h2>
+    <h3>{{ section.name }}</h3>
     <table align='center'>
       <tr>
         <th>Name</th>
@@ -117,5 +111,3 @@
     </table>
     {% endfor %}
     </div>
-  </body>
-</html>

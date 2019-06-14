@@ -26,9 +26,8 @@ def task_env_create():
 def task_build_website():
     """Build website using nbsite"""
     return {'actions': [
+        "python tools/build.py",
+        "mv tools/index.rst doc/tools.rst",
         "nbsite generate-rst --org pyviz --project-name pyviz --examples notebooks",  # noqa
         "nbsite build --what=html --output=builtdocs",
-        "python tools/build.py",
-        "mv tools/index.html builtdocs/tools.html",
-        "cp tools/_static/tools.css builtdocs/_static/tools.css",
     ]}
