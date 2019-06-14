@@ -1,24 +1,20 @@
 #!/usr/bin/env python
 
+import os
 import sys
 from jinja2 import Template
-from yaml import load
+from yaml import safe_load
 import requests
 
-with open('tools.yml') as f:
-    config = load(f)
+
+here = os.path.abspath(os.path.dirname(__file__))
+
+with open(os.path.join(here, 'tools.yml')) as f:
+    config = safe_load(f)
 
 existing = {package['repo'].split('/')[1].lower(): package for section in config for package in section['packages']}
 
-# Also get affiliated packages
 registry = []
-# for section in config:
-#     if section['name'] == 'Affiliated Packages':
-#         affiliated = section
-#         break
-# else:
-#     print("Could not find affiliated package section in dashboard.yml")
-#     sys.exit(1)
 
 for package in registry:
     # FIXME: Not all repo name is actual package name.
@@ -56,15 +52,15 @@ for section in config:
         if 'travis' in package['badges'] and 'travis_project' not in package:
             package['travis_project'] = package['repo']
         if 'conda' in package['badges'] and 'conda_channel' not in package:
-            package['conda_channel'] = 'pyviz'
-        if 'site' in package['badges']:
-            package['site_protocol'] = package.get('site_protocol', 'http')
-            package['site'] = package.get('site', '{}.pyviz.org'.format(package['name']))
+            package['conda_channel'] = 'anaconda'
+        if 'site' in package['badges'] and 'site' not in package:
+            package['site'] = '{}.org'.format(package['name'])
+        if 'site' in package['badges'] and 'site_protocol' not in package:
+            package['site_protocol'] = 'https'
 
 # affiliated['packages'] = sorted(affiliated['packages'], key=lambda x: x['name'].lower())
 
-template = Template(open('template.html', 'r').read())
+template = Template(open(os.path.join(here, 'template.html'), 'r').read())
 
-
-with open('index.html', 'w') as f:
+with open(os.path.join(here, 'index.html'), 'w') as f:
     f.write(template.render(config=config))
