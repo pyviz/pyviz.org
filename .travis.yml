@@ -42,5 +42,3 @@ jobs:
           on:
             all_branches: true
 
-notifications:
-  email: false

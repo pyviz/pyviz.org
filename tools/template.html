@@ -1,0 +1,133 @@
+<html>
+  <head>
+    <link href='style.css' rel='stylesheet' type="text/css">
+  </head>
+  <body>
+    <div id="wrapper">
+    <h1>PyViz Project Dashboard</h1>
+    {% for section in config %}
+    <h2>{{ section.name }}</h2>
+    <table align='center'>
+      <tr>
+        <th>Name</th>
+        <th>Travis</th>
+        <th>AppVeyor</th>
+        <th>Coverage</th>
+        <th>Docs</th>
+        <th>Release</th>
+        <th>PyPI</th>
+        <th>Conda</th>
+      </tr>
+      {% for package in section.packages %}
+      <tr>
+        <td align='left'>
+          <a href="http://github.com/{{ package.repo }}">{{ package.name }}</a>
+        </td>
+          {% if 'travis' in package.badges %}
+          <td align='left'>
+            <a href="https://travis-ci.org/{{ package.travis_project }}">
+              <img src="https://travis-ci.org/{{ package.travis_project }}.svg?branch=master">
+            </a>
+          </td>
+          {% else %}
+          <td align='center'>-</td>
+          {% endif %}
+          {% if 'appveyor' in package.badges %}
+          <td align='left'>
+            <a href="https://ci.appveyor.com/project/{{ package.appveyor_project }}?branch=master">
+              <img src="https://img.shields.io/appveyor/ci/{{ package.appveyor_project }}/master.svg">
+            </a>
+          </td>
+          {% else %}
+          <td align='center'>-</td>
+          {% endif %}
+          {% if 'coveralls' in package.badges %}
+          <td align='left'>
+            <a href="https://coveralls.io/r/{{ package.repo }}?branch=master">
+              <img src="https://coveralls.io/repos/{{ package.repo }}/badge.svg?branch=master">
+            </a>
+          </td>
+          {% elif 'codecov' in package.badges %}
+          <td align='left'>
+            <a href="https://codecov.io/gh/{{ package.repo }}?branch=master">
+              <img src="https://codecov.io/gh/{{ package.repo }}/branch/master/graph/badge.svg">
+            </a>
+          </td>
+          {% else %}
+          <td align='center'>-</td>
+          {% endif %}
+          {% if 'gh-pages' in package.badges or 'site' in package.badges %}
+          <td align='left'>
+            <a href="{{ package.site_protocol }}://{{ package.site }}">
+              <img src="https://img.shields.io/website-up-down-green-red/{{ package.site_protocol }}/{{ package.site }}.svg">
+            </a>
+            {% if 'gh-pages' in package.badges %}
+            <a href="https://github.com/{{ package.repo }}/tree/gh-pages">
+              <img src="https://img.shields.io/github/last-commit/{{ package.repo }}/gh-pages.svg">
+            </a>
+            {% endif %}
+          </td>
+          {% elif 'rtd' in package.badges %}
+          <td align='left'>
+            <a href="https://readthedocs.org/projects/{{ package.rtd_name }}/?badge=latest">
+              <img src="https://readthedocs.org/projects/{{ package.rtd_name }}/badge/?version=latest">
+            </a>
+          </td>
+          {% else %}
+          <td align='center'>-</td>
+          {% endif %}
+          {% if 'release' in package.badges %}
+          <td align='left'>
+            <a href="https://github.com/{{ package.repo }}/tags">
+              <img src="https://img.shields.io/github/tag/{{ package.repo }}.svg?label=dev-tag&colorB=11ccbb">
+            </a>
+            <a href="https://github.com/{{ package.repo }}/releases">
+              <img src="https://img.shields.io/github/release/{{ package.repo }}.svg?label=rel-tag&colorB=11ccbb">
+            </a>
+          </td>
+          {% else %}
+          <td align='center'>-</td>
+          {% endif %}
+          {% if 'pypi' in package.badges %}
+          <td align='left'>
+            <a href="https://pypi.python.org/pypi/{{ package.pypi_name }}">
+              <img src="https://img.shields.io/pypi/v/{{ package.pypi_name }}.svg?color=cc77dd">
+            </a>
+          </td>
+          {% else %}
+          <td align='center'>-</td>
+          {% endif %}
+          {% if 'conda' in package.badges %}
+          <td align='left'>
+            <a href="https://anaconda.org/{{ package.conda_channel }}/{{ package.conda_package }}">
+              <img src="https://img.shields.io/conda/vn/{{ package.conda_channel }}/{{ package.conda_package }}.svg?colorB=4488ff&style=flat">
+            </a>
+          </td>
+          {% else %}
+          <td align='center'>-</td>
+          {% endif %}
+          {% if 'conda-forge' in package.badges %}
+          <td align='left'>
+            <a href="https://anaconda.org/conda-forge/{{ package.conda_package }}">
+              <img src="https://img.shields.io/conda/vn/conda-forge/{{ package.conda_package }}.svg?colorB=4488ff&style=flat">
+            </a>
+          </td>
+          {% else %}
+          <td align='center'>-</td>
+          {% endif %}
+          {% if 'defaults' in package.badges %}
+          <td align='left'>
+            <a href="https://anaconda.org/anaconda/{{ package.conda_package }}">
+              <img src="https://img.shields.io/conda/vn/anaconda/{{ package.conda_package }}.svg?colorB=4488ff&label=defaults&style=flat">
+            </a>
+          </td>
+          {% else %}
+          <td align='center'>-</td>
+          {% endif %}
+      </tr>
+      {% endfor %}
+    </table>
+    {% endfor %}
+    </div>
+  </body>
+</html>

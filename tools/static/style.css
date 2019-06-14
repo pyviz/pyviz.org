@@ -1,0 +1,16 @@
+body {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-align: center;
+}
+
+td {
+	padding: 5px;
+}
+
+table {
+	margin-bottom: 50px;
+}
+
+a {
+	text-decoration:none;
+}
