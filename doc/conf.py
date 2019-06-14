@@ -17,7 +17,11 @@ html_theme_options = {
     'page_width': '80%',
     'font_family': "Ubuntu, sans-serif",
     'font_size': '0.9em',
-    'extra_nav_links': {'Github': 'https://github.com/pyviz/website'},
+    'link': '#347ab4',
+    'link_hover': '#1c4669',
+    'extra_nav_links': {
+        'Github': 'https://github.com/pyviz/website',
+    },
     'show_powered_by': False,
 }
 
