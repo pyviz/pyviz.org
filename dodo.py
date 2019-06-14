@@ -28,4 +28,9 @@ def task_build_website():
     return {'actions': [
         "nbsite generate-rst --org pyviz --project-name pyviz --examples notebooks",  # noqa
         "nbsite build --what=html --output=builtdocs",
+        "cd tools",
+        "python build.py",
+        "cd ..",
+        "cp tools/index.html builtdocs/tools.html",
+        "cp tools/_static/tools.css builtdocs/_static/tools.css",
     ]}

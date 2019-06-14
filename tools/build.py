@@ -5,7 +5,7 @@ from jinja2 import Template
 from yaml import load
 import requests
 
-with open('dashboard.yml') as f:
+with open('tools.yml') as f:
     config = load(f)
 
 existing = {package['repo'].split('/')[1].lower(): package for section in config for package in section['packages']}
@@ -66,5 +66,5 @@ for section in config:
 template = Template(open('template.html', 'r').read())
 
 
-with open('status.html', 'w') as f:
+with open('index.html', 'w') as f:
     f.write(template.render(config=config))

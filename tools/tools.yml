@@ -51,7 +51,7 @@
 - name: Tooling and Infrastructure packages
 
   packages:
-  
+
   - repo: pyviz-dev/sphinx_pyviz_theme
     badges: travis, release, pypi, conda
 
