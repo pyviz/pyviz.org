@@ -8,7 +8,6 @@
         <th>Contributors</th>
         <th>Downloads</th>
         <th>License</th>
-        <th>Coverage</th>
         <th>Docs</th>
         <th>PyPI</th>
         <th>Conda</th>
@@ -34,21 +33,6 @@
             </td>
           {% else %}
           <td align='center'>-</td><td align='center'>-</td>
-          {% endif %}
-          {% if 'coveralls' in package.badges %}
-          <td align='left'>
-            <a href="https://coveralls.io/r/{{ package.repo }}?branch=master">
-              <img src="https://coveralls.io/repos/{{ package.repo }}/badge.svg?branch=master">
-            </a>
-          </td>
-          {% elif 'codecov' in package.badges %}
-          <td align='left'>
-            <a href="https://codecov.io/gh/{{ package.repo }}?branch=master">
-              <img src="https://codecov.io/gh/{{ package.repo }}/branch/master/graph/badge.svg">
-            </a>
-          </td>
-          {% else %}
-          <td align='center'>-</td>
           {% endif %}
           {% if 'site' in package.badges %}
           <td align='left'>
