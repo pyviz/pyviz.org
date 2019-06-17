@@ -3,7 +3,7 @@ from nbsite.shared_conf import *
 
 project = u'PyViz'
 authors = u'PyViz authors'
-copyright = u'\u00a9 2019, ' + authors
+copyright = u' 2019, ' + authors
 description = 'How to solve visualization problems with Python tools.'
 
 version = release = '0.0.1'
