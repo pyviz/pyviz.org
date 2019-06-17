@@ -32,7 +32,7 @@
               <img src="https://img.shields.io/pypi/l/{{ package.pypi_name }}.svg">
             </td>
           {% else %}
-          <td align='center'>-</td><td align='center'>-</td>
+          <td align='center' class='empty-cell'>-</td><td align='center' class='empty-cell'>-</td>
           {% endif %}
           {% if 'site' in package.badges %}
           <td align='left'>
@@ -47,7 +47,7 @@
             </a>
           </td>
           {% else %}
-          <td align='center'>-</td>
+          <td align='center' class='empty-cell'>-</td>
           {% endif %}
           {% if 'pypi' in package.badges %}
           <td align='left'>
@@ -56,7 +56,7 @@
             </a>
           </td>
           {% else %}
-          <td align='center'>-</td>
+          <td align='center' class='empty-cell'>-</td>
           {% endif %}
           {% if 'conda' in package.badges %}
           <td align='left'>
@@ -65,7 +65,7 @@
             </a>
           </td>
           {% else %}
-          <td align='center'>-</td>
+          <td align='center' class='empty-cell'>-</td>
           {% endif %}
                     {% if 'sponsor' in package.badges %}
             <td align='left'>
@@ -84,7 +84,7 @@
             {% endfor %}
             </td>
           {% else %}
-          <td align='center'>-</td>
+          <td align='center' class='empty-cell'>-</td>
           {% endif %}
       </tr>
       {% endfor %}

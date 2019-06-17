@@ -45,10 +45,12 @@
       badges: travis, appveyor, pypi, conda, site
 
     - repo: PatrikHlobil/Pandas-Bokeh
-      badges: pypi
+      site: github.com/PatrikHlobil/Pandas-Bokeh/blob/master/README.md
+      badges: pypi, site
 
     - repo: santosjorge/cufflinks
-      badges: circleci, pypi
+      site: github.com/santosjorge/cufflinks/blob/master/README.md
+      badges: circleci, pypi, site
 
 - name: High-Level
   packages:

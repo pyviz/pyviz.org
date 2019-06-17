@@ -27,3 +27,7 @@ iframe {
 #tools-wrapper .sponsor-logo {
   max-height: 20px;
 }
+
+#tools-wrapper .empty-cell {
+  text-align: center;
+}
