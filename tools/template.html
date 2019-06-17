@@ -1,6 +1,6 @@
     <div id="tools-wrapper">
     {% for section in config %}
-    <h3>{{ section.name }}</h3>
+    <h3 id="{{ section.name.lower().replace(' ', '-') }}">{{ section.name }}</h3>
     <table>
       <tr>
         <th>Name</th>

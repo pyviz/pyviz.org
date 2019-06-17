@@ -11,7 +11,7 @@ anaconda:
 metoffice:
   label: Met Office
   url: https://www.metoffice.gov.uk
-  logo: https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/images/about-us/website/mo_master_black_mono_for_light_backg_rbg.png
+  logo: _static/logos/metoffice.png
 
 spotify:
   label: Spotify

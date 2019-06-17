@@ -14,7 +14,7 @@ html_favicon = 'favicon.ico'
 html_theme_options = {
     'logo': 'logo.png',
     'logo_name': False,
-    'page_width': '80%',
+    'page_width': '90%',
     'font_family': "Ubuntu, sans-serif",
     'font_size': '0.9em',
     'link': '#347ab4',
