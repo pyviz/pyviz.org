@@ -8,7 +8,7 @@
    Home <self>
    Overviews <overviews/index>
    Quick tools <quicktools/index>
-   All tools <tools/index>
+   All tools <tools>
    Dashboarding <dashboarding/index>
    SciVis <scivis/index>
    Tutorials <tutorials/index>

@@ -3,9 +3,12 @@ channels:
   - conda-forge
 dependencies:
   - flake8
+  - jinja2
   - m2r
   - pyviz::nbsite
   - pyviz::nbsmoke
   - pyviz::pyctdev
   - pytest
+  - pyyaml
+  - requests
   - tornado<6

@@ -1,0 +1,142 @@
+- name: Core
+  packages:
+    - repo: bokeh/bokeh
+      badges: travis, pypi, conda, site
+
+    - repo: matplotlib/matplotlib
+      badges: travis, appveyor, codecov, pypi, conda, site
+
+    - repo: plotly/plotly.py
+      pypi_name: plotly
+      conda_package: plotly
+      conda_channel: conda-forge
+      site: plot.ly
+      badges: circleci, pypi, conda, site
+
+- name: Dashboarding
+  packages:
+
+    - repo: plotly/dash
+      conda_channel: conda-forge
+      site: dash.plot.ly
+      badges: circleci, pypi, conda, site
+
+    - repo: pyviz/panel
+      site: panel.pyviz.org
+      badges: travis, appveyor, codecov, pypi, conda, site
+
+    - repo: QuantStack/voila
+      conda_channel: conda-forge
+      badges: travis, pypi, conda, rtd
+
+- name: High-Level
+  packages:
+
+    - repo: spotify/chartify
+      conda_channel: conda-forge
+      badges: travis, pypi, conda, site
+
+    - repo: pyviz/holoviews
+      appveyor_project: pyviz/holoviews-ginxt
+      badges: travis, appveyor, coveralls, pypi, conda, site
+
+    - repo: mwaskom/seaborn
+      site: seaborn.pydata.org
+      badges: travis, codecov, pypi, conda, site
+
+    - repo: plotly/plotly_express
+      site: plotly.express
+      badges: pypi, site
+
+    - repo: altair-viz/altair
+      site: altair-viz.github.io
+      conda_channel: conda-forge
+      badges: travis, pypi, conda, site
+
+- name: High-Level Shared API
+  packages:
+    - repo: altair-viz/pdvega
+      site: altair-viz.github.io/pdvega
+      badges: travis, pypi, site
+
+    - repo: pyviz/hvplot
+      site: hvplot.pyviz.org
+      badges: travis, appveyor, pypi, conda, site
+
+    - repo: PatrikHlobil/Pandas-Bokeh
+      badges: pypi
+
+    - repo: santosjorge/cufflinks
+      badges: circleci, pypi
+
+
+- name: SciVis
+  packages:
+    - repo: vispy/vispy
+      conda_channel: conda-forge
+      site_protocol: http
+      badges: travis, appveyor, coveralls, pypi, conda, site
+
+    - repo: glumpy/glumpy
+      badges: pypi, rtd
+
+    - repo: enthought/mayavi
+      site: docs.enthought.com/mayavi/mayavi
+      appveyor_project: EnthoughtOSS/mayavi
+      badges: travis, appveyor, codecov, pypi, conda, site
+
+    - repo: Kitware/ParaView
+      conda_channel: conda-forge
+      badges: travis, conda, site
+
+    - repo: Kitware/VTK
+      conda_channel: conda-forge
+      badges: travis, pypi, conda, site
+
+    - repo: yt-project/yt
+      site: yt-project.org
+      badges: travis, codecov, pypi, conda, site
+
+- name: Domain-specific
+  packages:
+
+    - repo: networkx/networkx
+      site: networkx.github.io
+      appveyor_project: dschult/networkx-pqott
+      badges: travis, appveyor, codecov, pypi, conda, site
+
+    - repo: scikit-image/scikit-image
+      site: scikit-image.org
+      badges: travis, appveyor, codecov, pypi, conda, site
+
+    - repo: SciTools/cartopy
+      site: scitools.org.uk/cartopy
+      badges: travis, appveyor, coveralls, pypi, conda, site
+
+    - repo: pyviz/geoviews
+      site_protocol: http
+      badges: travis, appveyor, pypi, conda, site
+
+- name: Other
+  packages:
+
+    - repo: dask/dask
+      appveyor_project: daskdev/dask
+      badges: travis, appveyor, coveralls, rtd, pypi, conda
+
+    - repo: pandas-dev/pandas
+      site: pandas.pydata.org
+      badges: travis, appveyor, codecov, rtd, pypi, conda, site
+
+    - repo: pydata/xarray
+      appveyor_project: shoyer/xray
+      site: xarray.pydata.org
+      badges: travis, appveyor, coveralls, rtd, pypi, conda, site
+
+    - repo: pyviz/colorcet
+      site: colorcet.pyviz.org
+      badges: travis, appveyor, pypi, conda, site
+
+    - repo: pyviz/datashader
+      site_protocol: http
+      badges: travis, appveyor, pypi, conda, site
