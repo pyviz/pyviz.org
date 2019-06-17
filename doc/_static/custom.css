@@ -20,14 +20,14 @@ iframe {
   margin-bottom: -1200px;
 }
 
-#tools-wrapper body {
-	text-align: center;
-}
-
-#tools-wrapper table {
-	margin-bottom: 50px;
-}
-
 #tools-wrapper a {
 	text-decoration:none;
+}
+
+#tools-wrapper .sponsor-logo {
+  max-height: 20px;
+}
+
+#tools-wrapper .empty-cell {
+  text-align: center;
 }

@@ -10,7 +10,7 @@ env:
 stages:
   - test
   - name: website_release
-    if: commit_message =~ /^.*(website_release).*$/
+    if: (commit_message =~ /^.*(website_release).*$/) OR (branch = master)
 
 jobs:
   include:

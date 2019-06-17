@@ -1,0 +1,48 @@
+numfocus:
+  label: NumFocus
+  url: https://numfocus.org
+  logo: https://numfocus.org/wp-content/uploads/2018/01/optNumFocus_LRG.png
+
+anaconda:
+  label: Anaconda
+  url: https://www.anaconda.com
+  logo: https://www.anaconda.com/wp-content/uploads/2018/06/cropped-Anaconda_horizontal_RGB-1-600x102.png
+
+metoffice:
+  label: Met Office
+  url: https://www.metoffice.gov.uk
+  logo: _static/logos/metoffice.png
+
+spotify:
+  label: Spotify
+  url: https://www.spotify.com
+  logo: _static/logos/spotify.png
+
+plotly:
+  label: Plot.ly
+  url: https://plot.ly
+  logo: _static/logos/plotly.png
+
+kitware:
+  label: Kitware
+  url: https://www.kitware.com
+  logo: https://www.kitware.com/main/wp-content/uploads/2017/02/Kitware_Print_186.svg
+
+enthought:
+  label: Enthought
+  url: https://www.enthought.com
+  logo: https://www.enthought.com/wp-content/uploads/enthought-blue-sized.svg
+
+nvidia:
+  label: NVIDIA
+  url: https://www.nvidia.com
+  logo: _static/logos/nvidia.jpg
+
+quantstack:
+  label: QuantStack
+  url: http://quantstack.net
+  logo: http://quantstack.net/img/logo.svg
+
+vaex.io:
+  label: vaex.io
+  url: https://vaex.io
