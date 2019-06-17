@@ -1,10 +1,9 @@
 # SciVis Libraries
 
-SciVis tools cover important functionality not addressed by InfoVis-focused libraries, offering advanced and specialized visualization techniques for large and complex finite-element-method simulations. By focussing on visualizing physically situated data in desktop applications these tools support visualization of a variety of data structures and the “long tail” of scientific research beyond just the initial visualization itself.
+Most of the libraries listed at PyViz.org fall into the "InfoVis" (Information Visualization) category of tools, visualizing arbitrary and potentially abstract types of information, typically in 2D or 2D+time plots with axes and numerical scales. Tools in the separate "SciVis" (Scientific Visualization) category focus on visualizing physically situated data in 3D and 3D+time, often without spatial axes and instead providing an immersive visual experience of real-world physical datasets (see [Weiskopf et al](https://pdfs.semanticscholar.org/86aa/dffeae1912a404ee66223774d6a45eefb438.pdf) for a comparison).
 
-These tools primarily build on the 1992 OpenGL graphics standard, delivering graphics-intensive visualizations of physical processes in three or four dimensions (3D over time), for regular or irregularly gridded data. These libraries predate HTML5’s support for rich web applications, generally focusing on high-performance desktop-GUI applications in engineering or scientific contexts.
+The SciVis tools primarily build on the 1992 OpenGL graphics standard, delivering graphics-intensive visualizations of physical processes for regular or irregularly gridded data. These libraries predate HTML5’s support for rich web applications, generally focusing on high-performance desktop-GUI applications in engineering or scientific contexts.
 
-Can generally handle very large gridded datasets (gigabytes or larger) using compiled data libraries and native GUI apps.
 
 - The Visualization Toolkit - [VTK](https://vtk.org) (from [Kitware](https://www.kitware.com/)) supports manipulating and displaying scientific data by enabling 3D rendering, widgets for 3D interaction, and 2D plotting capability.
 
