@@ -16,52 +16,6 @@
       site: plot.ly
       badges: circleci, pypi, conda, site
 
-- name: Dashboarding
-  packages:
-
-    - repo: plotly/dash
-      sponsors: [plotly]
-      conda_channel: conda-forge
-      site: dash.plot.ly
-      badges: circleci, pypi, conda, site
-
-    - repo: pyviz/panel
-      sponsors: [anaconda]
-      site: panel.pyviz.org
-      badges: travis, appveyor, codecov, pypi, conda, site
-
-    - repo: QuantStack/voila
-      sponsors: [quantstack]
-      conda_channel: conda-forge
-      badges: travis, pypi, conda, rtd
-
-- name: High-Level
-  packages:
-
-    - repo: mwaskom/seaborn
-      site: seaborn.pydata.org
-      badges: travis, codecov, pypi, conda, site
-
-    - repo: altair-viz/altair
-      site: altair-viz.github.io
-      conda_channel: conda-forge
-      badges: travis, pypi, conda, site
-
-    - repo: spotify/chartify
-      sponsors: [spotify]
-      conda_channel: conda-forge
-      badges: travis, pypi, conda, site
-
-    - repo: pyviz/holoviews
-      sponsors: [anaconda]
-      appveyor_project: pyviz/holoviews-ginxt
-      badges: travis, appveyor, coveralls, pypi, conda, site
-
-    - repo: plotly/plotly_express
-      sponsors: [plotly]
-      site: plotly.express
-      badges: pypi, site
-
 - name: High-Level Shared API
   packages:
 
@@ -96,6 +50,51 @@
     - repo: santosjorge/cufflinks
       badges: circleci, pypi
 
+- name: High-Level
+  packages:
+
+    - repo: mwaskom/seaborn
+      site: seaborn.pydata.org
+      badges: travis, codecov, pypi, conda, site
+
+    - repo: altair-viz/altair
+      site: altair-viz.github.io
+      conda_channel: conda-forge
+      badges: travis, pypi, conda, site
+
+    - repo: spotify/chartify
+      sponsors: [spotify]
+      conda_channel: conda-forge
+      badges: travis, pypi, conda, site
+
+    - repo: pyviz/holoviews
+      sponsors: [anaconda]
+      appveyor_project: pyviz/holoviews-ginxt
+      badges: travis, appveyor, coveralls, pypi, conda, site
+
+    - repo: plotly/plotly_express
+      sponsors: [plotly]
+      site: plotly.express
+      badges: pypi, site
+
+- name: Dashboarding
+  packages:
+
+    - repo: plotly/dash
+      sponsors: [plotly]
+      conda_channel: conda-forge
+      site: dash.plot.ly
+      badges: circleci, pypi, conda, site
+
+    - repo: pyviz/panel
+      sponsors: [anaconda]
+      site: panel.pyviz.org
+      badges: travis, appveyor, codecov, pypi, conda, site
+
+    - repo: QuantStack/voila
+      sponsors: [quantstack]
+      conda_channel: conda-forge
+      badges: travis, pypi, conda, rtd
 
 - name: SciVis
   packages:
