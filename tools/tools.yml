@@ -1,12 +1,15 @@
 - name: Core
   packages:
     - repo: bokeh/bokeh
+      sponsors: [numfocus, anaconda]
       badges: travis, pypi, conda, site
 
     - repo: matplotlib/matplotlib
+      sponsors: [numfocus]
       badges: travis, appveyor, codecov, pypi, conda, site
 
     - repo: plotly/plotly.py
+      sponsors: [plotly]
       pypi_name: plotly
       conda_package: plotly
       conda_channel: conda-forge
@@ -17,15 +20,18 @@
   packages:
 
     - repo: plotly/dash
+      sponsors: [plotly]
       conda_channel: conda-forge
       site: dash.plot.ly
       badges: circleci, pypi, conda, site
 
     - repo: pyviz/panel
+      sponsors: [anaconda]
       site: panel.pyviz.org
       badges: travis, appveyor, codecov, pypi, conda, site
 
     - repo: QuantStack/voila
+      sponsors: [quantstack]
       conda_channel: conda-forge
       badges: travis, pypi, conda, rtd
 
@@ -42,14 +48,17 @@
       badges: travis, pypi, conda, site
 
     - repo: spotify/chartify
+      sponsors: [spotify]
       conda_channel: conda-forge
       badges: travis, pypi, conda, site
 
     - repo: pyviz/holoviews
+      sponsors: [anaconda]
       appveyor_project: pyviz/holoviews-ginxt
       badges: travis, appveyor, coveralls, pypi, conda, site
 
     - repo: plotly/plotly_express
+      sponsors: [plotly]
       site: plotly.express
       badges: pypi, site
 
@@ -57,15 +66,18 @@
   packages:
 
     - repo: pandas-dev/pandas
+      sponsors: [numfocus]
       site: pandas.pydata.org
       badges: travis, appveyor, codecov, rtd, pypi, conda, site
 
     - repo: pydata/xarray
+      sponsors: [numfocus]
       appveyor_project: shoyer/xray
       site: xarray.pydata.org
       badges: travis, appveyor, coveralls, rtd, pypi, conda, site
 
     - repo: dask/dask
+      sponsors: [anaconda, nvidia]
       appveyor_project: daskdev/dask
       badges: travis, appveyor, coveralls, rtd, pypi, conda
 
@@ -74,6 +86,7 @@
       badges: travis, pypi, site
 
     - repo: pyviz/hvplot
+      sponsors: [anaconda]
       site: hvplot.pyviz.org
       badges: travis, appveyor, pypi, conda, site
 
@@ -95,19 +108,23 @@
       badges: pypi, rtd
 
     - repo: enthought/mayavi
+      sponsors: [enthought]
       site: docs.enthought.com/mayavi/mayavi
       appveyor_project: EnthoughtOSS/mayavi
       badges: travis, appveyor, codecov, pypi, conda, site
 
     - repo: Kitware/ParaView
+      sponsors: [kitware]
       conda_channel: conda-forge
       badges: travis, conda, site
 
     - repo: Kitware/VTK
+      sponsors: [kitware]
       conda_channel: conda-forge
       badges: travis, pypi, conda, site
 
     - repo: yt-project/yt
+      sponsors: [numfocus]
       site: yt-project.org
       badges: travis, codecov, pypi, conda, site
 
@@ -115,6 +132,7 @@
   packages:
 
     - repo: pyviz/colorcet
+      sponsors: [anaconda]
       site: colorcet.pyviz.org
       badges: travis, appveyor, pypi, conda, site
 
@@ -140,10 +158,12 @@
       badges: travis, appveyor, codecov, pypi, conda, site
 
     - repo: SciTools/cartopy
+      sponsors: [metoffice]
       site: scitools.org.uk/cartopy
       badges: travis, appveyor, coveralls, pypi, conda, site
 
     - repo: pyviz/geoviews
+      sponsors: [anaconda]
       site_protocol: http
       badges: travis, appveyor, pypi, conda, site
 
@@ -151,10 +171,12 @@
   packages:
 
     - repo: pyviz/datashader
+      sponsors: [anaconda]
       site_protocol: http
       badges: travis, appveyor, pypi, conda, site
 
     - repo: vaexio/vaex
+      sponsors: [vaex.io]
       site: vaex.io
       conda_channel: conda-forge
       badges: travis, appveyor, pypi, conda, site

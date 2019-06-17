@@ -23,3 +23,7 @@ iframe {
 #tools-wrapper a {
 	text-decoration:none;
 }
+
+#tools-wrapper .sponsor-logo {
+  max-height: 20px;
+}

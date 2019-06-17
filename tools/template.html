@@ -12,6 +12,7 @@
         <th>Docs</th>
         <th>PyPI</th>
         <th>Conda</th>
+        <th>Sponsors</th>
       </tr>
       {% for package in section.packages %}
       <tr>
@@ -79,6 +80,25 @@
               <img src="https://img.shields.io/conda/vn/{{ package.conda_channel }}/{{ package.conda_package }}.svg?style=flat">
             </a>
           </td>
+          {% else %}
+          <td align='center'>-</td>
+          {% endif %}
+                    {% if 'sponsor' in package.badges %}
+            <td align='left'>
+            {% for sponsor in package.sponsors %}
+              {% if sponsors.get(sponsor) %}
+                <a href="{{ sponsors[sponsor].get('url') }}">
+                {% if sponsors[sponsor].get('logo') %}
+                  <img class='sponsor-logo' src="{{ sponsors[sponsor]['logo'] }}">
+                {% else %}
+                  {{ sponsors[sponsor].get('label', sponsor) }}
+                {% endif %}
+                </a>
+              {% else %}
+                {{ sponsor }}
+              {% endif %}
+            {% endfor %}
+            </td>
           {% else %}
           <td align='center'>-</td>
           {% endif %}
