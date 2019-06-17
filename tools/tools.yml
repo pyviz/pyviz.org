@@ -25,11 +25,6 @@
       site: pandas.pydata.org
       badges: travis, appveyor, codecov, rtd, pypi, conda, site
 
-    - repo: dask/dask
-      sponsors: [anaconda, nvidia]
-      appveyor_project: daskdev/dask
-      badges: travis, appveyor, coveralls, rtd, pypi, conda
-
     - repo: pydata/xarray
       sponsors: [numfocus]
       appveyor_project: shoyer/xray
@@ -73,6 +68,7 @@
     - repo: spotify/chartify
       sponsors: [spotify]
       conda_channel: conda-forge
+      site: github.com/spotify/chartify/blob/master/README.rst
       badges: travis, pypi, conda, site
 
     - repo: plotly/plotly_express

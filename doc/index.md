@@ -5,8 +5,8 @@ Welcome to PyViz!  PyViz is an effort to make data visualization using Python op
 This PyViz.org website contains:
 
  - [Overviews](overviews/index.html) of the OSS visualization packages available in Python, how they relate to each other, and the core concepts that underlie them
- - [Quick tools](quicktools/index.html) for getting started with Python viz, creating powerful plots in just a few lines of code
- - [All tools](tools.html) available for doing viz in Python OSS, as a big, long list
+ - [High-level tools](high-level/index.html) for getting started with Python viz, creating powerful plots in just a few lines of code
+ - [All tools](tools.html) available for doing viz in Python OSS, as a table for comparing maturity, popularity, and support.
  - [Dashboarding](dashboarding/index.html) tools for sharing live Python-backed visualizations
  - [SciVis](scivis/index.html) tools for rendering data embedded in three-dimensional space
  - [Tutorials](tutorials/index.html) showing how to use the available tools to accomplish various categories of tasks
