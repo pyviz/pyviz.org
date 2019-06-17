@@ -3,3 +3,10 @@
 
 # nbsite output
 builtdocs/
+doc/tools.rst
+
+# doit
+.doit.db
+
+# pytest
+.pytest_cache
