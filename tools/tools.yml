@@ -18,7 +18,7 @@
 
     - repo: plotly/dash
       conda_channel: conda-forge
-      site: plot.ly/products/dash/
+      site: dash.plot.ly
       badges: circleci, pypi, conda, site
 
     - repo: pyviz/panel
@@ -26,9 +26,34 @@
       badges: travis, appveyor, codecov, pypi, conda, site
 
     - repo: QuantStack/voila
+      conda_channel: conda-forge
       badges: travis, pypi, conda, rtd
 
-- name: Quick
+- name: High-Level
+  packages:
+
+    - repo: spotify/chartify
+      conda_channel: conda-forge
+      badges: travis, pypi, conda, site
+
+    - repo: pyviz/holoviews
+      appveyor_project: pyviz/holoviews-ginxt
+      badges: travis, appveyor, coveralls, pypi, conda, site
+
+    - repo: mwaskom/seaborn
+      site: seaborn.pydata.org
+      badges: travis, codecov, pypi, conda, site
+
+    - repo: plotly/plotly_express
+      site: plotly.express
+      badges: pypi, site
+
+    - repo: altair-viz/altair
+      site: altair-viz.github.io
+      conda_channel: conda-forge
+      badges: travis, pypi, conda, site
+
+- name: High-Level Shared API
   packages:
     - repo: altair-viz/pdvega
       site: altair-viz.github.io/pdvega
@@ -44,30 +69,12 @@
     - repo: santosjorge/cufflinks
       badges: circleci, pypi
 
-- name: High-Level
-  packages:
-
-    - repo: spotify/chartify
-      conda_channel: conda-forge
-      badges: travis, coveralls, pypi, conda, site
-
-    - repo: pyviz/holoviews
-      appveyor_project: pyviz/holoviews-ginxt
-      badges: travis, appveyor, coveralls, pypi, conda, site
-
-    - repo: plotly/plotly_express
-      site: plotly.express
-      badges: pypi, site
-
-    - repo: altair-viz/altair
-      site: altair-viz.github.io
-      conda_channel: conda-forge
-      badges: travis, pypi, conda, site
 
 - name: SciVis
   packages:
     - repo: vispy/vispy
       conda_channel: conda-forge
+      site_protocol: http
       badges: travis, appveyor, coveralls, pypi, conda, site
 
     - repo: glumpy/glumpy
@@ -90,15 +97,17 @@
       site: yt-project.org
       badges: travis, codecov, pypi, conda, site
 
-- name: Content-area specific
+- name: Domain-specific
   packages:
 
     - repo: networkx/networkx
+      site: networkx.github.io
       appveyor_project: dschult/networkx-pqott
-      badges: travis, appveyor, codecov, pypi, conda
+      badges: travis, appveyor, codecov, pypi, conda, site
 
     - repo: scikit-image/scikit-image
-      badges: travis, appveyor, codecov, pypi, conda
+      site: scikit-image.org
+      badges: travis, appveyor, codecov, pypi, conda, site
 
     - repo: SciTools/cartopy
       site: scitools.org.uk/cartopy
