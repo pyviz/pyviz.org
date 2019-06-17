@@ -32,6 +32,15 @@
 - name: High-Level
   packages:
 
+    - repo: mwaskom/seaborn
+      site: seaborn.pydata.org
+      badges: travis, codecov, pypi, conda, site
+
+    - repo: altair-viz/altair
+      site: altair-viz.github.io
+      conda_channel: conda-forge
+      badges: travis, pypi, conda, site
+
     - repo: spotify/chartify
       conda_channel: conda-forge
       badges: travis, pypi, conda, site
@@ -40,21 +49,26 @@
       appveyor_project: pyviz/holoviews-ginxt
       badges: travis, appveyor, coveralls, pypi, conda, site
 
-    - repo: mwaskom/seaborn
-      site: seaborn.pydata.org
-      badges: travis, codecov, pypi, conda, site
-
     - repo: plotly/plotly_express
       site: plotly.express
       badges: pypi, site
 
-    - repo: altair-viz/altair
-      site: altair-viz.github.io
-      conda_channel: conda-forge
-      badges: travis, pypi, conda, site
-
 - name: High-Level Shared API
   packages:
+
+    - repo: pandas-dev/pandas
+      site: pandas.pydata.org
+      badges: travis, appveyor, codecov, rtd, pypi, conda, site
+
+    - repo: pydata/xarray
+      appveyor_project: shoyer/xray
+      site: xarray.pydata.org
+      badges: travis, appveyor, coveralls, rtd, pypi, conda, site
+
+    - repo: dask/dask
+      appveyor_project: daskdev/dask
+      badges: travis, appveyor, coveralls, rtd, pypi, conda
+
     - repo: altair-viz/pdvega
       site: altair-viz.github.io/pdvega
       badges: travis, pypi, site
@@ -97,6 +111,22 @@
       site: yt-project.org
       badges: travis, codecov, pypi, conda, site
 
+- name: Color
+  packages:
+
+    - repo: pyviz/colorcet
+      site: colorcet.pyviz.org
+      badges: travis, appveyor, pypi, conda, site
+
+    - repo: matplotlib/viscm
+      conda_channel: conda-forge
+      badges: travis, codecov, pypi, conda
+
+    - repo: matplotlib/cmocean
+      site: matplotlib.org/cmocean
+      conda_channel: conda-forge
+      badges: travis, codecov, pypi, conda
+
 - name: Domain-specific
   packages:
 
@@ -120,23 +150,11 @@
 - name: Other
   packages:
 
-    - repo: dask/dask
-      appveyor_project: daskdev/dask
-      badges: travis, appveyor, coveralls, rtd, pypi, conda
-
-    - repo: pandas-dev/pandas
-      site: pandas.pydata.org
-      badges: travis, appveyor, codecov, rtd, pypi, conda, site
-
-    - repo: pydata/xarray
-      appveyor_project: shoyer/xray
-      site: xarray.pydata.org
-      badges: travis, appveyor, coveralls, rtd, pypi, conda, site
-
-    - repo: pyviz/colorcet
-      site: colorcet.pyviz.org
-      badges: travis, appveyor, pypi, conda, site
-
     - repo: pyviz/datashader
       site_protocol: http
+      badges: travis, appveyor, pypi, conda, site
+
+    - repo: vaexio/vaex
+      site: vaex.io
+      conda_channel: conda-forge
       badges: travis, appveyor, pypi, conda, site

@@ -20,14 +20,6 @@ iframe {
   margin-bottom: -1200px;
 }
 
-#tools-wrapper body {
-	text-align: center;
-}
-
-#tools-wrapper table {
-	margin-bottom: 50px;
-}
-
 #tools-wrapper a {
 	text-decoration:none;
 }
