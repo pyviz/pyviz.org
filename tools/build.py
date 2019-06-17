@@ -32,9 +32,7 @@ for package in registry:
     if 'pypi_name' not in entry:
         entry['pypi_name'] = package['pypi_name']
     if 'badges' not in entry:
-        entry['badges'] = 'travis, coveralls, rtd, pypi, conda'
-    # if pkg_name not in existing:
-    #     affiliated['packages'].append(entry)
+        entry['badges'] = 'coveralls, rtd, pypi, conda'
 
 for section in config:
     for package in section['packages']:
@@ -45,12 +43,6 @@ for section in config:
             package['rtd_name'] = package['name']
         if 'pypi' in package['badges'] and 'pypi_name' not in package:
             package['pypi_name'] = package['name']
-        if 'appveyor' in package['badges'] and 'appveyor_project' not in package:
-            package['appveyor_project'] = package['repo']
-        if 'circleci' in package['badges'] and 'circleci_project' not in package:
-            package['circleci_project'] = package['repo']
-        if 'travis' in package['badges'] and 'travis_project' not in package:
-            package['travis_project'] = package['repo']
         if 'conda' in package['badges'] and 'conda_channel' not in package:
             package['conda_channel'] = 'anaconda'
         if 'site' in package['badges'] and 'site' not in package:

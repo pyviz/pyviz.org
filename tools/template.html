@@ -8,7 +8,6 @@
         <th>Contributors</th>
         <th>Downloads</th>
         <th>License</th>
-        <th>CI</th>
         <th>Coverage</th>
         <th>Docs</th>
         <th>PyPI</th>
@@ -35,29 +34,6 @@
           {% else %}
           <td align='center'>-</td><td align='center'>-</td>
           {% endif %}
-        <td align='left'>
-          {% if 'travis' in package.badges %}
-            <a href="https://travis-ci.org/{{ package.travis_project }}">
-              <img src="https://img.shields.io/travis/{{ package.travis_project }}/master.svg?logo=travis-ci">
-            </a>
-          {% else %}
-          <p></p>
-          {% endif %}
-          {% if 'appveyor' in package.badges %}
-            <a href="https://ci.appveyor.com/project/{{ package.appveyor_project }}?branch=master">
-              <img src="https://img.shields.io/appveyor/ci/{{ package.appveyor_project }}/master.svg?logo=appveyor">
-            </a>
-          {% else %}
-          <p></p>
-          {% endif %}
-          {% if 'circleci' in package.badges %}
-            <a href="https://circleci.com/gh/{{ package.circleci_project }}">
-              <img src="https://circleci.com/gh/{{ package.circleci_project }}.svg?style=svg">
-            </a>
-          {% else %}
-          <p></p>
-          {% endif %}
-        </td>
           {% if 'coveralls' in package.badges %}
           <td align='left'>
             <a href="https://coveralls.io/r/{{ package.repo }}?branch=master">
