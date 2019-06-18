@@ -7,4 +7,4 @@
    :hidden:
    :maxdepth: 2
 
-   HoloViz <https://pyviz.org/tutorial>
+   HoloViz <https://holoviz.org/tutorial>
