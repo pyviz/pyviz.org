@@ -186,6 +186,32 @@
       conda_channel: conda-forge
       badges: travis, codecov, pypi, conda
 
+
+- name: Geospatial
+  intro: Tools for working with data in geographic coordinates
+  packages:
+
+    - repo: SciTools/cartopy
+      sponsors: [metoffice]
+      site: scitools.org.uk/cartopy
+      badges: travis, appveyor, coveralls, pypi, conda, site
+
+    - repo: pyviz/geoviews
+      sponsors: [anaconda]
+      site_protocol: http
+      badges: travis, appveyor, pypi, conda, site
+
+    - repo: pyviz/geoviews
+      sponsors: [anaconda]
+      site_protocol: http
+      badges: travis, appveyor, pypi, conda, site
+
+    - repo: python-visualization/folium
+
+    - repo: jupyter-widgets/ipyleaflet
+      site: ipyleaflet.readthedocs.io
+
+
 - name: Domain-specific
   intro: Tools focused on specific research or application areas.
   packages:
@@ -198,16 +224,6 @@
     - repo: scikit-image/scikit-image
       site: scikit-image.org
       badges: travis, appveyor, codecov, pypi, conda, site
-
-    - repo: SciTools/cartopy
-      sponsors: [metoffice]
-      site: scitools.org.uk/cartopy
-      badges: travis, appveyor, coveralls, pypi, conda, site
-
-    - repo: pyviz/geoviews
-      sponsors: [anaconda]
-      site_protocol: http
-      badges: travis, appveyor, pypi, conda, site
 
     - repo: yt-project/yt
       sponsors: [numfocus]
@@ -240,19 +256,31 @@
 
     - repo: lightning-viz/lightning
       site: http://lightning-viz.org
-      rip: https://gitter.im/lightning-viz/lightning
+      dormant: https://gitter.im/lightning-viz/lightning
 
     - repo: wrobstory/vincent
       site: vincent.readthedocs.io 
-      rip: https://github.com/wrobstory/vincent/graphs/contributors
+      dormant: https://github.com/wrobstory/vincent/graphs/contributors
 
     - repo: https://github.com/wireservice/leather
       site: leather.readthedocs.io
-      rip: https://github.com/wireservice/leather/graphs/contributors
+      dormant: https://github.com/wireservice/leather/graphs/contributors
 
     - repo: almarklein/visvis
-      rip: https://github.com/almarklein/visvis#status
+      dormant: https://github.com/almarklein/visvis#status
 
     - repo: mpld3/mpld3
       site: mpld3.github.io
-      rip: http://www.xavierdupre.fr/app/pymyinstall/helpsphinx/blog/2017/2017-09-02_mpld3.html
+      dormant: http://www.xavierdupre.fr/app/pymyinstall/helpsphinx/blog/2017/2017-09-02_mpld3.html
+      
+    - repo: matplotlib/basemap
+      site: https://matplotlib.org/basemap
+      dormant: https://matplotlib.org/basemap/users/intro.html#cartopy-new-management-and-eol-announcement
+
+    - repo: rossant/galry
+      dormant: https://github.com/rossant/galry/blob/master/README.md
+
+    - repo: adrn/d3po
+      site: d3po.org
+      dormant: https://github.com/adrn/d3po/graphs/contributors
+
