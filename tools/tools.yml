@@ -1,4 +1,5 @@
 - name: Core
+  intro: Python libraries on which other higher-level libraries are built.
   packages:
 
     - repo: matplotlib/matplotlib
@@ -18,6 +19,7 @@
       badges: circleci, pypi, conda, site
 
 - name: High-Level Shared API
+  intro: Libraries sharing the Pandas .plot() API.
   packages:
 
     - repo: pandas-dev/pandas
@@ -49,6 +51,7 @@
       badges: travis, pypi, site
 
 - name: High-Level
+  intro: Libraries providing a higher level of abstraction for working with data.
   packages:
 
     - repo: mwaskom/seaborn
@@ -76,6 +79,30 @@
       site: plotly.express
       badges: pypi, site
 
+- name: Other plotting libraries
+  intro: Plotting libraries not fitting into other categories above.
+  packages:
+
+    - repo: bloomberg/bqplot
+      site: bqplot.readthedocs.io
+
+    - repo: sciapp/gr
+      site: gr-framework.org/python.html
+
+    - repo: has2k1/plotnine
+      site: plotnine.readthedocs.io
+
+    - repo: yhat/ggpy
+      site: ggplot.yhathq.com
+
+    - repo: glue-viz/glue
+      site: docs.glueviz.org
+
+    - repo: sandialabs/toyplot
+      sponsors: [sandia]
+      site: toyplot.readthedocs.io
+
+
 - name: Dashboarding
   intro: Libraries for creating live Python-backed applications or dashboards that a user can interact with to explore or analyze data.
   packages:
@@ -97,6 +124,7 @@
       badges: travis, pypi, conda, rtd
 
 - name: SciVis
+  intro: Libraries for visualizing scientific data situated in real-world coordinates, typically using OpenGL.
   packages:
 
     - repo: Kitware/VTK
@@ -123,12 +151,8 @@
       appveyor_project: EnthoughtOSS/mayavi
       badges: travis, appveyor, codecov, pypi, conda, site
 
-    - repo: yt-project/yt
-      sponsors: [numfocus]
-      site: yt-project.org
-      badges: travis, codecov, pypi, conda, site
-
-- name: Color
+- name: Colormapping
+  intro: Collections of colormaps and tools for generating new colormaps.
   packages:
 
     - repo: pyviz/colorcet
@@ -146,6 +170,7 @@
       badges: travis, codecov, pypi, conda
 
 - name: Domain-specific
+  intro: Tools focused on specific research or application areas.
   packages:
 
     - repo: networkx/networkx
@@ -167,7 +192,16 @@
       site_protocol: http
       badges: travis, appveyor, pypi, conda, site
 
-- name: Other
+    - repo: yt-project/yt
+      sponsors: [numfocus]
+      site: yt-project.org
+      badges: travis, codecov, pypi, conda, site
+
+    - repo: DistrictDataLabs/yellowbrick
+      site: www.scikit-yb.org
+
+- name: Large-data rendering
+  intro: Tools for server-side rasterizing/aggregating data before visualization.
   packages:
 
     - repo: pyviz/datashader
