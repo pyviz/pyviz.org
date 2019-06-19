@@ -18,4 +18,4 @@ SciVis libraries supporting Python:
 
 - [yt](https://yt-project.org) is a package for analyzing and visualizing volumetric data. yt supports structured, variable-resolution meshes, unstructured meshes, and discrete or sampled data such as particles.
 
-- [PyVista](http://www.pyvista.org) is a streamlined interface for the Visualization Toolkit (VTK) providing 3D plotting and mesh analysis with NumPy support being at it's core. PyVista is a Pythonic, well-documented API exposing VTK’s powerful visualization backend facilitating rapid prototyping, analysis, and visual integration of spatially referenced datasets.
+- [PyVista](http://www.pyvista.org) is a streamlined interface for the Visualization Toolkit (VTK) providing 3D plotting and mesh analysis with NumPy support being at its core. PyVista supports point clouds, structured/unstructured meshes, and volumetric datasets.
