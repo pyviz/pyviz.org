@@ -109,6 +109,9 @@
       sponsors: [sandia]
       badges: pypi, rtd
 
+    - repo: enthought/chaco
+      sponsors: [enthought]
+      site: docs.enthought.com/chaco
 
 - name: Dashboarding
   intro: Libraries for creating live Python-backed applications or dashboards that a user can interact with to explore or analyze data.
