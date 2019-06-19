@@ -1,12 +1,12 @@
 numfocus:
   label: NumFocus
   url: https://numfocus.org
-  logo: https://numfocus.org/wp-content/uploads/2018/01/optNumFocus_LRG.png
+  logo: _static/logos/numfocus.png
 
 anaconda:
   label: Anaconda
   url: https://www.anaconda.com
-  logo: https://www.anaconda.com/wp-content/uploads/2018/06/cropped-Anaconda_horizontal_RGB-1-600x102.png
+  logo: _static/logos/anaconda.png
 
 metoffice:
   label: Met Office
@@ -26,12 +26,12 @@ plotly:
 kitware:
   label: Kitware
   url: https://www.kitware.com
-  logo: https://www.kitware.com/main/wp-content/uploads/2017/02/Kitware_Print_186.svg
+  logo: _static/logos/kitware.svg
 
 enthought:
   label: Enthought
   url: https://www.enthought.com
-  logo: https://www.enthought.com/wp-content/uploads/enthought-blue-sized.svg
+  logo: _static/logos/enthought.svg
 
 nvidia:
   label: NVIDIA
@@ -41,7 +41,7 @@ nvidia:
 quantstack:
   label: QuantStack
   url: http://quantstack.net
-  logo: http://quantstack.net/img/logo.svg
+  logo: _static/logos/quantstack.svg
 
 vaex.io:
   label: vaex.io
