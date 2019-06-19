@@ -1,17 +1,17 @@
 ## PyViz Tools
 
-This repository is used to generate a tools dashboard that allows comparisons between various Python visualization packages.
+This directory is used to generate a tools dashboard for comparing various Python visualization packages.
 
 The main configuration of the dashboard is done via the ``tools.yml`` file, which can contain several sections with a list of packages, and a list of services for each section.
 
-The dashboard is created during the website build process on Travis CI and can be seen [here](http://pyviz.org/tools.html)
+The dashboard is created during the website build process on Travis CI and can be seen at [pyviz.org/tools.html](http://pyviz.org/tools.html).
 
 
 ### Introductory text
 
-The intro text is located in `doc/tools.md` that file is included immediately after the title on the page.
+The intro text is located in `doc/tools.md`, whose contents will be included immediately after the title on the page.
 
-Ever section can also have an `intro` in `tools.yml`. This text should also be written as markdown.
+Every section can also have an `intro` in `tools.yml`. This text should also be written as markdown.
 
 ### Adding a tool
 
