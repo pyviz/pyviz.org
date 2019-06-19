@@ -1,6 +1,7 @@
     <div id="tools-wrapper">
     {% for section in config %}
     <h3 id="{{ section.name.lower().replace(' ', '-') }}">{{ section.name }}</h3>
+    {{ section.get('intro', '') }}
     <table>
       <tr>
         <th>Name</th>
@@ -73,7 +74,7 @@
               {% if sponsors.get(sponsor) %}
                 <a href="{{ sponsors[sponsor].get('url') }}">
                 {% if sponsors[sponsor].get('logo') %}
-                  <img class='sponsor-logo' src="{{ sponsors[sponsor]['logo'] }}">
+                  <img class='sponsor-logo' src="{{ sponsors[sponsor]['logo'] }}" alt="{{ sponsors[sponsor].get('label', sponsor) }}">
                 {% else %}
                   {{ sponsors[sponsor].get('label', sponsor) }}
                 {% endif %}

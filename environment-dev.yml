@@ -5,6 +5,7 @@ dependencies:
   - flake8
   - jinja2
   - m2r
+  - markdown
   - pyviz::nbsite
   - pyviz::nbsmoke
   - pyviz::pyctdev

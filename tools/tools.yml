@@ -77,6 +77,7 @@
       badges: pypi, site
 
 - name: Dashboarding
+  intro: Libraries for creating live Python-backed applications or dashboards that a user can interact with to explore or analyze data.
   packages:
 
     - repo: plotly/dash
