@@ -74,7 +74,7 @@
               {% if sponsors.get(sponsor) %}
                 <a href="{{ sponsors[sponsor].get('url') }}">
                 {% if sponsors[sponsor].get('logo') %}
-                  <img class='sponsor-logo' src="{{ sponsors[sponsor]['logo'] }}" alt="{{ sponsors[sponsor].get('label', sponsor) }}">
+                  <img class='sponsor-logo' src="{{ sponsors[sponsor]['logo'] }}" title="{{ sponsors[sponsor].get('label', sponsor) }}">
                 {% else %}
                   {{ sponsors[sponsor].get('label', sponsor) }}
                 {% endif %}
