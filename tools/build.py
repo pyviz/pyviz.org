@@ -19,11 +19,12 @@ for section in config:
         section['intro'] = markdown(section['intro'])
     for package in section['packages']:
         package['user'], package['name'] = package['repo'].split('/')
-        package['badges'] = [x.strip() for x in package['badges'].split(',')]
         package['conda_package'] = package.get('conda_package', package['name'])
 
-        if not package['badges']:
-            badges = ['pypi']
+        if package.get('badges'):
+            package['badges'] = [x.strip() for x in package['badges'].split(',')]
+        else:
+            package['badges'] = ['pypi', 'conda']
         if package.get('conda_channel') and 'conda' not in package['badges']:
             package['badges'].append('conda')
         if package.get('sponsors') and 'sponsor' not in package['badges']:

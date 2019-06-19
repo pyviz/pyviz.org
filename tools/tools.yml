@@ -84,23 +84,30 @@
   packages:
 
     - repo: bloomberg/bqplot
-      site: bqplot.readthedocs.io
+      conda_channel: conda-forge
+      badges: pypi, conda, rtd
 
     - repo: sciapp/gr
       site: gr-framework.org/python.html
+      badges: pypi, site
 
     - repo: has2k1/plotnine
-      site: plotnine.readthedocs.io
+      conda_channel: conda-forge
+      badges: pypi, conda, rtd
 
     - repo: yhat/ggpy
+      site_protocol: http
       site: ggplot.yhathq.com
+      badges: pypi, site
 
     - repo: glue-viz/glue
+      site_protocol: http
       site: docs.glueviz.org
+      badges: pypi, site
 
     - repo: sandialabs/toyplot
       sponsors: [sandia]
-      site: toyplot.readthedocs.io
+      badges: pypi, rtd
 
 
 - name: Dashboarding
@@ -199,6 +206,7 @@
 
     - repo: DistrictDataLabs/yellowbrick
       site: www.scikit-yb.org
+      badges: pypi, site
 
 - name: Large-data rendering
   intro: Tools for server-side rasterizing/aggregating data before visualization.
