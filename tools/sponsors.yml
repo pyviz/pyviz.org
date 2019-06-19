@@ -38,6 +38,11 @@ nvidia:
   url: https://www.nvidia.com
   logo: _static/logos/nvidia.jpg
 
+sandia:
+  label: Sandia
+  url: https://www.sandia.gov
+  logo: _static/logos/sandia.png
+
 quantstack:
   label: QuantStack
   url: http://quantstack.net
