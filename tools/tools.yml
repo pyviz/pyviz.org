@@ -113,6 +113,8 @@
       sponsors: [enthought]
       site: docs.enthought.com/chaco
 
+    - repo: Kozea/pygal
+
 - name: Dashboarding
   intro: Libraries for creating live Python-backed applications or dashboards that a user can interact with to explore or analyze data.
   packages:
@@ -147,6 +149,9 @@
       conda_channel: conda-forge
       badges: travis, conda, site
 
+    - repo: pyvista/pyvista
+      site: docs.pyvista.org
+
     - repo: vispy/vispy
       conda_channel: conda-forge
       site_protocol: http
@@ -160,6 +165,8 @@
       site: docs.enthought.com/mayavi/mayavi
       appveyor_project: EnthoughtOSS/mayavi
       badges: travis, appveyor, codecov, pypi, conda, site
+
+    - repo: maartenbreddels/ipyvolume
 
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
