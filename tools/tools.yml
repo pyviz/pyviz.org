@@ -222,3 +222,27 @@
       site: vaex.io
       conda_channel: conda-forge
       badges: travis, appveyor, pypi, conda, site
+
+
+- name: Dormant projects
+  intro: Tools no longer developed or endorsed by the authors
+  packages:
+
+    - repo: lightning-viz/lightning
+      site: http://lightning-viz.org
+      rip: https://gitter.im/lightning-viz/lightning
+
+    - repo: wrobstory/vincent
+      site: vincent.readthedocs.io 
+      rip: https://github.com/wrobstory/vincent/graphs/contributors
+
+    - repo: https://github.com/wireservice/leather
+      site: leather.readthedocs.io
+      rip: https://github.com/wireservice/leather/graphs/contributors
+
+    - repo: almarklein/visvis
+      rip: https://github.com/almarklein/visvis#status
+
+    - repo: mpld3/mpld3
+      site: mpld3.github.io
+      rip: http://www.xavierdupre.fr/app/pymyinstall/helpsphinx/blog/2017/2017-09-02_mpld3.html
