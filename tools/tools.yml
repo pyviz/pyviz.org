@@ -236,7 +236,7 @@
     - repo: DistrictDataLabs/yellowbrick
       site: www.scikit-yb.org
       badges: pypi, site
-      
+
     - repo: ContextLab/hypertools
       site: hypertools.readthedocs.io
 
@@ -267,12 +267,12 @@
       dormant: https://gitter.im/lightning-viz/lightning
 
     - repo: wrobstory/vincent
-      site: vincent.readthedocs.io 
       dormant: https://github.com/wrobstory/vincent/graphs/contributors
+      badges: pypi, rtd
 
-    - repo: https://github.com/wireservice/leather
-      site: leather.readthedocs.io
+    - repo: wireservice/leather
       dormant: https://github.com/wireservice/leather/graphs/contributors
+      badges: pypi, rtd
 
     - repo: almarklein/visvis
       dormant: https://github.com/almarklein/visvis#status
@@ -280,7 +280,7 @@
     - repo: mpld3/mpld3
       site: mpld3.github.io
       dormant: http://www.xavierdupre.fr/app/pymyinstall/helpsphinx/blog/2017/2017-09-02_mpld3.html
-      
+
     - repo: matplotlib/basemap
       site: https://matplotlib.org/basemap
       dormant: https://matplotlib.org/basemap/users/intro.html#cartopy-new-management-and-eol-announcement
@@ -298,7 +298,7 @@
       badges: pypi, site
       dormant: https://github.com/yhat/ggpy/graphs/contributors
 
-    - repo: github.com/PyQwt/PyQwt
+    - repo: PyQwt/PyQwt
       site: http://www.pyqtgraph.org
       dormant: https://github.com/PyQwt
 
