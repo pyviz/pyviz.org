@@ -207,7 +207,7 @@
 
     - repo: pyviz/geoviews
       sponsors: [anaconda]
-      site_protocol: http
+      site: http://geoviews.org
       badges: travis, appveyor, pypi, conda, site
 
     - repo: python-visualization/folium
