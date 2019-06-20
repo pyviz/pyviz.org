@@ -9,7 +9,6 @@ env:
 
 stages:
   - test
-    if: NOT type = cron
   - name: website_release
     if: branch = master
   - name: website_dev
