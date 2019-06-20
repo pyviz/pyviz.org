@@ -116,6 +116,9 @@
     - repo: veusz/veusz
       site: veusz.github.io
 
+    - repo: biggles-plot/biggles
+      site: biggles-plot.github.io
+
 - name: Dashboarding
   intro: Libraries for creating live Python-backed applications or dashboards that a user can interact with to explore or analyze data.
   packages:
