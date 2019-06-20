@@ -12,3 +12,4 @@
    Mayavi <https://docs.enthought.com/mayavi/mayavi>
    ParaView <https://www.paraview.org>
    yt <https://yt-project.org>
+   PyVista <http://www.pyvista.org>
