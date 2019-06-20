@@ -1,8 +1,6 @@
-# How to visualize data in Python
+# Python tools for data visualization
 
-Welcome to PyViz!  PyViz is an effort to make data visualization using Python open-source tools easier to use, easier to learn, and more powerful.
-
-This PyViz.org website contains:
+Welcome to PyViz!  The PyViz.org website is an open platform for helping users decide on the best open-source (OSS) data visualization tools for their purposes, with links, overviews, comparisons, and examples. Contents:
 
  - [Overviews](overviews/index.html) of the OSS visualization packages available in Python, how they relate to each other, and the core concepts that underlie them
  - [High-level tools](high-level/index.html) for getting started with Python viz, creating powerful plots in just a few lines of code
