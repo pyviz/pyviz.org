@@ -18,19 +18,24 @@
       <tr>
         <td align='left'>
           <a href="http://github.com/{{ package.repo }}">{{ package.name }}</a>
+          {% if 'dormant' in package.badges %}
+            <a href="{{ package.dormant }}">
+              <img src="_static/dormant.svg">
+            </a>
+          {% endif %}
         </td>
         <td align='left'>
-          <img src="https://img.shields.io/github/stars/{{ package.repo }}.svg?style=social">
+          <img src="_static/cache/{{ package.name }}_stars_badge.svg">
         </td>
         <td align='left'>
-          <img src="https://img.shields.io/github/contributors/{{ package.repo }}.svg?style=social&logo=github">
+          <img src="_static/cache/{{ package.name }}_contributors_badge.svg">
         </td>
           {% if 'pypi' in package.badges %}
             <td align='left'>
-              <img src="https://img.shields.io/pypi/dd/{{ package.pypi_name }}.svg?logo=pypi">
+              <img src="_static/cache/{{ package.name }}_downloads_badge.svg">
             </td>
             <td align='left'>
-              <img src="https://img.shields.io/pypi/l/{{ package.pypi_name }}.svg">
+              <img src="_static/cache/{{ package.name }}_license_badge.svg">
             </td>
           {% else %}
           <td align='center' class='empty-cell'>-</td><td align='center' class='empty-cell'>-</td>

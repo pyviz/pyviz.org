@@ -4,6 +4,7 @@
 # nbsite output
 builtdocs/
 doc/tools.rst
+doc/_static/cache/
 
 # doit
 .doit.db
