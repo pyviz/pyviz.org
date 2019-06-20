@@ -43,10 +43,10 @@ If you add a new tool that has a sponsor that is not yet found on the page, the 
 numfocus:
   label: NumFocus
   url: https://numfocus.org
-  logo: _static/logos/numfocus.png
+  logo: _static/badges/numfocus.png
 ```
 
-If using a logo, don't forget to include a small version of the logo at `doc/_static/logos/`.
+If using a logo, don't forget to include a small version of the logo at `doc/_static/badges/`.
 
 ### View website locally
 
