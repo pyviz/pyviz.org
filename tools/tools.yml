@@ -209,6 +209,8 @@
     - repo: jupyter-widgets/ipyleaflet
       site: ipyleaflet.readthedocs.io
 
+    - repo: andrea-cuttone/geoplotlib
+      site: github.com/andrea-cuttone/geoplotlib/wiki/User-Guide
 
 - name: Domain-specific
   intro: Tools focused on specific research or application areas.
@@ -234,6 +236,8 @@
       
     - repo: ContextLab/hypertools
       site: hypertools.readthedocs.io
+
+    - repo: ResidentMario/missingno
 
 - name: Large-data rendering
   intro: Tools for server-side rasterizing/aggregating data before visualization.
@@ -294,3 +298,7 @@
     - repo: github.com/PyQwt/PyQwt
       site: http://www.pyqtgraph.org
       dormant: https://github.com/PyQwt
+
+    - repo: dgrtwo/gleam
+      dormant: https://github.com/dgrtwo/gleam/graphs/contributors
+
