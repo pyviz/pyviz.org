@@ -95,11 +95,6 @@
       conda_channel: conda-forge
       badges: pypi, conda, rtd
 
-    - repo: yhat/ggpy
-      site_protocol: http
-      site: ggplot.yhathq.com
-      badges: pypi, site
-
     - repo: glue-viz/glue
       site_protocol: http
       site: docs.glueviz.org
@@ -284,3 +279,8 @@
       site: d3po.org
       dormant: https://github.com/adrn/d3po/graphs/contributors
 
+    - repo: yhat/ggpy
+      site_protocol: http
+      site: ggplot.yhathq.com
+      badges: pypi, site
+      dormant: https://github.com/yhat/ggpy/graphs/contributors
