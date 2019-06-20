@@ -19,16 +19,20 @@
         <td align='left'>
           <a href="http://github.com/{{ package.repo }}">{{ package.name }}</a>
           {% if 'dormant' in package.badges %}
-            <a href="{{ package.dormant }}">
+            <br><a href="{{ package.dormant }}">
               <img src="_static/dormant.svg">
             </a>
           {% endif %}
         </td>
         <td align='left'>
-          <img src="_static/cache/{{ package.name }}_stars_badge.svg">
+          <a href="https://github.com/{{ package.repo }}/stargazers">
+            <img src="_static/cache/{{ package.name }}_stars_badge.svg">
+          </a>
         </td>
         <td align='left'>
-          <img src="_static/cache/{{ package.name }}_contributors_badge.svg">
+          <a href="https://github.com/{{ package.repo }}/graphs/contributors">
+            <img src="_static/cache/{{ package.name }}_contributors_badge.svg">
+          </a>
         </td>
           {% if 'pypi' in package.badges %}
             <td align='left'>

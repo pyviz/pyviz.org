@@ -58,8 +58,9 @@ for section in config:
         if 'site' in package['badges']:
             if 'site' not in package:
                 package['site'] = '{}.org'.format(package['name'])
-            if 'site_protocol' not in package:
                 package['site_protocol'] = 'https'
+            else:
+                package['site_protocol'], package['site'] = package['site'].split('://')
 
         if build_cache:
             for badge, url in cache.items():
