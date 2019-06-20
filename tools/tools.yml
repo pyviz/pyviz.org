@@ -299,7 +299,7 @@
       dormant: https://github.com/yhat/ggpy/graphs/contributors
 
     - repo: github.com/PyQwt/PyQwt
-      site: http://www.pyqtgraph.org
+      site: http://pyqwt.sourceforge.net/
       dormant: https://github.com/PyQwt
 
     - repo: dgrtwo/gleam
