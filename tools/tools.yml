@@ -51,7 +51,7 @@
       badges: travis, pypi, site
 
 - name: High-Level
-  intro: Libraries providing a higher level of abstraction for working with data.
+  intro: Libraries focusing on high-level operations for working with data visually, built upon the core libraries.
   packages:
 
     - repo: mwaskom/seaborn
@@ -87,13 +87,18 @@
       conda_channel: conda-forge
       badges: pypi, conda, rtd
 
+    - repo: has2k1/plotnine
+      conda_channel: conda-forge
+      badges: pypi, conda, rtd
+
+    - repo: veusz/veusz
+      site: veusz.github.io
+
     - repo: sciapp/gr
       site: gr-framework.org/python.html
       badges: pypi, site
 
-    - repo: has2k1/plotnine
-      conda_channel: conda-forge
-      badges: pypi, conda, rtd
+    - repo: Kozea/pygal
 
     - repo: glue-viz/glue
       site_protocol: http
@@ -108,13 +113,8 @@
       sponsors: [enthought]
       site: docs.enthought.com/chaco
 
-    - repo: Kozea/pygal
-
     - repo: pyqtgraph/pyqtgraph
       site: http://www.pyqtgraph.org
-
-    - repo: veusz/veusz
-      site: veusz.github.io
 
     - repo: biggles-plot/biggles
       site: biggles-plot.github.io
