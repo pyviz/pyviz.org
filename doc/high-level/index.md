@@ -19,8 +19,8 @@ The Pandas .plot() API has emerged as a de-facto standard for high-level plottin
 
 ## Other high-level APIs
 
-- [Seaborn](https://seaborn.pydata.org) -- matplotlib-based high-level interface for drawing statistical graphics.
-- [Altair](https://altair-viz.github.io/) -- Vega-lite-based interactive plots.
-- [HoloViews](https://holoviews.org) -- Bokeh, Matplotlib, or Plotly-based interactive plots for tidy data.
+- [Seaborn](https://seaborn.pydata.org) -- Matplotlib-based high-level interface for drawing statistical graphics.
+- [Altair](https://altair-viz.github.io/) -- Declarative Vega-lite-based interactive plots.
+- [HoloViews](https://holoviews.org) -- Declarative Bokeh, Matplotlib, or Plotly-based interactive plots for tidy data.
 - [Chartify](https://github.com/spotify/chartify) -- Bokeh-based interactive plots for tidy data.
 - [Plotly Express](https://www.plotly.express/) -- Plotly-based interactive plots.

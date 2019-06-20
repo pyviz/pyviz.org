@@ -10,7 +10,9 @@ env:
 stages:
   - test
   - name: website_release
-    if: (commit_message =~ /^.*(website_release).*$/) OR (branch = master)
+    if: branch = master
+  - name: website_dev
+    if: (commit_message =~ /^.*(website_dev).*$/) OR (branch = master)
 
 jobs:
   include:
@@ -39,6 +41,19 @@ jobs:
           skip_cleanup: true
           github_token: $GITHUB_TOKEN
           local_dir: ./builtdocs
+          fqdn: pyviz.orf
+          on:
+            all_branches: true
+
+    - <<: *website_release
+      stage: website_dev
+      script: doit build_website
+      deploy:
+        - provider: pages
+          skip_cleanup: true
+          github_token: $GITHUB_TOKEN
+          local_dir: ./builtdocs
+          repo: pyviz-dev/website
           on:
             all_branches: true
 

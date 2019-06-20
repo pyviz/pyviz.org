@@ -1,6 +1,7 @@
     <div id="tools-wrapper">
     {% for section in config %}
     <h3 id="{{ section.name.lower().replace(' ', '-') }}">{{ section.name }}</h3>
+    {{ section.get('intro', '') }}
     <table>
       <tr>
         <th>Name</th>
@@ -17,19 +18,28 @@
       <tr>
         <td align='left'>
           <a href="http://github.com/{{ package.repo }}">{{ package.name }}</a>
+          {% if 'dormant' in package.badges %}
+            <br><a href="{{ package.dormant }}">
+              <img src="_static/dormant.svg">
+            </a>
+          {% endif %}
         </td>
         <td align='left'>
-          <img src="https://img.shields.io/github/stars/{{ package.repo }}.svg?style=social">
+          <a href="https://github.com/{{ package.repo }}/stargazers">
+            <img src="_static/cache/{{ package.name }}_stars_badge.svg">
+          </a>
         </td>
         <td align='left'>
-          <img src="https://img.shields.io/github/contributors/{{ package.repo }}.svg?style=social&logo=github">
+          <a href="https://github.com/{{ package.repo }}/graphs/contributors">
+            <img src="_static/cache/{{ package.name }}_contributors_badge.svg">
+          </a>
         </td>
           {% if 'pypi' in package.badges %}
             <td align='left'>
-              <img src="https://img.shields.io/pypi/dd/{{ package.pypi_name }}.svg?logo=pypi">
+              <img src="_static/cache/{{ package.name }}_downloads_badge.svg">
             </td>
             <td align='left'>
-              <img src="https://img.shields.io/pypi/l/{{ package.pypi_name }}.svg">
+              <img src="_static/cache/{{ package.name }}_license_badge.svg">
             </td>
           {% else %}
           <td align='center' class='empty-cell'>-</td><td align='center' class='empty-cell'>-</td>
@@ -42,7 +52,7 @@
           </td>
           {% elif 'rtd' in package.badges %}
           <td align='left'>
-            <a href="https://readthedocs.org/projects/{{ package.rtd_name }}/?badge=latest">
+            <a href="https://{{ package.rtd_name }}.readthedocs.io">
               <img src="https://readthedocs.org/projects/{{ package.rtd_name }}/badge/?version=latest">
             </a>
           </td>
@@ -73,7 +83,7 @@
               {% if sponsors.get(sponsor) %}
                 <a href="{{ sponsors[sponsor].get('url') }}">
                 {% if sponsors[sponsor].get('logo') %}
-                  <img class='sponsor-logo' src="{{ sponsors[sponsor]['logo'] }}">
+                  <img class='sponsor-logo' src="{{ sponsors[sponsor]['logo'] }}" title="{{ sponsors[sponsor].get('label', sponsor) }}">
                 {% else %}
                   {{ sponsors[sponsor].get('label', sponsor) }}
                 {% endif %}

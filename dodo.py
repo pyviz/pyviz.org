@@ -6,6 +6,9 @@ if "PYCTDEV_ECOSYSTEM" not in os.environ:
 from pyctdev import *  # noqa: api
 
 
+here = os.path.abspath(os.path.dirname(__file__))
+
+
 def task_ecosystem_setup():
     """Set up conda with updated version, and yes set to always"""
     return {'actions': [
@@ -22,12 +25,20 @@ def task_env_create():
         "conda env update -f environment-dev.yml -n pyviz",
     ]}
 
+cache_param = {
+    'name': 'cache',
+    'long': 'cache',
+    'type': bool,
+    'default': True,
+    'inverse': 'nocache',
+}
 
 def task_build_website():
     """Build website using nbsite"""
     return {'actions': [
-        "python tools/build.py",
+        "echo building cache: %(cache)s",
+        "BUILD_CACHE=%(cache)s python tools/build.py",
         "mv tools/index.rst doc/tools.rst",
         "nbsite generate-rst --org pyviz --project-name pyviz --examples notebooks",  # noqa
         "nbsite build --what=html --output=builtdocs",
-    ]}
+    ], 'params': [cache_param]}
