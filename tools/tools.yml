@@ -110,6 +110,9 @@
 
     - repo: Kozea/pygal
 
+    - repo: pyqtgraph/pyqtgraph
+      site: http://www.pyqtgraph.org
+
 - name: Dashboarding
   intro: Libraries for creating live Python-backed applications or dashboards that a user can interact with to explore or analyze data.
   packages:
@@ -228,6 +231,9 @@
     - repo: DistrictDataLabs/yellowbrick
       site: www.scikit-yb.org
       badges: pypi, site
+      
+    - repo: ContextLab/hypertools
+      site: hypertools.readthedocs.io
 
 - name: Large-data rendering
   intro: Tools for server-side rasterizing/aggregating data before visualization.
@@ -284,3 +290,7 @@
       site: ggplot.yhathq.com
       badges: pypi, site
       dormant: https://github.com/yhat/ggpy/graphs/contributors
+
+    - repo: github.com/PyQwt/PyQwt
+      site: http://www.pyqtgraph.org
+      dormant: https://github.com/PyQwt
