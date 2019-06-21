@@ -48,6 +48,7 @@ quantstack:
   url: http://quantstack.net
   logo: _static/badges/quantstack.svg
 
-vaex.io:
+vaexio:
   label: vaex.io
   url: https://vaex.io
+  logo: _static/badges/vaexio.png
