@@ -5,6 +5,7 @@
     <table>
       <tr>
         <th>Name</th>
+        <th></th>
         <th>Stars</th>
         <th>Contributors</th>
         <th>Downloads</th>
@@ -18,8 +19,10 @@
       <tr>
         <td align='left'>
           <a href="http://github.com/{{ package.repo }}">{{ package.name }}</a>
+        </td>
+        <td align='left'>
           {% if 'dormant' in package.badges %}
-            <br><a href="{{ package.dormant }}">
+            <a href="{{ package.dormant }}">
               <img src="_static/dormant.svg">
             </a>
           {% endif %}

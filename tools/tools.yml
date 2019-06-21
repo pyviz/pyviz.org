@@ -109,6 +109,7 @@
 
 
     - repo: Kozea/pygal
+      site: http://pygal.org
       conda_channel: conda-forge
 
     - repo: has2k1/plotnine
@@ -167,6 +168,7 @@
   packages:
 
     - repo: python-visualization/folium
+      site: https://python-visualization.github.io/folium
       conda_channel: conda-forge
 
     - repo: SciTools/cartopy
@@ -264,7 +266,7 @@
       badges: travis, appveyor, pypi, conda, site
 
     - repo: vaexio/vaex
-      sponsors: [vaex.io]
+      sponsors: [vaexio]
       site: https://vaex.io
       conda_channel: conda-forge
       badges: travis, appveyor, pypi, conda, site
