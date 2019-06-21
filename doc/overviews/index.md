@@ -1,10 +1,10 @@
 # Overviews
 
-The Python visualization landscape can seem daunting at first. These overviews attempt to shine light on common patterns and use cases, comparing or discussing multiple plotting libraries.
+The Python visualization landscape can seem daunting at first. These overviews attempt to shine light on common patterns and use cases, comparing or discussing multiple plotting libraries. Note that some of the projects discussed in the overviews are no longer maintained, so be sure to check the list of [dormant projects](../tools.html#dormant-projects) before choosing that library.
 
 <iframe src="https://rougier.github.io/python-visualization-landscape/landscape-colors.html" frameborder="0" allowfullscreen></iframe>
 
-*Adaptation of Jake VanderPlas graphic about python visualization landscape, by Nicolas P. Rougier*
+*Adaptation of Jake VanderPlas graphic about the Python visualization landscape, by Nicolas P. Rougier*
 
 - [Python Data Visualization 2018](https://www.anaconda.com/python-data-visualization-2018-why-so-many-libraries)
   15 Nov 2018 - 14 Dec 2018  James A. Bednar, Anaconda, Inc. Three blog posts surveying the history and breadth of several dozen Python viz libraries, without example code.
