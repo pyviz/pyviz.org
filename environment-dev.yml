@@ -16,4 +16,5 @@ dependencies:
   - pytest
   - pyyaml
   - requests
+  - s3fs
   - tornado<6
