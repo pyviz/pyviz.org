@@ -14,8 +14,8 @@ build_cache = eval(os.getenv('BUILD_CACHE', 'False'))
 cache = {
     "stars": "https://img.shields.io/github/stars/{repo}.svg?style=social",
     "contributors": "https://img.shields.io/github/contributors/{repo}.svg?style=social&logo=github",
-    "downloads": "https://img.shields.io/pypi/dd/{pypi_name}.svg?logo=pypi",
-    "license": "https://img.shields.io/pypi/l/{pypi_name}.svg",
+    "pypi_downloads": "https://img.shields.io/pypi/dd/{pypi_name}.svg?label=pypi",
+    "license": "https://img.shields.io/pypi/l/{pypi_name}.svg?label",
 }
 
 if build_cache:
@@ -35,6 +35,7 @@ for section in config:
             raise Warning('Package.repo is not in correct format', package)
             continue
         package['conda_package'] = package.get('conda_package', package['name'])
+        package['pypi_name'] = package.get('pypi_name', package['name'])
 
         if package.get('badges'):
             package['badges'] = [x.strip() for x in package['badges'].split(',')]
@@ -51,8 +52,6 @@ for section in config:
 
         if 'rtd' in package['badges'] and 'rtd_name' not in package:
             package['rtd_name'] = package['name']
-        if 'pypi' in package['badges'] and 'pypi_name' not in package:
-            package['pypi_name'] = package['name']
         if 'conda' in package['badges'] and 'conda_channel' not in package:
             package['conda_channel'] = 'anaconda'
         if 'site' in package['badges']:
@@ -64,7 +63,7 @@ for section in config:
 
         if build_cache:
             for badge, url in cache.items():
-                rendered_url = url.format(repo=package['repo'], pypi_name=package.get('pypi_name', package['name']))
+                rendered_url = url.format(repo=package['repo'], pypi_name=package['pypi_name'])
                 r = requests.get(rendered_url)
                 with open(os.path.join(cache_path, f"{package['name']}_{badge}_badge.svg"), 'wb') as f:
                     f.write(r.content)

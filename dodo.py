@@ -37,6 +37,7 @@ def task_build_website():
     """Build website using nbsite"""
     return {'actions': [
         "echo building cache: %(cache)s",
+        "python tools/conda_downloads.py",
         "BUILD_CACHE=%(cache)s python tools/build.py",
         "mv tools/index.rst doc/tools.rst",
         "nbsite generate-rst --org pyviz --project-name pyviz --examples notebooks",  # noqa
