@@ -9,6 +9,7 @@
         <th>Stars</th>
         <th>Contributors</th>
         <th>Downloads</th>
+        <th></th>
         <th>License</th>
         <th>Docs</th>
         <th>PyPI</th>
@@ -38,14 +39,25 @@
           </a>
         </td>
           {% if 'pypi' in package.badges %}
-            <td align='left'>
-              <img src="_static/cache/{{ package.name }}_downloads_badge.svg">
-            </td>
+          <td align='left'>
+            <img src="_static/cache/{{ package.name }}_pypi_downloads_badge.svg">
+          </td>
+          {% else %}
+          <td align='center' class='empty-cell'>-</td>
+          {% endif %}
+          {% if 'conda' in package.badges %}
+          <td align='left'>
+            <img src="_static/cache/{{ package.name }}_conda_downloads_badge.svg">
+          </td>
+          {% else %}
+          <td align='center' class='empty-cell'>-</td>
+          {% endif %}
+          {% if 'pypi' in package.badges %}
             <td align='left'>
               <img src="_static/cache/{{ package.name }}_license_badge.svg">
             </td>
           {% else %}
-          <td align='center' class='empty-cell'>-</td><td align='center' class='empty-cell'>-</td>
+          <td align='center' class='empty-cell'>-</td>
           {% endif %}
           {% if 'site' in package.badges %}
           <td align='left'>
@@ -65,7 +77,7 @@
           {% if 'pypi' in package.badges %}
           <td align='left'>
             <a href="https://pypi.python.org/pypi/{{ package.pypi_name }}">
-              <img src="https://img.shields.io/pypi/v/{{ package.pypi_name }}.svg">
+              <img src="https://img.shields.io/pypi/v/{{ package.pypi_name }}.svg?label">
             </a>
           </td>
           {% else %}
@@ -80,7 +92,7 @@
           {% else %}
           <td align='center' class='empty-cell'>-</td>
           {% endif %}
-                    {% if 'sponsor' in package.badges %}
+          {% if 'sponsor' in package.badges %}
             <td align='left'>
             {% for sponsor in package.sponsors %}
               {% if sponsors.get(sponsor) %}
