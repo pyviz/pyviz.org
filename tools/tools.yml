@@ -189,6 +189,8 @@
       site: https://github.com/andrea-cuttone/geoplotlib/wiki/User-Guide
       badges: pypi
 
+    - repo: vgm64/gmplot
+
 - name: Other domain-specific
   intro: Tools focused on specific research or application areas other than those above.
   packages:
