@@ -27,3 +27,6 @@ The Python visualization landscape can seem daunting at first. These overviews a
 
 - [Python Data Visualization — Comparing 5 Tools](https://codeburst.io/overview-of-python-data-visualization-tools-e32e1f716d10)
   6 Dec 2017 Elena Kirzhner, Codeburst. Blog post with simple comparisons of Pandas, Seaborn, Bokeh, Pygal, and Plotly code and output.
+
+- [Plotting business locations on maps using multiple Plotting libraries in Python](https://towardsdatascience.com/plotting-business-locations-on-maps-using-multiple-plotting-libraries-in-python-45a00ea770af)
+  30 Apr 2018 Karan Bhanot. Blog post comparing plotting business locations using gmplot, geopandas, plotly, and bokeh.
