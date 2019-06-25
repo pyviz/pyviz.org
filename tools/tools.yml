@@ -6,10 +6,6 @@
       sponsors: [numfocus]
       badges: travis, appveyor, codecov, pypi, conda, site
 
-    - repo: bokeh/bokeh
-      sponsors: [numfocus, anaconda]
-      badges: travis, pypi, conda, site
-
     - repo: plotly/plotly.py
       sponsors: [plotly]
       pypi_name: plotly
@@ -17,6 +13,10 @@
       conda_channel: conda-forge
       site: https://plot.ly
       badges: circleci, pypi, conda, site
+
+    - repo: bokeh/bokeh
+      sponsors: [numfocus, anaconda]
+      badges: travis, pypi, conda, site
 
 - name: High-Level Shared API
   intro: Libraries sharing the Pandas .plot() API, built upon the core Python or JS libraries.
@@ -51,7 +51,7 @@
       badges: travis, pypi, site
 
 - name: High-Level
-  intro: Libraries focusing on high-level operations for working with data visually, built upon the core Python or JS libraries.
+  intro: InfoVis Libraries focusing on high-level operations for working with data visually, built upon the core Python or JS libraries.
   packages:
 
     - repo: mwaskom/seaborn
@@ -80,7 +80,7 @@
       badges: travis, pypi, conda, site
 
 - name: Native-GUI
-  intro: Libraries targetting native-desktop GUI interfaces for interactive plots (plus Matplotlib in core above).
+  intro: InfoVis Libraries targetting native-desktop GUI interfaces for interactive plots (also see Matplotlib in core above).
   packages:
 
     - repo: pyqtgraph/pyqtgraph
@@ -95,13 +95,13 @@
       site: https://docs.enthought.com/chaco
       badges: pypi
 
-    - repo: sciapp/gr
-      site: https://gr-framework.org/python.html
-      badges: pypi, site
-
     - repo: veusz/veusz
       conda_channel: conda-forge
       site: https://veusz.github.io
+
+    - repo: sciapp/gr
+      site: https://gr-framework.org/python.html
+      badges: pypi, site
 
 - name: Other InfoVis
   intro: InfoVis plotting libraries not fitting into other categories above.
@@ -137,19 +137,14 @@
       conda_channel: conda-forge
       badges: travis, pypi, conda, site
 
-    - repo: Kitware/ParaView
-      sponsors: [kitware]
-      conda_channel: conda-forge
-      badges: travis, conda, site
-
-    - repo: pyvista/pyvista
-      site: https://docs.pyvista.org
-      conda_channel: conda-forge
-
     - repo: vispy/vispy
       conda_channel: conda-forge
       site: http://vispy.org
       badges: travis, appveyor, coveralls, pypi, conda, site
+
+    - repo: pyvista/pyvista
+      site: https://docs.pyvista.org
+      conda_channel: conda-forge
 
     - repo: enthought/mayavi
       sponsors: [enthought]
@@ -164,7 +159,7 @@
       badges: pypi, rtd
 
 - name: Geospatial
-  intro: Tools for working with data in geographic coordinates
+  intro: Tools for working with data in geographic coordinates.
   packages:
 
     - repo: python-visualization/folium
@@ -175,6 +170,8 @@
       sponsors: [metoffice]
       site: https://scitools.org.uk/cartopy
       badges: travis, appveyor, coveralls, pypi, conda, site
+
+    - repo: vgm64/gmplot
 
     - repo: jupyter-widgets/ipyleaflet
       conda_channel: conda-forge
@@ -188,8 +185,6 @@
     - repo: andrea-cuttone/geoplotlib
       site: https://github.com/andrea-cuttone/geoplotlib/wiki/User-Guide
       badges: pypi
-
-    - repo: vgm64/gmplot
 
 - name: Other domain-specific
   intro: Tools focused on specific research or application areas other than those above.
@@ -219,6 +214,22 @@
     - repo: ContextLab/hypertools
       badges: pypi, rtd
 
+- name: Large-data rendering
+  intro: Tools for server-side rasterizing/aggregating data before visualization.
+  packages:
+
+    - repo: pyviz/datashader
+      sponsors: [anaconda]
+      site: http://datashader.org
+      badges: travis, appveyor, pypi, conda, site
+
+    - repo: vaexio/vaex
+      sponsors: [vaexio]
+      site: https://vaex.io
+      conda_channel: conda-forge
+      badges: travis, appveyor, pypi, conda, site
+
+
 - name: Dashboarding
   intro: Libraries for creating live Python-backed web applications or dashboards that a user can interact with to explore or analyze data.
   packages:
@@ -243,6 +254,9 @@
   intro: Collections of colormaps and tools for generating new colormaps.
   packages:
 
+    - repo: jiffyclub/palettable
+      site: https://jiffyclub.github.io/palettable
+
     - repo: pyviz/colorcet
       sponsors: [anaconda]
       site: https://colorcet.pyviz.org
@@ -256,23 +270,6 @@
     - repo: matplotlib/viscm
       conda_channel: conda-forge
       badges: travis, codecov, pypi, conda
-
-
-- name: Large-data rendering
-  intro: Tools for server-side rasterizing/aggregating data before visualization.
-  packages:
-
-    - repo: pyviz/datashader
-      sponsors: [anaconda]
-      site: http://datashader.org
-      badges: travis, appveyor, pypi, conda, site
-
-    - repo: vaexio/vaex
-      sponsors: [vaexio]
-      site: https://vaex.io
-      conda_channel: conda-forge
-      badges: travis, appveyor, pypi, conda, site
-
 
 - name: Dormant projects
   intro: Tools no longer developed or endorsed by the authors.
