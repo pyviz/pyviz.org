@@ -51,7 +51,7 @@
       badges: travis, pypi, site
 
 - name: High-Level
-  intro: Libraries focusing on high-level operations for working with data visually, built upon the core Python or JS libraries.
+  intro: InfoVis Libraries focusing on high-level operations for working with data visually, built upon the core Python or JS libraries.
   packages:
 
     - repo: mwaskom/seaborn
@@ -80,7 +80,7 @@
       badges: travis, pypi, conda, site
 
 - name: Native-GUI
-  intro: Libraries targetting native-desktop GUI interfaces for interactive plots (plus Matplotlib in core above).
+  intro: InfoVis Libraries targetting native-desktop GUI interfaces for interactive plots (also see Matplotlib in core above).
   packages:
 
     - repo: pyqtgraph/pyqtgraph
@@ -164,7 +164,7 @@
       badges: pypi, rtd
 
 - name: Geospatial
-  intro: Tools for working with data in geographic coordinates
+  intro: Tools for working with data in geographic coordinates.
   packages:
 
     - repo: python-visualization/folium
@@ -243,6 +243,9 @@
   intro: Collections of colormaps and tools for generating new colormaps.
   packages:
 
+    - repo: jiffyclub/palettable
+      site: jiffyclub.github.io/palettable
+
     - repo: pyviz/colorcet
       sponsors: [anaconda]
       site: https://colorcet.pyviz.org
@@ -256,7 +259,6 @@
     - repo: matplotlib/viscm
       conda_channel: conda-forge
       badges: travis, codecov, pypi, conda
-
 
 - name: Large-data rendering
   intro: Tools for server-side rasterizing/aggregating data before visualization.
