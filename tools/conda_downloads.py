@@ -24,7 +24,13 @@ step = len(colors) /np.log10(top_of_colormap)
 today = datetime.date.today()
 first = today.replace(day=1)
 last_month = first - datetime.timedelta(days=1)
-monthly = cat.anaconda_package_data_by_month(year=last_month.year, month=last_month.month,
+try:
+    monthly = cat.anaconda_package_data_by_month(year=last_month.year, month=last_month.month,
+                                                    columns=['pkg_name', 'counts']).to_dask()
+except:
+    # if the last month isn't available, get the month before
+    month_before = last_month.replace(day=1) - datetime.timedelta(days=1)
+    monthly = cat.anaconda_package_data_by_month(year=month_before.year, month=month_before.month,
                                                 columns=['pkg_name', 'counts']).to_dask()
 per_package_downloads = monthly.groupby('pkg_name').sum().compute()
 
