@@ -14,7 +14,7 @@ build_cache = eval(os.getenv('BUILD_CACHE', 'False'))
 cache = {
     "stars": "https://img.shields.io/github/stars/{repo}.svg?style=social",
     "contributors": "https://img.shields.io/github/contributors/{repo}.svg?style=social&logo=github",
-    "pypi_downloads": "https://img.shields.io/pypi/dd/{pypi_name}.svg?label=pypi",
+    "pypi_downloads": "https://img.shields.io/pypi/dm/{pypi_name}.svg?label=pypi",
     "license": "https://img.shields.io/pypi/l/{pypi_name}.svg?label",
 }
 
