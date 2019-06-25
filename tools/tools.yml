@@ -244,7 +244,7 @@
   packages:
 
     - repo: jiffyclub/palettable
-      site: jiffyclub.github.io/palettable
+      site: https://jiffyclub.github.io/palettable
 
     - repo: pyviz/colorcet
       sponsors: [anaconda]
