@@ -2,5 +2,19 @@ name: pyviz
 channels:
   - conda-forge
 dependencies:
-  - bokeh
-  - matplotlib
+  - colorcet
+  - fastparquet
+  - flake8
+  - intake
+  - intake-parquet
+  - jinja2
+  - m2r
+  - markdown
+  - pyviz::nbsite
+  - pyviz::nbsmoke
+  - pyviz::pyctdev
+  - pytest
+  - pyyaml
+  - requests
+  - s3fs
+  - tornado<6

@@ -22,7 +22,6 @@ def task_env_create():
     return {'actions': [
         "pip uninstall -y doit pyctdev",
         "conda env update -f environment.yml -n pyviz",
-        "conda env update -f environment-dev.yml -n pyviz",
     ]}
 
 cache_param = {
