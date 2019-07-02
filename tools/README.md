@@ -47,26 +47,3 @@ numfocus:
 ```
 
 If using a logo, don't forget to include a small version of the logo at `doc/_static/badges/`.
-
-### View website locally
-
-Set up and activate development environment:
-
-```bash
-conda env update --file environment.yml --name pyviz
-conda env update --file environment-dev.yml --name pyviz
-conda activate pyviz
-```
-
-Build the website using the custom ``doit`` (similar to `make`) command.
-
-```bash
-doit build_website
-```
-
-View the website locally
-
-```bash
-python -m http.server 8000
-```
-
