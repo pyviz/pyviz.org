@@ -34,6 +34,8 @@ Build the website using the custom ``doit`` (similar to `make`) command.
 doit build_website
 ```
 
+**NOTE:** To skip badges caching, set the `--nocache` flag.
+
 View the website locally
 
 ```bash
@@ -42,4 +44,4 @@ python -m http.server 8000
 
 ## Adding a tool to the "All Tools" page
 
-See the [README](tools/README.md) in the tools directory for instructions on adding a tool to the "All Tools" page
+See the [README](tools/README.md) in the tools directory for instructions on adding a tool to the "All Tools" page.
