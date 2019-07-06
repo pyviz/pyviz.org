@@ -7,7 +7,7 @@
 | Build Status | [![Linux/MacOS Build Status](https://travis-ci.org/pyviz/website.svg?branch=master)](https://travis-ci.org/pyviz/website) |
 | Website | [![gh-pages](https://img.shields.io/github/last-commit/pyviz/website/gh-pages.svg)](https://github.com/pyviz/holoviz/tree/gh-pages) [![site](https://img.shields.io/website-up-down-green-red/http/pyviz.org.svg)](http://pyviz.org) |
 
-Source material to build [pyviz.org](https://pyviz.org)
+Source material to build [pyviz.org](https://pyviz.org).  This site is owned by [NumFocus](https://numfocus.org) and is currently managed by Anaconda, Inc. for the community, but is open to everyone involved in Python data visualization; see [#2](https://github.com/pyviz/website/issues/2).
 
 ## Building pyviz.org
 
