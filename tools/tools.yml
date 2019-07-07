@@ -214,6 +214,8 @@
     - repo: ContextLab/hypertools
       badges: pypi, rtd
 
+    - repo: reiinakano/scikit-plot
+
 - name: Large-data rendering
   intro: Tools for server-side rasterizing/aggregating data before visualization.
   packages:
