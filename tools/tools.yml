@@ -187,6 +187,9 @@
       badges: pypi
 
     - repo: ResidentMario/geoplot
+      site: https://residentmario.github.io/geoplot
+      conda_channel: conda-forge
+      badges: pypi, conda, site
 
 - name: Other domain-specific
   intro: Tools focused on specific research or application areas other than those above.
@@ -217,6 +220,9 @@
       badges: pypi, rtd
 
     - repo: reiinakano/scikit-plot
+      site: https://github.com/reiinakano/scikit-plot#welcome-to-scikit-plot
+      conda_channel: conda-forge
+      badges: pypi, conda, site
 
 - name: Large-data rendering
   intro: Tools for server-side rasterizing/aggregating data before visualization.
@@ -325,4 +331,3 @@
 
     - repo: almarklein/visvis
       dormant: https://github.com/almarklein/visvis#status
-
