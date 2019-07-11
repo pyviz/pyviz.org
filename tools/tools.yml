@@ -229,6 +229,7 @@
       badges: pypi, site      
       
     - repo: arviz-devs/arviz
+      sponsors: [numfocus]
       site: https://arviz-devs.github.io/arviz/
       conda_channel: conda-forge
       badges: pypi, travis, azure, coveralls, conda, site      
