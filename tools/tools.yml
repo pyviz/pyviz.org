@@ -227,6 +227,11 @@
     - repo: ismms-himc/clustergrammer2
       site: https://clustergrammer.readthedocs.io/
       badges: pypi, site      
+      
+    - repo: arviz-devs/arviz
+      site: https://arviz-devs.github.io/arviz/
+      conda_channel: conda-forge
+      badges: pypi, travis, azure, coveralls, conda, site      
 
 - name: Large-data rendering
   intro: Tools for server-side rasterizing/aggregating data before visualization.
