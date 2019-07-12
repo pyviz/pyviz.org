@@ -129,11 +129,12 @@
       badges: pypi
 
 - name: SciVis
-  intro: Libraries for visualizing scientific data situated in real-world coordinates, typically using OpenGL.
+  intro: Libraries for visualizing scientific data situated in real-world coordinates, typically using OpenGL or WebGL.
   packages:
 
     - repo: Kitware/VTK
       sponsors: [kitware]
+      site: https://vtk.org/
       conda_channel: conda-forge
       badges: travis, pypi, conda, site
 
@@ -157,6 +158,10 @@
 
     - repo: glumpy/glumpy
       badges: pypi, rtd
+
+    - repo: InsightSoftwareConsortium/itk-jupyter-widgets
+      conda_channel: conda-forge
+      badges: pypi, conda, circleci
 
 - name: Geospatial
   intro: Tools for working with data in geographic coordinates.

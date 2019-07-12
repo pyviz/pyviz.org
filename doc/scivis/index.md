@@ -1,6 +1,6 @@
 # SciVis Libraries
 
-Most of the libraries listed at PyViz.org fall into the [InfoVis](http://ieeevis.org/year/2019/info/call-participation/infovis-paper-types) (Information Visualization) category of tools, visualizing arbitrary and potentially abstract types of information, typically in 2D or 2D+time plots with axes and numerical scales. Tools in the separate [SciVis](http://ieeevis.org/year/2019/info/call-participation/scivis-paper-types) (Scientific Visualization) category focus on visualizing physically situated gridded data in 3D and 3D+time, often without spatial axes and instead providing an immersive visual experience of real-world physical datasets (see [Weiskopf et al](https://pdfs.semanticscholar.org/86aa/dffeae1912a404ee66223774d6a45eefb438.pdf) for a comparison). Many of the SciVis tools build on the 1992 OpenGL graphics standard, and are thus desktop-GUI applications rather than browser-based web applications.
+Most of the libraries listed at PyViz.org fall into the [InfoVis](http://ieeevis.org/year/2019/info/call-participation/infovis-paper-types) (Information Visualization) category of tools, visualizing arbitrary and potentially abstract types of information, typically in 2D or 2D+time plots with axes and numerical scales. Tools in the separate [SciVis](http://ieeevis.org/year/2019/info/call-participation/scivis-paper-types) (Scientific Visualization) category focus on visualizing physically situated gridded data in 3D and 3D+time, often without spatial axes and instead providing an immersive visual experience of real-world physical datasets (see [Weiskopf et al](https://pdfs.semanticscholar.org/86aa/dffeae1912a404ee66223774d6a45eefb438.pdf) for a comparison). Desktop-GUI targeted SciVis tools build on the OpenGL graphics standard, while browser-based web applications usually leverage the related WebGL graphics standard.
 
 SciVis libraries supporting Python:
 
@@ -14,8 +14,10 @@ SciVis libraries supporting Python:
 
 - [Mayavi](https://docs.enthought.com/mayavi/mayavi) (from [Enthought](https://www.enthought.com/)) is a general purpose, cross-platform tool for 3-D scientific data visualization.
 
-- [ParaView](https://www.paraview.org) (from [Kitware](https://www.kitware.com/)) allows users to quickly build visualizations to analyze their data using qualitative and quantitative techniques. The data exploration can be done interactively in 3D or programmatically using batch processing capabilities.
+- [ParaView](https://www.paraview.org) (from [Kitware](https://www.kitware.com/)) is an application built on the Visualization Toolkit (VTK) with extensions for distributed computing. ParaView allows users to quickly build visualizations to analyze their data using qualitative and quantitative techniques. The data exploration can be done interactively in 3D or programmatically using batch processing capabilities.
 
 - [yt](https://yt-project.org) is a package for analyzing and visualizing volumetric data. yt supports structured, variable-resolution meshes, unstructured meshes, and discrete or sampled data such as particles.
 
 - [PyVista](http://www.pyvista.org) is a streamlined interface for the Visualization Toolkit (VTK) providing 3D plotting and mesh analysis with NumPy support being at its core. PyVista supports point clouds, structured/unstructured meshes, and volumetric datasets.
+
+- [itk-jupyter-widgets](https://github.com/InsightSoftwareConsortium/itk-jupyter-widgets), based on the Visualization Toolkit for JavaScript [vtk.js](https://kitware.github.io/vtk-js/index.html) and the [Insight Toolkit (ITK)](https://www.itk.org/), provides interactive 3D widgets for Jupyter to visualize and analyze images, point sets, and meshes.
