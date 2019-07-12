@@ -162,6 +162,8 @@
   intro: Tools for working with data in geographic coordinates.
   packages:
 
+    - repo: geopandas/geopandas
+
     - repo: python-visualization/folium
       site: https://python-visualization.github.io/folium
       conda_channel: conda-forge
