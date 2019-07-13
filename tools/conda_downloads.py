@@ -26,7 +26,7 @@ first = today.replace(day=1)
 last_month = first - datetime.timedelta(days=1)
 try:
     monthly = cat.anaconda_package_data_by_month(year=last_month.year, month=last_month.month,
-                                                    columns=['pkg_name', 'counts']).to_dask()
+                                                 columns=['pkg_name', 'counts']).to_dask()
 except:
     # if the last month isn't available, get the month before
     month_before = last_month.replace(day=1) - datetime.timedelta(days=1)
@@ -38,6 +38,7 @@ if not os.path.exists(cache_path):
     os.mkdir(cache_path)
 
 def get_conda_badge(conda_package):
+    conda_package = conda_package.lower()
     if conda_package in per_package_downloads.index:
         downloads = per_package_downloads.counts.loc[conda_package]
     else:
