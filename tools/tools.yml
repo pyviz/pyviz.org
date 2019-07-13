@@ -160,6 +160,8 @@
       badges: pypi, rtd
 
     - repo: InsightSoftwareConsortium/itk-jupyter-widgets
+      pypi_name: itkwidgets
+      conda_package: itkwidgets
       conda_channel: conda-forge
       badges: pypi, conda, circleci
 
@@ -230,16 +232,16 @@
       site: https://github.com/reiinakano/scikit-plot#welcome-to-scikit-plot
       conda_channel: conda-forge
       badges: pypi, conda, site
-      
+
     - repo: ismms-himc/clustergrammer2
       site: https://clustergrammer.readthedocs.io/
-      badges: pypi, site      
-      
+      badges: pypi, site
+
     - repo: arviz-devs/arviz
       sponsors: [numfocus]
       site: https://arviz-devs.github.io/arviz/
       conda_channel: conda-forge
-      badges: pypi, travis, azure, coveralls, conda, site      
+      badges: pypi, travis, azure, coveralls, conda, site
 
 - name: Large-data rendering
   intro: Tools for server-side rasterizing/aggregating data before visualization.
