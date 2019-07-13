@@ -216,7 +216,8 @@
 
     - repo: DistrictDataLabs/yellowbrick
       site: https://www.scikit-yb.org
-      badges: pypi, site
+      conda_channel: DistrictDataLabs
+      badges: travis, appveyor, pypi, conda, site
 
     - repo: yt-project/yt
       sponsors: [numfocus]
