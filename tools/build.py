@@ -59,7 +59,7 @@ for section in config:
                 package['site'] = '{}.org'.format(package['name'])
                 package['site_protocol'] = 'https'
             else:
-                package['site_protocol'], package['site'] = package['site'].split('://')
+                package['site_protocol'], package['site'] = package['site'].rstrip('/').split('://')
 
         if build_cache:
             for badge, url in cache.items():
