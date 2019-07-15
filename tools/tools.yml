@@ -10,7 +10,6 @@
       sponsors: [plotly]
       pypi_name: plotly
       conda_package: plotly
-      conda_channel: conda-forge
       site: https://plot.ly
       badges: circleci, pypi, conda, site
 
@@ -181,6 +180,7 @@
       badges: travis, appveyor, coveralls, pypi, conda, site
 
     - repo: vgm64/gmplot
+      badges: pypi
 
     - repo: jupyter-widgets/ipyleaflet
       conda_channel: conda-forge
@@ -229,17 +229,17 @@
       badges: pypi, rtd
 
     - repo: reiinakano/scikit-plot
-      site: https://github.com/reiinakano/scikit-plot#welcome-to-scikit-plot
+      site: https://github.com/reiinakano/scikit-plot
       conda_channel: conda-forge
       badges: pypi, conda, site
 
     - repo: ismms-himc/clustergrammer2
-      site: https://clustergrammer.readthedocs.io/
+      site: https://clustergrammer.readthedocs.io
       badges: pypi, site
 
     - repo: arviz-devs/arviz
       sponsors: [numfocus]
-      site: https://arviz-devs.github.io/arviz/
+      site: https://arviz-devs.github.io/arviz
       conda_channel: conda-forge
       badges: pypi, travis, azure, coveralls, conda, site
 
