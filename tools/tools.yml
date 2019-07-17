@@ -217,8 +217,10 @@
       conda_channel: conda-forge
 
     - repo: DistrictDataLabs/yellowbrick
-      site: https://www.scikit-yb.org
-      badges: pypi, site
+       site: https://www.scikit-yb.org
+       sponsors: [numfocus]
+      conda_channel: DistrictDataLabs
+      badges: travis, appveyor, pypi, conda, site
 
     - repo: yt-project/yt
       sponsors: [numfocus]
