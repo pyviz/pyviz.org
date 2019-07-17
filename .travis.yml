@@ -5,7 +5,7 @@ os:
 
 env:
   global:
-    - PYENV_VERSION=3.6
+    - PYENV_VERSION=3.7
 
 stages:
   - test
