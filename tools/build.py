@@ -1,27 +1,11 @@
 #!/usr/bin/env python
-
 import os
 from jinja2 import Template
 from yaml import safe_load
 from markdown import markdown
-import requests
 
 
 here = os.path.abspath(os.path.dirname(__file__))
-cache_path = os.path.join(here, '..', 'doc', '_static', 'cache')
-build_cache = eval(os.getenv('BUILD_CACHE', 'False'))
-
-cache = {
-    "stars": "https://img.shields.io/github/stars/{repo}.svg?style=social",
-    "contributors": "https://img.shields.io/github/contributors/{repo}.svg?style=social&logo=github",
-    "pypi_downloads": "https://img.shields.io/pypi/dm/{pypi_name}.svg?label=pypi",
-    "license": "https://img.shields.io/pypi/l/{pypi_name}.svg?label",
-}
-
-if build_cache:
-    print('Build cache: True')
-    if not os.path.exists(cache_path):
-        os.mkdir(cache_path)
 
 print("Opening config file")
 with open(os.path.join(here, 'tools.yml')) as f:
@@ -63,14 +47,6 @@ for section in config:
                 package['site_protocol'] = 'https'
             else:
                 package['site_protocol'], package['site'] = package['site'].rstrip('/').split('://')
-
-        if build_cache:
-            print(f"Caching badges for {package.get('pypi_name', '')}")
-            for badge, url in cache.items():
-                rendered_url = url.format(repo=package['repo'], pypi_name=package['pypi_name'])
-                r = requests.get(rendered_url)
-                with open(os.path.join(cache_path, f"{package['name']}_{badge}_badge.svg"), 'wb') as f:
-                    f.write(r.content)
 
 with open(os.path.join(here, 'sponsors.yml')) as f:
     sponsors = safe_load(f)

@@ -24,21 +24,31 @@ def task_env_create():
         "conda env update -f environment.yml -n pyviz",
     ]}
 
-cache_param = {
-    'name': 'cache',
-    'long': 'cache',
-    'type': bool,
-    'default': True,
-    'inverse': 'nocache',
-}
+
+def task_build_cache():
+    """Build cache"""
+    return {'actions': [
+         "python tools/conda_downloads.py",
+        'SECTION="Core" python tools/build_cache.py',
+        'SECTION="High-Level Shared API" python tools/build_cache.py',
+        'SECTION="High-Level" python tools/build_cache.py',
+        'SECTION="Native-GUI" python tools/build_cache.py',
+        'SECTION="Other InfoVis" python tools/build_cache.py',
+        'SECTION="SciVis" python tools/build_cache.py',
+        'SECTION="Geospatial" python tools/build_cache.py',
+        'SECTION="Other domain-specific" python tools/build_cache.py',
+        'SECTION="Large-data rendering" python tools/build_cache.py',
+        'SECTION="Dashboarding" python tools/build_cache.py',
+        'SECTION="Colormapping" python tools/build_cache.py',
+        'SECTION="Dormant projects" python tools/build_cache.py',
+     ]}
+
 
 def task_build_website():
     """Build website using nbsite"""
     return {'actions': [
-        "echo building cache: %(cache)s",
-        "python tools/conda_downloads.py",
-        "BUILD_CACHE=%(cache)s python tools/build.py",
+        "python tools/build.py",
         "mv tools/index.rst doc/tools.rst",
         "nbsite generate-rst --org pyviz --project-name pyviz --examples notebooks",  # noqa
         "nbsite build --what=html --output=builtdocs",
-    ], 'params': [cache_param]}
+    ]}

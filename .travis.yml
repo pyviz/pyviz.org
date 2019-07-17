@@ -37,12 +37,22 @@ jobs:
       stage: website_release
       env: BUILD_CACHE=True
       script:
-        # these steps can be called using doit build_website, but the Travis job will time out
+        # these steps can be called using doit build_cache
+        # but the Travis job will time out, so they are split up here
         - python tools/conda_downloads.py
-        - python tools/build.py
-        - mv tools/index.rst doc/tools.rst
-        - nbsite generate-rst --org pyviz --project-name pyviz --examples notebooks
-        - nbsite build --what=html --output=builtdocs
+        - SECTION="Core" python tools/build_cache.py
+        - SECTION="High-Level Shared API" python tools/build_cache.py
+        - SECTION="High-Level" python tools/build_cache.py
+        - SECTION="Native-GUI" python tools/build_cache.py
+        - SECTION="Other InfoVis" python tools/build_cache.py
+        - SECTION="SciVis" python tools/build_cache.py
+        - SECTION="Geospatial" python tools/build_cache.py
+        - SECTION="Other domain-specific" python tools/build_cache.py
+        - SECTION="Large-data rendering" python tools/build_cache.py
+        - SECTION="Dashboarding" python tools/build_cache.py
+        - SECTION="Colormapping" python tools/build_cache.py
+        - SECTION="Dormant projects" python tools/build_cache.py
+        - doit build_website
       deploy:
         - provider: pages
           skip_cleanup: true
