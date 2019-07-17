@@ -54,7 +54,6 @@ jobs:
 
     - <<: *website_release
       stage: website_dev
-      script: doit build_website
       deploy:
         - provider: pages
           skip_cleanup: true
