@@ -35,7 +35,14 @@ jobs:
     - &website_release
       <<: *test
       stage: website_release
-      script: doit build_website
+      env: BUILD_CACHE=True
+      script:
+        # these steps can be called using doit build_website, but the Travis job will time out
+        - python tools/conda_downloads.py
+        - python tools/build.py
+        - mv tools/index.rst doc/tools.rst
+        - nbsite generate-rst --org pyviz --project-name pyviz --examples notebooks
+        - nbsite build --what=html --output=builtdocs
       deploy:
         - provider: pages
           skip_cleanup: true
@@ -56,4 +63,3 @@ jobs:
           repo: pyviz-dev/website
           on:
             all_branches: true
-
