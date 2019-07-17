@@ -19,14 +19,16 @@ cache = {
 }
 
 if build_cache:
+    print('Build cache: True')
     if not os.path.exists(cache_path):
         os.mkdir(cache_path)
 
+print("Opening config file")
 with open(os.path.join(here, 'tools.yml')) as f:
     config = safe_load(f)
 
 for section in config:
-    print(f"Building {section['name']}")
+    print(f"Building {section.get('name', '')}")
     if section.get('intro'):
         section['intro'] = markdown(section['intro'])
     for package in section['packages']:
@@ -63,7 +65,7 @@ for section in config:
                 package['site_protocol'], package['site'] = package['site'].rstrip('/').split('://')
 
         if build_cache:
-            print(f"Caching badges for {package['pypi_name']}")
+            print(f"Caching badges for {package.get('pypi_name', '')}")
             for badge, url in cache.items():
                 rendered_url = url.format(repo=package['repo'], pypi_name=package['pypi_name'])
                 r = requests.get(rendered_url)
