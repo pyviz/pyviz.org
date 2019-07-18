@@ -66,6 +66,10 @@ jobs:
     - &website_release
       <<: *test
       stage: website_release
+      before_script:
+        - git checkout -b deploy-${TRAVIS_BRANCH}
+        - git fetch https://github.com/$TRAVIS_REPO_SLUG.git cache:refs/remotes/cache  # all cached badges are in this branc
+        - git checkout cache -- ./doc/_static/cache
       script: doit build_website
       deploy:
         - provider: pages
