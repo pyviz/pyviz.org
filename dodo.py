@@ -28,19 +28,11 @@ def task_env_create():
 def task_build_cache():
     """Build cache"""
     return {'actions': [
-         "python tools/conda_downloads.py",
-        'SECTION="Core" python tools/build_cache.py',
-        'SECTION="High-Level Shared API" python tools/build_cache.py',
-        'SECTION="High-Level" python tools/build_cache.py',
-        'SECTION="Native-GUI" python tools/build_cache.py',
-        'SECTION="Other InfoVis" python tools/build_cache.py',
-        'SECTION="SciVis" python tools/build_cache.py',
-        'SECTION="Geospatial" python tools/build_cache.py',
-        'SECTION="Other domain-specific" python tools/build_cache.py',
-        'SECTION="Large-data rendering" python tools/build_cache.py',
-        'SECTION="Dashboarding" python tools/build_cache.py',
-        'SECTION="Colormapping" python tools/build_cache.py',
-        'SECTION="Dormant projects" python tools/build_cache.py',
+        "python tools/conda_downloads.py",
+        "BADGE=stars python tools/build_cache.py",
+        "BADGE=contributors python tools/build_cache.py",
+        "BADGE=license python tools/build_cache.py",
+        "BADGE=pypi_downloads python tools/build_cache.py",
      ]}
 
 

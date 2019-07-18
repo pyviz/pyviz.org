@@ -9,6 +9,8 @@ env:
 
 stages:
   - test
+  - name: build_cache
+    if: (commit_message =~ /^.*(website_dev).*$/) OR (branch = master)
   - name: website_release
     if: branch = master
   - name: website_dev
@@ -32,27 +34,39 @@ jobs:
           fi;
         - doit test_all
 
+    - &build_cache
+      <<: *test
+      stage: build_cache
+      env: BADGE=pypi_downloads
+      script: python tools/build_cache.py
+      after_success:
+        - git config user.email "travis@travis.org"
+        - git config user.name "travis"
+        - mv ./doc/_static/cache ./tmp
+        - git fetch https://github.com/$TRAVIS_REPO_SLUG.git cache:refs/remotes/cache
+        - git checkout cache
+        - mv ./tmp/* ./doc/_static/cache
+        - git add ./doc/_static/cache
+        - git commit -m "adding cached badge of $BADGE"
+        - git push -f -q "https://pyviz-developers:$GITHUB_TOKEN@github.com/pyviz/website.git" HEAD:cache
+
+    - <<: *build_cache
+      env: BADGE=stars
+
+    - <<: *build_cache
+      env: BADGE=contributors
+
+    - <<: *build_cache
+      env: BADGE=license
+
+    - <<: *build_cache
+      env: BADGE=conda_downloads
+      script: python tools/conda_downloads.py
+
     - &website_release
       <<: *test
       stage: website_release
-      env: BUILD_CACHE=True
-      script:
-        # these steps can be called using doit build_cache
-        # but the Travis job will time out, so they are split up here
-        - python tools/conda_downloads.py
-        - SECTION="Core" python tools/build_cache.py
-        - SECTION="High-Level Shared API" python tools/build_cache.py
-        - SECTION="High-Level" python tools/build_cache.py
-        - SECTION="Native-GUI" python tools/build_cache.py
-        - SECTION="Other InfoVis" python tools/build_cache.py
-        - SECTION="SciVis" python tools/build_cache.py
-        - SECTION="Geospatial" python tools/build_cache.py
-        - SECTION="Other domain-specific" python tools/build_cache.py
-        - SECTION="Large-data rendering" python tools/build_cache.py
-        - SECTION="Dashboarding" python tools/build_cache.py
-        - SECTION="Colormapping" python tools/build_cache.py
-        - SECTION="Dormant projects" python tools/build_cache.py
-        - doit build_website
+      script: doit build_website
       deploy:
         - provider: pages
           skip_cleanup: true
