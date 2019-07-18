@@ -2,11 +2,7 @@ name: pyviz
 channels:
   - conda-forge
 dependencies:
-  - colorcet
-  - fastparquet
   - flake8
-  - intake
-  - intake-parquet
   - jinja2
   - m2r
   - markdown
@@ -16,5 +12,4 @@ dependencies:
   - pytest
   - pyyaml
   - requests
-  - s3fs
   - tornado<6
