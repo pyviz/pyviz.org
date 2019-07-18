@@ -24,21 +24,23 @@ def task_env_create():
         "conda env update -f environment.yml -n pyviz",
     ]}
 
-cache_param = {
-    'name': 'cache',
-    'long': 'cache',
-    'type': bool,
-    'default': True,
-    'inverse': 'nocache',
-}
+
+def task_build_cache():
+    """Build cache"""
+    return {'actions': [
+        "python tools/conda_downloads.py",
+        "BADGE=stars python tools/build_cache.py",
+        "BADGE=contributors python tools/build_cache.py",
+        "BADGE=license python tools/build_cache.py",
+        "BADGE=pypi_downloads python tools/build_cache.py",
+     ]}
+
 
 def task_build_website():
     """Build website using nbsite"""
     return {'actions': [
-        "echo building cache: %(cache)s",
-        "python tools/conda_downloads.py",
-        "BUILD_CACHE=%(cache)s python tools/build.py",
+        "python tools/build.py",
         "mv tools/index.rst doc/tools.rst",
         "nbsite generate-rst --org pyviz --project-name pyviz --examples notebooks",  # noqa
         "nbsite build --what=html --output=builtdocs",
-    ], 'params': [cache_param]}
+    ]}

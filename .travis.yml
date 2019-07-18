@@ -9,6 +9,8 @@ env:
 
 stages:
   - test
+  - name: build_cache
+    if: (commit_message =~ /^.*(website_dev).*$/) OR (branch = master)
   - name: website_release
     if: branch = master
   - name: website_dev
@@ -32,9 +34,44 @@ jobs:
           fi;
         - doit test_all
 
+    - &build_cache
+      <<: *test
+      stage: build_cache
+      env: BADGE=pypi_downloads
+      script: python tools/build_cache.py
+      after_success:
+        - git config user.email "travis@travis.org"
+        - git config user.name "travis"
+        - mv ./doc/_static/cache ./tmp
+        - git fetch https://github.com/$TRAVIS_REPO_SLUG.git cache:refs/remotes/cache
+        - git checkout cache
+        - mv ./tmp/* ./doc/_static/cache
+        - git add ./doc/_static/cache
+        - git commit -m "adding cached badge of $BADGE"
+        - git push -f -q "https://pyviz-developers:$GITHUB_TOKEN@github.com/pyviz/website.git" HEAD:cache
+
+    - <<: *build_cache
+      env: BADGE=stars
+
+    - <<: *build_cache
+      env: BADGE=contributors
+
+    - <<: *build_cache
+      env: BADGE=license
+
+    - <<: *build_cache
+      env: BADGE=conda_downloads
+      script:
+        - conda install -c conda-forge colorcet fastparquet intake intake-parquet s3fs
+        - python tools/conda_downloads.py
+
     - &website_release
       <<: *test
       stage: website_release
+      before_script:
+        - git checkout -b deploy-${TRAVIS_BRANCH}
+        - git fetch https://github.com/$TRAVIS_REPO_SLUG.git cache:refs/remotes/cache  # all cached badges are in this branc
+        - git checkout cache -- ./doc/_static/cache
       script: doit build_website
       deploy:
         - provider: pages
@@ -47,7 +84,6 @@ jobs:
 
     - <<: *website_release
       stage: website_dev
-      script: doit build_website
       deploy:
         - provider: pages
           skip_cleanup: true
@@ -56,4 +92,3 @@ jobs:
           repo: pyviz-dev/website
           on:
             all_branches: true
-

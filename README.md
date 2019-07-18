@@ -34,7 +34,7 @@ Build the website using the custom ``doit`` (similar to `make`) command.
 doit build_website
 ```
 
-**NOTE:** To skip badges caching, set the `--nocache` flag.
+**NOTE:** To build the cached badges use `doit build_cache`.
 
 View the website locally
 
