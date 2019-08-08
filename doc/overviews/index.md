@@ -25,6 +25,9 @@ The Python visualization landscape can seem daunting at first. These overviews a
 - [Python Graph Gallery](https://python-graph-gallery.com)
   30 Apr 2017 - 7 Jan 2018  Yan Holtz. Website with examples of plots made with Seaborn, Matplotlib, Pandas, with output and Python code, used in [data-to-viz.com](https://www.data-to-viz.com).
 
+- [pythonplot.com](http://pythonplot.com)
+  23 Jun 2017 - 12 Jun 2019 Timothy Hopper. Website with examples of plots made with Pandas+Matplotlib, Seaborn, plotnine, plotly, and R ggplot2, with output and Python code.
+
 - [Python Data Visualization — Comparing 5 Tools](https://codeburst.io/overview-of-python-data-visualization-tools-e32e1f716d10)
   6 Dec 2017 Elena Kirzhner, Codeburst. Blog post with simple comparisons of Pandas, Seaborn, Bokeh, Pygal, and Plotly code and output.
 
