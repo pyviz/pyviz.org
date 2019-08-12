@@ -352,3 +352,8 @@
 
     - repo: almarklein/visvis
       dormant: https://github.com/almarklein/visvis#status
+      
+    - repo: yhat/ggpy
+      site: http://yhat.github.io/ggpy/
+      dormant: https://github.com/yhat/ggpy/graphs/contributors
+      badges: pypi, rtd
