@@ -160,7 +160,7 @@
     - repo: glumpy/glumpy
       badges: pypi, rtd
 
-    - repo: InsightSoftwareConsortium/itk-jupyter-widgets
+    - repo: InsightSoftwareConsortium/itkwidgets
       pypi_name: itkwidgets
       conda_package: itkwidgets
       conda_channel: conda-forge
