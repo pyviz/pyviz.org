@@ -127,6 +127,8 @@
       site: https://biggles-plot.github.io
       badges: pypi
 
+    - repo: maxhumber/chart
+
 - name: SciVis
   intro: Libraries for visualizing scientific data situated in real-world coordinates, typically using OpenGL or WebGL.
   packages:
