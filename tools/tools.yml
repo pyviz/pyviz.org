@@ -248,7 +248,7 @@
       badges: pypi, travis, azure, coveralls, conda, site
 
 - name: Large-data rendering
-  intro: Tools for rasterizing/aggregating data before visualization, in some cases server-side.
+  intro: Tools for rasterizing/aggregating data before visualization, to allow  in some cases server-side.
   packages:
 
     - repo: pyviz/datashader
