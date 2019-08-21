@@ -248,7 +248,7 @@
       badges: pypi, travis, azure, coveralls, conda, site
 
 - name: Large-data rendering
-  intro: Tools for server-side rasterizing/aggregating data before visualization.
+  intro: Tools for rasterizing/aggregating data before visualization, in some cases server-side.
   packages:
 
     - repo: pyviz/datashader
@@ -262,6 +262,9 @@
       conda_channel: conda-forge
       badges: travis, appveyor, pypi, conda, site
 
+    - repo: astrofrog/mpl-scatter-density
+      site: https://github.com/astrofrog/mpl-scatter-density
+      badges: travis, appveyor, pypi, conda, site
 
 - name: Dashboarding
   intro: Libraries for creating live Python-backed web applications or dashboards that a user can interact with to explore or analyze data.
