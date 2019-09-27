@@ -33,3 +33,5 @@ The Python visualization landscape can seem daunting at first. These overviews a
 
 - [Plotting business locations on maps using multiple Plotting libraries in Python](https://towardsdatascience.com/plotting-business-locations-on-maps-using-multiple-plotting-libraries-in-python-45a00ea770af)
   30 Apr 2018 Karan Bhanot. Blog post comparing plotting business locations using gmplot, geopandas, plotly, and bokeh.
+
+- [Python Grids: Data Visualization](http://www.pythongrids.org/grids/g/data-visualization) 19 Sep 2019 Jared Chung. Table comparing stats on 14 Python plotting libraries.
