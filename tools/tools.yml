@@ -171,6 +171,8 @@
   packages:
 
     - repo: geopandas/geopandas
+      site: http://geopandas.org
+      conda_channel: conda-forge
 
     - repo: python-visualization/folium
       site: https://python-visualization.github.io/folium
