@@ -249,6 +249,12 @@
       conda_channel: conda-forge
       badges: pypi, travis, azure, coveralls, conda, site
 
+    - repo: Unidata/MetPy
+      sponsors: [unidata]
+      site: https://unidata.github.io/MetPy
+      conda_channel: conda-forge
+      badges: travis, appveyor, codecov, pypi, conda, site
+
 - name: Large-data rendering
   intro: Tools for rasterizing/aggregating data before visualization, which can make rendering faster, allow larger datasets, or make it feasible to use remote datasets (with server-side rendering).
   packages:

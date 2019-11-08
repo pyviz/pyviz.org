@@ -52,3 +52,8 @@ vaexio:
   label: vaex.io
   url: https://vaex.io
   logo: _static/badges/vaexio.png
+
+unidata:
+  label: Unidata
+  url: https://www.unidata.ucar.edu
+  logo: _static/badges/unidata.png
