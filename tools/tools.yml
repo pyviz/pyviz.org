@@ -294,6 +294,11 @@
       conda_channel: conda-forge
       badges: travis, pypi, conda, rtd
 
+    - repo: streamlit/streamlit
+      site: https://streamlit.io
+      badges: pypi
+
+
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
   packages:
