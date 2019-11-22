@@ -10,7 +10,7 @@ version = release = '0.0.1'
 extensions.extend(['m2r'])
 
 html_static_path += ['_static']
-html_favicon = 'favicon.ico'
+html_favicon = '_static/favicon.ico'
 html_theme_options = {
     'logo': 'logo.png',
     'logo_name': False,
