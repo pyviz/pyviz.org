@@ -14,4 +14,5 @@ Welcome to PyViz!  The PyViz.org website is an open platform for helping users d
 
 If you are a part of the Python data visualization landscape, then this is _your_ site!  All content has been contributed by individual library authors and users, and you could be next! Please open an issue or PR on [this GitHub repo](https://github.com/pyviz/website) to start a conversation. The goal is to make everyone doing viz in Python more productive, have more power, and make a greater impact from their work.
 
-**NOTE:** The contents of PyViz.org from June 2019 or earlier, focusing on Datashader, HoloViews, GeoViews, Panel, Param, and hvPlot, are now at [HoloViz.org](https://holoviz.org). PyViz.org is now a fully open guide to all Python visualization tools.
+**NOTE:** The contents of PyViz.org from June 2019 or earlier, focusing on Datashader, HoloViews, GeoViews, Panel, Param, and hvPlot, are now at [HoloViz.org](https://holoviz.org). PyViz.org is now a fully open guide to all Python visualization tools. If you are looking for Brian Thomas's 
+PyViz smart-home visualization tool, check out his `paper <http://ieeexplore.ieee.org/document/5766889/>`_.
