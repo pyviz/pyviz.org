@@ -94,13 +94,13 @@
       site: https://docs.enthought.com/chaco
       badges: pypi
 
-    - repo: veusz/veusz
-      conda_channel: conda-forge
-      site: https://veusz.github.io
-
     - repo: sciapp/gr
       site: https://gr-framework.org/python.html
       badges: pypi, site
+
+    - repo: veusz/veusz
+      conda_channel: conda-forge
+      site: https://veusz.github.io
 
 - name: Other InfoVis
   intro: InfoVis plotting libraries not fitting into other categories above.
@@ -123,11 +123,11 @@
       sponsors: [sandia]
       badges: pypi, rtd
 
+    - repo: maxhumber/chart
+
     - repo: biggles-plot/biggles
       site: https://biggles-plot.github.io
       badges: pypi
-
-    - repo: maxhumber/chart
 
 - name: SciVis
   intro: Libraries for visualizing scientific data situated in real-world coordinates, typically using OpenGL or WebGL.
@@ -144,8 +144,7 @@
       site: http://vispy.org
       badges: travis, appveyor, coveralls, pypi, conda, site
 
-    - repo: pyvista/pyvista
-      site: https://docs.pyvista.org
+    - repo: maartenbreddels/ipyvolume
       conda_channel: conda-forge
 
     - repo: enthought/mayavi
@@ -154,17 +153,18 @@
       appveyor_project: EnthoughtOSS/mayavi
       badges: travis, appveyor, codecov, pypi, conda, site
 
-    - repo: maartenbreddels/ipyvolume
+    - repo: pyvista/pyvista
+      site: https://docs.pyvista.org
       conda_channel: conda-forge
-
-    - repo: glumpy/glumpy
-      badges: pypi, rtd
 
     - repo: InsightSoftwareConsortium/itkwidgets
       pypi_name: itkwidgets
       conda_package: itkwidgets
       conda_channel: conda-forge
       badges: pypi, conda, circleci
+
+    - repo: glumpy/glumpy
+      badges: pypi, rtd
 
 - name: Geospatial
   intro: Tools for working with data in geographic coordinates.
@@ -195,14 +195,14 @@
       site: http://geoviews.org
       badges: travis, appveyor, pypi, conda, site
 
-    - repo: andrea-cuttone/geoplotlib
-      site: https://github.com/andrea-cuttone/geoplotlib/wiki/User-Guide
-      badges: pypi
-
     - repo: ResidentMario/geoplot
       site: https://residentmario.github.io/geoplot
       conda_channel: conda-forge
       badges: pypi, conda, site
+
+    - repo: andrea-cuttone/geoplotlib
+      site: https://github.com/andrea-cuttone/geoplotlib/wiki/User-Guide
+      badges: pypi
 
 - name: Other domain-specific
   intro: Tools focused on specific research or application areas other than those above.
@@ -220,11 +220,28 @@
     - repo: ResidentMario/missingno
       conda_channel: conda-forge
 
+    - repo: arviz-devs/arviz
+      sponsors: [numfocus]
+      site: https://arviz-devs.github.io/arviz
+      conda_channel: conda-forge
+      badges: pypi, travis, azure, coveralls, conda, site
+
+    - repo: reiinakano/scikit-plot
+      site: https://github.com/reiinakano/scikit-plot
+      conda_channel: conda-forge
+      badges: pypi, conda, site
+
     - repo: DistrictDataLabs/yellowbrick
       site: https://www.scikit-yb.org
       sponsors: [numfocus]
       conda_channel: DistrictDataLabs
       badges: travis, appveyor, pypi, conda, site
+
+    - repo: Unidata/MetPy
+      sponsors: [unidata]
+      site: https://unidata.github.io/MetPy
+      conda_channel: conda-forge
+      badges: travis, appveyor, codecov, pypi, conda, site
 
     - repo: yt-project/yt
       sponsors: [numfocus]
@@ -234,30 +251,17 @@
     - repo: ContextLab/hypertools
       badges: pypi, rtd
 
-    - repo: reiinakano/scikit-plot
-      site: https://github.com/reiinakano/scikit-plot
-      conda_channel: conda-forge
-      badges: pypi, conda, site
-
     - repo: ismms-himc/clustergrammer2
       site: https://clustergrammer.readthedocs.io
       badges: pypi, site
 
-    - repo: arviz-devs/arviz
-      sponsors: [numfocus]
-      site: https://arviz-devs.github.io/arviz
-      conda_channel: conda-forge
-      badges: pypi, travis, azure, coveralls, conda, site
-
-    - repo: Unidata/MetPy
-      sponsors: [unidata]
-      site: https://unidata.github.io/MetPy
-      conda_channel: conda-forge
-      badges: travis, appveyor, codecov, pypi, conda, site
-
 - name: Large-data rendering
   intro: Tools for rasterizing/aggregating data before visualization, which can make rendering faster, allow larger datasets, or make it feasible to use remote datasets (with server-side rendering).
   packages:
+
+    - repo: astrofrog/mpl-scatter-density
+      site: https://github.com/astrofrog/mpl-scatter-density
+      badges: travis, appveyor, pypi, conda, site
 
     - repo: pyviz/datashader
       sponsors: [anaconda]
@@ -268,10 +272,6 @@
       sponsors: [vaexio]
       site: https://vaex.io
       conda_channel: conda-forge
-      badges: travis, appveyor, pypi, conda, site
-
-    - repo: astrofrog/mpl-scatter-density
-      site: https://github.com/astrofrog/mpl-scatter-density
       badges: travis, appveyor, pypi, conda, site
 
 - name: Dashboarding
@@ -289,15 +289,14 @@
       site: https://panel.pyviz.org
       badges: travis, appveyor, codecov, pypi, conda, site
 
-    - repo: QuantStack/voila
-      sponsors: [quantstack]
-      conda_channel: conda-forge
-      badges: travis, pypi, conda, rtd
-
     - repo: streamlit/streamlit
       site: https://streamlit.io
       badges: pypi
 
+    - repo: QuantStack/voila
+      sponsors: [quantstack]
+      conda_channel: conda-forge
+      badges: travis, pypi, conda, rtd
 
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
