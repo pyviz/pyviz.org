@@ -78,6 +78,11 @@
       site: https://github.com/spotify/chartify/blob/master/README.rst
       badges: travis, pypi, conda, site
 
+    - repo: AutoViML/AutoViz
+      site: https://github.com/AutoViML/AutoViz
+      badges: travis, pypi, site
+      builton: matplotlib
+
 - name: Native-GUI
   intro: InfoVis Libraries targetting native-desktop GUI interfaces for interactive plots (also see Matplotlib in core above).
   packages:
