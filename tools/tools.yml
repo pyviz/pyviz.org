@@ -280,7 +280,7 @@
       badges: travis, appveyor, pypi, conda, site
 
 - name: Dashboarding
-  intro: Libraries for creating live Python-backed web applications or dashboards that a user can interact with to explore or analyze data.
+  intro: Libraries for creating live Python-backed web applications or dashboards that a user can interact with to explore or analyze data. Also see Bokeh, under Core tools above.
   packages:
 
     - repo: plotly/dash
