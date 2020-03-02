@@ -218,11 +218,6 @@
       appveyor_project: dschult/networkx-pqott
       badges: travis, appveyor, codecov, pypi, conda, site
 
-    - repo: epfl-lts2/pygsp
-      site: https://pygsp.readthedocs.io
-      conda_channel: conda-forge
-      badges: travis, coveralls, pypi, conda, rtd, site
-
     - repo: scikit-image/scikit-image
       site: https://scikit-image.org
       badges: travis, appveyor, codecov, pypi, conda, site
@@ -257,6 +252,11 @@
       sponsors: [numfocus]
       site: https://yt-project.org
       badges: travis, codecov, pypi, conda, site
+
+    - repo: epfl-lts2/pygsp
+      site: https://pygsp.readthedocs.io
+      conda_channel: conda-forge
+      badges: travis, coveralls, pypi, conda, rtd, site
 
     - repo: ContextLab/hypertools
       badges: pypi, rtd
