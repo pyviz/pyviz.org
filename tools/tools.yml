@@ -267,7 +267,7 @@
 
     - repo: skewed/graph-tool
       site: http://graph-tool.skewed.de
-      badges: pypi, rtd
+      badges: pypi, site
 
 - name: Large-data rendering
   intro: Tools for rasterizing/aggregating data before visualization, which can make rendering faster, allow larger datasets, or make it feasible to use remote datasets (with server-side rendering).
