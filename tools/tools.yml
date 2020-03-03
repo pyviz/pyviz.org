@@ -209,14 +209,73 @@
       site: https://github.com/andrea-cuttone/geoplotlib/wiki/User-Guide
       badges: pypi
 
-- name: Other domain-specific
-  intro: Tools focused on specific research or application areas other than those above.
+- name: Graphs and networks
+  intro: Tools to visualize graphs (networks).
   packages:
 
     - repo: networkx/networkx
       site: https://networkx.github.io
       appveyor_project: dschult/networkx-pqott
       badges: travis, appveyor, codecov, pypi, conda, site
+
+    - repo: skewed/graph-tool
+      # repo: https://git.skewed.de/count0/graph-tool
+      site: http://graph-tool.skewed.de
+      conda_channel: conda-forge
+      badges: conda, site
+
+    - repo: igraph/python-igraph
+      site: https://igraph.org/python
+      conda_channel: conda-forge
+      appveyor_project: ntamas/python-igraph
+      badges: travis, appveyor, pypi, conda, site
+
+    - repo: xflr6/graphviz
+      site: https://graphviz.readthedocs.io
+      conda_channel: conda-forge
+      badges: travis, codecov, pypi, conda, rtd, site
+
+    - repo: pygraphviz/pygraphviz
+      site: https://pygraphviz.github.io
+      conda_channel: conda-forge
+      badges: travis, pypi, conda, site
+
+    - repo: epfl-lts2/pygsp
+      site: https://pygsp.readthedocs.io
+      conda_channel: conda-forge
+      badges: travis, coveralls, pypi, conda, rtd, site
+
+    - repo: benmaier/netwulf
+      site: https://netwulf.readthedocs.io
+      badges: travis, pypi, rtd, site
+
+    - repo: cytoscape/py2cytoscape
+      site: https://py2cytoscape.readthedocs.io
+      conda_channel: conda-forge
+      badges: travis, pypi, conda, rtd, site
+
+    - repo: graphistry/pygraphistry
+      site: https://www.graphistry.com
+      badges: travis, pypi, rtd, site
+
+    - repo: WestHealth/pyvis
+      site: https://pyvis.readthedocs.io
+      badges: pypi, site
+
+    - repo: SkBlaz/Py3Plex
+      site: https://skblaz.github.io/Py3plex/
+      badges: pypi, site
+
+    - repo: dblarremore/webweb
+      site: https://webwebpage.github.io
+      badges: pypi, site
+
+    - repo: Yomguithereal/ipysigma
+      badges: pypi
+
+- name: Other domain-specific
+  intro: Tools focused on specific research or application areas other than those above.
+  packages:
 
     - repo: scikit-image/scikit-image
       site: https://scikit-image.org
@@ -253,20 +312,11 @@
       site: https://yt-project.org
       badges: travis, codecov, pypi, conda, site
 
-    - repo: epfl-lts2/pygsp
-      site: https://pygsp.readthedocs.io
-      conda_channel: conda-forge
-      badges: travis, coveralls, pypi, conda, rtd, site
-
     - repo: ContextLab/hypertools
       badges: pypi, rtd
 
     - repo: ismms-himc/clustergrammer2
       site: https://clustergrammer.readthedocs.io
-      badges: pypi, site
-
-    - repo: skewed/graph-tool
-      site: http://graph-tool.skewed.de
       badges: pypi, site
 
 - name: Large-data rendering
