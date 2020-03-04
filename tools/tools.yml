@@ -232,6 +232,7 @@
 
     - repo: xflr6/graphviz
       site: https://graphviz.readthedocs.io
+      conda_package: python-graphviz
       conda_channel: conda-forge
       badges: travis, codecov, pypi, conda, rtd, site
 
