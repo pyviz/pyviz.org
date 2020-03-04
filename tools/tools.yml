@@ -274,6 +274,9 @@
     - repo: Yomguithereal/ipysigma
       badges: pypi
 
+    - repo: timkpaine/ipydagred3
+      badges: azure, pypi
+
 - name: Other domain-specific
   intro: Tools focused on specific research or application areas other than those above.
   packages:
