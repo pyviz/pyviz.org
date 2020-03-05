@@ -182,7 +182,7 @@
       conda_package: itkwidgets
       conda_channel: conda-forge
       badges: pypi, conda, circleci
-      builton: vtk
+      builton: webgl
 
     - repo: glumpy/glumpy
       badges: pypi, rtd
