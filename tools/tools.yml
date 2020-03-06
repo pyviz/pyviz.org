@@ -121,6 +121,12 @@
       conda_channel: conda-forge
       site: https://veusz.github.io
 
+    - repo: napari/napari
+      site: https://napari.org/
+      conda_channel: conda-forge
+      badges: codecov, pypi, conda
+      builton: vispy
+      
 - name: Other InfoVis
   intro: InfoVis plotting libraries not fitting into other categories above.
   packages:
