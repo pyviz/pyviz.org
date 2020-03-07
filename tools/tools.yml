@@ -210,7 +210,7 @@
       badges: pypi
 
 - name: Graphs and networks
-  intro: Tools to visualize graphs (networks).
+  intro: Tools specifically focused on visualizing graphs (networks).  Several of the other plotting libraries listed in other sections can also plot graphs, including Bokeh, HoloViews, Matplotlib, and Plotly.
   packages:
 
     - repo: networkx/networkx
