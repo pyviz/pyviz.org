@@ -254,18 +254,6 @@
       badges: travis, appveyor, codecov, pypi, conda, site
       builton: matplotlib, graphviz
 
-    - repo: skewed/graph-tool
-      # repo: https://git.skewed.de/count0/graph-tool
-      site: http://graph-tool.skewed.de
-      conda_channel: conda-forge
-      badges: conda, site
-
-    - repo: igraph/python-igraph
-      site: https://igraph.org/python
-      conda_channel: conda-forge
-      appveyor_project: ntamas/python-igraph
-      badges: travis, appveyor, pypi, conda, site
-
     - repo: xflr6/graphviz
       site: https://graphviz.readthedocs.io
       conda_package: python-graphviz
@@ -273,33 +261,53 @@
       badges: travis, codecov, pypi, conda, rtd, site
       builton: graphviz
 
+    - repo: pydot/pydot
+      badges: pypi
+      builton: graphviz
+      
     - repo: pygraphviz/pygraphviz
       site: https://pygraphviz.github.io
       conda_channel: conda-forge
       badges: travis, pypi, conda, site
       builton: graphviz
 
+    - repo: igraph/python-igraph
+      site: https://igraph.org/python
+      conda_channel: conda-forge
+      appveyor_project: ntamas/python-igraph
+      badges: travis, appveyor, pypi, conda, site
+
+    - repo: WestHealth/pyvis
+      site: https://pyvis.readthedocs.io
+      badges: pypi, site
+
     - repo: epfl-lts2/pygsp
       site: https://pygsp.readthedocs.io
       conda_channel: conda-forge
       badges: travis, coveralls, pypi, conda, rtd, site
 
-    - repo: benmaier/netwulf
-      site: https://netwulf.readthedocs.io
-      badges: travis, pypi, rtd, site
+    - repo: skewed/graph-tool
+      # repo: https://git.skewed.de/count0/graph-tool
+      site: http://graph-tool.skewed.de
+      conda_channel: conda-forge
+      badges: conda, site
 
     - repo: cytoscape/py2cytoscape
       site: https://py2cytoscape.readthedocs.io
       conda_channel: conda-forge
       badges: travis, pypi, conda, rtd, site
 
-    - repo: WestHealth/pyvis
-      site: https://pyvis.readthedocs.io
-      badges: pypi, site
-
     - repo: SkBlaz/Py3Plex
       site: https://py3plex.readthedocs.io
       badges: pypi, site
+
+    - repo: timkpaine/ipydagred3
+      badges: azure, pypi
+      builton: d3
+
+    - repo: benmaier/netwulf
+      site: https://netwulf.readthedocs.io
+      badges: travis, pypi, rtd, site
 
     - repo: dblarremore/webweb
       site: https://webwebpage.github.io
@@ -308,14 +316,6 @@
     - repo: Yomguithereal/ipysigma
       badges: pypi
 
-    - repo: timkpaine/ipydagred3
-      badges: azure, pypi
-      builton: d3
-
-    - repo: pydot/pydot
-      badges: pypi
-      builton: graphviz
-      
 - name: Other domain-specific
   intro: Tools focused on specific research or application areas other than those above.
   packages:
