@@ -264,7 +264,7 @@
       badges: pypi, site
 
     - repo: SkBlaz/Py3Plex
-      site: https://skblaz.github.io/Py3plex/
+      site: https://py3plex.readthedocs.io
       badges: pypi, site
 
     - repo: dblarremore/webweb
