@@ -255,10 +255,6 @@
       conda_channel: conda-forge
       badges: travis, pypi, conda, rtd, site
 
-    - repo: graphistry/pygraphistry
-      site: https://www.graphistry.com
-      badges: travis, pypi, rtd, site
-
     - repo: WestHealth/pyvis
       site: https://pyvis.readthedocs.io
       badges: pypi, site
