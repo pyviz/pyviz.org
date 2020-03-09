@@ -316,7 +316,7 @@
     - repo: Yomguithereal/ipysigma
       badges: pypi
 
-    - repo: https://github.com/QuantStack/ipycytoscape
+    - repo: QuantStack/ipycytoscape
       badges: pypi
 
 - name: Other domain-specific
