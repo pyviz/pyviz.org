@@ -316,6 +316,9 @@
     - repo: Yomguithereal/ipysigma
       badges: pypi
 
+    - repo: https://github.com/QuantStack/ipycytoscape
+      badges: pypi
+
 - name: Other domain-specific
   intro: Tools focused on specific research or application areas other than those above.
   packages:
