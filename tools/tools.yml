@@ -292,6 +292,10 @@
       conda_channel: conda-forge
       badges: conda, site
 
+    - repo: ericmjl/nxviz
+      site: https://nxviz.readthedocs.io
+      badges: pypi
+
     - repo: cytoscape/py2cytoscape
       site: https://py2cytoscape.readthedocs.io
       conda_channel: conda-forge
@@ -317,10 +321,6 @@
       badges: pypi, site
 
     - repo: Yomguithereal/ipysigma
-      badges: pypi
-
-    - repo: ericmjl/nxviz
-      site: https://nxviz.readthedocs.io
       badges: pypi
 
 
