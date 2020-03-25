@@ -319,6 +319,11 @@
     - repo: Yomguithereal/ipysigma
       badges: pypi
 
+    - repo: ericmjl/nxviz
+      site: https://nxviz.readthedocs.io
+      badges: pypi
+
+
 - name: Other domain-specific
   intro: Tools focused on specific research or application areas other than those above.
   packages:
