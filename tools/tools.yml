@@ -309,14 +309,14 @@
       site: https://netwulf.readthedocs.io
       badges: travis, pypi, rtd, site
 
+    - repo: QuantStack/ipycytoscape
+      badges: pypi
+
     - repo: dblarremore/webweb
       site: https://webwebpage.github.io
       badges: pypi, site
 
     - repo: Yomguithereal/ipysigma
-      badges: pypi
-
-    - repo: QuantStack/ipycytoscape
       badges: pypi
 
 - name: Other domain-specific
