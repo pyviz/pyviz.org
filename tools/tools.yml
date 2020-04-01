@@ -383,15 +383,15 @@
   intro: Tools for rasterizing/aggregating data before visualization, which can make rendering faster, allow larger datasets, or make it feasible to use remote datasets (with server-side rendering).
   packages:
 
-    - repo: astrofrog/mpl-scatter-density
-      site: https://github.com/astrofrog/mpl-scatter-density
-      badges: travis, appveyor, pypi, conda, site
-      builton: matplotlib
-
     - repo: pyviz/datashader
       sponsors: [anaconda]
       site: http://datashader.org
       badges: travis, appveyor, pypi, conda, site
+
+    - repo: astrofrog/mpl-scatter-density
+      site: https://github.com/astrofrog/mpl-scatter-density
+      badges: travis, appveyor, pypi, conda, site
+      builton: matplotlib
 
     - repo: vaexio/vaex
       sponsors: [vaexio]
@@ -410,15 +410,15 @@
       badges: circleci, pypi, conda, site
       builton: plotly
 
+    - repo: streamlit/streamlit
+      site: https://streamlit.io
+      badges: pypi
+
     - repo: pyviz/panel
       sponsors: [anaconda]
       site: https://panel.pyviz.org
       badges: travis, appveyor, codecov, pypi, conda, site
       builton: bokeh
-
-    - repo: streamlit/streamlit
-      site: https://streamlit.io
-      badges: pypi
 
     - repo: QuantStack/voila
       sponsors: [quantstack]
