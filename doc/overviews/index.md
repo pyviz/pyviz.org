@@ -6,6 +6,9 @@ The Python visualization landscape can seem daunting at first. These overviews a
 
 *Adaptation of Jake VanderPlas graphic about the Python visualization landscape, by Nicolas P. Rougier*
 
+- [Python Visualization Landscape](https://medium.com/@lulunana/python-visualization-landscape-3b95ede3d030)
+  24 Oct 2019 @lulunana. High-level overview of various categories of Python viz libraries, without example code.
+
 - [Python Data Visualization 2018](https://www.anaconda.com/python-data-visualization-2018-why-so-many-libraries)
   15 Nov 2018 - 14 Dec 2018  James A. Bednar, Anaconda, Inc. Three blog posts surveying the history and breadth of several dozen Python viz libraries, without example code.
   [Updated in 2019 as an eBook](https://know.anaconda.com/eBook-PyVizeBookLP_ReportRegistration.html?utm_source=pyviz.org&utm_campaign=pyviz&utm_content=ebook).
