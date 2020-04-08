@@ -57,3 +57,8 @@ unidata:
   label: Unidata
   url: https://www.unidata.ucar.edu
   logo: _static/badges/unidata.png
+
+nsf:
+  label: NSF
+  url: https://www.nsf.gov
+  logo: _static/badges/NSF.jpg
