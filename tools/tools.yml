@@ -215,7 +215,7 @@
       
     - repo: pysal/splot
       sponsors: [nsf]
-      site: https://splot.readthedocs.io/en/latest/?badge=latest
+      site: https://splot.readthedocs.io
       conda_channel: conda-forge
       badges: coveralls, pypi, conda, site
       builton: matplotlib
