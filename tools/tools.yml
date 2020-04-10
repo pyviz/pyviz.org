@@ -212,6 +212,13 @@
       site: https://python-visualization.github.io/folium
       conda_channel: conda-forge
       builton: leaflet
+      
+    - repo: pysal/splot
+      sponsors: [cgs]
+      site: https://splot.readthedocs.io
+      conda_channel: conda-forge
+      badges: coveralls, pypi, conda, site
+      builton: matplotlib
 
     - repo: SciTools/cartopy
       sponsors: [metoffice]
