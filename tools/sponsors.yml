@@ -62,3 +62,8 @@ nsf:
   label: NSF
   url: https://www.nsf.gov
   logo: _static/badges/NSF.jpg
+
+cgs:
+  label: cgs
+  url: https://spatial.ucr.edu
+  logo: _static/badges/cgs.svg
