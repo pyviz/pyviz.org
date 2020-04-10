@@ -214,7 +214,7 @@
       builton: leaflet
       
     - repo: pysal/splot
-      sponsors: [cgs, nsf]
+      sponsors: [cgs]
       site: https://splot.readthedocs.io
       conda_channel: conda-forge
       badges: coveralls, pypi, conda, site
