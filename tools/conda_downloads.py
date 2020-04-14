@@ -15,7 +15,7 @@ import numpy as np
 
 here = os.path.abspath(os.path.dirname(__file__))
 cache_path = os.path.join(here, '..', 'doc', '_static', 'cache')
-cat = intake.Catalog('https://raw.githubusercontent.com/ContinuumIO/anaconda-package-data/master/catalog/anaconda_package_data.yaml')
+cat = intake.open_catalog('https://raw.githubusercontent.com/ContinuumIO/anaconda-package-data/master/catalog/anaconda_package_data.yaml')
 
 colors = cc.palette_n.rainbow[-20:80:-1]
 top_of_colormap = 1e6
