@@ -418,6 +418,7 @@
       builton: plotly
 
     - repo: streamlit/streamlit
+      sponsors: [streamlit]    
       site: https://streamlit.io
       badges: pypi
 

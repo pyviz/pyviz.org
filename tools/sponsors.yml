@@ -62,3 +62,8 @@ cgs:
   label: cgs
   url: https://spatial.ucr.edu
   logo: _static/badges/cgs.svg
+
+streamlit:
+  label: streamlit
+  url: https://streamlit.io
+  logo: _static/badges/streamlit.png
