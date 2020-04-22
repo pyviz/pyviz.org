@@ -389,6 +389,11 @@
       site: https://clustergrammer.readthedocs.io
       badges: pypi, site
       builton: webgl
+      
+    - repo: PAIR-code/facets
+      site: https://pair-code.github.io/facets/
+      badges: pypi 
+
 
 - name: Large-data rendering
   intro: Tools for rasterizing/aggregating data before visualization, which can make rendering faster, allow larger datasets, or make it feasible to use remote datasets (with server-side rendering).
