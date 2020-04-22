@@ -154,10 +154,6 @@
     - repo: biggles-plot/biggles
       site: https://biggles-plot.github.io
       badges: pypi
-      
-    - repo: PAIR-code/facets
-      site: https://pair-code.github.io/facets/
-      badges: pypi 
 
 - name: SciVis
   intro: Libraries for visualizing scientific data situated in real-world coordinates, typically using OpenGL or WebGL.
@@ -393,7 +389,6 @@
     - repo: PAIR-code/facets
       site: https://pair-code.github.io/facets/
       badges: pypi 
-
 
 - name: Large-data rendering
   intro: Tools for rasterizing/aggregating data before visualization, which can make rendering faster, allow larger datasets, or make it feasible to use remote datasets (with server-side rendering).
