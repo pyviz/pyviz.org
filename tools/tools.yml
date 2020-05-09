@@ -199,6 +199,11 @@
       badges: pypi, rtd
       builton: opengl
 
+    - repo: vtkplotter/vtkplotter
+      site: https://vtkplotter.embl.es
+      conda_channel: conda-forge
+      builton: vtk
+
 - name: Geospatial
   intro: Tools for working with data in geographic coordinates.
   packages:
