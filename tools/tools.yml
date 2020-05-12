@@ -199,9 +199,11 @@
       badges: pypi, rtd
       builton: opengl
 
-    - repo: vtkplotter/vtkplotter
+    - repo: marcomusy/vtkplotter
+      sponsors: [EMBL]
       site: https://vtkplotter.embl.es
       conda_channel: conda-forge
+      badges: pypi, conda, circleci
       builton: vtk
 
 - name: Geospatial

@@ -28,6 +28,11 @@ kitware:
   url: https://www.kitware.com
   logo: _static/badges/kitware.svg
 
+EMBL:
+  label: EMBL
+  url: https://www.embl.es
+  logo: _static/badges/embl.png
+
 enthought:
   label: Enthought
   url: https://www.enthought.com
