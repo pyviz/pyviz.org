@@ -512,7 +512,7 @@
     - repo: PierreRaybaut/guiqwt
       site: https://pythonhosted.org/guiqwt/
       dormant: https://github.com/PierreRaybaut/guiqwt/graphs/contributors
-      badges: site
+      badges: site, pypi
 
     - repo: wrobstory/vincent
       dormant: https://github.com/wrobstory/vincent/graphs/contributors
