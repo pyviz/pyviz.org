@@ -444,6 +444,9 @@
       conda_channel: conda-forge
       badges: travis, pypi, conda, rtd
 
+    - repo: danielfrg/jupyter-flex
+      site: https://jupyter-flex.extrapolations.dev
+
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
   packages:
