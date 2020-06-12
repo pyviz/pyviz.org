@@ -4,7 +4,8 @@ Just about any Python library can be used to create a "static" PNG, SVG, HTML, o
 
 - [Dash](https://plot.ly/products/dash) (from [Plotly](https://plot.ly)); see the [blog post](https://medium.com/@plotlygraphs/introducing-dash-5ecf7191b503)
 - [Panel](https://panel.pyviz.org) (from [Anaconda](http://anaconda.com)); see the [blog post](https://medium.com/@philipp.jfr/panel-announcement-2107c2b15f52)
-- [Voila](https://github.com/QuantStack/voila) (from [QuantStack](http://quantstack.net)); see the [blog post](https://blog.jupyter.org/and-voil%C3%A0-f6a2c08a4a93)
+- [Voila](https://github.com/QuantStack/voila) (from [QuantStack](http://quantstack.net)); see the [blog post](https://blog.jupyter.org/and-voil%C3%A0-f6a2c08a4a93); used with separate layout tools like 
+[jupyter-flex](https://github.com/danielfrg/jupyter-flex) or templates like [voila-vuetify](https://github.com/voila-dashboards/voila-vuetify).
 - [Streamlit](https://www.streamlit.io); see the [blog post](https://towardsdatascience.com/coding-ml-tools-like-you-code-ml-models-ddba3357eace)
 
 There are also other tools that can be used for some aspects of dashboarding as well as many other tasks:
