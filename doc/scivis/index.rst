@@ -13,3 +13,4 @@
    ParaView <https://www.paraview.org>
    yt <https://yt-project.org>
    PyVista <http://www.pyvista.org>
+   vedo <http://vedo.embl.es>

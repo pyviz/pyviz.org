@@ -199,9 +199,9 @@
       badges: pypi, rtd
       builton: opengl
 
-    - repo: marcomusy/vtkplotter
+    - repo: marcomusy/vedo
       sponsors: [EMBL]
-      site: https://vtkplotter.embl.es
+      site: https://vedo.embl.es
       conda_channel: conda-forge
       badges: pypi, conda, circleci
       builton: vtk

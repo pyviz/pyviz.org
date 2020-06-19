@@ -20,6 +20,6 @@ SciVis libraries supporting Python:
 
 - [PyVista](http://www.pyvista.org) is a streamlined interface for the Visualization Toolkit (VTK) providing 3D plotting and mesh analysis with NumPy support being at its core. PyVista supports point clouds, structured/unstructured meshes, and volumetric datasets.
 
-- [vtkplotter](https://vtkplotter.embl.es) is a lightweight module for scientific analysis and visualization of polygonal meshes, point clouds and volumetric data. It offers an intuitive API which can be combined with VTK seamlessly in a program, whilst mantaining access to the full range of VTK native classes.
+- [vedo](https://vedo.embl.es) is a lightweight module for scientific analysis and visualization of polygonal meshes, point clouds and volumetric data. It offers an intuitive API which can be combined with VTK seamlessly in a program, whilst mantaining access to the full range of VTK native classes.
 
 - [itk-jupyter-widgets](https://github.com/InsightSoftwareConsortium/itk-jupyter-widgets), based on the Visualization Toolkit for JavaScript [vtk.js](https://kitware.github.io/vtk-js/index.html) and the [Insight Toolkit (ITK)](https://www.itk.org/), provides interactive 3D widgets for Jupyter to visualize and analyze images, point sets, and meshes.
