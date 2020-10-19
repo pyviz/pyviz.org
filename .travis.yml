@@ -1,11 +1,8 @@
 sudo: false
-language: generic
+language: python
 os:
   - linux
-
-env:
-  global:
-    - PYENV_VERSION=3.7
+  
 
 stages:
   - test
