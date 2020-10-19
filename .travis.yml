@@ -59,7 +59,7 @@ jobs:
     - <<: *build_cache
       env: BADGE=conda_downloads
       script:
-        - conda install -c conda-forge colorcet fastparquet intake intake-parquet "s3fs>=0.3" python-snappy aiohttp requests
+        - conda install -c conda-forge colorcet fastparquet intake intake-parquet "s3fs>=0.5.1" python-snappy
         - python tools/conda_downloads.py
 
     - &website_release
