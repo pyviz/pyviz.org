@@ -416,6 +416,12 @@
       site: https://vaex.io
       conda_channel: conda-forge
       badges: travis, appveyor, pypi, conda, site
+      
+    - repo: atoti/atoti
+      sponsors: [atoti]
+      site: https://docs.atoti.io/
+      conda_channel: conda-forge
+      badges: pypi, conda
 
 - name: Dashboarding
   intro: Libraries for creating live Python-backed web applications or dashboards that a user can interact with to explore or analyze data. Also see Bokeh, under Core tools above.
@@ -446,6 +452,12 @@
 
     - repo: danielfrg/jupyter-flex
       site: https://jupyter-flex.extrapolations.dev
+      
+    - repo: atoti/atoti
+      sponsors: [atoti]
+      site: https://docs.atoti.io/
+      conda_channel: conda-forge
+      badges: pypi, conda
 
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.

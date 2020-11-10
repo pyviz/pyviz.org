@@ -8,3 +8,4 @@
    Dash <https://plot.ly/products/dash>
    Panel <https://panel.pyviz.org>
    Voila <https://github.com/QuantStack/voila>
+   atoti <https://github.com/atoti/atoti>
