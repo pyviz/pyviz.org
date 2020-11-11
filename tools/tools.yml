@@ -420,7 +420,6 @@
     - repo: atoti/atoti
       sponsors: [atoti]
       site: https://docs.atoti.io/
-      conda_channel: conda-forge
       badges: pypi, conda
 
 - name: Dashboarding
@@ -456,7 +455,6 @@
     - repo: atoti/atoti
       sponsors: [atoti]
       site: https://docs.atoti.io/
-      conda_channel: conda-forge
       badges: pypi, conda
 
 - name: Colormapping
