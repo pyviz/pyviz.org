@@ -6,6 +6,9 @@ The Python visualization landscape can seem daunting at first. These overviews a
 
 *Adaptation of Jake VanderPlas graphic about the Python visualization landscape, by Nicolas P. Rougier*
 
+- [Are Dashboards for Me?](https://towardsdatascience.com/are-dashboards-for-me-7f66502986b1)
+  7 Jul 2020 Dan Lester. Overview of Python and R dashboard tools, including Voila, ipywidgets, binder, Shiny, Dash, Streamlit, Bokeh, and Panel.
+
 - [Python Visualization Landscape](https://towardsdatascience.com/complete-guide-to-data-visualization-with-python-2dd74df12b5e)
   29 Feb 2020 Albert Sanchez Lafuente. Example code for Pandas tables, Matplotlib, Seaborn, Bokeh, Altair, and Folium.
 
@@ -26,6 +29,9 @@ The Python visualization landscape can seem daunting at first. These overviews a
 
 - [Python Data Visualization — Comparing 5 Tools](https://codeburst.io/overview-of-python-data-visualization-tools-e32e1f716d10)
   6 Dec 2017 Elena Kirzhner, Codeburst. Blog post with simple comparisons of Pandas, Seaborn, Bokeh, Pygal, and Plotly code and output.
+
+- [10 Heatmaps 10 Libraries](https://blog.algorexhealth.com/2017/09/10-heatmaps-10-python-libraries/)
+  10 Sep 2017 Luke Shulman. Comparing heatmap code across 10 different viz libraries.
 
 - [The Python Visualization Landscape](https://www.youtube.com/watch?v=FytuB8nFHPQ)
   20 May 2017  Jake VanderPlas, U. Washington. 30-minute talk surveying the history and breadth of Python viz libraries. [[slides]](https://speakerdeck.com/jakevdp/pythons-visualization-landscape-pycon-2017).
