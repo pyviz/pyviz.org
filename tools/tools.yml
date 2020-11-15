@@ -468,6 +468,15 @@
       conda_channel: conda-forge
       badges: travis, codecov, pypi, conda
 
+    - repo: callumrollo/cmcrameri
+      conda_channel: conda-forge
+      badges: pypi, conda
+
+    - repo: 1313e/CMasher
+      site: https://cmasher.readthedocs.io
+      conda_channel: conda-forge
+      badges: travis, appveyor, pypi, conda, site
+
 - name: Dormant projects
   intro: Tools no longer developed or endorsed by the authors.
   packages:
