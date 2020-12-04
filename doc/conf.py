@@ -7,7 +7,7 @@ copyright = u' 2019, ' + authors
 description = 'How to solve visualization problems with Python tools.'
 
 version = release = '0.0.1'
-extensions.extend(['m2r2'])
+extensions.extend(['m2r'])
 
 html_static_path += ['_static']
 html_favicon = '_static/favicon.ico'
