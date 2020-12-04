@@ -1,6 +1,7 @@
 name: pyviz
 channels:
   - conda-forge
+  
 dependencies:
   - flake8
   - jinja2
@@ -12,5 +13,4 @@ dependencies:
   - pyyaml
   - requests
   - tornado<6
-  - pip: 
-    - git+https://github.com/crossnox/m2r@dev#egg=m2r
+  - m2r2
