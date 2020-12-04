@@ -14,3 +14,5 @@ dependencies:
   - tornado<6
   - pip: 
     - git+https://github.com/crossnox/m2r@v0.2.7#egg=m2r
+    # Was 'dev'
+
