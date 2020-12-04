@@ -45,7 +45,7 @@ jobs:
         - mv ./tmp/* ./doc/_static/cache
         - git add ./doc/_static/cache
         - git commit -m "adding cached badge of $BADGE"
-        - git push -f -q "https://pyviz-developers:$GITHUB_TOKEN@github.com/pyviz/website.git" HEAD:cache
+        - git push -f -q "https://pyviz-developers:$GITHUB_TOKEN@github.com/pyviz/pyviz.org.git" HEAD:cache
 
     - <<: *build_cache
       env: BADGE=stars
