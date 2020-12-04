@@ -14,3 +14,5 @@ dependencies:
   - requests
   - tornado<6
   - m2r2
+  - intake
+  - s3fs
