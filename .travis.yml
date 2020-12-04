@@ -43,7 +43,7 @@ jobs:
         - git fetch https://github.com/$TRAVIS_REPO_SLUG.git cache:refs/remotes/cache
         - git checkout cache
         - mv ./tmp/* ./doc/_static/cache
-        - git add ./doc/_static/cache
+        - git add -f ./doc/_static/cache
         - ls ./doc/_static/cache
         - git commit -m "adding cached badge of $BADGE"
         - git push -f "https://pyviz-developers:$GITHUB_TOKEN@github.com/$TRAVIS_REPO_SLUG.git" HEAD:cache
