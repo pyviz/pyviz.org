@@ -102,8 +102,13 @@
       builton: matplotlib
 
 - name: Native-GUI
-  intro: InfoVis Libraries targetting native-desktop GUI interfaces for interactive plots (also see Matplotlib in core above).
+  intro: InfoVis Libraries targetting native-desktop GUI interfaces for interactive plots.
   packages:
+
+    - repo: matplotlib/matplotlib
+      sponsors: [numfocus]
+      badges: travis, appveyor, codecov, pypi, conda, site
+      builton: matplotlib
 
     - repo: pyqtgraph/pyqtgraph
       site: http://www.pyqtgraph.org
@@ -428,8 +433,13 @@
       badges: travis, appveyor, pypi, conda, site
 
 - name: Dashboarding
-  intro: Libraries for creating live Python-backed web applications or dashboards that a user can interact with to explore or analyze data. Also see Bokeh, under Core tools above.
+  intro: Libraries for creating live Python-backed web applications or dashboards that a user can interact with to explore or analyze data.
   packages:
+
+    - repo: bokeh/bokeh
+      sponsors: [numfocus, anaconda]
+      badges: travis, pypi, conda, site
+      builton: bokeh
 
     - repo: plotly/dash
       sponsors: [plotly]
