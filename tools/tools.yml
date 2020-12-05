@@ -39,7 +39,8 @@
 
     - repo: santosjorge/cufflinks
       site: https://github.com/santosjorge/cufflinks/blob/master/README.md
-      badges: circleci, pypi, site
+      conda_channel: conda-forge
+      badges: circleci, pypi, conda, site
       builton: plotly
 
     - repo: pyviz/hvplot
@@ -50,12 +51,14 @@
 
     - repo: PatrikHlobil/Pandas-Bokeh
       site: https://github.com/PatrikHlobil/Pandas-Bokeh/blob/master/README.md
-      badges: pypi, site
+      conda_channel: PatrikHlobil
+      badges: pypi, conda, site
       builton: bokeh
 
     - repo: altair-viz/pdvega
       site: https://altair-viz.github.io/pdvega
-      badges: travis, pypi, site
+      conda_channel: conda-forge
+      badges: travis, pypi, conda, site
       builton: vega
 
 - name: High-Level
@@ -82,7 +85,8 @@
     - repo: plotly/plotly_express
       sponsors: [plotly]
       site: https://plotly.express
-      badges: pypi, site
+      conda_channel: conda-forge
+      badges: pypi, conda, site
       builton: plotly
 
     - repo: spotify/chartify
@@ -147,7 +151,8 @@
 
     - repo: sandialabs/toyplot
       sponsors: [sandia]
-      badges: pypi, rtd
+      conda_channel: conda-forge
+      badges: pypi, conda, rtd
 
     - repo: maxhumber/chart
 
@@ -276,7 +281,8 @@
       builton: graphviz
 
     - repo: pydot/pydot
-      badges: pypi
+      badges: pypi, conda
+      conda_channel: conda-forge
       builton: graphviz
       
     - repo: pygraphviz/pygraphviz
@@ -293,7 +299,8 @@
 
     - repo: WestHealth/pyvis
       site: https://pyvis.readthedocs.io
-      badges: pypi, site
+      conda_channel: conda-forge
+      badges: pypi, conda, site
 
     - repo: epfl-lts2/pygsp
       site: https://pygsp.readthedocs.io
@@ -308,7 +315,8 @@
 
     - repo: ericmjl/nxviz
       site: https://nxviz.readthedocs.io
-      badges: pypi
+      conda_channel: conda-forge
+      badges: pypi, conda, site
 
     - repo: cytoscape/py2cytoscape
       site: https://py2cytoscape.readthedocs.io
@@ -320,19 +328,21 @@
       badges: pypi, site
 
     - repo: timkpaine/ipydagred3
-      badges: azure, pypi
+      conda_channel: conda-forge
       builton: d3
+      badges: azure, pypi, conda
 
     - repo: benmaier/netwulf
       site: https://netwulf.readthedocs.io
       badges: travis, pypi, rtd, site
 
     - repo: QuantStack/ipycytoscape
-      badges: pypi
+      conda_channel: conda-forge
+      badges: pypi, conda
 
     - repo: dblarremore/webweb
       site: https://webwebpage.github.io
-      badges: pypi, site
+      badges: pypi, conda, site
 
     - repo: Yomguithereal/ipysigma
       badges: pypi
@@ -431,7 +441,8 @@
     - repo: streamlit/streamlit
       sponsors: [streamlit]    
       site: https://streamlit.io
-      badges: pypi
+      conda_channel: conda-forge
+      badges: pypi, conda, site
 
     - repo: pyviz/panel
       sponsors: [anaconda]
