@@ -1,0 +1,33 @@
+div.body {
+    max-width: 2000px;
+}
+
+iframe {
+  -moz-transform: scale(0.25, 0.25);
+  -webkit-transform: scale(0.25, 0.25);
+  -o-transform: scale(0.25, 0.25);
+  -ms-transform: scale(0.25, 0.25);
+  transform: scale(0.25, 0.25);
+  -moz-transform-origin: top left;
+  -webkit-transform-origin: top left;
+  -o-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
+
+  width: 3100px;
+  margin-right: -2500px;
+  height: 1600px;
+  margin-bottom: -1200px;
+}
+
+#tools-wrapper a {
+	text-decoration:none;
+}
+
+#tools-wrapper .sponsor-logo {
+  max-height: 20px;
+}
+
+#tools-wrapper .empty-cell {
+  text-align: center;
+}
