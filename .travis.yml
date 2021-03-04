@@ -5,7 +5,8 @@ os:
   
 
 stages:
-  - test
+  - name: test
+    if: (branch != cache)
   - name: build_cache
     if: (commit_message =~ /^.*(website_dev).*$/) OR (branch = master)
   - name: website_release
