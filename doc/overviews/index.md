@@ -6,6 +6,9 @@ The Python visualization landscape can seem daunting at first. These overviews a
 
 *Adaptation of Jake VanderPlas graphic about the Python visualization landscape, by Nicolas P. Rougier*
 
+- [Beyond Matplotlib and Seaborn: Python Data Visualization Tools That Work](https://medium.com/codex/beyond-matplotlib-and-seaborn-python-data-visualization-tools-that-work-3ef7f8d1500e)
+  1 Feb 2021 Stephanie Kirmer. Comparing Matplotlib, Seaborn, Bokeh, Altair, Plotnine, and Plotly, with example github repo for code.
+
 - [Are Dashboards for Me?](https://towardsdatascience.com/are-dashboards-for-me-7f66502986b1)
   7 Jul 2020 Dan Lester. Overview of Python and R dashboard tools, including Voila, ipywidgets, binder, Shiny, Dash, Streamlit, Bokeh, and Panel.
 
