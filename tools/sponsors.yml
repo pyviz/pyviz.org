@@ -72,3 +72,8 @@ streamlit:
   label: streamlit
   url: https://streamlit.io
   logo: _static/badges/streamlit.png
+
+jetbrains:
+  jetbrains: streamlit
+  url: https://www.jetbrains.com
+  logo: _static/badges/jetbrains.png

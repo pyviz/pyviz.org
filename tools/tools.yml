@@ -95,12 +95,17 @@
       site: https://github.com/spotify/chartify/blob/master/README.rst
       badges: travis, pypi, conda, site
       builton: bokeh
+      
+    - repo: JetBrains/lets-plot
+      sponsors: [jetbrains]
+      site: https://github.com/JetBrains/lets-plot/blob/master/README_PYTHON.md
+      badges: pypi, site
 
     - repo: AutoViML/AutoViz
       site: https://github.com/AutoViML/AutoViz
       badges: travis, pypi, site
       builton: matplotlib
-
+      
 - name: Native-GUI
   intro: InfoVis Libraries targetting native-desktop GUI interfaces for interactive plots.
   packages:
@@ -467,6 +472,10 @@
 
     - repo: danielfrg/jupyter-flex
       site: https://jupyter-flex.extrapolations.dev
+
+    - repo: fossasia/visdom
+      site: https://github.com/fossasia/visdom/blob/master/README.md#visdom
+      builton: plotly
 
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
