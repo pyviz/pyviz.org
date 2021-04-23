@@ -1,6 +1,6 @@
     <div id="tools-wrapper">
     {% for section in config %}
-    <h3 id="{{ section.name.lower().replace(' ', '-') }}">{{ section.name }}</h3>
+    <h3 id="{{ section.name.lower().replace(' ', '-') }}">{{ section.name }}<a class="headerlink" href="#{{ section.name.lower().replace(' ', '-') }}" title="Permalink to {{ section.name }}">¶</a></h3>
     {{ section.get('intro', '') }}
     <table>
       <tr>
