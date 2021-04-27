@@ -8,6 +8,12 @@ Just about any Python library can be used to create a "static" PNG, SVG, HTML, o
 [jupyter-flex](https://github.com/danielfrg/jupyter-flex) or templates like [voila-vuetify](https://github.com/voila-dashboards/voila-vuetify).
 - [Streamlit](https://www.streamlit.io); see the [blog post](https://towardsdatascience.com/coding-ml-tools-like-you-code-ml-models-ddba3357eace)
 
+You can see comparisons of these tools in:
+- [Streamlit vs Dash vs Voilà vs Panel — Battle of The Python Dashboarding Giants](https://medium.datadriveninvestor.com/streamlit-vs-dash-vs-voil%C3%A0-vs-panel-battle-of-the-python-dashboarding-giants-177c40b9ea57)
+  30 Mar 2021 Stephen Kilcommins. Comparing Streamlit, Dash, Voilà, and Panel for dashboarding. Links to more detailed explorations for each library individually.
+- [Are Dashboards for Me?](https://towardsdatascience.com/are-dashboards-for-me-7f66502986b1)
+  7 Jul 2020 Dan Lester. Overview of Python and R dashboard tools, including Voila, ipywidgets, binder, Shiny, Dash, Streamlit, Bokeh, and Panel.
+
 There are also other tools that can be used for some aspects of dashboarding as well as many other tasks:
 
 - [Bokeh](http://bokeh.org) is a plotting library, a widget and app library, and a server for both plots and dashboards. [Panel](https://panel.pyviz.org) is built on Bokeh, providing a higher-level toolkit specifically focused on app and dashboard creation and supporting multiple plotting libraries (not just Bokeh).

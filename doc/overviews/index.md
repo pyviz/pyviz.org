@@ -6,16 +6,10 @@ The Python visualization landscape can seem daunting at first. These overviews a
 
 *Adaptation of Jake VanderPlas graphic about the Python visualization landscape, by Nicolas P. Rougier*
 
-- [Streamlit vs Dash vs Voilà vs Panel — Battle of The Python Dashboarding Giants](https://medium.datadriveninvestor.com/streamlit-vs-dash-vs-voil%C3%A0-vs-panel-battle-of-the-python-dashboarding-giants-177c40b9ea57)
-  30 Mar 2021 Stephen Kilcommins. Comparing Streamlit, Dash, Voilà, and Panel for dashboarding. Links to more detailed explorations for each library individually.
-
 - [Beyond Matplotlib and Seaborn: Python Data Visualization Tools That Work](https://medium.com/codex/beyond-matplotlib-and-seaborn-python-data-visualization-tools-that-work-3ef7f8d1500e)
   1 Feb 2021 Stephanie Kirmer. Comparing Matplotlib, Seaborn, Bokeh, Altair, Plotnine, and Plotly, with example github repo for code.
 
-- [Are Dashboards for Me?](https://towardsdatascience.com/are-dashboards-for-me-7f66502986b1)
-  7 Jul 2020 Dan Lester. Overview of Python and R dashboard tools, including Voila, ipywidgets, binder, Shiny, Dash, Streamlit, Bokeh, and Panel.
-
-- [Python Visualization Landscape](https://towardsdatascience.com/complete-guide-to-data-visualization-with-python-2dd74df12b5e)
+- [Complete Guide to Data Visualization with Python](https://towardsdatascience.com/complete-guide-to-data-visualization-with-python-2dd74df12b5e)
   29 Feb 2020 Albert Sanchez Lafuente. Example code for Pandas tables, Matplotlib, Seaborn, Bokeh, Altair, and Folium.
 
 - [Python Visualization Landscape](https://medium.com/@lulunana/python-visualization-landscape-3b95ede3d030)
