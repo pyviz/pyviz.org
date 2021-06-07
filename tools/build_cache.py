@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import os
+import time
 from yaml import safe_load
 import requests
 
@@ -38,5 +39,14 @@ for section in config:
         print(f"  * package: {package.get('pypi_name', '')}")
         rendered_url = url.format(repo=package['repo'], pypi_name=package['pypi_name'])
         r = requests.get(rendered_url)
+        content = r.content
+        if badge == 'pypi_downloads' and 'pypi: invalid' in r.content:
+            print("PyPI badge returned as 'invalid'. Retrying after 5 seconds.")
+            time.sleep(5)
+            r = requests.get(rendered_url)
+            content = r.content
+
+        if badge == 'pypi_downloads' and 'pypi: invalid' in r.content:
+            print("PyPI still returning 'invalid' badge after retry.")
         with open(os.path.join(cache_path, f"{package['name']}_{badge}_badge.svg"), 'wb') as f:
-            f.write(r.content)
+            f.write(content)
