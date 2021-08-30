@@ -41,7 +41,7 @@ jobs:
         run: |
           eval "$(conda shell.bash hook)"
           conda activate pyviz
-          conda install -c conda-forge colorcet fastparquet intake intake-parquet "s3fs>=0.5.1" python-snappy
+          conda install -c conda-forge colorcet fastparquet intake intake-parquet "s3fs>=0.6.0" python-snappy
           doit build_cache
           git config user.email = "actions@github.com"
           git config user.name = "GitHub Actions"
