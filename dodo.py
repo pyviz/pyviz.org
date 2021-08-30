@@ -39,10 +39,8 @@ def task_build_cache():
 def task_build_website():
     """Build website using nbsite"""
     return {'actions': [
-        "conda list",
         "python tools/build.py",
         "mv tools/index.rst doc/tools.rst",
         "nbsite generate-rst --org pyviz --project-name pyviz",  # noqa
-        "sphinx-build -b html doc builtdocs -vvv -T",  # to remove
         "nbsite build --what=html --output=builtdocs",
     ]}

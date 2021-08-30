@@ -53,17 +53,14 @@ jobs:
           ls ./doc/_static/cache
           git commit -m "adding cached badges"
           git push -f "https://pyviz-developers:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git" HEAD:cache
-      - name: Website release
+      - uses: actions/checkout@v2
+      - name: Build website
         run: |
           eval "$(conda shell.bash hook)"
           conda activate pyviz
-          git status
-          ls -ll
-          git checkout -b deploy
+          git checkout -b deploy-tmp
           git fetch "https://github.com/$GITHUB_REPOSITORY.git" cache:refs/remotes/cache  # all cached badges are in this branch
           git checkout cache -- ./doc/_static/cache
-          cat dodo.py
-          git status
           doit build_website
       - name: git status
         run: |
