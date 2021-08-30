@@ -41,6 +41,6 @@ def task_build_website():
     return {'actions': [
         "python tools/build.py",
         "mv tools/index.rst doc/tools.rst",
-        "nbsite generate-rst --org pyviz --project-name pyviz --examples notebooks",  # noqa
+        "nbsite generate-rst --org pyviz --project-name pyviz",  # noqa
         "nbsite build --what=html --output=builtdocs",
     ]}
