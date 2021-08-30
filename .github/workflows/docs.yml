@@ -60,6 +60,7 @@ jobs:
           git checkout -b deploy
           git fetch "https://github.com/$GITHUB_REPOSITORY.git" cache:refs/remotes/cache  # all cached badges are in this branch
           git checkout cache -- ./doc/_static/cache
+          cat dodo.py
           doit build_website
       - name: git status
         run: |
