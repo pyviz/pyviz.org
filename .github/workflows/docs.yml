@@ -15,7 +15,7 @@ jobs:
   build_docs:
     name: Documentation
     runs-on: 'ubuntu-latest'
-    if: "! contains(github.event.head_commit.message, 'website_dev') || github.ref == 'refs/heads/master'"
+    if: "contains(github.event.head_commit.message, 'website_dev') || github.ref == 'refs/heads/master'"
     timeout-minutes: 120
     defaults:
       run:
