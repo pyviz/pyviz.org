@@ -1,0 +1,103 @@
+name: docs
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - '*'
+  schedule:
+    - cron: "0 8 * 1-12 1"  # First monday of the month at 8 am
+  workflow_dispatch:
+
+jobs:
+  pre_ci:
+    runs-on: 'ubuntu-latest'
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          # required for PRs
+          fetch-depth: 2
+      - name: Get commit message
+        id: get_commit_message
+        run: |
+          if   [[ '${{ github.event_name }}' == 'push' ]]; then
+            echo ::set-output name=commit_message::$(git log --format=%B -n 1 HEAD)
+          elif [[ '${{ github.event_name }}' == 'pull_request' ]]; then
+            echo ::set-output name=commit_message::$(git log --format=%B -n 1 HEAD^2)
+          fi
+    outputs:
+      commit_message:
+        echo "${{ steps.get_commit_message.outputs.commit_message }}"
+  build_docs:
+    name: Documentation
+    runs-on: 'ubuntu-latest'
+    needs: pre_ci
+    if: "contains(needs.pre_ci.outputs.commit_message, 'website_dev') || github.ref == 'refs/heads/master'"
+    timeout-minutes: 120
+    defaults:
+      run:
+        shell: bash -l {0}
+    env:
+      DESC: "Documentation build"
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          miniconda-version: "latest"
+      - name: conda setup
+        run: |
+          eval "$(conda shell.bash hook)"
+          conda config --set always_yes True
+          conda install -c pyviz "pyctdev>=0.5"
+          doit ecosystem_setup
+          doit env_create
+          conda activate pyviz
+          doit env_capture
+      - name: Build cache
+        run: |
+          eval "$(conda shell.bash hook)"
+          conda activate pyviz
+          conda install -c conda-forge colorcet fastparquet intake intake-parquet "s3fs>=0.6.0" python-snappy
+          doit build_cache
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          mv ./doc/_static/cache ./tmp
+          git fetch "https://github.com/$GITHUB_REPOSITORY.git" cache:refs/remotes/cache
+          git checkout cache
+          mv ./tmp/* ./doc/_static/cache
+          git add -f ./doc/_static/cache
+          ls ./doc/_static/cache
+          git commit -m "adding cached badges"
+          git push -f "https://pyviz-developers:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git" HEAD:cache
+      - uses: actions/checkout@v2
+      - name: Build website
+        run: |
+          eval "$(conda shell.bash hook)"
+          conda activate pyviz
+          git checkout -b deploy-tmp
+          git fetch "https://github.com/$GITHUB_REPOSITORY.git" cache:refs/remotes/cache  # all cached badges are in this branch
+          git checkout cache -- ./doc/_static/cache
+          doit build_website
+      - name: git status
+        run: |
+          git status
+          git diff
+      - name: Deploy dev
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_dir: ./builtdocs
+          external_repository: pyviz-dev/website
+          personal_token: ${{ secrets.DEV_ACCESS_TOKEN }}
+          force_orphan: true
+      - name: Deploy main
+        if: ${{ github.ref == 'refs/heads/master' }}
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_dir: ./builtdocs
+          cname: pyviz.org
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force_orphan: true

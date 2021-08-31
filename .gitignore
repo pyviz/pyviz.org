@@ -1,3 +1,9 @@
+# Byte-compiled / DLL / optimized files...
+__pycache__/
+
+# OSX
+.DS_STORE
+
 # Jupyter notebook
 *.ipynb_checkpoints/
 
