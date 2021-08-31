@@ -40,13 +40,13 @@ for section in config:
         rendered_url = url.format(repo=package['repo'], pypi_name=package['pypi_name'])
         r = requests.get(rendered_url)
         content = r.content
-        if badge == 'pypi_downloads' and 'pypi: invalid' in r.content:
+        if badge == 'pypi_downloads' and 'pypi: invalid' in r.text:
             print("PyPI badge returned as 'invalid'. Retrying after 5 seconds.")
             time.sleep(5)
             r = requests.get(rendered_url)
             content = r.content
 
-        if badge == 'pypi_downloads' and 'pypi: invalid' in r.content:
+        if badge == 'pypi_downloads' and 'pypi: invalid' in r.text:
             print("PyPI still returning 'invalid' badge after retry.")
         with open(os.path.join(cache_path, f"{package['name']}_{badge}_badge.svg"), 'wb') as f:
             f.write(content)
