@@ -43,8 +43,8 @@ jobs:
           conda activate pyviz
           conda install -c conda-forge colorcet fastparquet intake intake-parquet "s3fs>=0.6.0" python-snappy
           doit build_cache
-          git config user.email = "actions@github.com"
-          git config user.name = "GitHub Actions"
+          git config --global user.email = "actions@github.com"
+          git config --global user.name = "GitHub Actions"
           mv ./doc/_static/cache ./tmp
           git fetch "https://github.com/$GITHUB_REPOSITORY.git" cache:refs/remotes/cache
           git checkout cache
