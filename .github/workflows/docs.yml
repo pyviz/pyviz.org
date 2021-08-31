@@ -91,7 +91,7 @@ jobs:
         with:
           publish_dir: ./builtdocs
           external_repository: pyviz-dev/website
-          personal_token: ${{ secrets.GITHUB_TOKEN }}
+          personal_token: ${{ secrets.DEV_ACCESS_TOKEN }}
           force_orphan: true
       - name: Deploy main
         if: ${{ github.ref == 'refs/heads/master' }}
