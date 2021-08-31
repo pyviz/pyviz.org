@@ -120,7 +120,10 @@
 
     - repo: glue-viz/glue
       site: http://docs.glueviz.org
-      badges: pypi, site
+      conda_channel: conda-forge
+      conda_package: glueviz
+      badges: pypi, conda, site
+      builton: matplotlib
 
     - repo: napari/napari
       site: https://napari.org/
