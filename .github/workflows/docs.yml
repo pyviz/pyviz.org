@@ -16,6 +16,7 @@ jobs:
     name: LOG Everything on GitHub Event
     runs-on: 'ubuntu-latest'
     steps:
+      - uses: actions/checkout@v2
       - name: Logging
         run: |
           git log -n 1
