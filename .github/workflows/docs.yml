@@ -18,8 +18,12 @@ jobs:
     steps:
       - name: Logging
         run: |
+          echo "head_commit"
+          echo "${{github.event.head_commit.message}}"
+          echo "commits"
+          echo "${{toJSON(github.event.commits)}}"
+          echo "all"
           echo "${{toJSON(github.event)}}"
-          echo "${{github.event.commits[0].message}}"
   build_docs:
     name: Documentation
     runs-on: 'ubuntu-latest'
