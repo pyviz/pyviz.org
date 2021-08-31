@@ -18,6 +18,7 @@ jobs:
     steps:
       - name: Logging
         run: |
+          git log -n 1
           echo "head_commit"
           echo "${{github.event.head_commit.message}}"
           echo "commits"
