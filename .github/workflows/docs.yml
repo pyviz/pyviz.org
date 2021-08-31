@@ -19,7 +19,7 @@ jobs:
       - name: Logging
         run: |
           echo "${{toJSON(github.event)}}"
-          echo "${{github.event.commits[0].message}}""
+          echo "${{github.event.commits[0].message}}"
   build_docs:
     name: Documentation
     runs-on: 'ubuntu-latest'
