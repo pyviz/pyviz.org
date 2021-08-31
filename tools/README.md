@@ -4,7 +4,7 @@ This directory is used to generate a tools dashboard for comparing various Pytho
 
 The main configuration of the dashboard is done via the ``tools.yml`` file, which can contain several sections with a list of packages, and a list of services for each section.
 
-The dashboard is created during the website build process on Travis CI and can be seen at [pyviz.org/tools.html](http://pyviz.org/tools.html).
+The dashboard is created during the website build process on Github Actions and can be seen at [pyviz.org/tools.html](http://pyviz.org/tools.html).
 
 
 ### Introductory text
