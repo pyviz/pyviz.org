@@ -12,23 +12,6 @@ on:
   workflow_dispatch:
 
 jobs:
-  log-github-event-goodies:
-    name: LOG Everything on GitHub Event
-    runs-on: 'ubuntu-latest'
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          # for pull_request so we can do HEAD^2
-          fetch-depth: 2
-      - name: Logging
-        run: |
-          git log -n 1 HEAD^2
-          echo "head_commit"
-          echo "${{github.event.head_commit.message}}"
-          echo "commits"
-          echo "${{toJSON(github.event.commits)}}"
-          echo "all"
-          echo "${{toJSON(github.event)}}"
   pre_ci:
     runs-on: 'ubuntu-latest'
     steps:
@@ -80,8 +63,8 @@ jobs:
           conda activate pyviz
           conda install -c conda-forge colorcet fastparquet intake intake-parquet "s3fs>=0.6.0" python-snappy
           doit build_cache
-          git config --global user.email = "actions@github.com"
-          git config --global user.name = "GitHub Actions"
+          git config user.name github-actions
+          git config user.email github-actions@github.com
           mv ./doc/_static/cache ./tmp
           git fetch "https://github.com/$GITHUB_REPOSITORY.git" cache:refs/remotes/cache
           git checkout cache
