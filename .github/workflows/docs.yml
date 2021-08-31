@@ -17,9 +17,12 @@ jobs:
     runs-on: 'ubuntu-latest'
     steps:
       - uses: actions/checkout@v2
+        with:
+          # for pull_request so we can do HEAD^2
+          fetch-depth: 2
       - name: Logging
         run: |
-          git log -n 1
+          git log -n 1 HEAD^2
           echo "head_commit"
           echo "${{github.event.head_commit.message}}"
           echo "commits"
