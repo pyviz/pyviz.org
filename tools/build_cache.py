@@ -40,13 +40,25 @@ for section in config:
         rendered_url = url.format(repo=package['repo'], pypi_name=package['pypi_name'])
         r = requests.get(rendered_url)
         content = r.content
-        if badge == 'pypi_downloads' and 'pypi: invalid' in r.text:
-            print("PyPI badge returned as 'invalid'. Retrying after 5 seconds.")
-            time.sleep(5)
-            r = requests.get(rendered_url)
-            content = r.content
+        # Pypistats implements IP rate limiting, so let's slow things
+        # down and retry a few times when failing.
+        if badge == 'pypi_downloads':
 
-        if badge == 'pypi_downloads' and 'pypi: invalid' in r.text:
-            print("PyPI still returning 'invalid' badge after retry.")
+            time.sleep(2.5)
+            
+            nb_retries = 4
+            retry_duration = 5  # In seconds, multiplied by two after each retry.
+            retry_count = 1
+            while 'pypi: invalid' in r.text and retry_count <= nb_retries:
+                print(f"PyPI badge returned as 'invalid'. Retrying after {retry_duration} seconds.")
+                time.sleep(retry_duration)
+                r = requests.get(rendered_url)
+                content = r.content
+                if retry_count == nb_retries:
+                    print(f"Failed a getting a valid Pypi Downloads badge for {package['pypi_name']}.")
+                    break
+                retry_count += 1
+                retry_duration *= 2
+
         with open(os.path.join(cache_path, f"{package['name']}_{badge}_badge.svg"), 'wb') as f:
             f.write(content)
