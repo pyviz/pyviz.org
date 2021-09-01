@@ -20,6 +20,8 @@ if url is None:
     raise ValueError((f'{badge} not in {", ".join(cache.keys())}, use env '
                       'var BADGE to set.'))
 
+print(f"Building a cache of {badge} badges.")
+
 if not os.path.exists(cache_path):
     os.mkdir(cache_path)
 
