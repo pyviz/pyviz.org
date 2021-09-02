@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import datetime
 import os
 from jinja2 import Template
 from yaml import safe_load
@@ -6,6 +7,7 @@ from markdown import markdown
 
 
 here = os.path.abspath(os.path.dirname(__file__))
+today = datetime.date.today().strftime("%B %-d, %Y")
 
 print("Opening config file")
 with open(os.path.join(here, 'tools.yml')) as f:
@@ -66,4 +68,4 @@ with open(os.path.join(here, 'index.rst'), 'w') as f:
     f.write("=========\n\n")
     f.write(".. mdinclude:: tools.md\n\n")
     f.write(".. raw:: html\n\n")
-    f.write(template.render(config=config, sponsors=sponsors))
+    f.write(template.render(config=config, sponsors=sponsors, date=today))
