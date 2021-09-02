@@ -20,7 +20,15 @@ if url is None:
     raise ValueError((f'{badge} not in {", ".join(cache.keys())}, use env '
                       'var BADGE to set.'))
 
-print(f"Building a cache of {badge} badges.")
+# The pypi download badge cannot occasionally be properly fetched
+# by shields and cached here. We list those that failed, so that
+# in the template we can put the actual badge link rather than
+# the cached one.
+pypi_invalid_file = os.path.join(here, "pypi_invalid_badges.txt")
+if os.path.exists(pypi_invalid_file):
+  os.remove(pypi_invalid_file)
+
+print(f"\nBuilding a cache of {badge} badges.\n")
 
 if not os.path.exists(cache_path):
     os.mkdir(cache_path)
@@ -35,7 +43,6 @@ for section in config:
             package['user'], package['name'] = package['repo'].split('/')
         except:
             raise Warning('Package.repo is not in correct format', package)
-            continue
         package['pypi_name'] = package.get('pypi_name', package['name'])
 
         print(f"  * package: {package.get('pypi_name', '')}")
@@ -61,6 +68,10 @@ for section in config:
                     break
                 retry_count += 1
                 retry_duration *= 2
+        
+        if 'pypi: invalid' in r.text:
+            with open(pypi_invalid_file, 'a') as f:
+                f.write(package['pypi_name'] + '\n')
 
         with open(os.path.join(cache_path, f"{package['name']}_{badge}_badge.svg"), 'wb') as f:
             f.write(content)

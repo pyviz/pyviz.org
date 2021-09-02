@@ -38,7 +38,11 @@
             <img src="_static/cache/{{ package.name }}_contributors_badge.svg">
           </a>
         </td>
-          {% if 'pypi' in package.badges %}
+          {% if 'pypi_invalid' in package %}
+          <td align='left'>
+            <img src="https://img.shields.io/pypi/dm/{{ package.name }}?color=%20%23868686&label=pypi">
+          </td>
+          {% elif 'pypi' in package.badges %}
           <td align='left'>
             <img src="_static/cache/{{ package.name }}_pypi_downloads_badge.svg">
           </td>

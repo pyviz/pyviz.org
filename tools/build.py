@@ -11,6 +11,12 @@ print("Opening config file")
 with open(os.path.join(here, 'tools.yml')) as f:
     config = safe_load(f)
 
+try:
+    with open(os.path.join(here, 'pypi_invalid_badges.txt')) as f:
+        pypi_invalid_badges = f.read().splitlines()
+except FileNotFoundError:
+    pypi_invalid_badges = []
+
 for section in config:
     print(f"Building {section.get('name', '')}")
     if section.get('intro'):
@@ -20,9 +26,11 @@ for section in config:
             package['user'], package['name'] = package['repo'].split('/')
         except:
             raise Warning('Package.repo is not in correct format', package)
-            continue
         package['conda_package'] = package.get('conda_package', package['name'])
         package['pypi_name'] = package.get('pypi_name', package['name'])
+
+        if package['pypi_name'] in pypi_invalid_badges:
+            package['pypi_invalid'] = True
 
         if package.get('badges'):
             package['badges'] = [x.strip() for x in package['badges'].split(',')]
