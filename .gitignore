@@ -12,6 +12,9 @@ builtdocs/
 doc/tools.rst
 doc/_static/cache/
 
+# Site building temp output
+tools/pypi_invalid_badges.txt
+
 # doit
 .doit.db
 

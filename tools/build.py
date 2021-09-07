@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import datetime
 import os
 from jinja2 import Template
 from yaml import safe_load
@@ -6,10 +7,17 @@ from markdown import markdown
 
 
 here = os.path.abspath(os.path.dirname(__file__))
+today = datetime.date.today().strftime("%B %-d, %Y")
 
 print("Opening config file")
 with open(os.path.join(here, 'tools.yml')) as f:
     config = safe_load(f)
+
+try:
+    with open(os.path.join(here, 'pypi_invalid_badges.txt')) as f:
+        pypi_invalid_badges = f.read().splitlines()
+except FileNotFoundError:
+    pypi_invalid_badges = []
 
 for section in config:
     print(f"Building {section.get('name', '')}")
@@ -20,9 +28,11 @@ for section in config:
             package['user'], package['name'] = package['repo'].split('/')
         except:
             raise Warning('Package.repo is not in correct format', package)
-            continue
         package['conda_package'] = package.get('conda_package', package['name'])
         package['pypi_name'] = package.get('pypi_name', package['name'])
+
+        if package['pypi_name'] in pypi_invalid_badges:
+            package['pypi_invalid'] = True
 
         if package.get('badges'):
             package['badges'] = [x.strip() for x in package['badges'].split(',')]
@@ -58,4 +68,4 @@ with open(os.path.join(here, 'index.rst'), 'w') as f:
     f.write("=========\n\n")
     f.write(".. mdinclude:: tools.md\n\n")
     f.write(".. raw:: html\n\n")
-    f.write(template.render(config=config, sponsors=sponsors))
+    f.write(template.render(config=config, sponsors=sponsors, date=today))
