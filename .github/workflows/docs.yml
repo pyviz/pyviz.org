@@ -74,6 +74,8 @@ jobs:
           git commit -m "adding cached badges"
           git push -f "https://pyviz-developers:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git" HEAD:cache
       - uses: actions/checkout@v2
+        with:
+          clean: false
       - name: Build website
         run: |
           eval "$(conda shell.bash hook)"
