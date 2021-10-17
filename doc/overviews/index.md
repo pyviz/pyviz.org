@@ -9,11 +9,14 @@ The Python visualization landscape can seem daunting at first. These overviews a
 - [Beyond Matplotlib and Seaborn: Python Data Visualization Tools That Work](https://medium.com/codex/beyond-matplotlib-and-seaborn-python-data-visualization-tools-that-work-3ef7f8d1500e)
   1 Feb 2021 Stephanie Kirmer. Comparing Matplotlib, Seaborn, Bokeh, Altair, Plotnine, and Plotly, with example github repo for code.
 
+- [Plotly vs. Bokeh: Interactive Python Visualisation Pros and Cons](https://pauliacomi.com/2020/06/07/plotly-v-bokeh.html) 
+  7 June 2020 Paul Iacomi. In-depth comparison of Bokeh and Plotly+Dash for dashboarding.
+
 - [Complete Guide to Data Visualization with Python](https://towardsdatascience.com/complete-guide-to-data-visualization-with-python-2dd74df12b5e)
   29 Feb 2020 Albert Sanchez Lafuente. Example code for Pandas tables, Matplotlib, Seaborn, Bokeh, Altair, and Folium.
 
 - [Python Visualization Landscape](https://medium.com/@lulunana/python-visualization-landscape-3b95ede3d030)
-  24 Oct 2019 @lulunana. High-level overview of various categories of Python viz libraries, without example code.
+  24 Oct 2019 Sophia Yang. High-level overview of various categories of Python viz libraries, without example code.
 
 - [Python Grids: Data Visualization](http://www.pythongrids.org/grids/g/data-visualization) 19 Sep 2019 Jared Chung. Table comparing stats on 14 Python plotting libraries.
 

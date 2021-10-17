@@ -55,12 +55,6 @@
       badges: pypi, conda, site
       builton: bokeh
 
-    - repo: altair-viz/pdvega
-      site: https://altair-viz.github.io/pdvega
-      conda_channel: conda-forge
-      badges: travis, pypi, conda, site
-      builton: vega
-
 - name: High-Level
   intro: InfoVis Libraries focusing on high-level operations for working with data visually, built upon the core Python or JS libraries.
   packages:
@@ -95,7 +89,7 @@
       site: https://github.com/spotify/chartify/blob/master/README.rst
       badges: travis, pypi, conda, site
       builton: bokeh
-      
+
     - repo: JetBrains/lets-plot
       sponsors: [jetbrains]
       site: https://github.com/JetBrains/lets-plot/blob/master/README_PYTHON.md
@@ -105,7 +99,7 @@
       site: https://github.com/AutoViML/AutoViz
       badges: travis, pypi, site
       builton: matplotlib
-      
+
 - name: Native-GUI
   intro: InfoVis Libraries targetting native-desktop GUI interfaces for interactive plots.
   packages:
@@ -125,12 +119,6 @@
       badges: pypi, conda, site
       builton: matplotlib
 
-    - repo: napari/napari
-      site: https://napari.org/
-      conda_channel: conda-forge
-      badges: codecov, pypi, conda
-      builton: vispy
-      
     - repo: veusz/veusz
       conda_channel: conda-forge
       site: https://veusz.github.io
@@ -153,7 +141,7 @@
       conda_channel: conda-forge
       badges: pypi, conda, rtd
       builton: matplotlib
-      
+
     - repo: Kozea/pygal
       site: http://pygal.org
       conda_channel: conda-forge
@@ -237,7 +225,7 @@
       site: https://python-visualization.github.io/folium
       conda_channel: conda-forge
       builton: leaflet
-      
+
     - repo: SciTools/cartopy
       sponsors: [metoffice]
       site: https://scitools.org.uk/cartopy
@@ -297,7 +285,7 @@
       badges: pypi, conda
       conda_channel: conda-forge
       builton: graphviz
-      
+
     - repo: pygraphviz/pygraphviz
       site: https://pygraphviz.github.io
       conda_channel: conda-forge
@@ -365,6 +353,12 @@
   intro: Tools focused on specific research or application areas other than those above.
   packages:
 
+    - repo: napari/napari
+      site: https://napari.org/
+      conda_channel: conda-forge
+      badges: codecov, pypi, conda
+      builton: vispy
+
     - repo: scikit-image/scikit-image
       site: https://scikit-image.org
       badges: travis, appveyor, codecov, pypi, conda, site
@@ -415,10 +409,10 @@
       site: https://clustergrammer.readthedocs.io
       badges: pypi, site
       builton: webgl
-      
+
     - repo: PAIR-code/facets
       site: https://pair-code.github.io/facets/
-      badges: pypi 
+      badges: pypi
 
 - name: Large-data rendering
   intro: Tools for rasterizing/aggregating data before visualization, which can make rendering faster, allow larger datasets, or make it feasible to use remote datasets (with server-side rendering).
@@ -463,7 +457,7 @@
       builton: bokeh
 
     - repo: streamlit/streamlit
-      sponsors: [streamlit]    
+      sponsors: [streamlit]
       site: https://streamlit.io
       conda_channel: conda-forge
       badges: pypi, conda, site
@@ -513,6 +507,13 @@
 - name: Dormant projects
   intro: Tools no longer developed or endorsed by the authors.
   packages:
+
+    - repo: altair-viz/pdvega
+      site: https://altair-viz.github.io/pdvega
+      conda_channel: conda-forge
+      badges: travis, pypi, conda, site
+      builton: vega
+      dormant: https://github.com/altair-viz/pdvega
 
     - repo: matplotlib/basemap
       site: https://matplotlib.org/basemap
