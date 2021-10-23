@@ -1,0 +1,55 @@
+bokeh:
+  label: Bokeh
+  url: https://docs.bokeh.org/en/latest/
+  logo: _static/badges/builtons/bokeh.png
+
+plotly:
+  label: Plotly
+  url: https://plotly.com/
+  logo: _static/badges/builtons/plotly.png
+
+matplotlib:
+  label: Matplotlib
+  url: https://matplotlib.org/
+  logo: _static/badges/builtons/matplotlib.png
+
+vega:
+  label: Vega
+  url: https://vega.github.io/vega/
+  logo: _static/badges/builtons/vega.png
+
+vtk:
+  label: VTK
+  url: https://vtk.org/
+  logo: _static/badges/builtons/vtk.png
+
+opengl:
+  label: OpenGL
+  url: https://www.opengl.org/
+  logo: _static/badges/builtons/opengl.png
+
+webgl:
+  label: WebGL
+  url: https://www.khronos.org/webgl/
+  logo: _static/badges/builtons/webgl.png
+
+vispy:
+  label: VisPy
+  url: https://vispy.org/
+  logo: _static/badges/builtons/vispy.png
+
+leaflet:
+  label: Leaflet
+  url: https://leafletjs.com/
+  logo: _static/badges/builtons/leaflet.png
+
+graphviz:
+  label: Graphviz
+  url: https://graphviz.org/
+  logo: _static/badges/builtons/graphviz.png
+
+d3:
+  label: D3
+  url: https://d3js.org/
+  logo: _static/badges/builtons/d3.png
+
