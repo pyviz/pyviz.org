@@ -18,6 +18,7 @@
         <th>PyPI</th>
         <th>Conda</th>
         <th>Sponsors</th>
+        <th>Built on</th>
       </tr>
       {% for package in section.packages %}
       <tr>
@@ -112,6 +113,25 @@
                 </a>
               {% else %}
                 {{ sponsor }}
+              {% endif %}
+            {% endfor %}
+            </td>
+          {% else %}
+          <td align='center' class='empty-cell'>-</td>
+          {% endif %}
+          {% if 'builton' in package.badges %}
+            <td align='center'>
+            {% for builton in package.builtons %}
+              {% if builtons.get(builton) %}
+                <a href="{{ builtons[builton].get('url') }}">
+                {% if builtons[builton].get('logo') %}
+                  <img class='builton-logo' src="{{ builtons[builton]['logo'] }}" title="{{ builtons[builton].get('label', builton) }}">
+                {% else %}
+                  {{ builtons[builton].get('label', builton) }}
+                {% endif %}
+                </a>
+              {% else %}
+                {{ builton }}
               {% endif %}
             {% endfor %}
             </td>

@@ -24,7 +24,7 @@ iframe {
 	text-decoration:none;
 }
 
-#tools-wrapper .sponsor-logo {
+#tools-wrapper .sponsor-logo, #tools-wrapper .builton-logo {
   max-height: 20px;
 }
 

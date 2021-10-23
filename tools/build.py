@@ -42,6 +42,8 @@ for section in config:
             package['badges'].append('conda')
         if package.get('sponsors') and 'sponsor' not in package['badges']:
             package['badges'].append('sponsor')
+        if package.get('builtons') and 'builton' not in package['badges']:
+            package['badges'].append('builton')
         if package.get('site') and 'site' not in package['badges']:
             package['badges'].append('site')
         if package.get('dormant') and 'dormant' not in package['badges']:
@@ -61,6 +63,9 @@ for section in config:
 with open(os.path.join(here, 'sponsors.yml')) as f:
     sponsors = safe_load(f)
 
+with open(os.path.join(here, 'builtons.yml')) as f:
+    builtons = safe_load(f)
+
 template = Template(open(os.path.join(here, 'template.html'), 'r').read())
 
 with open(os.path.join(here, 'index.rst'), 'w') as f:
@@ -68,4 +73,4 @@ with open(os.path.join(here, 'index.rst'), 'w') as f:
     f.write("=========\n\n")
     f.write(".. mdinclude:: tools.md\n\n")
     f.write(".. raw:: html\n\n")
-    f.write(template.render(config=config, sponsors=sponsors, date=today))
+    f.write(template.render(config=config, sponsors=sponsors, builtons=builtons, date=today))
