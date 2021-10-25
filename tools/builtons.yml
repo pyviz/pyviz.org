@@ -53,3 +53,8 @@ d3:
   url: https://d3js.org/
   logo: _static/badges/builtons/d3.png
 
+qt:
+  label: qt
+  url: https://qt.io/
+  logo: _static/badges/builtons/qt.png
+
