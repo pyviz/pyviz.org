@@ -474,12 +474,12 @@
       conda_channel: conda-forge
       badges: travis, pypi, conda, rtd
 
-    - repo: danielfrg/jupyter-flex
-      site: https://jupyter-flex.extrapolations.dev
-
     - repo: h2oai/wave
       site: https://wave.h2o.ai
       sponsors: [h2o]
+
+    - repo: danielfrg/jupyter-flex
+      site: https://jupyter-flex.extrapolations.dev
 
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
