@@ -74,6 +74,11 @@ streamlit:
   logo: _static/badges/streamlit.png
 
 jetbrains:
-  jetbrains: streamlit
+  label: jetbrains
   url: https://www.jetbrains.com
   logo: _static/badges/jetbrains.png
+
+h2o:
+  label: h2o.ai
+  url: https://h2o.ai
+  logo: _static/badges/h2o.png
