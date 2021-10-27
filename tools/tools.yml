@@ -37,17 +37,17 @@
       badges: travis, appveyor, coveralls, rtd, pypi, conda, site
       builtons: [matplotlib]
 
-    - repo: pyviz/hvplot
-      sponsors: [anaconda]
-      site: https://hvplot.pyviz.org
-      badges: travis, appveyor, pypi, conda, site
-      builtons: [bokeh]
-
     - repo: santosjorge/cufflinks
       site: https://github.com/santosjorge/cufflinks/blob/master/README.md
       conda_channel: conda-forge
       badges: circleci, pypi, conda, site
       builtons: [plotly]
+
+    - repo: pyviz/hvplot
+      sponsors: [anaconda]
+      site: https://hvplot.pyviz.org
+      badges: travis, appveyor, pypi, conda, site
+      builtons: [bokeh]
 
     - repo: PatrikHlobil/Pandas-Bokeh
       site: https://github.com/PatrikHlobil/Pandas-Bokeh/blob/master/README.md
@@ -125,15 +125,15 @@
       site: https://veusz.github.io
       builtons: [qt]
 
-    - repo: sciapp/gr
-      site: https://gr-framework.org/python.html
-      badges: pypi, site
-
     - repo: enthought/chaco
       sponsors: [enthought]
       site: https://docs.enthought.com/chaco
       badges: pypi
       builtons: [kiva]
+
+    - repo: sciapp/gr
+      site: https://gr-framework.org/python.html
+      badges: pypi, site
 
 - name: Other InfoVis
   intro: InfoVis plotting libraries not fitting into other categories above.
@@ -175,6 +175,12 @@
       badges: travis, pypi, conda, site
       builtons: [vtk]
 
+    - repo: vispy/vispy
+      conda_channel: conda-forge
+      site: http://vispy.org
+      badges: travis, appveyor, coveralls, pypi, conda, site
+      builtons: [opengl]
+
     - repo: enthought/mayavi
       sponsors: [enthought]
       site: https://docs.enthought.com/mayavi/mayavi
@@ -182,20 +188,14 @@
       badges: travis, appveyor, codecov, pypi, conda, site
       builtons: [vtk, opengl]
 
-    - repo: vispy/vispy
+    - repo: maartenbreddels/ipyvolume
       conda_channel: conda-forge
-      site: http://vispy.org
-      badges: travis, appveyor, coveralls, pypi, conda, site
-      builtons: [opengl]
+      builtons: [opengl, webgl]
 
     - repo: pyvista/pyvista
       site: https://docs.pyvista.org
       conda_channel: conda-forge
       builtons: [vtk]
-
-    - repo: maartenbreddels/ipyvolume
-      conda_channel: conda-forge
-      builtons: [opengl, webgl]
 
     - repo: InsightSoftwareConsortium/itkwidgets
       pypi_name: itkwidgets
@@ -249,17 +249,17 @@
       badges: travis, appveyor, pypi, conda, site
       builtons: [bokeh, matplotlib, plotly]
 
+    - repo: ResidentMario/geoplot
+      site: https://residentmario.github.io/geoplot
+      conda_channel: conda-forge
+      badges: pypi, conda, site
+      builtons: [matplotlib]
+
     - repo: pysal/splot
       sponsors: [cgs]
       site: https://splot.readthedocs.io
       conda_channel: conda-forge
       badges: coveralls, pypi, conda, site
-      builtons: [matplotlib]
-
-    - repo: ResidentMario/geoplot
-      site: https://residentmario.github.io/geoplot
-      conda_channel: conda-forge
-      badges: pypi, conda, site
       builtons: [matplotlib]
 
     - repo: andrea-cuttone/geoplotlib
@@ -317,28 +317,28 @@
       conda_channel: conda-forge
       badges: conda, site
 
+    - repo: QuantStack/ipycytoscape
+      conda_channel: conda-forge
+      badges: pypi, conda
+
     - repo: ericmjl/nxviz
       site: https://nxviz.readthedocs.io
       conda_channel: conda-forge
       badges: pypi, conda, site
-
-    - repo: SkBlaz/Py3Plex
-      site: https://py3plex.readthedocs.io
-      badges: pypi, site
 
     - repo: cytoscape/py2cytoscape
       site: https://py2cytoscape.readthedocs.io
       conda_channel: conda-forge
       badges: travis, pypi, conda, rtd, site
 
+    - repo: SkBlaz/Py3Plex
+      site: https://py3plex.readthedocs.io
+      badges: pypi, site
+
     - repo: timkpaine/ipydagred3
       conda_channel: conda-forge
       badges: azure, pypi, conda
       builtons: [d3]
-
-    - repo: QuantStack/ipycytoscape
-      conda_channel: conda-forge
-      badges: pypi, conda
 
     - repo: dblarremore/webweb
       site: https://webwebpage.github.io
@@ -355,12 +355,6 @@
 - name: Other domain-specific
   intro: Tools focused on specific research or application areas other than those above.
   packages:
-
-    - repo: napari/napari
-      site: https://napari.org/
-      conda_channel: conda-forge
-      badges: codecov, pypi, conda
-      builtons: [vispy]
 
     - repo: scikit-image/scikit-image
       site: https://scikit-image.org
@@ -398,6 +392,12 @@
       badges: travis, appveyor, codecov, pypi, conda, site
       builtons: [matplotlib]
 
+    - repo: napari/napari
+      site: https://napari.org/
+      conda_channel: conda-forge
+      badges: codecov, pypi, conda
+      builtons: [vispy]
+
     - repo: yt-project/yt
       sponsors: [numfocus]
       site: https://yt-project.org
@@ -426,16 +426,16 @@
       site: http://datashader.org
       badges: travis, appveyor, pypi, conda, site
 
-    - repo: astrofrog/mpl-scatter-density
-      site: https://github.com/astrofrog/mpl-scatter-density
-      badges: travis, appveyor, pypi, conda, site
-      builtons: [matplotlib]
-
     - repo: vaexio/vaex
       sponsors: [vaexio]
       site: https://vaex.io
       conda_channel: conda-forge
       badges: travis, appveyor, pypi, conda, site
+
+    - repo: astrofrog/mpl-scatter-density
+      site: https://github.com/astrofrog/mpl-scatter-density
+      badges: travis, appveyor, pypi, conda, site
+      builtons: [matplotlib]
 
 - name: Dashboarding
   intro: Libraries for creating live Python-backed web applications or dashboards that a user can interact with to explore or analyze data.
@@ -453,17 +453,21 @@
       badges: circleci, pypi, conda, site
       builtons: [plotly]
 
+    - repo: streamlit/streamlit
+      sponsors: [streamlit]
+      site: https://streamlit.io
+      conda_channel: conda-forge
+      badges: pypi, conda, site
+
     - repo: pyviz/panel
       sponsors: [anaconda]
       site: https://panel.pyviz.org
       badges: travis, appveyor, codecov, pypi, conda, site
       builtons: [bokeh]
 
-    - repo: streamlit/streamlit
-      sponsors: [streamlit]
-      site: https://streamlit.io
-      conda_channel: conda-forge
-      badges: pypi, conda, site
+    - repo: fossasia/visdom
+      site: https://github.com/fossasia/visdom/blob/master/README.md#visdom
+      builtons: [plotly]
 
     - repo: QuantStack/voila
       sponsors: [quantstack]
@@ -473,10 +477,6 @@
     - repo: danielfrg/jupyter-flex
       site: https://jupyter-flex.extrapolations.dev
 
-    - repo: fossasia/visdom
-      site: https://github.com/fossasia/visdom/blob/master/README.md#visdom
-      builtons: [plotly]
-
     - repo: h2oai/wave
       site: https://wave.h2o.ai
       sponsors: [h2o]
@@ -485,20 +485,16 @@
   intro: Collections of colormaps and tools for generating new colormaps.
   packages:
 
-    - repo: jiffyclub/palettable
-      site: https://jiffyclub.github.io/palettable
-
     - repo: pyviz/colorcet
       sponsors: [anaconda]
       site: https://colorcet.pyviz.org
       badges: travis, appveyor, pypi, conda, site
 
+    - repo: jiffyclub/palettable
+      site: https://jiffyclub.github.io/palettable
+
     - repo: matplotlib/cmocean
       site: https://matplotlib.org/cmocean
-      conda_channel: conda-forge
-      badges: travis, codecov, pypi, conda
-
-    - repo: matplotlib/viscm
       conda_channel: conda-forge
       badges: travis, codecov, pypi, conda
 
@@ -510,6 +506,10 @@
     - repo: callumrollo/cmcrameri
       conda_channel: conda-forge
       badges: pypi, conda
+
+    - repo: matplotlib/viscm
+      conda_channel: conda-forge
+      badges: travis, codecov, pypi, conda
 
 - name: Dormant projects
   intro: Tools no longer developed or endorsed by the authors.
