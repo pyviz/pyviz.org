@@ -477,6 +477,10 @@
       site: https://github.com/fossasia/visdom/blob/master/README.md#visdom
       builtons: [plotly]
 
+    - repo: h2oai/wave
+      site: https://wave.h2o.ai
+      sponsors: [h2o]
+
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
   packages:
