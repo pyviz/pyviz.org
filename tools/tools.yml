@@ -480,6 +480,13 @@
 
     - repo: danielfrg/jupyter-flex
       site: https://jupyter-flex.extrapolations.dev
+      badges: pypi
+
+    - repo: trungleduc/ipyflex
+      site: https://ipyflex.readthedocs.io
+      conda_channel: conda-forge
+      badges: pypi, conda, rtd
+
 
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
