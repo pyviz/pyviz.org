@@ -10,8 +10,9 @@ cache_path = os.path.join(here, '..', 'doc', '_static', 'cache')
 badge = os.getenv('BADGE')
 
 cache = {
-    "stars": "https://img.shields.io/github/stars/{repo}.svg?style=social",
-    "contributors": "https://img.shields.io/github/contributors/{repo}.svg?style=social&logo=github",
+    # Override the label with a space to disable it and reduce the badge size
+    "stars": "https://img.shields.io/github/stars/{repo}.svg?style=flat&logo=github&color=blue&label=%20",
+    "contributors": "https://img.shields.io/github/contributors/{repo}.svg?style=flat&logo=github&color=blue&label=%20",
     "pypi_downloads": "https://img.shields.io/pypi/dm/{pypi_name}.svg?label=pypi",
     "license": "https://img.shields.io/pypi/l/{pypi_name}.svg?label",
 }

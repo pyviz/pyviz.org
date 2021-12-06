@@ -70,7 +70,7 @@
           {% if 'site' in package.badges %}
           <td align='left'>
             <a href="{{ package.site_protocol }}://{{ package.site }}">
-              <img src="https://img.shields.io/website-up-down-green-red/{{ package.site_protocol }}/{{ package.site }}.svg">
+              <img src="https://img.shields.io/website-up-down-green-red/{{ package.site_protocol }}/{{ package.site }}.svg?label=%20">
             </a>
           </td>
           {% elif 'rtd' in package.badges %}

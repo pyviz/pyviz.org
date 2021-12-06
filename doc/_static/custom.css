@@ -31,3 +31,7 @@ iframe {
 #tools-wrapper .empty-cell {
   text-align: center;
 }
+
+#tools-wrapper table img {
+    max-width:  fit-content;
+  }
