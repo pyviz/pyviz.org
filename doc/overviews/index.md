@@ -4,8 +4,14 @@ The Python visualization landscape can seem daunting at first. These overviews a
 
 <iframe src="https://rougier.github.io/python-visualization-landscape/landscape-colors.html" frameborder="0" allowfullscreen></iframe>
 
-*Adaptation of Jake VanderPlas graphic about the Python visualization landscape, by Nicolas P. Rougier*
+*Adaptation of [Jake VanderPlas' graphic](https://www.youtube.com/watch?v=FytuB8nFHPQ) about the Python visualization landscape, by Nicolas P. Rougier*
 
+- [Python Dashboarding Shootout and Showdown | PyData Global 2021](https://www.youtube.com/watch?v=4a-Db1zhTEw)
+  October 2021: James Bednar, Nicolas Kruchten, Marc Skov Madsen, Sylvain Corlay and Adrien Treuille
+  
+- [Why *Interactive* Data Visualization Matters for Data Science in Python | PyData Global 2021](https://www.youtube.com/watch?v=tlcMlOVbEpw)
+  October 2021: Nicolas Kruchten
+  
 - [Beyond Matplotlib and Seaborn: Python Data Visualization Tools That Work](https://medium.com/codex/beyond-matplotlib-and-seaborn-python-data-visualization-tools-that-work-3ef7f8d1500e)
   1 Feb 2021 Stephanie Kirmer. Comparing Matplotlib, Seaborn, Bokeh, Altair, Plotnine, and Plotly, with example github repo for code.
 
