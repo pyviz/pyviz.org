@@ -4,7 +4,7 @@ The Python visualization landscape can seem daunting at first. These overviews a
 
 <iframe src="https://rougier.github.io/python-visualization-landscape/landscape-colors.html" frameborder="0" allowfullscreen></iframe>
 
-*Adaptation of [Jake VanderPlas' graphic](https://www.youtube.com/watch?v=FytuB8nFHPQ) about the Python visualization landscape, by Nicolas P. Rougier*
+<em>Adaptation of <a href="https://www.youtube.com/watch?v=FytuB8nFHPQ">Jake VanderPlas' graphic</a> about the Python visualization landscape, by Nicolas P. Rougier</em>
 
 - [Python Dashboarding Shootout and Showdown | PyData Global 2021](https://www.youtube.com/watch?v=4a-Db1zhTEw)
   October 2021: James Bednar, Nicolas Kruchten, Marc Skov Madsen, Sylvain Corlay and Adrien Treuille
