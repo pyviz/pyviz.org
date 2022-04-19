@@ -1,0 +1,42 @@
+name: pyviz.org
+
+description: pyviz.org
+
+commands:
+  build_cache:
+    unix: |
+      python tools/conda_downloads.py
+      BADGE=stars python tools/build_cache.py
+      BADGE=contributors python tools/build_cache.py
+      BADGE=license python tools/build_cache.py
+      BADGE=pypi_downloads python tools/build_cache.py
+  build_website:
+    unix: |
+      python tools/build.py
+      mv tools/index.rst doc/tools.rst
+      nbsite generate-rst --org pyviz --project-name pyviz
+      nbsite build --what=html --output=builtdocs
+
+channels:
+- pyviz
+- conda-forge
+
+packages:
+- python==3.7.11
+- jinja2==3.0.1
+- markdown==3.3.4
+- nbsite==0.6.7
+- pyyaml==5.4.1
+- requests==2.26.0
+- tornado==5.1.1
+- m2r2==0.3.1
+- colorcet==2.0.6
+- fastparquet==0.7.1
+- intake==0.6.3
+- intake-parquet==0.2.3
+- s3fs==2021.8.0
+- python-snappy==0.6.0
+
+platforms:
+- linux-64
+- osx-64

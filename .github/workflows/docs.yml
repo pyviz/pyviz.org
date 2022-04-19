@@ -44,25 +44,20 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
       - uses: conda-incubator/setup-miniconda@v2
         with:
+          auto-activate-base: true
+          activate-environment: ""
           miniconda-version: "latest"
       - name: conda setup
         run: |
           eval "$(conda shell.bash hook)"
-          conda config --set always_yes True
-          conda install -c pyviz "pyctdev>=0.5"
-          doit ecosystem_setup
-          doit env_create
-          conda activate pyviz
-          doit env_capture
+          conda install anaconda-project
+          anaconda-project prepare
       - name: Build cache
         run: |
           eval "$(conda shell.bash hook)"
-          conda activate pyviz
-          conda install -c conda-forge colorcet fastparquet intake intake-parquet "s3fs>=0.6.0" python-snappy
-          doit build_cache
+          anaconda-project run build_cache
           git config user.name github-actions
           git config user.email github-actions@github.com
           mv ./doc/_static/cache ./tmp
@@ -79,11 +74,10 @@ jobs:
       - name: Build website
         run: |
           eval "$(conda shell.bash hook)"
-          conda activate pyviz
           git checkout -b deploy-tmp
           git fetch "https://github.com/$GITHUB_REPOSITORY.git" cache:refs/remotes/cache  # all cached badges are in this branch
           git checkout cache -- ./doc/_static/cache
-          doit build_website
+          anaconda-project run build_website
       - name: git status
         run: |
           git status
