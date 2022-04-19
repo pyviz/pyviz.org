@@ -57,7 +57,7 @@ jobs:
       - name: Build cache
         run: |
           eval "$(conda shell.bash hook)"
-          anaconda-project build_cache
+          anaconda-project run build_cache
           git config user.name github-actions
           git config user.email github-actions@github.com
           mv ./doc/_static/cache ./tmp
@@ -77,7 +77,7 @@ jobs:
           git checkout -b deploy-tmp
           git fetch "https://github.com/$GITHUB_REPOSITORY.git" cache:refs/remotes/cache  # all cached badges are in this branch
           git checkout cache -- ./doc/_static/cache
-          anaconda-project build_website
+          anaconda-project run build_website
       - name: git status
         run: |
           git status
