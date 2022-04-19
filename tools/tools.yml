@@ -100,6 +100,12 @@
       badges: travis, pypi, site
       builtons: [matplotlib]
 
+    - repo: lukelbd/proplot
+      site: https://proplot.readthedocs.io
+      conda_channel: conda-forge
+      badges: travis, pypi, conda, site
+      builtons: [matplotlib]
+
 - name: Native-GUI
   intro: InfoVis Libraries targetting native-desktop GUI interfaces for interactive plots.
   packages:
