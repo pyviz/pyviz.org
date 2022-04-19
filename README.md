@@ -21,23 +21,22 @@ To build the [dev site](https://pyviz-dev.github.io/pyviz.org), just push a comm
 
 ## Building website locally
 
-Set up and activate development environment:
+Install anaconda-project:
 
 ```bash
-conda env update --file environment.yml --name pyviz
-conda activate pyviz
+conda install anaconda-project
 ```
 
-Build the cached badges using the custom ``doit`` (similar to `make`) command:
+Build the cached badges:
 
 ```bash
-doit build_cache
+anaconda-project build_cache
 ```
 
 Build the website:
 
 ```bash
-doit build_website
+anaconda-project build_website
 ```
 
 View the website locally:
