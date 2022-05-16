@@ -106,6 +106,10 @@
       badges: travis, pypi, conda, site
       builtons: [matplotlib]
 
+    - repo: vizzuhq/ipyvizzu
+      site: https://ipyvizzu.vizzuhq.com
+      badges: travis, pypi, site
+
 - name: Native-GUI
   intro: InfoVis Libraries targetting native-desktop GUI interfaces for interactive plots.
   packages:
@@ -492,6 +496,9 @@
       site: https://ipyflex.readthedocs.io
       conda_channel: conda-forge
       badges: pypi, conda, rtd
+
+    - repo: mljar/bloxs
+      badges: pypi
 
 
 - name: Colormapping
