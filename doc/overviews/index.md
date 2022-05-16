@@ -6,7 +6,7 @@ The Python visualization landscape can seem daunting at first. These overviews a
 
 <em>Adaptation of <a href="https://www.youtube.com/watch?v=FytuB8nFHPQ">Jake VanderPlas' graphic</a> about the Python visualization landscape, by Nicolas P. Rougier</em>
 
-- [What Are the Best Python Plotting Libraries?](https://towardsdatascience.com/what-are-the-best-python-plotting-libraries-df234a356aec), May 2022: Will Noris. Comparing Matplotlib, Seaborn, Plotly, and Folium.
+- [What Are the Best Python Plotting Libraries?](https://towardsdatascience.com/what-are-the-best-python-plotting-libraries-df234a356aec), May 2022: Will Norris. Comparing Matplotlib, Seaborn, Plotly, and Folium.
 
 - [Python Dashboarding Shootout and Showdown | PyData Global 2021](https://www.youtube.com/watch?v=4a-Db1zhTEw)
   October 2021: James Bednar, Nicolas Kruchten, Marc Skov Madsen, Sylvain Corlay and Adrien Treuille
