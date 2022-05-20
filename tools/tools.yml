@@ -475,6 +475,11 @@
       badges: travis, appveyor, codecov, pypi, conda, site
       builtons: [bokeh]
 
+    - repo: gradio-app/gradio
+      sponsors: [huggingface]
+      site: https://gradio.app/
+      badges: circleci, codecov, pypi, conda, site
+
     - repo: fossasia/visdom
       site: https://github.com/fossasia/visdom/blob/master/README.md#visdom
       builtons: [plotly]
