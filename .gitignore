@@ -20,3 +20,5 @@ tools/pypi_invalid_badges.txt
 
 # anaconda-project
 envs
+
+*~
