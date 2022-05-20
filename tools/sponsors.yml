@@ -82,3 +82,8 @@ h2o:
   label: h2o.ai
   url: https://h2o.ai
   logo: _static/badges/h2o.png
+
+huggingface:
+  label: huggingface
+  url: https://huggingface.co
+  logo: _static/badges/huggingface.png
