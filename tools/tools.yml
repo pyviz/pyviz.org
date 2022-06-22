@@ -234,6 +234,13 @@
       conda_channel: conda-forge
       builtons: [matplotlib]
 
+    - repo: pydata/xarray
+      sponsors: [numfocus]
+      appveyor_project: shoyer/xray
+      site: https://xarray.pydata.org
+      badges: travis, appveyor, coveralls, rtd, pypi, conda, site
+      builtons: [matplotlib]
+
     - repo: python-visualization/folium
       site: https://python-visualization.github.io/folium
       conda_channel: conda-forge
@@ -244,6 +251,12 @@
       site: https://scitools.org.uk/cartopy
       badges: travis, appveyor, coveralls, pypi, conda, site
       builtons: [matplotlib]
+
+    - repo: pyviz/hvplot
+      sponsors: [anaconda]
+      site: https://hvplot.pyviz.org
+      badges: travis, appveyor, pypi, conda, site
+      builtons: [bokeh]
 
     - repo: jupyter-widgets/ipyleaflet
       conda_channel: conda-forge
