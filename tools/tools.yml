@@ -266,6 +266,13 @@
     - repo: vgm64/gmplot
       badges: pypi
 
+    - repo: pysal/splot
+      sponsors: [cgs]
+      site: https://splot.readthedocs.io
+      conda_channel: conda-forge
+      badges: coveralls, pypi, conda, site
+      builtons: [matplotlib]
+
     - repo: pyviz/geoviews
       sponsors: [anaconda]
       site: http://geoviews.org
@@ -278,23 +285,16 @@
       badges: pypi, conda, site
       builtons: [matplotlib]
 
-    - repo: pysal/splot
-      sponsors: [cgs]
-      site: https://splot.readthedocs.io
-      conda_channel: conda-forge
-      badges: coveralls, pypi, conda, site
-      builtons: [matplotlib]
-
-    - repo: andrea-cuttone/geoplotlib
-      site: https://github.com/andrea-cuttone/geoplotlib/wiki/User-Guide
-      badges: pypi
-      builtons: [opengl]
-
     - repo: giswqs/leafmap
       site: https://leafmap.org
       conda_channel: conda-forge
       badges: pypi, conda
       builtons: [leaflet, plotly]
+
+    - repo: andrea-cuttone/geoplotlib
+      site: https://github.com/andrea-cuttone/geoplotlib/wiki/User-Guide
+      badges: pypi
+      builtons: [opengl]
 
 - name: Graphs and networks
   intro: Tools specifically focused on visualizing graphs (networks).  Several of the other plotting libraries listed in other sections can also plot graphs, including Bokeh, HoloViews, Matplotlib, and Plotly.
