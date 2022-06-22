@@ -277,6 +277,12 @@
       badges: pypi
       builtons: [opengl]
 
+    - repo: giswqs/leafmap
+      site: https://leafmap.org
+      conda_channel: conda-forge
+      badges: pypi, conda
+      builtons: [leaflet, plotly]
+
 - name: Graphs and networks
   intro: Tools specifically focused on visualizing graphs (networks).  Several of the other plotting libraries listed in other sections can also plot graphs, including Bokeh, HoloViews, Matplotlib, and Plotly.
   packages:
