@@ -225,6 +225,12 @@
       badges: pypi, rtd
       builtons: [opengl]
 
+    - repo: nmwsharp/polyscope
+      site: http://polyscope.run
+      badges: pypi
+      builtons: [opengl]
+
+
 - name: Geospatial
   intro: Tools for working with data in geographic coordinates.
   packages:
@@ -498,6 +504,10 @@
       sponsors: [huggingface]
       site: https://gradio.app
       badges: circleci, codecov, pypi, site
+
+    - repo: pywebio/PyWebIO
+      site: https://www.pyweb.io
+      badges: pypi, site
 
     - repo: fossasia/visdom
       site: https://github.com/fossasia/visdom/blob/master/README.md#visdom
