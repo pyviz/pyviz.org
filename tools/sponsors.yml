@@ -87,3 +87,8 @@ huggingface:
   label: huggingface
   url: https://huggingface.co
   logo: _static/badges/huggingface.png
+
+mljar:
+  label: mljar
+  url: https://mljar.com
+  logo: _static/badges/mljar.png

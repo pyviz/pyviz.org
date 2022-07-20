@@ -8,3 +8,4 @@
    Dash <https://plot.ly/products/dash>
    Panel <https://panel.pyviz.org>
    Voila <https://github.com/QuantStack/voila>
+   Mercury <https://github.com/mljar/mercury>
