@@ -7,7 +7,6 @@ Just about any Python library can be used to create a "static" PNG, SVG, HTML, o
 - [Voila](https://github.com/QuantStack/voila) (from [QuantStack](http://quantstack.net)); see the [blog post](https://blog.jupyter.org/and-voil%C3%A0-f6a2c08a4a93); used with separate layout tools like 
 [jupyter-flex](https://github.com/danielfrg/jupyter-flex) or templates like [voila-vuetify](https://github.com/voila-dashboards/voila-vuetify).
 - [Streamlit](https://www.streamlit.io); see the [blog post](https://towardsdatascience.com/coding-ml-tools-like-you-code-ml-models-ddba3357eace)
-- [Mercury](https://github.com/mljar/mercury) (from [MLJAR](https://mljar.com)); see the [blog post](https://mljar.com/blog/dashboard-python-jupyter-notebook/) 
 
 You can see comparisons of these tools in:
 - [Streamlit vs Dash vs Voilà vs Panel — Battle of The Python Dashboarding Giants](https://medium.datadriveninvestor.com/streamlit-vs-dash-vs-voil%C3%A0-vs-panel-battle-of-the-python-dashboarding-giants-177c40b9ea57)
