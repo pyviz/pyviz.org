@@ -518,6 +518,12 @@
       conda_channel: conda-forge
       badges: travis, pypi, conda, rtd
 
+    - repo: mljar/mercury
+      site: https://mljar.com/mercury
+      conda_channel: conda-forge
+      badges: pypi, conda, site
+      sponsors: [mljar]
+
     - repo: h2oai/wave
       site: https://wave.h2o.ai
       sponsors: [h2o]
@@ -533,6 +539,7 @@
 
     - repo: mljar/bloxs
       badges: pypi
+      sponsors: [mljar]
 
 
 - name: Colormapping
