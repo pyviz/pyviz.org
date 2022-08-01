@@ -18,6 +18,7 @@ commands:
       nbsite build --what=html --output=builtdocs
 
 channels:
+- defaults
 - pyviz
 - conda-forge
 
