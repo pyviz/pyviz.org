@@ -170,9 +170,6 @@
 
     - repo: maxhumber/chart
 
-    - repo: biggles-plot/biggles
-      site: https://biggles-plot.github.io
-      badges: pypi
 
 - name: SciVis
   intro: Libraries for visualizing scientific data situated in real-world coordinates, typically using OpenGL or WebGL.
@@ -576,12 +573,10 @@
   intro: Tools no longer developed or endorsed by the authors.
   packages:
 
-    - repo: altair-viz/pdvega
-      site: https://altair-viz.github.io/pdvega
-      conda_channel: conda-forge
-      badges: travis, pypi, conda, site
-      builtons: [d3, vega]
-      dormant: https://github.com/altair-viz/pdvega
+    - repo: biggles-plot/biggles
+      site: https://biggles-plot.github.io
+      badges: pypi
+      dormant: https://github.com/biggles-plot/biggles/graphs/contributors
 
     - repo: matplotlib/basemap
       site: https://matplotlib.org/basemap
@@ -622,6 +617,16 @@
       site: https://mpld3.github.io
       dormant: http://www.xavierdupre.fr/app/pymyinstall/helpsphinx/blog/2017/2017-09-02_mpld3.html
       builtons: [matplotlib, d3]
+      
+    - repo: altair-viz/pdvega
+      site: https://altair-viz.github.io/pdvega
+      conda_channel: conda-forge
+      badges: travis, pypi, conda, site
+      builtons: [d3, vega]
+      dormant: https://github.com/altair-viz/pdvega
+
+    - repo: olgabot/prettyplotlib
+      dormant: https://github.com/olgabot/prettyplotlib/commit/089263c8574b03126a638c8c00bf7880695bc93c
 
     - repo: PyQwt/PyQwt
       site: http://www.pyqtgraph.org
@@ -643,3 +648,4 @@
     - repo: almarklein/visvis
       dormant: https://github.com/almarklein/visvis#status
       builtons: [opengl]
+      
