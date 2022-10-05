@@ -537,6 +537,12 @@
     - repo: mljar/bloxs
       badges: pypi
       sponsors: [mljar]
+      
+    - repo: rstudio/py-shiny
+      sponsors: [rstudio]
+      site: https://shiny.rstudio.com/py/
+      conda_channel: conda-forge
+      badges: pypi, conda
 
 
 - name: Colormapping
