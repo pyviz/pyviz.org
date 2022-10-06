@@ -43,9 +43,9 @@
       badges: circleci, pypi, conda, site
       builtons: [plotly]
 
-    - repo: pyviz/hvplot
+    - repo: holoviz/hvplot
       sponsors: [anaconda]
-      site: https://hvplot.pyviz.org
+      site: https://hvplot.holoviz.org
       badges: travis, appveyor, pypi, conda, site
       builtons: [bokeh]
 
@@ -70,9 +70,9 @@
       badges: travis, pypi, conda, site
       builtons: [vega]
 
-    - repo: pyviz/holoviews
+    - repo: holoviz/holoviews
       sponsors: [anaconda]
-      appveyor_project: pyviz/holoviews-ginxt
+      appveyor_project: holoviz/holoviews-ginxt
       badges: travis, appveyor, coveralls, pypi, conda, site
       builtons: [bokeh, matplotlib, plotly]
 
@@ -276,7 +276,7 @@
       badges: coveralls, pypi, conda, site
       builtons: [matplotlib]
 
-    - repo: pyviz/geoviews
+    - repo: holoviz/geoviews
       sponsors: [anaconda]
       site: http://geoviews.org
       badges: travis, appveyor, pypi, conda, site
@@ -453,7 +453,7 @@
   intro: Tools for rasterizing/aggregating data before visualization, which can make rendering faster, allow larger datasets, or make it feasible to use remote datasets (with server-side rendering).
   packages:
 
-    - repo: pyviz/datashader
+    - repo: holoviz/datashader
       sponsors: [anaconda]
       site: http://datashader.org
       badges: travis, appveyor, pypi, conda, site
@@ -491,9 +491,9 @@
       conda_channel: conda-forge
       badges: pypi, conda, site
 
-    - repo: pyviz/panel
+    - repo: holoviz/panel
       sponsors: [anaconda]
-      site: https://panel.pyviz.org
+      site: https://panel.holoviz.org
       badges: travis, appveyor, codecov, pypi, conda, site
       builtons: [bokeh]
 
@@ -538,14 +538,17 @@
       badges: pypi
       sponsors: [mljar]
 
+    - repo: Avaiga/taipy
+      site: https://www.taipy.io
+      badges: pypi
 
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
   packages:
 
-    - repo: pyviz/colorcet
+    - repo: holoviz/colorcet
       sponsors: [anaconda]
-      site: https://colorcet.pyviz.org
+      site: https://colorcet.holoviz.org
       badges: travis, appveyor, pypi, conda, site
 
     - repo: jiffyclub/palettable
