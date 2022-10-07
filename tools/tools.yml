@@ -542,6 +542,10 @@
       badges: pypi
       sponsors: [mljar]
 
+    - repo: rstudio/py-shiny
+      site: https://shiny.rstudio.com/py
+      badges: pypi
+      sponsors: [rstudio]
 
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
@@ -621,7 +625,7 @@
       site: https://mpld3.github.io
       dormant: http://www.xavierdupre.fr/app/pymyinstall/helpsphinx/blog/2017/2017-09-02_mpld3.html
       builtons: [matplotlib, d3]
-      
+
     - repo: altair-viz/pdvega
       site: https://altair-viz.github.io/pdvega
       conda_channel: conda-forge
@@ -652,4 +656,3 @@
     - repo: almarklein/visvis
       dormant: https://github.com/almarklein/visvis#status
       builtons: [opengl]
-      
