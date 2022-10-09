@@ -544,6 +544,7 @@
 
     - repo: rstudio/py-shiny
       site: https://shiny.rstudio.com/py
+      pypi_name: shiny
       badges: pypi
       sponsors: [rstudio]
 
