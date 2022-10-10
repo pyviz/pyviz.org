@@ -523,6 +523,12 @@
       site: https://jupyter-flex.extrapolations.dev
       badges: pypi
 
+    - repo: rstudio/py-shiny
+      site: https://shiny.rstudio.com/py
+      pypi_name: shiny
+      badges: pypi
+      sponsors: [rstudio]
+
     - repo: trungleduc/ipyflex
       site: https://ipyflex.readthedocs.io
       conda_channel: conda-forge
@@ -541,12 +547,6 @@
     - repo: mljar/bloxs
       badges: pypi
       sponsors: [mljar]
-
-    - repo: rstudio/py-shiny
-      site: https://shiny.rstudio.com/py
-      pypi_name: shiny
-      badges: pypi
-      sponsors: [rstudio]
 
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
