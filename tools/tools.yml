@@ -491,37 +491,33 @@
       conda_channel: conda-forge
       badges: pypi, conda, site
 
+    - repo: gradio-app/gradio
+      sponsors: [huggingface]
+      site: https://gradio.app
+      badges: circleci, codecov, pypi, site
+
     - repo: holoviz/panel
       sponsors: [anaconda]
       site: https://panel.holoviz.org
       badges: travis, appveyor, codecov, pypi, conda, site
       builtons: [bokeh]
 
-    - repo: gradio-app/gradio
-      sponsors: [huggingface]
-      site: https://gradio.app
-      badges: circleci, codecov, pypi, site
-
     - repo: QuantStack/voila
       sponsors: [quantstack]
       conda_channel: conda-forge
       badges: travis, pypi, conda, rtd
 
-    - repo: fossasia/visdom
-      site: https://github.com/fossasia/visdom/blob/master/README.md#visdom
-      builtons: [plotly]
-
     - repo: h2oai/wave
       site: https://wave.h2o.ai
       sponsors: [h2o]
 
+    - repo: fossasia/visdom
+      site: https://github.com/fossasia/visdom/blob/master/README.md#visdom
+      builtons: [plotly]
+
     - repo: pywebio/PyWebIO
       site: https://www.pyweb.io
       badges: pypi, site
-
-    - repo: danielfrg/jupyter-flex
-      site: https://jupyter-flex.extrapolations.dev
-      badges: pypi
 
     - repo: rstudio/py-shiny
       site: https://shiny.rstudio.com/py
@@ -533,6 +529,10 @@
       site: https://ipyflex.readthedocs.io
       conda_channel: conda-forge
       badges: pypi, conda, rtd
+
+    - repo: danielfrg/jupyter-flex
+      site: https://jupyter-flex.extrapolations.dev
+      badges: pypi
 
     - repo: Avaiga/taipy
       site: https://www.taipy.io
