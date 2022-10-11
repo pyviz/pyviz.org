@@ -552,7 +552,7 @@
       site: https://docs.datapane.com
       conda_channel: conda-forge
       badges: pypi, conda, site
-      sponsors: [mljar]
+      sponsors: [datapane]
 
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
