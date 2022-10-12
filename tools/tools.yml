@@ -519,6 +519,12 @@
       site: https://www.pyweb.io
       badges: pypi, site
 
+    - repo: datapane/datapane
+      site: https://docs.datapane.com
+      conda_channel: conda-forge
+      badges: pypi, conda, site
+      sponsors: [datapane]
+
     - repo: rstudio/py-shiny
       site: https://shiny.rstudio.com/py
       pypi_name: shiny
@@ -547,12 +553,6 @@
     - repo: mljar/bloxs
       badges: pypi
       sponsors: [mljar]
-
-    - repo: datapane/datapane
-      site: https://docs.datapane.com
-      conda_channel: conda-forge
-      badges: pypi, conda, site
-      sponsors: [datapane]
 
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
