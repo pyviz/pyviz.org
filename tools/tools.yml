@@ -528,7 +528,8 @@
     - repo: rstudio/py-shiny
       site: https://shiny.rstudio.com/py
       pypi_name: shiny
-      badges: pypi
+      conda_channel: conda-forge
+      badges: pypi, conda
       sponsors: [rstudio]
 
     - repo: trungleduc/ipyflex
@@ -553,12 +554,6 @@
     - repo: mljar/bloxs
       badges: pypi
       sponsors: [mljar]
-      
-    - repo: rstudio/py-shiny
-      sponsors: [rstudio]
-      site: https://shiny.rstudio.com/py/
-      conda_channel: conda-forge
-      badges: pypi, conda
 
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
