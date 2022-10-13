@@ -528,7 +528,8 @@
     - repo: rstudio/py-shiny
       site: https://shiny.rstudio.com/py
       pypi_name: shiny
-      badges: pypi
+      conda_channel: conda-forge
+      badges: pypi, conda
       sponsors: [rstudio]
 
     - repo: trungleduc/ipyflex
