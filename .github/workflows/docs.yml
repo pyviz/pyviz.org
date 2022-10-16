@@ -15,7 +15,7 @@ jobs:
   pre_ci:
     runs-on: 'ubuntu-latest'
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           # required for PRs
           fetch-depth: 2
@@ -43,7 +43,7 @@ jobs:
       DESC: "Documentation build"
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: conda-incubator/setup-miniconda@v2
         with:
           auto-activate-base: true
@@ -68,7 +68,7 @@ jobs:
           ls ./doc/_static/cache
           git commit -m "adding cached badges"
           git push -f "https://pyviz-developers:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git" HEAD:cache
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           clean: false
       - name: Build website
