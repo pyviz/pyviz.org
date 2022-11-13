@@ -108,7 +108,8 @@
 
     - repo: vizzuhq/ipyvizzu
       site: https://ipyvizzu.vizzuhq.com
-      badges: travis, pypi, site
+      conda_channel: conda-forge
+      badges: travis, pypi, conda, site
 
 - name: Native-GUI
   intro: InfoVis Libraries targetting native-desktop GUI interfaces for interactive plots.
