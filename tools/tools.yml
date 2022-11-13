@@ -110,6 +110,11 @@
       site: https://ipyvizzu.vizzuhq.com
       badges: travis, pypi, site
 
+    - repo: vizzuhq/ipyvizzu-story
+      site: https://vizzuhq.github.io/ipyvizzu-story/
+      conda_channel: conda-forge
+      badges: travis, pypi, conda, site
+
 - name: Native-GUI
   intro: InfoVis Libraries targetting native-desktop GUI interfaces for interactive plots.
   packages:
