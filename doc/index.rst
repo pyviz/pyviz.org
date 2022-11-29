@@ -12,4 +12,3 @@
    Dashboarding <dashboarding/index>
    SciVis <scivis/index>
    Tutorials <tutorials/index>
-   Topics <https://examples.pyviz.org>
