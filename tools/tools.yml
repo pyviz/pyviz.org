@@ -115,6 +115,12 @@
       site: https://vizzuhq.github.io/ipyvizzu-story/
       conda_channel: conda-forge
       badges: travis, pypi, conda, site
+      
+    - repo: Technion-Kishony-lab/quibbler
+      pypi_name: pyquibbler
+      site: https://github.com/Technion-Kishony-lab/quibbler
+      badges: pypi, site
+      builtons: [matplotlib]
 
 - name: Native-GUI
   intro: InfoVis Libraries targetting native-desktop GUI interfaces for interactive plots.
