@@ -561,6 +561,12 @@
       badges: pypi
       sponsors: [mljar]
 
+    - repo: Zen-Reportz/zen_dash
+      badges: pypi
+
+    - repo: pynecone-io/pynecone
+      badges: pypi
+
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
   packages:
