@@ -521,15 +521,24 @@
       site: https://github.com/fossasia/visdom/blob/master/README.md#visdom
       builtons: [plotly]
 
-    - repo: pywebio/PyWebIO
-      site: https://www.pyweb.io
-      badges: pypi, site
-
     - repo: datapane/datapane
       site: https://docs.datapane.com
       conda_channel: conda-forge
       badges: pypi, conda, site
       sponsors: [datapane]
+
+    - repo: pywebio/PyWebIO
+      site: https://www.pyweb.io
+      badges: pypi, site
+
+    - repo: Avaiga/taipy
+      site: https://www.taipy.io
+      badges: pypi
+
+    - repo: trungleduc/ipyflex
+      site: https://ipyflex.readthedocs.io
+      conda_channel: conda-forge
+      badges: pypi, conda, rtd
 
     - repo: rstudio/py-shiny
       site: https://shiny.rstudio.com/py
@@ -538,17 +547,18 @@
       badges: pypi, conda
       sponsors: [rstudio]
 
-    - repo: trungleduc/ipyflex
-      site: https://ipyflex.readthedocs.io
-      conda_channel: conda-forge
-      badges: pypi, conda, rtd
+    - repo: mljar/bloxs
+      badges: pypi
+      sponsors: [mljar]
 
     - repo: danielfrg/jupyter-flex
       site: https://jupyter-flex.extrapolations.dev
       badges: pypi
 
-    - repo: Avaiga/taipy
-      site: https://www.taipy.io
+    - repo: pynecone-io/pynecone
+      badges: pypi
+
+    - repo: Zen-Reportz/zen_dash
       badges: pypi
 
     - repo: mljar/mercury
@@ -556,16 +566,6 @@
       conda_channel: conda-forge
       badges: pypi, conda, site
       sponsors: [mljar]
-
-    - repo: mljar/bloxs
-      badges: pypi
-      sponsors: [mljar]
-
-    - repo: Zen-Reportz/zen_dash
-      badges: pypi
-
-    - repo: pynecone-io/pynecone
-      badges: pypi
 
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
