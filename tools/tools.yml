@@ -76,17 +76,17 @@
       badges: travis, appveyor, coveralls, pypi, conda, site
       builtons: [bokeh, matplotlib, plotly]
 
-    - repo: AutoViML/AutoViz
-      site: https://github.com/AutoViML/AutoViz
-      badges: travis, pypi, site
-      builtons: [matplotlib]
-
     - repo: plotly/plotly_express
       sponsors: [plotly]
       site: https://plotly.express
       conda_channel: conda-forge
       badges: pypi, conda, site
       builtons: [plotly]
+
+    - repo: AutoViML/AutoViz
+      site: https://github.com/AutoViML/AutoViz
+      badges: travis, pypi, site
+      builtons: [matplotlib]
 
     - repo: spotify/chartify
       sponsors: [spotify]
@@ -95,16 +95,16 @@
       badges: travis, pypi, conda, site
       builtons: [bokeh]
 
+    - repo: JetBrains/lets-plot
+      sponsors: [jetbrains]
+      site: https://github.com/JetBrains/lets-plot/blob/master/README_PYTHON.md
+      badges: pypi, site
+
     - repo: lukelbd/proplot
       site: https://proplot.readthedocs.io
       conda_channel: conda-forge
       badges: travis, pypi, conda, site
       builtons: [matplotlib]
-
-    - repo: JetBrains/lets-plot
-      sponsors: [jetbrains]
-      site: https://github.com/JetBrains/lets-plot/blob/master/README_PYTHON.md
-      badges: pypi, site
 
     - repo: vizzuhq/ipyvizzu
       site: https://ipyvizzu.vizzuhq.com
@@ -115,7 +115,7 @@
       site: https://vizzuhq.github.io/ipyvizzu-story/
       conda_channel: conda-forge
       badges: travis, pypi, conda, site
-      
+
     - repo: Technion-Kishony-lab/quibbler
       pypi_name: pyquibbler
       site: https://github.com/Technion-Kishony-lab/quibbler
@@ -194,20 +194,20 @@
       badges: travis, pypi, conda, site
       builtons: [vtk]
 
-    - repo: vispy/vispy
+    - repo: pyvista/pyvista
+      site: https://docs.pyvista.org
       conda_channel: conda-forge
-      site: http://vispy.org
-      badges: travis, appveyor, coveralls, pypi, conda, site
-      builtons: [opengl]
+      builtons: [vtk]
 
     - repo: maartenbreddels/ipyvolume
       conda_channel: conda-forge
       builtons: [opengl, webgl]
 
-    - repo: pyvista/pyvista
-      site: https://docs.pyvista.org
+    - repo: vispy/vispy
       conda_channel: conda-forge
-      builtons: [vtk]
+      site: http://vispy.org
+      badges: travis, appveyor, coveralls, pypi, conda, site
+      builtons: [opengl]
 
     - repo: enthought/mayavi
       sponsors: [enthought]
@@ -267,6 +267,9 @@
       badges: travis, appveyor, pypi, conda, site
       builtons: [bokeh]
 
+    - repo: vgm64/gmplot
+      badges: pypi
+
     - repo: SciTools/cartopy
       sponsors: [metoffice]
       site: https://scitools.org.uk/cartopy
@@ -277,9 +280,6 @@
       conda_channel: conda-forge
       badges: pypi, conda, rtd
       builtons: [leaflet]
-
-    - repo: vgm64/gmplot
-      badges: pypi
 
     - repo: pysal/splot
       sponsors: [cgs]
@@ -338,17 +338,17 @@
       conda_channel: conda-forge
       builtons: [graphviz]
 
-    - repo: pygraphviz/pygraphviz
-      site: https://pygraphviz.github.io
-      conda_channel: conda-forge
-      badges: travis, pypi, conda, site
-      builtons: [graphviz]
-
     - repo: igraph/python-igraph
       site: https://igraph.org/python
       conda_channel: conda-forge
       appveyor_project: ntamas/python-igraph
       badges: travis, appveyor, pypi, conda, site
+
+    - repo: pygraphviz/pygraphviz
+      site: https://pygraphviz.github.io
+      conda_channel: conda-forge
+      badges: travis, pypi, conda, site
+      builtons: [graphviz]
 
     - repo: WestHealth/pyvis
       site: https://pyvis.readthedocs.io
@@ -410,17 +410,6 @@
       badges: travis, appveyor, codecov, pypi, conda, site
       builtons: [matplotlib]
 
-    - repo: DistrictDataLabs/yellowbrick
-      site: https://www.scikit-yb.org
-      sponsors: [numfocus]
-      conda_channel: DistrictDataLabs
-      badges: travis, appveyor, pypi, conda, site
-      builtons: [matplotlib]
-
-    - repo: ResidentMario/missingno
-      conda_channel: conda-forge
-      builtons: [matplotlib]
-
     - repo: arviz-devs/arviz
       sponsors: [numfocus]
       site: https://arviz-devs.github.io/arviz
@@ -428,10 +417,21 @@
       badges: pypi, travis, azure, coveralls, conda, site
       builtons: [matplotlib]
 
+    - repo: DistrictDataLabs/yellowbrick
+      site: https://www.scikit-yb.org
+      sponsors: [numfocus]
+      conda_channel: DistrictDataLabs
+      badges: travis, appveyor, pypi, conda, site
+      builtons: [matplotlib]
+
     - repo: reiinakano/scikit-plot
       site: https://github.com/reiinakano/scikit-plot
       conda_channel: conda-forge
       badges: pypi, conda, site
+      builtons: [matplotlib]
+
+    - repo: ResidentMario/missingno
+      conda_channel: conda-forge
       builtons: [matplotlib]
 
     - repo: napari/napari
@@ -558,6 +558,15 @@
       badges: pypi, conda
       sponsors: [rstudio]
 
+    - repo: pynecone-io/pynecone
+      badges: pypi
+
+    - repo: mljar/mercury
+      site: https://mljar.com/mercury
+      conda_channel: conda-forge
+      badges: pypi, conda, site
+      sponsors: [mljar]
+
     - repo: mljar/bloxs
       badges: pypi
       sponsors: [mljar]
@@ -566,17 +575,8 @@
       site: https://jupyter-flex.extrapolations.dev
       badges: pypi
 
-    - repo: pynecone-io/pynecone
-      badges: pypi
-
     - repo: Zen-Reportz/zen_dash
       badges: pypi
-
-    - repo: mljar/mercury
-      site: https://mljar.com/mercury
-      conda_channel: conda-forge
-      badges: pypi, conda, site
-      sponsors: [mljar]
 
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
