@@ -59,16 +59,16 @@
   intro: InfoVis Libraries focusing on high-level operations for working with data visually, built upon the core Python or JS libraries.
   packages:
 
-    - repo: mwaskom/seaborn
-      site: https://seaborn.pydata.org
-      badges: travis, codecov, pypi, conda, site
-      builtons: [matplotlib]
-
     - repo: altair-viz/altair
       site: https://altair-viz.github.io
       conda_channel: conda-forge
       badges: travis, pypi, conda, site
       builtons: [vega]
+
+    - repo: mwaskom/seaborn
+      site: https://seaborn.pydata.org
+      badges: travis, codecov, pypi, conda, site
+      builtons: [matplotlib]
 
     - repo: holoviz/holoviews
       sponsors: [anaconda]
@@ -147,15 +147,16 @@
       site: https://veusz.github.io
       builtons: [qt]
 
-    - repo: sciapp/gr
-      site: https://gr-framework.org/python.html
-      badges: pypi, site
-
     - repo: enthought/chaco
       sponsors: [enthought]
       site: https://docs.enthought.com/chaco
       badges: pypi
       builtons: [kiva]
+
+    - repo: sciapp/gr
+      site: https://gr-framework.org/python.html
+      badges: pypi, site
+
 
 - name: Other InfoVis
   intro: InfoVis plotting libraries not fitting into other categories above.
@@ -167,20 +168,20 @@
       badges: pypi, conda, rtd
       builtons: [matplotlib]
 
-    - repo: Kozea/pygal
-      site: http://pygal.org
-      conda_channel: conda-forge
-
     - repo: bloomberg/bqplot
       conda_channel: conda-forge
       badges: pypi, conda, rtd
 
-    - repo: maxhumber/chart
+    - repo: Kozea/pygal
+      site: http://pygal.org
+      conda_channel: conda-forge
 
     - repo: sandialabs/toyplot
       sponsors: [sandia]
       conda_channel: conda-forge
       badges: pypi, conda, rtd
+
+    - repo: maxhumber/chart
 
 
 - name: SciVis
@@ -270,16 +271,16 @@
     - repo: vgm64/gmplot
       badges: pypi
 
+    - repo: jupyter-widgets/ipyleaflet
+      conda_channel: conda-forge
+      badges: pypi, conda, rtd
+      builtons: [leaflet]
+
     - repo: SciTools/cartopy
       sponsors: [metoffice]
       site: https://scitools.org.uk/cartopy
       badges: travis, appveyor, coveralls, pypi, conda, site
       builtons: [matplotlib]
-
-    - repo: jupyter-widgets/ipyleaflet
-      conda_channel: conda-forge
-      badges: pypi, conda, rtd
-      builtons: [leaflet]
 
     - repo: pysal/splot
       sponsors: [cgs]
@@ -294,17 +295,17 @@
       badges: travis, appveyor, pypi, conda, site
       builtons: [bokeh, matplotlib, plotly]
 
-    - repo: ResidentMario/geoplot
-      site: https://residentmario.github.io/geoplot
-      conda_channel: conda-forge
-      badges: pypi, conda, site
-      builtons: [matplotlib]
-
     - repo: giswqs/leafmap
       site: https://leafmap.org
       conda_channel: conda-forge
       badges: pypi, conda
       builtons: [leaflet, plotly]
+
+    - repo: ResidentMario/geoplot
+      site: https://residentmario.github.io/geoplot
+      conda_channel: conda-forge
+      badges: pypi, conda, site
+      builtons: [matplotlib]
 
     - repo: andrea-cuttone/geoplotlib
       site: https://github.com/andrea-cuttone/geoplotlib/wiki/User-Guide
@@ -338,17 +339,17 @@
       conda_channel: conda-forge
       builtons: [graphviz]
 
-    - repo: igraph/python-igraph
-      site: https://igraph.org/python
-      conda_channel: conda-forge
-      appveyor_project: ntamas/python-igraph
-      badges: travis, appveyor, pypi, conda, site
-
     - repo: pygraphviz/pygraphviz
       site: https://pygraphviz.github.io
       conda_channel: conda-forge
       badges: travis, pypi, conda, site
       builtons: [graphviz]
+
+    - repo: igraph/python-igraph
+      site: https://igraph.org/python
+      conda_channel: conda-forge
+      appveyor_project: ntamas/python-igraph
+      badges: travis, appveyor, pypi, conda, site
 
     - repo: WestHealth/pyvis
       site: https://pyvis.readthedocs.io
@@ -495,12 +496,10 @@
       badges: travis, pypi, conda, site
       builtons: [bokeh]
 
-    - repo: plotly/dash
-      sponsors: [plotly]
-      conda_channel: conda-forge
-      site: https://dash.plot.ly
-      badges: circleci, pypi, conda, site
-      builtons: [plotly]
+    - repo: gradio-app/gradio
+      sponsors: [huggingface]
+      site: https://gradio.app
+      badges: circleci, codecov, pypi, site
 
     - repo: streamlit/streamlit
       sponsors: [streamlit]
@@ -508,10 +507,12 @@
       conda_channel: conda-forge
       badges: pypi, conda, site
 
-    - repo: gradio-app/gradio
-      sponsors: [huggingface]
-      site: https://gradio.app
-      badges: circleci, codecov, pypi, site
+    - repo: plotly/dash
+      sponsors: [plotly]
+      conda_channel: conda-forge
+      site: https://dash.plot.ly
+      badges: circleci, pypi, conda, site
+      builtons: [plotly]
 
     - repo: holoviz/panel
       sponsors: [anaconda]
