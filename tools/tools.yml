@@ -37,17 +37,17 @@
       badges: travis, appveyor, coveralls, rtd, pypi, conda, site
       builtons: [matplotlib]
 
-    - repo: santosjorge/cufflinks
-      site: https://github.com/santosjorge/cufflinks/blob/master/README.md
-      conda_channel: conda-forge
-      badges: circleci, pypi, conda, site
-      builtons: [plotly]
-
     - repo: holoviz/hvplot
       sponsors: [anaconda]
       site: https://hvplot.holoviz.org
       badges: travis, appveyor, pypi, conda, site
       builtons: [bokeh]
+
+    - repo: santosjorge/cufflinks
+      site: https://github.com/santosjorge/cufflinks/blob/master/README.md
+      conda_channel: conda-forge
+      badges: circleci, pypi, conda, site
+      builtons: [plotly]
 
     - repo: PatrikHlobil/Pandas-Bokeh
       site: https://github.com/PatrikHlobil/Pandas-Bokeh/blob/master/README.md
@@ -268,13 +268,13 @@
       badges: travis, appveyor, pypi, conda, site
       builtons: [bokeh]
 
-    - repo: vgm64/gmplot
-      badges: pypi
-
     - repo: jupyter-widgets/ipyleaflet
       conda_channel: conda-forge
       badges: pypi, conda, rtd
       builtons: [leaflet]
+
+    - repo: vgm64/gmplot
+      badges: pypi
 
     - repo: SciTools/cartopy
       sponsors: [metoffice]
@@ -435,18 +435,18 @@
       conda_channel: conda-forge
       builtons: [matplotlib]
 
-    - repo: napari/napari
-      site: https://napari.org/
-      conda_channel: conda-forge
-      badges: codecov, pypi, conda
-      builtons: [vispy]
-
     - repo: Unidata/MetPy
       sponsors: [unidata]
       site: https://unidata.github.io/MetPy
       conda_channel: conda-forge
       badges: travis, appveyor, codecov, pypi, conda, site
       builtons: [matplotlib]
+
+    - repo: napari/napari
+      site: https://napari.org/
+      conda_channel: conda-forge
+      badges: codecov, pypi, conda
+      builtons: [vispy]
 
     - repo: yt-project/yt
       sponsors: [numfocus]
