@@ -122,6 +122,8 @@
       badges: pypi, site
       builtons: [matplotlib]
 
+    - repo: koonimaru/omniplot
+
 - name: Native-GUI
   intro: InfoVis Libraries targetting native-desktop GUI interfaces for interactive plots.
   packages:
@@ -578,6 +580,25 @@
 
     - repo: Zen-Reportz/zen_dash
       badges: pypi
+
+    - repo: h2oai/nitro
+      badges: pypi
+
+    - repo: pycob/pyvibe
+      badges: pypi
+
+    - repo: zauberzeug/nicegui
+      badges: pypi
+
+    - repo: sansyrox/starfyre
+      badges: pypi
+
+    - repo: widgetti/reacton
+      badges: pypi
+
+    - repo: widgetti/solara
+      badges: pypi
+
 
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
