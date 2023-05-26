@@ -321,6 +321,7 @@
 
     - repo: raphaelquast/eomaps
       site: https://eomaps.readthedocs.io
+      conda_channel: conda-forge
       badges: pypi, conda, codecov, site
       builtons: [matplotlib, cartopy]
 
