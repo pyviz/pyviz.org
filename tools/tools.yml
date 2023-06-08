@@ -38,9 +38,9 @@
       builtons: [matplotlib]
 
     - repo: holoviz/hvplot
-      sponsors: [anaconda]
+      sponsors: [anaconda,numfocus]
       site: https://hvplot.holoviz.org
-      badges: travis, appveyor, pypi, conda, site
+      badges: pypi, conda, site
       builtons: [bokeh]
 
     - repo: santosjorge/cufflinks
@@ -71,9 +71,8 @@
       builtons: [matplotlib]
 
     - repo: holoviz/holoviews
-      sponsors: [anaconda]
-      appveyor_project: holoviz/holoviews-ginxt
-      badges: travis, appveyor, coveralls, pypi, conda, site
+      sponsors: [anaconda,numfocus]
+      badges: coveralls, pypi, conda, site
       builtons: [bokeh, matplotlib, plotly]
 
     - repo: plotly/plotly_express
@@ -264,10 +263,10 @@
       conda_channel: conda-forge
       builtons: [leaflet]
 
-    - repo: pyviz/hvplot
-      sponsors: [anaconda]
-      site: https://hvplot.pyviz.org
-      badges: travis, appveyor, pypi, conda, site
+    - repo: holoviz/hvplot
+      sponsors: [anaconda,numfocus]
+      site: https://hvplot.holoviz.org
+      badges: pypi, conda, site
       builtons: [bokeh]
 
     - repo: jupyter-widgets/ipyleaflet
@@ -292,9 +291,9 @@
       builtons: [matplotlib]
 
     - repo: holoviz/geoviews
-      sponsors: [anaconda]
+      sponsors: [anaconda,numfocus]
       site: http://geoviews.org
-      badges: travis, appveyor, pypi, conda, site
+      badges: pypi, conda, site
       builtons: [bokeh, matplotlib, plotly]
 
     - repo: giswqs/leafmap
@@ -474,9 +473,9 @@
   packages:
 
     - repo: holoviz/datashader
-      sponsors: [anaconda]
-      site: http://datashader.org
-      badges: travis, appveyor, pypi, conda, site
+      sponsors: [anaconda,numfocus]
+      site: https://datashader.org
+      badges: pypi, conda, site
 
     - repo: vaexio/vaex
       sponsors: [vaexio]
@@ -517,9 +516,9 @@
       builtons: [plotly]
 
     - repo: holoviz/panel
-      sponsors: [anaconda]
+      sponsors: [anaconda,numfocus]
       site: https://panel.holoviz.org
-      badges: travis, appveyor, codecov, pypi, conda, site
+      badges: codecov, pypi, conda, site
       builtons: [bokeh]
 
     - repo: QuantStack/voila
@@ -598,15 +597,20 @@
 
     - repo: h2oai/nitro
       badges: pypi
+      sponsors: [h2o]
+
+    - repo: github.com/wandb/weave
+      site: https://wandb.ai/site/weave
+      sponsors: [wandb]
 
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
   packages:
 
     - repo: holoviz/colorcet
-      sponsors: [anaconda]
+      sponsors: [anaconda,numfocus]
       site: https://colorcet.holoviz.org
-      badges: travis, appveyor, pypi, conda, site
+      badges: pypi, conda, site
 
     - repo: jiffyclub/palettable
       site: https://jiffyclub.github.io/palettable
