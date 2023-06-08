@@ -92,3 +92,7 @@ mljar:
   label: mljar
   url: https://mljar.com
   logo: _static/badges/mljar.png
+
+wandb:
+  label: Weights and Biases
+  url: https://wandb.ai/
