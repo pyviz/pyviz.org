@@ -599,7 +599,7 @@
       badges: pypi
       sponsors: [h2o]
 
-    - repo: github.com/wandb/weave
+    - repo: wandb/weave
       site: https://wandb.ai/site/weave
       sponsors: [wandb]
 
