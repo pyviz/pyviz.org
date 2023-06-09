@@ -578,6 +578,10 @@
       site: https://jupyter-flex.extrapolations.dev
       badges: pypi
 
+    - repo: wandb/weave
+      site: https://wandb.ai/site/weave
+      sponsors: [wandb]
+
     - repo: Avaiga/taipy
       site: https://www.taipy.io
       badges: pypi
@@ -598,10 +602,6 @@
     - repo: h2oai/nitro
       badges: pypi
       sponsors: [h2o]
-
-    - repo: wandb/weave
-      site: https://wandb.ai/site/weave
-      sponsors: [wandb]
 
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
