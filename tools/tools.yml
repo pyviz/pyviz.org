@@ -302,6 +302,11 @@
       badges: pypi, conda
       builtons: [leaflet, plotly]
 
+    - repo: JetBrains/lets-plot
+      sponsors: [jetbrains]
+      site: https://lets-plot.org
+      badges: pypi, site
+
     - repo: ResidentMario/geoplot
       site: https://residentmario.github.io/geoplot
       conda_channel: conda-forge
