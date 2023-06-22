@@ -96,7 +96,7 @@
 
     - repo: JetBrains/lets-plot
       sponsors: [jetbrains]
-      site: https://github.com/JetBrains/lets-plot/blob/master/README_PYTHON.md
+      site: https://lets-plot.org
       badges: pypi, site
 
     - repo: lukelbd/proplot
