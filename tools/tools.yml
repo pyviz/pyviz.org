@@ -617,6 +617,7 @@
     - repo: ifpen/chalk-it
       badges: pypi
       site: https://ifpen.github.io/chalk-it
+      pypi_name: py-chalk-it
 
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
