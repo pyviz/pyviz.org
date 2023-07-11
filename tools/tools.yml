@@ -613,6 +613,7 @@
     - repo: h2oai/nitro
       badges: pypi
       sponsors: [h2o]
+      pypi_name: h2o-nitro
 
     - repo: ifpen/chalk-it
       badges: pypi
