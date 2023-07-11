@@ -608,6 +608,10 @@
       badges: pypi
       sponsors: [h2o]
 
+    - repo: ifpen/chalk-it
+      badges: pypi
+      site: https://ifpen.github.io/chalk-it
+
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
   packages:
