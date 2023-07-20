@@ -514,7 +514,7 @@
       badges: circleci, codecov, pypi, site
 
     - repo: streamlit/streamlit
-      sponsors: [streamlit]
+      sponsors: [snowflake]
       site: https://streamlit.io
       conda_channel: conda-forge
       badges: pypi, conda, site
@@ -619,6 +619,14 @@
       badges: pypi
       site: https://ifpen.github.io/chalk-it
       pypi_name: py-chalk-it
+
+    - repo: streamsync-cloud/streamsync
+      badges: pypi
+      site: https://www.streamsync.cloud/
+
+    - repo: kitware/trame
+      badges: pypi
+      site: https://kitware.github.io/trame
 
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
