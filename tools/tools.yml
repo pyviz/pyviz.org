@@ -551,14 +551,13 @@
       badges: pypi, conda, site
       sponsors: [datapane]
 
-    - repo: zauberzeug/nicegui
+    - repo: widgetti/solara
       badges: pypi
 
-    - repo: pywebio/PyWebIO
-      site: https://www.pyweb.io
-      badges: pypi, site
-
     - repo: widgetti/reacton
+      badges: pypi
+
+    - repo: zauberzeug/nicegui
       badges: pypi
 
     - repo: rstudio/py-shiny
@@ -568,16 +567,20 @@
       badges: pypi, conda
       sponsors: [rstudio]
 
+    - repo: pywebio/PyWebIO
+      site: https://www.pyweb.io
+      badges: pypi, site
+
+    - repo: kitware/trame
+      badges: pypi
+      site: https://kitware.github.io/trame
+
     - repo: pynecone-io/pynecone
       badges: pypi
 
-    - repo: widgetti/solara
+    - repo: Avaiga/taipy
+      site: https://www.taipy.io
       badges: pypi
-
-    - repo: trungleduc/ipyflex
-      site: https://ipyflex.readthedocs.io
-      conda_channel: conda-forge
-      badges: pypi, conda, rtd
 
     - repo: mljar/mercury
       site: https://mljar.com/mercury
@@ -585,17 +588,22 @@
       badges: pypi, conda, site
       sponsors: [mljar]
 
+    - repo: trungleduc/ipyflex
+      site: https://ipyflex.readthedocs.io
+      conda_channel: conda-forge
+      badges: pypi, conda, rtd
+
     - repo: danielfrg/jupyter-flex
       site: https://jupyter-flex.extrapolations.dev
       badges: pypi
 
+    - repo: streamsync-cloud/streamsync
+      badges: pypi
+      site: https://www.streamsync.cloud/
+
     - repo: wandb/weave
       site: https://wandb.ai/site/weave
       sponsors: [wandb]
-
-    - repo: Avaiga/taipy
-      site: https://www.taipy.io
-      badges: pypi
 
     - repo: pycob/pyvibe
       badges: pypi
@@ -619,14 +627,6 @@
       badges: pypi
       site: https://ifpen.github.io/chalk-it
       pypi_name: py-chalk-it
-
-    - repo: streamsync-cloud/streamsync
-      badges: pypi
-      site: https://www.streamsync.cloud/
-
-    - repo: kitware/trame
-      badges: pypi
-      site: https://kitware.github.io/trame
 
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
