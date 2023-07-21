@@ -565,11 +565,11 @@
       site: https://kitware.github.io/trame
 
     - repo: rstudio/py-shiny
-      site: https://shiny.rstudio.com/py
+      site: https://shiny.posit.co/py/
       pypi_name: shiny
       conda_channel: conda-forge
       badges: pypi, conda
-      sponsors: [rstudio]
+      sponsors: [posit]
 
     - repo: pywebio/PyWebIO
       site: https://www.pyweb.io

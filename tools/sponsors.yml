@@ -43,6 +43,11 @@ nvidia:
   url: https://www.nvidia.com
   logo: _static/badges/nvidia.jpg
 
+posit:
+  label: Posit, PBC
+  URL: https://posit.co/
+  logo: _static/badges/positpbc.png
+
 sandia:
   label: Sandia
   url: https://www.sandia.gov
