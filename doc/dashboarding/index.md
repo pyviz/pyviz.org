@@ -7,12 +7,14 @@ Just about any Python library can be used to create a "static" PNG, SVG, HTML, o
 - [Voila](https://github.com/QuantStack/voila) (from [QuantStack](http://quantstack.net)); see the [blog post](https://blog.jupyter.org/and-voil%C3%A0-f6a2c08a4a93); used with separate layout tools like 
 [jupyter-flex](https://github.com/danielfrg/jupyter-flex) or templates like [voila-vuetify](https://github.com/voila-dashboards/voila-vuetify).
 - [Streamlit](https://www.streamlit.io); see the [blog post](https://towardsdatascience.com/coding-ml-tools-like-you-code-ml-models-ddba3357eace)
+- [Shiny for Python](https://shiny.posit.co/py/); see [Getting Started Guide](https://shiny.posit.co/py/docs/overview.html)
 
 You can see comparisons of these tools in:
 - [Streamlit vs Dash vs Voilà vs Panel — Battle of The Python Dashboarding Giants](https://medium.datadriveninvestor.com/streamlit-vs-dash-vs-voil%C3%A0-vs-panel-battle-of-the-python-dashboarding-giants-177c40b9ea57)
   30 Mar 2021 Stephen Kilcommins. Comparing Streamlit, Dash, Voilà, and Panel for dashboarding. Links to more detailed explorations for each library individually.
 - [Are Dashboards for Me?](https://towardsdatascience.com/are-dashboards-for-me-7f66502986b1)
   7 Jul 2020 Dan Lester. Overview of Python and R dashboard tools, including Voila, ipywidgets, binder, Shiny, Dash, Streamlit, Bokeh, and Panel.
+- [Why Shiny for Python?](https://posit.co/blog/why-shiny-for-python/) 10 May 2023 Gordon Shotwell. Learn how Shiny for Python's design philosophy sets it apart from Streamlit and Dash.
 
 There are also other tools that can be used for some aspects of dashboarding as well as many other tasks:
 
