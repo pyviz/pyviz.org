@@ -630,6 +630,11 @@
       site: https://ifpen.github.io/chalk-it
       pypi_name: py-chalk-it
 
+    - repo: causalens/dara
+      badges: pypi
+      site: https://dara.causalens.com
+      pypi_name: create-dara-app
+
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
   packages:
