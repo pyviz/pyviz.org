@@ -6,6 +6,8 @@ The Python visualization landscape can seem daunting at first. These overviews a
 
 <em>Adaptation of <a href="https://www.youtube.com/watch?v=FytuB8nFHPQ">Jake VanderPlas' graphic</a> about the Python visualization landscape, by Nicolas P. Rougier</em>
 
+- [Interactive Dashboards in Python 2023](https://medium.com/@marktopacio/interactive-dashboards-in-python-2023-7d6cd4bda40c), July 8 2023: Mark Topacio. Comparing Streamlit, Solara, Dash, Datasette, and Shiny for Python.
+
 - [One library to rule them all? Geospatial visualisation tools in Python](https://gregorhd.github.io/geospatial-visualisation-in-python/), November 2022: Gregor Herda. Comparing  Altair, Bokeh, Cartopy, Datashader, GeoPandas, Geoplot, GeoViews, hvPlot, and Plotly.
 
 - [What Are the Best Python Plotting Libraries?](https://towardsdatascience.com/what-are-the-best-python-plotting-libraries-df234a356aec), May 2022: Will Norris. Comparing Matplotlib, Seaborn, Plotly, and Folium.
