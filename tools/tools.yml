@@ -329,6 +329,27 @@
       badges: pypi
       builtons: [matplotlib]
 
+    - repo: gee-community/geemap
+      site: https://geemap.org
+      badges: pypi
+
+    - repo: gboeing/osmnx
+      site: https://osmnx.readthedocs.io
+      badges: pypi
+
+    - repo: opengeos/mapwidget
+      site: https://mapwidget.gishub.org/
+      badges: pypi
+
+    - repo: HTenkanen/pyrosm
+      site: https://pyrosm.readthedocs.io
+      badges: pypi
+
+    - repo: keplergl/kepler.gl
+      site: https://docs.kepler.gl/docs/keplergl-jupyter
+      badges: pypi
+
+
 - name: Graphs and networks
   intro: Tools specifically focused on visualizing graphs (networks).  Several of the other plotting libraries listed in other sections can also plot graphs, including Bokeh, HoloViews, Matplotlib, and Plotly.
   packages:
