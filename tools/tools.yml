@@ -274,7 +274,13 @@
       badges: pypi, conda, rtd
       builtons: [leaflet]
 
-    - repo: vgm64/gmplot
+    - repo: keplergl/kepler.gl
+      site: https://docs.kepler.gl/docs/keplergl-jupyter
+      badges: pypi
+      pypi_name: keplergl
+
+    - repo: gboeing/osmnx
+      site: https://osmnx.readthedocs.io
       badges: pypi
 
     - repo: SciTools/cartopy
@@ -283,12 +289,12 @@
       badges: travis, appveyor, coveralls, pypi, conda, site
       builtons: [matplotlib]
 
-    - repo: pysal/splot
-      sponsors: [cgs]
-      site: https://splot.readthedocs.io
-      conda_channel: conda-forge
-      badges: coveralls, pypi, conda, site
-      builtons: [matplotlib]
+    - repo: vgm64/gmplot
+      badges: pypi
+
+    - repo: gee-community/geemap
+      site: https://geemap.org
+      badges: pypi
 
     - repo: giswqs/leafmap
       site: https://leafmap.org
@@ -296,16 +302,27 @@
       badges: pypi, conda
       builtons: [leaflet, plotly]
 
-    - repo: holoviz/geoviews
-      sponsors: [anaconda,numfocus]
-      site: http://geoviews.org
-      badges: pypi, conda, site
-      builtons: [bokeh, matplotlib, plotly]
+    - repo: pysal/splot
+      sponsors: [cgs]
+      site: https://splot.readthedocs.io
+      conda_channel: conda-forge
+      badges: coveralls, pypi, conda, site
+      builtons: [matplotlib]
+
+    - repo: HTenkanen/pyrosm
+      site: https://pyrosm.readthedocs.io
+      badges: pypi
 
     - repo: JetBrains/lets-plot
       sponsors: [jetbrains]
       site: https://lets-plot.org
       badges: pypi, site
+
+    - repo: holoviz/geoviews
+      sponsors: [anaconda,numfocus]
+      site: http://geoviews.org
+      badges: pypi, conda, site
+      builtons: [bokeh, matplotlib, plotly]
 
     - repo: ResidentMario/geoplot
       site: https://residentmario.github.io/geoplot
@@ -318,37 +335,20 @@
       badges: pypi
       builtons: [opengl]
 
-    - repo: raphaelquast/eomaps
-      site: https://eomaps.readthedocs.io
-      conda_channel: conda-forge
-      badges: pypi, conda, codecov, site
-      builtons: [matplotlib, cartopy]
+    - repo: opengeos/mapwidget
+      site: https://mapwidget.gishub.org/
+      badges: pypi
 
     - repo: ambeelabs/gspatial_plot
       site: https://gspatial-plot.readthedocs.io
       badges: pypi
       builtons: [matplotlib]
 
-    - repo: gee-community/geemap
-      site: https://geemap.org
-      badges: pypi
-
-    - repo: gboeing/osmnx
-      site: https://osmnx.readthedocs.io
-      badges: pypi
-
-    - repo: opengeos/mapwidget
-      site: https://mapwidget.gishub.org/
-      badges: pypi
-
-    - repo: HTenkanen/pyrosm
-      site: https://pyrosm.readthedocs.io
-      badges: pypi
-
-    - repo: keplergl/kepler.gl
-      site: https://docs.kepler.gl/docs/keplergl-jupyter
-      badges: pypi
-
+    - repo: raphaelquast/eomaps
+      site: https://eomaps.readthedocs.io
+      conda_channel: conda-forge
+      badges: pypi, conda, codecov, site
+      builtons: [matplotlib, cartopy]
 
 - name: Graphs and networks
   intro: Tools specifically focused on visualizing graphs (networks).  Several of the other plotting libraries listed in other sections can also plot graphs, including Bokeh, HoloViews, Matplotlib, and Plotly.
