@@ -6,7 +6,7 @@ The Python visualization landscape can seem daunting at first. These overviews a
 
 <em>Adaptation of <a href="https://www.youtube.com/watch?v=FytuB8nFHPQ">Jake VanderPlas' graphic</a> about the Python visualization landscape, by Nicolas P. Rougier</em>
 
-- [Low Code With Dash, Streamlit, and Panel](https://betterprogramming.pub/technical-encounter-low-code-with-dash-streamlit-and-panel-part-1-364cf67f8b71), July 9 2023: Petrica Leuca. Comparing Dash, Streamlit, and Panel.
+- [Low Code With Dash, Streamlit, and Panel](https://betterprogramming.pub/technical-encounter-low-code-with-dash-streamlit-and-panel-part-1-364cf67f8b71), July 9 2023: Petrica Leuca. Comparing Dash, Streamlit, and Panel. Separate followups focus individually on [Dash](https://medium.com/better-programming/technical-encounter-low-code-with-dash-43c6a4f2da5c), [Streamlit](https://medium.com/better-programming/technical-encounter-low-code-with-streamlit-9e3f730c0cd), and [Panel](https://medium.com/@petrica.leuca/technical-encounter-low-code-with-panel-7757d6a00876).
 
 - [Interactive Dashboards in Python 2023](https://medium.com/@marktopacio/interactive-dashboards-in-python-2023-7d6cd4bda40c), July 8 2023: Mark Topacio. Comparing Streamlit, Solara, Dash, Datasette, and Shiny for Python.
 
