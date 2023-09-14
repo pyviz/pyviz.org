@@ -58,3 +58,7 @@ qt:
   url: https://qt.io/
   logo: _static/badges/builtons/qt.png
 
+gmt:
+  label: gmt
+  url: https://www.generic-mapping-tools.org/
+  logo: _static/badges/builtons/gmt.png
