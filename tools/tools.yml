@@ -279,15 +279,15 @@
       badges: pypi
       pypi_name: keplergl
 
-    - repo: gboeing/osmnx
-      site: https://osmnx.readthedocs.io
-      badges: pypi
-
     - repo: SciTools/cartopy
       sponsors: [metoffice]
       site: https://scitools.org.uk/cartopy
       badges: travis, appveyor, coveralls, pypi, conda, site
       builtons: [matplotlib]
+
+    - repo: gboeing/osmnx
+      site: https://osmnx.readthedocs.io
+      badges: pypi
 
     - repo: vgm64/gmplot
       badges: pypi
@@ -302,6 +302,11 @@
       badges: pypi, conda
       builtons: [leaflet, plotly]
 
+    - repo: JetBrains/lets-plot
+      sponsors: [jetbrains]
+      site: https://lets-plot.org
+      badges: pypi, site
+
     - repo: pysal/splot
       sponsors: [cgs]
       site: https://splot.readthedocs.io
@@ -309,14 +314,15 @@
       badges: coveralls, pypi, conda, site
       builtons: [matplotlib]
 
+    - repo: ResidentMario/geoplot
+      site: https://residentmario.github.io/geoplot
+      conda_channel: conda-forge
+      badges: pypi, conda, site
+      builtons: [matplotlib]
+
     - repo: HTenkanen/pyrosm
       site: https://pyrosm.readthedocs.io
       badges: pypi
-
-    - repo: JetBrains/lets-plot
-      sponsors: [jetbrains]
-      site: https://lets-plot.org
-      badges: pypi, site
 
     - repo: holoviz/geoviews
       sponsors: [anaconda,numfocus]
@@ -324,11 +330,11 @@
       badges: pypi, conda, site
       builtons: [bokeh, matplotlib, plotly]
 
-    - repo: ResidentMario/geoplot
-      site: https://residentmario.github.io/geoplot
+    - repo: GenericMappingTools/pygmt
+      site: https://www.pygmt.org
       conda_channel: conda-forge
-      badges: pypi, conda, site
-      builtons: [matplotlib]
+      badges: pypi, conda, codecov
+      builtons: [gmt]
 
     - repo: andrea-cuttone/geoplotlib
       site: https://github.com/andrea-cuttone/geoplotlib/wiki/User-Guide
@@ -349,12 +355,6 @@
       conda_channel: conda-forge
       badges: pypi, conda, codecov, site
       builtons: [matplotlib, cartopy]
-
-    - repo: GenericMappingTools/pygmt
-      site: https://www.pygmt.org
-      conda_channel: conda-forge
-      badges: pypi, conda, codecov
-      builtons: [gmt]
 
 - name: Graphs and networks
   intro: Tools specifically focused on visualizing graphs (networks).  Several of the other plotting libraries listed in other sections can also plot graphs, including Bokeh, HoloViews, Matplotlib, and Plotly.
