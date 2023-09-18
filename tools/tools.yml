@@ -341,6 +341,12 @@
       badges: pypi
       builtons: [opengl]
 
+    - repo: raphaelquast/eomaps
+      site: https://eomaps.readthedocs.io
+      conda_channel: conda-forge
+      badges: pypi, conda, codecov, site
+      builtons: [matplotlib, cartopy]
+
     - repo: opengeos/mapwidget
       site: https://mapwidget.gishub.org/
       badges: pypi
@@ -349,12 +355,6 @@
       site: https://gspatial-plot.readthedocs.io
       badges: pypi
       builtons: [matplotlib]
-
-    - repo: raphaelquast/eomaps
-      site: https://eomaps.readthedocs.io
-      conda_channel: conda-forge
-      badges: pypi, conda, codecov, site
-      builtons: [matplotlib, cartopy]
 
 - name: Graphs and networks
   intro: Tools specifically focused on visualizing graphs (networks).  Several of the other plotting libraries listed in other sections can also plot graphs, including Bokeh, HoloViews, Matplotlib, and Plotly.
