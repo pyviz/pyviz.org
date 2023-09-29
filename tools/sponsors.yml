@@ -100,4 +100,8 @@ mljar:
 
 wandb:
   label: Weights and Biases
-  url: https://wandb.ai/
+  url: https://wandb.ai
+
+mckinsey:
+  label: McKinsey
+  url: https://mckinsey.com
