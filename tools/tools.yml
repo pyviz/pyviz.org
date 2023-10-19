@@ -242,7 +242,7 @@
       builtons: [opengl]
 
     - repo: datoviz/datoviz
-      site: https://datoviz.org/
+      site: https://datoviz.org
       conda_channel: mark.harfouche
       badges: conda
       builtons: [vulkan]
