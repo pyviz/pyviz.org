@@ -241,6 +241,12 @@
       badges: pypi, rtd
       builtons: [opengl]
 
+    - repo: datoviz/datoviz
+      site: https://datoviz.org/
+      conda_channel: mark.harfouche
+      badges: conda
+      builtons: [vulkan]
+
 
 - name: Geospatial
   intro: Tools for working with data in geographic coordinates.
