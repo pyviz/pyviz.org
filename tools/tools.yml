@@ -579,10 +579,14 @@
       sponsors: [datapane]
 
     - repo: widgetti/solara
-      badges: pypi
+      site: https://solara.dev
+      badges: pypi, conda
+      conda_channel: conda-forge
 
     - repo: widgetti/reacton
-      badges: pypi
+      site: https://reacton.solara.dev
+      badges: pypi, conda
+      conda_channel: conda-forge
 
     - repo: zauberzeug/nicegui
       badges: pypi
