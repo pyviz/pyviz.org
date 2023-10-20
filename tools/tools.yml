@@ -184,6 +184,12 @@
 
     - repo: maxhumber/chart
 
+    - repo: flekschas/jupyter-scatter
+      badges: pypi, site
+      builtons: [webgl]
+      pypi_name: jupyter-scatter
+      site: https://jupyter-scatter.dev/
+
 
 - name: SciVis
   intro: Libraries for visualizing scientific data situated in real-world coordinates, typically using OpenGL or WebGL.
