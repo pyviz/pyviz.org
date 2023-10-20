@@ -70,6 +70,11 @@
       badges: travis, codecov, pypi, conda, site
       builtons: [matplotlib]
 
+    - repo: finos/perspective
+      site: https://perspective.finos.org
+      conda_channel: conda-forge
+      badges: pypi, conda, site
+
     - repo: AutoViML/AutoViz
       site: https://github.com/AutoViML/AutoViz
       badges: travis, pypi, site
@@ -396,6 +401,10 @@
       badges: pypi, conda, site
 
     - repo: QuantStack/ipycytoscape
+      conda_channel: conda-forge
+      badges: pypi, conda
+
+    - repo: timkpaine/ipydagred3
       conda_channel: conda-forge
       badges: pypi, conda
 
