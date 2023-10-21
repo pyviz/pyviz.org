@@ -70,11 +70,6 @@
       badges: travis, codecov, pypi, conda, site
       builtons: [matplotlib]
 
-    - repo: finos/perspective
-      site: https://perspective.finos.org
-      conda_channel: conda-forge
-      badges: pypi, conda, site
-
     - repo: AutoViML/AutoViz
       site: https://github.com/AutoViML/AutoViz
       badges: travis, pypi, site
@@ -96,6 +91,11 @@
       sponsors: [jetbrains]
       site: https://lets-plot.org
       badges: pypi, site
+
+    - repo: finos/perspective
+      site: https://perspective.finos.org
+      conda_channel: conda-forge
+      badges: pypi, conda, site
 
     - repo: spotify/chartify
       sponsors: [spotify]
@@ -154,14 +154,14 @@
       badges: pypi
       builtons: [kiva]
 
+    - repo: sciapp/gr
+      site: https://gr-framework.org/python.html
+      badges: pypi, site
+
     - repo: veusz/veusz
       conda_channel: conda-forge
       site: https://veusz.github.io
       builtons: [qt]
-
-    - repo: sciapp/gr
-      site: https://gr-framework.org/python.html
-      badges: pypi, site
 
 
 - name: Other InfoVis
@@ -416,20 +416,10 @@
       conda_channel: conda-forge
       badges: pypi, conda
 
-    - repo: timkpaine/ipydagred3
-      conda_channel: conda-forge
-      badges: pypi, conda
-
     - repo: epfl-lts2/pygsp
       site: https://pygsp.readthedocs.io
       conda_channel: conda-forge
       badges: travis, coveralls, pypi, conda, rtd, site
-
-    - repo: skewed/graph-tool
-      # repo: https://git.skewed.de/count0/graph-tool
-      site: http://graph-tool.skewed.de
-      conda_channel: conda-forge
-      badges: conda, site
 
     - repo: ericmjl/nxviz
       site: https://nxviz.readthedocs.io
@@ -460,6 +450,12 @@
     - repo: benmaier/netwulf
       site: https://netwulf.readthedocs.io
       badges: travis, pypi, rtd, site
+
+    - repo: skewed/graph-tool
+      # repo: https://git.skewed.de/count0/graph-tool
+      site: http://graph-tool.skewed.de
+      conda_channel: conda-forge
+      badges: conda, site
 
 
 - name: Other domain-specific
@@ -589,6 +585,11 @@
       site: https://github.com/fossasia/visdom/blob/master/README.md#visdom
       builtons: [plotly]
 
+    - repo: widgetti/solara
+      site: https://solara.dev
+      badges: pypi, conda
+      conda_channel: conda-forge
+
     - repo: h2oai/wave
       site: https://wave.h2o.ai
       sponsors: [h2o]
@@ -598,11 +599,6 @@
       conda_channel: conda-forge
       badges: pypi, conda, site
       sponsors: [datapane]
-
-    - repo: widgetti/solara
-      site: https://solara.dev
-      badges: pypi, conda
-      conda_channel: conda-forge
 
     - repo: widgetti/reacton
       site: https://reacton.solara.dev
@@ -632,15 +628,23 @@
     - repo: pynecone-io/pynecone
       badges: pypi
 
-    - repo: Avaiga/taipy
-      site: https://www.taipy.io
-      badges: pypi
-
     - repo: mljar/mercury
       site: https://mljar.com/mercury
       conda_channel: conda-forge
       badges: pypi, conda, site
       sponsors: [mljar]
+
+    - repo: mckinsey/vizro
+      badges: pypi
+      sponsors: [mckinsey]
+
+    - repo: Avaiga/taipy
+      site: https://www.taipy.io
+      badges: pypi
+
+    - repo: wandb/weave
+      site: https://wandb.ai/site/weave
+      sponsors: [wandb]
 
     - repo: trungleduc/ipyflex
       site: https://ipyflex.readthedocs.io
@@ -654,10 +658,6 @@
     - repo: streamsync-cloud/streamsync
       badges: pypi
       site: https://www.streamsync.cloud/
-
-    - repo: wandb/weave
-      site: https://wandb.ai/site/weave
-      sponsors: [wandb]
 
     - repo: pycob/pyvibe
       badges: pypi
@@ -686,10 +686,6 @@
       badges: pypi
       site: https://dara.causalens.com
       pypi_name: create-dara-app
-
-    - repo: mckinsey/vizro
-      badges: pypi
-      sponsors: [mckinsey]
 
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
