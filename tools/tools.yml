@@ -374,7 +374,7 @@
       builtons: [matplotlib]
 
 - name: Graphs and networks
-  intro: Tools specifically focused on visualizing graphs (networks).  Several of the other plotting libraries listed in other sections can also plot graphs, including Bokeh, HoloViews, Matplotlib, and Plotly.
+  intro: Tools specifically focused on visualizing graphs (networks).  Several of the other plotting libraries listed in other sections can also plot network graphs, including Bokeh, HoloViews, hvPlot, Matplotlib, and Plotly.
   packages:
 
     - repo: networkx/networkx
@@ -524,7 +524,7 @@
       badges: pypi
 
 - name: Large-data rendering
-  intro: Tools for rasterizing/aggregating data before visualization, which can make rendering faster, allow larger datasets, or make it feasible to use remote datasets (with server-side rendering).
+  intro: Tools for visualizing especially large datasets, e.g. by automatic subsampling, dynamic aggregation, server-side rasterization, or dynamic colormapping
   packages:
 
     - repo: holoviz/datashader
@@ -542,6 +542,12 @@
       site: https://github.com/astrofrog/mpl-scatter-density
       badges: travis, appveyor, pypi, conda, site
       builtons: [matplotlib]
+
+    - repo: flekschas/jupyter-scatter
+      badges: pypi, site
+      builtons: [webgl]
+      pypi_name: jupyter-scatter
+      site: https://jupyter-scatter.dev/
 
 - name: Dashboarding
   intro: Libraries for creating live Python-backed web applications or dashboards that a user can interact with to explore or analyze data.
