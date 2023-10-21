@@ -687,6 +687,10 @@
       site: https://dara.causalens.com
       pypi_name: create-dara-app
 
+    - repo: mckinsey/vizro
+      badges: pypi
+      sponsors: [mckinsey]
+
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
   packages:
