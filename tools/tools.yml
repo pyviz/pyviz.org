@@ -634,6 +634,10 @@
     - repo: pynecone-io/pynecone
       badges: pypi
 
+    - repo: marimo-team/marimo
+      badges: pypi
+      site: https://marimo.io
+
     - repo: mljar/mercury
       site: https://mljar.com/mercury
       conda_channel: conda-forge
