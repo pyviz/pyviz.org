@@ -62,8 +62,13 @@ gmt:
   label: gmt
   url: https://www.generic-mapping-tools.org/
   logo: _static/badges/builtons/gmt.png
-  
+
 vulkan:
   label: vulkan
   url: https://www.vulkan.org/
   logo: _static/badges/builtons/vulkan.png
+
+panel:
+  label: Panel
+  url: https://panel.holoviz.org
+  logo: _static/badges/builtons/panel.png

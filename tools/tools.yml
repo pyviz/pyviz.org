@@ -197,7 +197,7 @@
 
 
 - name: SciVis
-  intro: Libraries for visualizing scientific data situated in real-world coordinates, typically using OpenGL or WebGL.
+  intro: Libraries for visualizing scientific data situated in real-world coordinates, typically using OpenGL, WebGL, or Vulkan.
   packages:
 
     - repo: Kitware/VTK
@@ -696,6 +696,10 @@
       badges: pypi
       site: https://dara.causalens.com
       pypi_name: create-dara-app
+
+    - repo: LCL-CAVE/manganite
+      badges: pypi
+      builtons: [panel]
 
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
