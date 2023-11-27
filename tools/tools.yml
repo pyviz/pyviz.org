@@ -682,6 +682,11 @@
     - repo: sansyrox/starfyre
       badges: pypi
 
+    - repo: jrc-bdap/vois
+      # repo: https://code.europa.eu/jrc-bdap/vois
+      badges: pypi
+      site: https://code.europa.eu/jrc-bdap/vois
+
     - repo: h2oai/nitro
       badges: pypi
       sponsors: [h2o]
@@ -700,6 +705,7 @@
     - repo: LCL-CAVE/manganite
       badges: pypi
       builtons: [panel]
+
 
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
