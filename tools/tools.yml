@@ -706,6 +706,8 @@
       badges: pypi
       builtons: [panel]
 
+    - repo: data-stack-hub/DataStack
+      badges: pypi
 
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
