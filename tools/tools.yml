@@ -554,6 +554,7 @@
   packages:
 
     - repo: bokeh/bokeh
+      site: http://bokeh.org/
       sponsors: [numfocus, anaconda]
       badges: travis, pypi, conda, site
       builtons: [bokeh]
@@ -561,7 +562,8 @@
     - repo: gradio-app/gradio
       sponsors: [huggingface]
       site: https://gradio.app
-      badges: circleci, codecov, pypi, site
+      conda_channel: conda-forge
+      badges: circleci, codecov, pypi, conda, site
 
     - repo: streamlit/streamlit
       sponsors: [snowflake]
@@ -583,21 +585,26 @@
       builtons: [bokeh]
 
     - repo: QuantStack/voila
+      site: https://voila.readthedocs.io
       sponsors: [quantstack]
       conda_channel: conda-forge
       badges: travis, pypi, conda, rtd
 
     - repo: fossasia/visdom
       site: https://github.com/fossasia/visdom/blob/master/README.md#visdom
+      badges: pypi, conda
+      conda_channel: conda-forge
       builtons: [plotly]
 
     - repo: widgetti/solara
       site: https://solara.dev
       badges: pypi, conda
       conda_channel: conda-forge
+      sponsors: [widgetti]
 
     - repo: h2oai/wave
       site: https://wave.h2o.ai
+      badges: pypi
       sponsors: [h2o]
 
     - repo: datapane/datapane
@@ -610,9 +617,13 @@
       site: https://reacton.solara.dev
       badges: pypi, conda
       conda_channel: conda-forge
+      sponsors: [widgetti]
 
     - repo: zauberzeug/nicegui
-      badges: pypi
+      site: https://nicegui.io/
+      badges: pypi, conda
+      conda_channel: conda-forge
+      sponsors: [zauberzeug]
 
     - repo: kitware/trame
       conda_channel: conda-forge
@@ -623,6 +634,7 @@
     - repo: rstudio/py-shiny
       site: https://shiny.posit.co/py/
       pypi_name: shiny
+      conda_package: shiny
       conda_channel: conda-forge
       badges: pypi, conda
       sponsors: [posit]
@@ -631,12 +643,16 @@
       site: https://www.pyweb.io
       badges: pypi, site
 
-    - repo: pynecone-io/pynecone
+    - repo: reflex-dev/reflex
+      site: https://reflex.dev/
       badges: pypi
+      sponsors: [reflex]
 
     - repo: marimo-team/marimo
-      badges: pypi
+      badges: pypi, conda
+      conda_channel: conda-forge
       site: https://marimo.io
+      sponsors: [marimo]
 
     - repo: mljar/mercury
       site: https://mljar.com/mercury
@@ -645,15 +661,19 @@
       sponsors: [mljar]
 
     - repo: mckinsey/vizro
-      badges: pypi
+      site: https://vizro.readthedocs.io
+      badges: pypi, conda
+      conda_channel: conda-forge
       sponsors: [mckinsey]
 
     - repo: Avaiga/taipy
       site: https://www.taipy.io
       badges: pypi
+      sponsors: [taipy]
 
     - repo: wandb/weave
       site: https://wandb.ai/site/weave
+      badges: pypi
       sponsors: [wandb]
 
     - repo: trungleduc/ipyflex
