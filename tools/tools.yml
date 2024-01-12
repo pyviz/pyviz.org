@@ -553,15 +553,17 @@
   intro: Libraries for creating live Python-backed web applications or dashboards that a user can interact with to explore or analyze data.
   packages:
 
-    - repo: bokeh/bokeh
-      sponsors: [numfocus, anaconda]
-      badges: travis, pypi, conda, site
-      builtons: [bokeh]
-
     - repo: gradio-app/gradio
       sponsors: [huggingface]
       site: https://gradio.app
-      badges: circleci, codecov, pypi, site
+      conda_channel: conda-forge
+      badges: circleci, codecov, pypi, conda, site
+
+    - repo: bokeh/bokeh
+      site: http://bokeh.org/
+      sponsors: [numfocus, anaconda]
+      badges: travis, pypi, conda, site
+      builtons: [bokeh]
 
     - repo: streamlit/streamlit
       sponsors: [snowflake]
@@ -582,22 +584,39 @@
       badges: codecov, pypi, conda, site
       builtons: [bokeh]
 
+    - repo: fossasia/visdom
+      site: https://github.com/fossasia/visdom/blob/master/README.md#visdom
+      badges: pypi, conda
+      conda_channel: conda-forge
+      builtons: [plotly]
+
+    - repo: zauberzeug/nicegui
+      site: https://nicegui.io/
+      badges: pypi, conda
+      conda_channel: conda-forge
+      sponsors: [zauberzeug]
+
     - repo: QuantStack/voila
+      site: https://voila.readthedocs.io
       sponsors: [quantstack]
       conda_channel: conda-forge
       badges: travis, pypi, conda, rtd
 
-    - repo: fossasia/visdom
-      site: https://github.com/fossasia/visdom/blob/master/README.md#visdom
-      builtons: [plotly]
+    - repo: widgetti/reacton
+      site: https://reacton.solara.dev
+      badges: pypi, conda
+      conda_channel: conda-forge
+      sponsors: [widgetti]
 
     - repo: widgetti/solara
       site: https://solara.dev
       badges: pypi, conda
       conda_channel: conda-forge
+      sponsors: [widgetti]
 
     - repo: h2oai/wave
       site: https://wave.h2o.ai
+      badges: pypi
       sponsors: [h2o]
 
     - repo: datapane/datapane
@@ -605,14 +624,6 @@
       conda_channel: conda-forge
       badges: pypi, conda, site
       sponsors: [datapane]
-
-    - repo: widgetti/reacton
-      site: https://reacton.solara.dev
-      badges: pypi, conda
-      conda_channel: conda-forge
-
-    - repo: zauberzeug/nicegui
-      badges: pypi
 
     - repo: kitware/trame
       conda_channel: conda-forge
@@ -623,6 +634,7 @@
     - repo: rstudio/py-shiny
       site: https://shiny.posit.co/py/
       pypi_name: shiny
+      conda_package: shiny
       conda_channel: conda-forge
       badges: pypi, conda
       sponsors: [posit]
@@ -631,12 +643,32 @@
       site: https://www.pyweb.io
       badges: pypi, site
 
-    - repo: pynecone-io/pynecone
-      badges: pypi
+    - repo: mckinsey/vizro
+      site: https://vizro.readthedocs.io
+      badges: pypi, conda
+      conda_channel: conda-forge
+      sponsors: [mckinsey]
 
     - repo: marimo-team/marimo
-      badges: pypi
+      badges: pypi, conda
+      conda_channel: conda-forge
       site: https://marimo.io
+      sponsors: [marimo]
+
+    - repo: Avaiga/taipy
+      site: https://www.taipy.io
+      badges: pypi
+      sponsors: [taipy]
+
+    - repo: wandb/weave
+      site: https://wandb.ai/site/weave
+      badges: pypi
+      sponsors: [wandb]
+
+    - repo: reflex-dev/reflex
+      site: https://reflex.dev/
+      badges: pypi
+      sponsors: [reflex]
 
     - repo: mljar/mercury
       site: https://mljar.com/mercury
@@ -644,26 +676,14 @@
       badges: pypi, conda, site
       sponsors: [mljar]
 
-    - repo: mckinsey/vizro
+    - repo: danielfrg/jupyter-flex
+      site: https://jupyter-flex.extrapolations.dev
       badges: pypi
-      sponsors: [mckinsey]
-
-    - repo: Avaiga/taipy
-      site: https://www.taipy.io
-      badges: pypi
-
-    - repo: wandb/weave
-      site: https://wandb.ai/site/weave
-      sponsors: [wandb]
 
     - repo: trungleduc/ipyflex
       site: https://ipyflex.readthedocs.io
       conda_channel: conda-forge
       badges: pypi, conda, rtd
-
-    - repo: danielfrg/jupyter-flex
-      site: https://jupyter-flex.extrapolations.dev
-      badges: pypi
 
     - repo: streamsync-cloud/streamsync
       badges: pypi

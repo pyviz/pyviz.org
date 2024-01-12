@@ -101,7 +101,33 @@ mljar:
 wandb:
   label: Weights and Biases
   url: https://wandb.ai
+  logo: _static/badgets/weights_and_biases.svg
 
 mckinsey:
   label: McKinsey
   url: https://mckinsey.com
+
+reflex:
+  label: Reflex
+  url: https://reflex.dev
+  logo: _static/badges/reflex.svg
+
+zauberzeug:
+  label: Zauberzeug
+  url: https://zauberzeug.com
+  logo: _static/badges/zauberzeug.webp
+
+widgetti:
+  label: Widgetti
+  url: https://widgetti.io/
+  logo: _static/badges/widgetti.png
+
+marimo:
+  label: marimo
+  url: https://marimo.io/
+  logo: _static/badges/marimo.png
+
+taipy:
+  label: taipy
+  url: https://www.taipy.io/
+  logo: _static/badges/taipy.png
