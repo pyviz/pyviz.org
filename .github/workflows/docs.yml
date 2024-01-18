@@ -66,7 +66,7 @@ jobs:
           git add -f ./doc/_static/cache
           ls ./doc/_static/cache
           git commit -m "adding cached badges"
-          git push -f HEAD:cache
+          git push -f origin HEAD:cache
       - uses: actions/checkout@v3
         with:
           clean: false
