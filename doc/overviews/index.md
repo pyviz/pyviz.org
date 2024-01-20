@@ -6,13 +6,17 @@ The Python visualization landscape can seem daunting at first. These overviews a
 
 <em>Adaptation of <a href="https://www.youtube.com/watch?v=FytuB8nFHPQ">Jake VanderPlas' graphic</a> about the Python visualization landscape, by Nicolas P. Rougier</em>
 
+- [Is Matplotlib Still the Best Python Library for Static Plots?](https://towardsdatascience.com/is-matplotlib-still-the-best-python-library-for-static-plots-a933c092cd49), 19 January 2024: Mike Clayton. Comparing Matplotlib, Seaborn, plotnine, Altair, and Plotly.
+
 - [Top-5 Python Frontend Libraries for Data Science](https://python.plainenglish.io/top-5-python-frontend-libraries-for-data-science-91261a65e366), 24 December 2023: Artem Shelamanov. Comparing Streamlit, Solara, Trame, ReactPy, and PyQt.
+
+- [Python on the Web](https://towardsdatascience.com/python-on-the-web-b819a6a55ec7), 11 October 2023: Pier Paolo Ippolito. Comparing Panel, Shiny for Python, and PyScript.
 
 - [Data Visualization with Streamlit, Dash, and Panel. Part 1](https://sunscrapers.com/blog/data-viz-streamlit-dash-panel-part-1) and [Part 2](https://sunscrapers.com/blog/streamlit-dash-panel-features-part-2), 20 September 2023: Patryk Młynarek. Comparing Panel, Dash, and Streamlit.
 
-- [Low Code With Dash, Streamlit, and Panel](https://betterprogramming.pub/technical-encounter-low-code-with-dash-streamlit-and-panel-part-1-364cf67f8b71), July 9 2023: Petrica Leuca. Comparing Dash, Streamlit, and Panel. Separate followups focus individually on [Dash](https://medium.com/better-programming/technical-encounter-low-code-with-dash-43c6a4f2da5c), [Streamlit](https://medium.com/better-programming/technical-encounter-low-code-with-streamlit-9e3f730c0cd), and [Panel](https://medium.com/@petrica.leuca/technical-encounter-low-code-with-panel-7757d6a00876).
+- [Low Code With Dash, Streamlit, and Panel](https://betterprogramming.pub/technical-encounter-low-code-with-dash-streamlit-and-panel-part-1-364cf67f8b71), 9 July 2023: Petrica Leuca. Comparing Dash, Streamlit, and Panel. Separate followups focus individually on [Dash](https://medium.com/better-programming/technical-encounter-low-code-with-dash-43c6a4f2da5c), [Streamlit](https://medium.com/better-programming/technical-encounter-low-code-with-streamlit-9e3f730c0cd), and [Panel](https://medium.com/@petrica.leuca/technical-encounter-low-code-with-panel-7757d6a00876).
 
-- [Interactive Dashboards in Python 2023](https://medium.com/@marktopacio/interactive-dashboards-in-python-2023-7d6cd4bda40c), July 8 2023: Mark Topacio. Comparing Streamlit, Solara, Dash, Datasette, and Shiny for Python.
+- [Interactive Dashboards in Python 2023](https://medium.com/@marktopacio/interactive-dashboards-in-python-2023-7d6cd4bda40c), 8 July 2023: Mark Topacio. Comparing Streamlit, Solara, Dash, Datasette, and Shiny for Python.
 
 - [One library to rule them all? Geospatial visualisation tools in Python](https://gregorhd.github.io/geospatial-visualisation-in-python/), November 2022: Gregor Herda. Comparing  Altair, Bokeh, Cartopy, Datashader, GeoPandas, Geoplot, GeoViews, hvPlot, and Plotly.
 
