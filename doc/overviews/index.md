@@ -6,6 +6,8 @@ The Python visualization landscape can seem daunting at first. These overviews a
 
 <em>Adaptation of <a href="https://www.youtube.com/watch?v=FytuB8nFHPQ">Jake VanderPlas' graphic</a> about the Python visualization landscape, by Nicolas P. Rougier</em>
 
+- [Declarative vs. Imperative Plotting: An overview for Python beginners](https://towardsdatascience.com/declarative-vs-imperative-plotting-3ee9952d6bf3), 9 January 2024: Lee Vaughan. Comparing Matplotlib, Seaborn, Plotly Express, and hvPlot/HoloViews.
+
 - [Is Matplotlib Still the Best Python Library for Static Plots?](https://towardsdatascience.com/is-matplotlib-still-the-best-python-library-for-static-plots-a933c092cd49), 19 January 2024: Mike Clayton. Comparing Matplotlib, Seaborn, plotnine, Altair, and Plotly.
 
 - [Top-5 Python Frontend Libraries for Data Science](https://python.plainenglish.io/top-5-python-frontend-libraries-for-data-science-91261a65e366), 24 December 2023: Artem Shelamanov. Comparing Streamlit, Solara, Trame, ReactPy, and PyQt.
