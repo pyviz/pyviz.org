@@ -19,7 +19,7 @@ jobs:
   pre_ci:
     runs-on: 'ubuntu-latest'
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           # required for PRs
           fetch-depth: 2
@@ -80,13 +80,6 @@ jobs:
         run: |
           git status
           git diff
-      - name: Deploy dev
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          publish_dir: ./builtdocs
-          external_repository: pyviz-dev/website
-          personal_token: ${{ secrets.DEV_ACCESS_TOKEN }}
-          force_orphan: true
       - name: Deploy main
         if: ${{ github.ref == 'refs/heads/master' }}
         uses: peaceiris/actions-gh-pages@v3
