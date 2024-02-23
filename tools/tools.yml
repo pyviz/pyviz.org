@@ -699,6 +699,10 @@
     - repo: Zen-Reportz/zen_dash
       badges: pypi
 
+    - repo: hyperdiv/hyperdiv
+      badges: pypi
+      site: https://hyperdiv.io
+
     - repo: sansyrox/starfyre
       badges: pypi
 
