@@ -72,3 +72,8 @@ panel:
   label: Panel
   url: https://panel.holoviz.org
   logo: _static/badges/builtons/panel.png
+
+pyvista:
+  label: PyVista
+  url: https://docs.pyvista.org/version/stable/
+  logo: _static/badges/builtons/pyvista.png
