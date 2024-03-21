@@ -529,6 +529,10 @@
       site: https://pair-code.github.io/facets/
       badges: pypi
 
+    - repo: moshi4/pyCirclize
+      badges: pypi
+
+
 - name: Large-data rendering
   intro: Tools for visualizing especially large datasets, e.g. by automatic subsampling, dynamic aggregation, server-side rasterization, or dynamic colormapping
   packages:
