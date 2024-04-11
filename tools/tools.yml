@@ -128,6 +128,12 @@
 
     - repo: koonimaru/omniplot
 
+    - repo: Marsilea-viz/marsilea
+      pypi_name: marsilea
+      site: https://marsilea.rtfd.io/
+      badges: pypi, site, rtd
+      builtons: [matplotlib]
+
 - name: Native-GUI
   intro: InfoVis Libraries targetting native-desktop GUI interfaces for interactive plots.
   packages:
