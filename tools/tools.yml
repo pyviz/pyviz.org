@@ -749,6 +749,10 @@
     - repo: data-stack-hub/DataStack
       badges: pypi
 
+    - repo: google/mesop
+      sponsors: [Google]
+      badges: pypi
+
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
   packages:
