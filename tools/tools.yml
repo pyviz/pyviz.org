@@ -708,6 +708,10 @@
     - repo: pycob/pyvibe
       badges: pypi
 
+    - repo: google/mesop
+      sponsors: [Google]
+      badges: pypi
+
     - repo: mljar/bloxs
       badges: pypi
       sponsors: [mljar]
@@ -747,10 +751,6 @@
       builtons: [panel]
 
     - repo: data-stack-hub/DataStack
-      badges: pypi
-
-    - repo: google/mesop
-      sponsors: [Google]
       badges: pypi
 
 - name: Colormapping
