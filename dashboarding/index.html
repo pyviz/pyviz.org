@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<title>Dashboarding tools — PyViz 0.0.1 documentation</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/alabaster.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/graphviz.css" rel="stylesheet" type="text/css"/>
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<link href="../_static/favicon.ico" rel="shortcut icon"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="../scivis/index.html" rel="next" title="SciVis Libraries"/>
+<link href="../tools.html" rel="prev" title="All Tools"/>
+<link href="../_static/custom.css" rel="stylesheet" type="text/css"/>
+<meta content="width=device-width, initial-scale=0.9, maximum-scale=0.9" name="viewport"/>
+</head><body>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body" role="main">
+<section id="dashboarding-tools">
+<h1>Dashboarding tools<a class="headerlink" href="#dashboarding-tools" title="Permalink to this headline">¶</a></h1>
+<p>Just about any Python library can be used to create a “static” PNG, SVG, HTML, or other output that can be pasted into a presentation, sent in an email, published as a figure in a paper, and so on.  Many people also want or need to create “live” Python-backed applications or dashboards that a user can interact with to explore or analyze some data. Python offers several libraries for this purpose. The four main tools designed specifically for web-based dashboarding in Python are:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://plot.ly/products/dash">Dash</a> (from <a class="reference external" href="https://plot.ly">Plotly</a>); see the <a class="reference external" href="https://medium.com/@plotlygraphs/introducing-dash-5ecf7191b503">blog post</a></p></li>
+<li><p><a class="reference external" href="https://panel.pyviz.org">Panel</a> (from <a class="reference external" href="http://anaconda.com">Anaconda</a>); see the <a class="reference external" href="https://medium.com/@philipp.jfr/panel-announcement-2107c2b15f52">blog post</a></p></li>
+<li><p><a class="reference external" href="https://github.com/QuantStack/voila">Voila</a> (from <a class="reference external" href="http://quantstack.net">QuantStack</a>); see the <a class="reference external" href="https://blog.jupyter.org/and-voil%C3%A0-f6a2c08a4a93">blog post</a>; used with separate layout tools like
+<a class="reference external" href="https://github.com/danielfrg/jupyter-flex">jupyter-flex</a> or templates like <a class="reference external" href="https://github.com/voila-dashboards/voila-vuetify">voila-vuetify</a>.</p></li>
+<li><p><a class="reference external" href="https://www.streamlit.io">Streamlit</a>; see the <a class="reference external" href="https://towardsdatascience.com/coding-ml-tools-like-you-code-ml-models-ddba3357eace">blog post</a></p></li>
+</ul>
+<p>You can see comparisons of these tools in:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://medium.datadriveninvestor.com/streamlit-vs-dash-vs-voil%C3%A0-vs-panel-battle-of-the-python-dashboarding-giants-177c40b9ea57">Streamlit vs Dash vs Voilà vs Panel — Battle of The Python Dashboarding Giants</a>
+30 Mar 2021 Stephen Kilcommins. Comparing Streamlit, Dash, Voilà, and Panel for dashboarding. Links to more detailed explorations for each library individually.</p></li>
+<li><p><a class="reference external" href="https://towardsdatascience.com/are-dashboards-for-me-7f66502986b1">Are Dashboards for Me?</a>
+7 Jul 2020 Dan Lester. Overview of Python and R dashboard tools, including Voila, ipywidgets, binder, Shiny, Dash, Streamlit, Bokeh, and Panel.</p></li>
+</ul>
+<p>There are also other tools that can be used for some aspects of dashboarding as well as many other tasks:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://bokeh.org">Bokeh</a> is a plotting library, a widget and app library, and a server for both plots and dashboards. <a class="reference external" href="https://panel.pyviz.org">Panel</a> is built on Bokeh, providing a higher-level toolkit specifically focused on app and dashboard creation and supporting multiple plotting libraries (not just Bokeh).</p></li>
+<li><p><a class="reference external" href="https://ipywidgets.readthedocs.io">ipywidgets</a> provides a wide array of Jupyter-compatible widgets and an interface supported by many Python libraries, but sharing as a dashboard requires a separate deployable server like <a class="reference external" href="https://github.com/QuantStack/voila">Voila</a>.</p></li>
+<li><p><a class="reference external" href="http://matplotlib.org">matplotlib</a> supports many different backends, including several native GUI toolkit interfaces such as Qt that can be used for building arbitrarily complex native applications that can be used instead of a web-based dashboard like those above.</p></li>
+<li><p><a class="reference external" href="https://github.com/jwkvam/bowtie">Bowtie</a> (from Jacques Kvam) allows users to build dashboards in pure Python.</p></li>
+<li><p><a class="reference external" href="http://flask.pocoo.org/">flask</a> is a Python-backed web server that can be used to build arbitrary web sites, including those with Python plots that then function as <a class="reference external" href="https://pusher.com/tutorials/live-dashboard-python">flask dashboards</a>, but is not specifically set up to make dashboarding easier.</p></li>
+</ul>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+</div>
+</div>
+</div>
+<div aria-label="main navigation" class="sphinxsidebar" role="navigation">
+<div class="sphinxsidebarwrapper">
+<p class="logo">
+<a href="../index.html">
+<img alt="Logo" class="logo" src="../_static/logo.png"/>
+</a>
+</p>
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overviews/index.html">Overviews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../high-level/index.html">High-level tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools.html">All tools</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Dashboarding</a><ul>
+<li class="toctree-l2"><a class="reference external" href="https://plot.ly/products/dash">Dash</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://panel.pyviz.org">Panel</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://github.com/QuantStack/voila">Voila</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scivis/index.html">SciVis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials</a></li>
+</ul>
+<hr/>
+<ul>
+<li class="toctree-l1"><a href="https://github.com/pyviz/website">Github</a></li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+<li><a href="../index.html">Documentation overview</a><ul>
+<li>Previous: <a href="../tools.html" title="previous chapter">All Tools</a></li>
+<li>Next: <a href="../scivis/index.html" title="next chapter">SciVis Libraries</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="searchbox" role="search" style="display: none">
+<h3 id="searchlabel">Quick search</h3>
+<div class="searchformwrapper">
+<form action="../search.html" class="search" method="get">
+<input aria-labelledby="searchlabel" autocapitalize="off" autocomplete="off" autocorrect="off" name="q" spellcheck="false" type="text"/>
+<input type="submit" value="Go"/>
+</form>
+</div>
+</div>
+<script>$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="footer">
+      © 2019, PyViz authors.
+      
+      |
+      <a href="../_sources/dashboarding/index.rst.txt" rel="nofollow">Page source</a>
+</div>
+</body>
+</html>
