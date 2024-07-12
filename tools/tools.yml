@@ -33,7 +33,8 @@
     - repo: pydata/xarray
       sponsors: [numfocus]
       appveyor_project: shoyer/xray
-      site: https://xarray.pydata.org
+      site: https://xarray.dev/
+      conda-channel: conda-forge
       badges: travis, appveyor, coveralls, rtd, pypi, conda, site
       builtons: [matplotlib]
 
