@@ -6,6 +6,8 @@ The Python visualization landscape can seem daunting at first. These overviews a
 
 <em>Adaptation of <a href="https://www.youtube.com/watch?v=FytuB8nFHPQ">Jake VanderPlas' graphic</a> about the Python visualization landscape, by Nicolas P. Rougier</em>
 
+- [7 Best Python Libraries For Data Visualisation](https://medium.com/@inverita/7-best-python-libraries-for-data-visualisation-517020f725a4), 25 Jan 2024: inVerita. Comparing Matplotlib, Seaborn, Plotly, Bokeh, Altair, and HoloViews.
+
 - [Top-5 Python Frontend Libraries for Data Science, part 2](https://python.plainenglish.io/top-5-python-frontend-libraries-for-data-science-part-2-4d07a48d2fde), 31 Mar 2024: Artem  Shelamanov. Comparing Voila, PyWebIO, Gradio, Panel, and Dash.
 
 - [Top-5 Python Frontend Libraries for Data Science, part 1](https://python.plainenglish.io/top-5-python-frontend-libraries-for-data-science-91261a65e366), 24 Dec 2023: Artem Shelamanov. Comparing Streamlit, Solara, Trame, ReactPy, and PyQt.
