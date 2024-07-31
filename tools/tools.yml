@@ -607,6 +607,12 @@
       conda_channel: conda-forge
       badges: travis, pypi, conda, rtd
 
+    - repo: marimo-team/marimo
+      badges: pypi, conda
+      conda_channel: conda-forge
+      site: https://marimo.io
+      sponsors: [marimo]
+
     - repo: fossasia/visdom
       site: https://github.com/fossasia/visdom/blob/master/README.md#visdom
       badges: pypi, conda
@@ -618,6 +624,12 @@
       badges: pypi, conda
       conda_channel: conda-forge
       sponsors: [zauberzeug]
+
+    - repo: kitware/trame
+      conda_channel: conda-forge
+      badges: pypi, conda, site
+      site: https://kitware.github.io/trame
+      sponsors: [Kitware]
 
     - repo: widgetti/reacton
       site: https://reacton.solara.dev
@@ -631,17 +643,6 @@
       conda_channel: conda-forge
       sponsors: [widgetti]
 
-    - repo: kitware/trame
-      conda_channel: conda-forge
-      badges: pypi, conda, site
-      site: https://kitware.github.io/trame
-      sponsors: [Kitware]
-
-    - repo: h2oai/wave
-      site: https://wave.h2o.ai
-      badges: pypi
-      sponsors: [h2o]
-
     - repo: rstudio/py-shiny
       site: https://shiny.posit.co/py/
       pypi_name: shiny
@@ -650,10 +651,10 @@
       badges: pypi, conda
       sponsors: [posit]
 
-    - repo: reflex-dev/reflex
-      site: https://reflex.dev/
+    - repo: h2oai/wave
+      site: https://wave.h2o.ai
       badges: pypi
-      sponsors: [reflex]
+      sponsors: [h2o]
 
     - repo: datapane/datapane
       site: https://docs.datapane.com
@@ -661,15 +662,19 @@
       badges: pypi, conda, site
       sponsors: [datapane]
 
-    - repo: marimo-team/marimo
-      badges: pypi, conda
-      conda_channel: conda-forge
-      site: https://marimo.io
-      sponsors: [marimo]
+    - repo: reflex-dev/reflex
+      site: https://reflex.dev/
+      badges: pypi
+      sponsors: [reflex]
 
-    - repo: pywebio/PyWebIO
-      site: https://www.pyweb.io
-      badges: pypi, site
+    - repo: wandb/weave
+      site: https://wandb.ai/site/weave
+      badges: pypi
+      sponsors: [wandb]
+
+    - repo: google/mesop
+      sponsors: [Google]
+      badges: pypi
 
     - repo: mckinsey/vizro
       site: https://vizro.readthedocs.io
@@ -677,10 +682,9 @@
       conda_channel: conda-forge
       sponsors: [mckinsey]
 
-    - repo: wandb/weave
-      site: https://wandb.ai/site/weave
-      badges: pypi
-      sponsors: [wandb]
+    - repo: pywebio/PyWebIO
+      site: https://www.pyweb.io
+      badges: pypi, site
 
     - repo: Avaiga/taipy
       site: https://www.taipy.io
@@ -693,8 +697,16 @@
       badges: pypi, conda, site
       sponsors: [mljar]
 
+    - repo: pycob/pyvibe
+      badges: pypi
+
     - repo: danielfrg/jupyter-flex
       site: https://jupyter-flex.extrapolations.dev
+      badges: pypi
+
+    - repo: AnswerDotAI/fasthtml
+      pypi_name: python-fasthtml
+      site: https://fastht.ml/
       badges: pypi
 
     - repo: trungleduc/ipyflex
@@ -705,13 +717,6 @@
     - repo: streamsync-cloud/streamsync
       badges: pypi
       site: https://www.streamsync.cloud/
-
-    - repo: pycob/pyvibe
-      badges: pypi
-
-    - repo: google/mesop
-      sponsors: [Google]
-      badges: pypi
 
     - repo: mljar/bloxs
       badges: pypi
@@ -754,10 +759,6 @@
     - repo: data-stack-hub/DataStack
       badges: pypi
 
-    - repo: AnswerDotAI/fasthtml
-      pypi_name: python-fasthtml
-      site: https://fastht.ml/
-      badges: pypi
 
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
