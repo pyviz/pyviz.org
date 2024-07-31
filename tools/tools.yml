@@ -600,13 +600,13 @@
       site: https://panel.holoviz.org
       badges: codecov, pypi, conda, site
       builtons: [bokeh]
-      
+
     - repo: QuantStack/voila
       site: https://voila.readthedocs.io
       sponsors: [quantstack]
       conda_channel: conda-forge
       badges: travis, pypi, conda, rtd
-      
+
     - repo: fossasia/visdom
       site: https://github.com/fossasia/visdom/blob/master/README.md#visdom
       badges: pypi, conda
@@ -636,7 +636,7 @@
       badges: pypi, conda, site
       site: https://kitware.github.io/trame
       sponsors: [Kitware]
-      
+
     - repo: h2oai/wave
       site: https://wave.h2o.ai
       badges: pypi
@@ -654,7 +654,7 @@
       site: https://reflex.dev/
       badges: pypi
       sponsors: [reflex]
-      
+
     - repo: datapane/datapane
       site: https://docs.datapane.com
       conda_channel: conda-forge
@@ -685,7 +685,7 @@
     - repo: Avaiga/taipy
       site: https://www.taipy.io
       badges: pypi
-      sponsors: [taipy]   
+      sponsors: [taipy]
 
     - repo: mljar/mercury
       site: https://mljar.com/mercury
@@ -752,6 +752,10 @@
       builtons: [panel]
 
     - repo: data-stack-hub/DataStack
+      badges: pypi
+
+    - repo: AnswerDotAI/fasthtml
+      site: https://fastht.ml/
       badges: pypi
 
 - name: Colormapping
