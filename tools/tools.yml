@@ -755,6 +755,7 @@
       badges: pypi
 
     - repo: AnswerDotAI/fasthtml
+      pypi_name: python-fasthtml
       site: https://fastht.ml/
       badges: pypi
 
