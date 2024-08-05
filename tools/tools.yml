@@ -601,17 +601,17 @@
       badges: codecov, pypi, conda, site
       builtons: [bokeh]
 
-    - repo: QuantStack/voila
-      site: https://voila.readthedocs.io
-      sponsors: [quantstack]
-      conda_channel: conda-forge
-      badges: travis, pypi, conda, rtd
-
     - repo: marimo-team/marimo
       badges: pypi, conda
       conda_channel: conda-forge
       site: https://marimo.io
       sponsors: [marimo]
+
+    - repo: QuantStack/voila
+      site: https://voila.readthedocs.io
+      sponsors: [quantstack]
+      conda_channel: conda-forge
+      badges: travis, pypi, conda, rtd
 
     - repo: fossasia/visdom
       site: https://github.com/fossasia/visdom/blob/master/README.md#visdom
@@ -662,15 +662,18 @@
       badges: pypi, conda, site
       sponsors: [datapane]
 
+    - repo: wandb/weave
+      site: https://wandb.ai/site/weave
+      badges: pypi
+      sponsors: [wandb]
+
     - repo: reflex-dev/reflex
       site: https://reflex.dev/
       badges: pypi
       sponsors: [reflex]
 
-    - repo: wandb/weave
-      site: https://wandb.ai/site/weave
+    - repo: Zen-Reportz/zen_dash
       badges: pypi
-      sponsors: [wandb]
 
     - repo: google/mesop
       sponsors: [Google]
@@ -709,6 +712,11 @@
       site: https://fastht.ml/
       badges: pypi
 
+    - repo: causalens/dara
+      badges: pypi
+      site: https://dara.causalens.com
+      pypi_name: create-dara-app
+
     - repo: trungleduc/ipyflex
       site: https://ipyflex.readthedocs.io
       conda_channel: conda-forge
@@ -718,12 +726,14 @@
       badges: pypi
       site: https://www.streamsync.cloud/
 
+    - repo: h2oai/nitro
+      badges: pypi
+      sponsors: [h2o]
+      pypi_name: h2o-nitro
+
     - repo: mljar/bloxs
       badges: pypi
       sponsors: [mljar]
-
-    - repo: Zen-Reportz/zen_dash
-      badges: pypi
 
     - repo: hyperdiv/hyperdiv
       badges: pypi
@@ -737,20 +747,10 @@
       badges: pypi
       site: https://code.europa.eu/jrc-bdap/vois
 
-    - repo: h2oai/nitro
-      badges: pypi
-      sponsors: [h2o]
-      pypi_name: h2o-nitro
-
     - repo: ifpen/chalk-it
       badges: pypi
       site: https://ifpen.github.io/chalk-it
       pypi_name: py-chalk-it
-
-    - repo: causalens/dara
-      badges: pypi
-      site: https://dara.causalens.com
-      pypi_name: create-dara-app
 
     - repo: LCL-CAVE/manganite
       badges: pypi
