@@ -132,7 +132,8 @@
     - repo: Marsilea-viz/marsilea
       pypi_name: marsilea
       site: https://marsilea.rtfd.io/
-      badges: pypi, site, rtd
+      conda_channel: conda-forge
+      badges: pypi, conda, site, rtd
       builtons: [matplotlib]
 
 - name: Native-GUI
