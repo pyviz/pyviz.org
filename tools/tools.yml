@@ -34,7 +34,7 @@
       sponsors: [numfocus]
       appveyor_project: shoyer/xray
       site: https://xarray.dev/
-      conda-channel: conda-forge
+      conda_channel: conda-forge
       badges: travis, appveyor, coveralls, rtd, pypi, conda, site
       builtons: [matplotlib]
 
@@ -279,7 +279,8 @@
     - repo: pydata/xarray
       sponsors: [numfocus]
       appveyor_project: shoyer/xray
-      site: https://xarray.pydata.org
+      site: https://xarray.dev/
+      conda_channel: conda-forge
       badges: travis, appveyor, coveralls, rtd, pypi, conda, site
       builtons: [matplotlib]
 
