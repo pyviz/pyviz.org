@@ -203,6 +203,13 @@
       pypi_name: jupyter-scatter
       site: https://jupyter-scatter.dev/
 
+    - repo: posit-dev/great-tables
+      pypi_name: great-tables
+      site: https://posit-dev.github.io/great-tables/
+      badges: codecov, pypi, site
+      conda_package: great_tables
+      conda_channel: conda-forge
+      sponsors: [posit]
 
 - name: SciVis
   intro: Libraries for visualizing scientific data situated in real-world coordinates, typically using OpenGL, WebGL, or Vulkan.
