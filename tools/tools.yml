@@ -203,13 +203,6 @@
       pypi_name: jupyter-scatter
       site: https://jupyter-scatter.dev/
 
-    - repo: posit-dev/great-tables
-      pypi_name: great-tables
-      site: https://posit-dev.github.io/great-tables/
-      badges: codecov, pypi, site
-      conda_package: great_tables
-      conda_channel: conda-forge
-      sponsors: [posit]
 
 - name: SciVis
   intro: Libraries for visualizing scientific data situated in real-world coordinates, typically using OpenGL, WebGL, or Vulkan.
@@ -478,6 +471,55 @@
       site: http://graph-tool.skewed.de
       conda_channel: conda-forge
       badges: conda, site
+
+- name: Table display
+  intro: Tools for displaying and potentially interacting with data displayed as tables. Data libraries like Pandas and Polars also display tables, as do most dashboarding tools (e.g. Panel includes the Tabulator JS library for interactive tables).
+  packages:
+    - repo: posit-dev/great-tables
+    pypi_name: great-tables
+    site: https://posit-dev.github.io/great-tables
+    badges: codecov, pypi, site
+    conda_package: great_tables
+    conda_channel: conda-forge
+    sponsors: [posit]
+
+    - repo: mwouts/itables
+    pypi_name: itables
+    site: https://mwouts.github.io/itables
+    badges: codecov, pypi, site
+    conda_package: itables
+    conda_channel: conda-forge
+
+    - repo: paddymul/buckaroo
+    pypi_name: buckaroo
+    site: https://paddymul.github.io/buckaroo
+
+    - repo: manzt/quak
+    pypi_name: quak
+    site: https://manzt.github.io/quak
+    
+    - repo: machow/reactable-py
+    pypi_name: reactable
+    site: https://machow.github.io/reactable-py
+
+    - repo: Kanaries/pygwalker
+    pypi_name: pygwalker
+    site: https://kanaries.net/pygwalker
+    badges: pypi
+    conda_package: pygwalker
+    conda_channel: conda-forge
+
+    - repo: finos/perspective
+    pypi_name: perspective-python
+    site: https://perspective.finos.org
+    badges: pypi
+    conda_package: perspective # newer of two conda packages (the other is `perspective-python`)
+    conda_channel: conda-forge
+
+    - repo: jupyter-widgets/ipydatagrid
+    pypi_name: ipydatagrid
+    conda_package: ipydatagrid
+    conda_channel: conda-forge
 
 
 - name: Other domain-specific
