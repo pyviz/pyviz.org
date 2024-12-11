@@ -479,14 +479,21 @@
     - repo: mwouts/itables
       pypi_name: itables
       site: https://mwouts.github.io/itables
-      badges: codecov, pypi, site
+      badges: codecov, pypi, site, conda
       conda_package: itables
+      conda_channel: conda-forge
+
+    - repo: finos/perspective
+      pypi_name: perspective-python
+      site: https://perspective.finos.org
+      badges: pypi, conda
+      conda_package: perspective # newer of two conda packages (the other is `perspective-python`)
       conda_channel: conda-forge
 
     - repo: posit-dev/great-tables
       pypi_name: great-tables
       site: https://posit-dev.github.io/great-tables
-      badges: codecov, pypi, site
+      badges: codecov, pypi, site, conda
       conda_package: great_tables
       conda_channel: conda-forge
       sponsors: [posit]
@@ -494,32 +501,29 @@
     - repo: Kanaries/pygwalker
       pypi_name: pygwalker
       site: https://kanaries.net/pygwalker
-      badges: pypi
+      badges: pypi, conda
       conda_package: pygwalker
       conda_channel: conda-forge
 
     - repo: jupyter-widgets/ipydatagrid
       pypi_name: ipydatagrid
+      badges: pypi, conda
       conda_package: ipydatagrid
-      conda_channel: conda-forge
-
-    - repo: finos/perspective
-      pypi_name: perspective-python
-      site: https://perspective.finos.org
-      badges: pypi
-      conda_package: perspective # newer of two conda packages (the other is `perspective-python`)
       conda_channel: conda-forge
 
     - repo: paddymul/buckaroo
       pypi_name: buckaroo
+      badges: pypi
       site: https://paddymul.github.io/buckaroo
 
     - repo: manzt/quak
       pypi_name: quak
+      badges: pypi
       site: https://manzt.github.io/quak
 
     - repo: machow/reactable-py
       pypi_name: reactable
+      badges: pypi
       site: https://machow.github.io/reactable-py
 
 
