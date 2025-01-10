@@ -6,6 +6,8 @@ The Python visualization landscape can seem daunting at first. These overviews a
 
 <em>Adaptation of <a href="https://www.youtube.com/watch?v=FytuB8nFHPQ">Jake VanderPlas' graphic</a> about the Python visualization landscape, by Nicolas P. Rougier</em>
 
+-[The Essential Guide to R and Python Libraries for Data Visualization](https://towardsdatascience.com/the-essential-guide-to-r-and-python-libraries-for-data-visualization-33be8511c976), 16 Dec 2024: Sarah Lea. Comparing Matplotlib, Seaborn, Plotly, Pandas .plot(), Bokeh, Altair, HoloViews, and Folium.
+
 - [A Survey of Python Frameworks](https://ploomber.io/blog/survey-python-frameworks/), 25 Sep 2024: Ellie Ko. Comparing Streamlit, Shiny for Python, Panel, Flask, Chainlit, Dash, Voila, and Gradio.
 
 - [The Power of Pandas Plots: Backends](https://towardsdatascience.com/the-power-of-pandas-plots-backends-6a08d52071d2), 29 Aug 2024: Pierre-Etienne Toulemonde. Comparing matplotlib, plotly, and hvPlot for plotting with Pandas.
