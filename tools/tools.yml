@@ -171,6 +171,13 @@
       site: https://veusz.github.io
       builtons: [qt]
 
+    - repo: newville/wxmplot
+      site: https://newville.github.io/wxmplot/
+      conda_channel: conda-forge
+      conda_package: wxmplot
+      badges: pypi, conda, site
+      builtons: [matplotlib]
+
 
 - name: Other InfoVis
   intro: InfoVis plotting libraries not fitting into other categories above.
