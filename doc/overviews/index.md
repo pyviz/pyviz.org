@@ -6,9 +6,13 @@ The Python visualization landscape can seem daunting at first. These overviews a
 
 <em>Adaptation of <a href="https://www.youtube.com/watch?v=FytuB8nFHPQ">Jake VanderPlas' graphic</a> about the Python visualization landscape, by Nicolas P. Rougier</em>
 
+- [Which Python Dashboard Is Better? Dash, Panel And Streamlit Showdown](https://pub.towardsai.net/which-python-dashboard-is-better-dash-panel-and-streamlit-showdown-8d4f8bf744f9), 5 Feb 2025: John Loewen. Comparing Plotly, Dash, and Streamlit generation from LLMs.
+
 -[The Essential Guide to R and Python Libraries for Data Visualization](https://towardsdatascience.com/the-essential-guide-to-r-and-python-libraries-for-data-visualization-33be8511c976), 16 Dec 2024: Sarah Lea. Comparing Matplotlib, Seaborn, Plotly, Pandas .plot(), Bokeh, Altair, HoloViews, and Folium.
 
 - [A Survey of Python Frameworks](https://ploomber.io/blog/survey-python-frameworks/), 25 Sep 2024: Ellie Ko. Comparing Streamlit, Shiny for Python, Panel, Flask, Chainlit, Dash, Voila, and Gradio.
+
+- I bet you didn’t use these Python visualization libraries!, 10-14 Sep 2024: Abhinaba Banerjee. Comparing [Altair and Plotnine (part 1)](https://python.plainenglish.io/i-bet-you-didnt-use-these-python-visualization-libraries-9da9531a1855), [Datashader, Pygal, and Geoplot (part 2)](https://python.plainenglish.io/i-bet-you-didnt-use-these-python-visualization-libraries-part-2-1f201a0a0547), VisPy, and typlot (part 3).
 
 - [The Power of Pandas Plots: Backends](https://towardsdatascience.com/the-power-of-pandas-plots-backends-6a08d52071d2), 29 Aug 2024: Pierre-Etienne Toulemonde. Comparing matplotlib, plotly, and hvPlot for plotting with Pandas.
 
