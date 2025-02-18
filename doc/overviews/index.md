@@ -8,7 +8,7 @@ The Python visualization landscape can seem daunting at first. These overviews a
 
 - [Which Python Dashboard Is Better? Dash, Panel And Streamlit Showdown](https://pub.towardsai.net/which-python-dashboard-is-better-dash-panel-and-streamlit-showdown-8d4f8bf744f9), 5 Feb 2025: John Loewen. Comparing Plotly, Dash, and Streamlit generation from LLMs.
 
--[The Essential Guide to R and Python Libraries for Data Visualization](https://towardsdatascience.com/the-essential-guide-to-r-and-python-libraries-for-data-visualization-33be8511c976), 16 Dec 2024: Sarah Lea. Comparing Matplotlib, Seaborn, Plotly, Pandas .plot(), Bokeh, Altair, HoloViews, and Folium.
+- [The Essential Guide to R and Python Libraries for Data Visualization](https://towardsdatascience.com/the-essential-guide-to-r-and-python-libraries-for-data-visualization-33be8511c976), 16 Dec 2024: Sarah Lea. Comparing Matplotlib, Seaborn, Plotly, Pandas .plot(), Bokeh, Altair, HoloViews, and Folium.
 
 - [A Survey of Python Frameworks](https://ploomber.io/blog/survey-python-frameworks/), 25 Sep 2024: Ellie Ko. Comparing Streamlit, Shiny for Python, Panel, Flask, Chainlit, Dash, Voila, and Gradio.
 
