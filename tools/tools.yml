@@ -825,6 +825,10 @@
     - repo: briefercloud/briefer
       badges: pypi
 
+    - repo: rio-labs/rio
+      badges: pypi
+      site: https://rio.dev
+
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
   packages:
