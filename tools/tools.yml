@@ -633,23 +633,17 @@
   intro: Libraries for creating live Python-backed web applications or dashboards that a user can interact with to explore or analyze data.
   packages:
 
-    - repo: gradio-app/gradio
-      sponsors: [huggingface]
-      site: https://gradio.app
-      conda_channel: conda-forge
-      badges: circleci, codecov, pypi, conda, site
-
-    - repo: bokeh/bokeh
-      site: http://bokeh.org/
-      sponsors: [numfocus, anaconda]
-      badges: travis, pypi, conda, site
-      builtons: [bokeh]
-
     - repo: streamlit/streamlit
       sponsors: [snowflake]
       site: https://streamlit.io
       conda_channel: conda-forge
       badges: pypi, conda, site
+
+    - repo: gradio-app/gradio
+      sponsors: [huggingface]
+      site: https://gradio.app
+      conda_channel: conda-forge
+      badges: circleci, codecov, pypi, conda, site
 
     - repo: plotly/dash
       sponsors: [plotly]
@@ -658,29 +652,17 @@
       badges: circleci, pypi, conda, site
       builtons: [plotly]
 
+    - repo: bokeh/bokeh
+      site: http://bokeh.org/
+      sponsors: [numfocus, anaconda]
+      badges: travis, pypi, conda, site
+      builtons: [bokeh]
+
     - repo: holoviz/panel
       sponsors: [anaconda,numfocus]
       site: https://panel.holoviz.org
       badges: codecov, pypi, conda, site
       builtons: [bokeh]
-
-    - repo: marimo-team/marimo
-      badges: pypi, conda
-      conda_channel: conda-forge
-      site: https://marimo.io
-      sponsors: [marimo]
-
-    - repo: QuantStack/voila
-      site: https://voila.readthedocs.io
-      sponsors: [quantstack]
-      conda_channel: conda-forge
-      badges: travis, pypi, conda, rtd
-
-    - repo: fossasia/visdom
-      site: https://github.com/fossasia/visdom/blob/master/README.md#visdom
-      badges: pypi, conda
-      conda_channel: conda-forge
-      builtons: [plotly]
 
     - repo: zauberzeug/nicegui
       site: https://nicegui.io/
@@ -694,6 +676,31 @@
       site: https://kitware.github.io/trame
       sponsors: [Kitware]
 
+    - repo: QuantStack/voila
+      site: https://voila.readthedocs.io
+      sponsors: [quantstack]
+      conda_channel: conda-forge
+      badges: travis, pypi, conda, rtd
+
+    - repo: marimo-team/marimo
+      badges: pypi, conda
+      conda_channel: conda-forge
+      site: https://marimo.io
+      sponsors: [marimo]
+
+    - repo: rstudio/py-shiny
+      site: https://shiny.posit.co/py/
+      pypi_name: shiny
+      conda_package: shiny
+      conda_channel: conda-forge
+      badges: pypi, conda
+      sponsors: [posit]
+
+    - repo: wandb/weave
+      site: https://wandb.ai/site/weave
+      badges: pypi
+      sponsors: [wandb]
+
     - repo: widgetti/reacton
       site: https://reacton.solara.dev
       badges: pypi, conda
@@ -706,37 +713,26 @@
       conda_channel: conda-forge
       sponsors: [widgetti]
 
-    - repo: rstudio/py-shiny
-      site: https://shiny.posit.co/py/
-      pypi_name: shiny
-      conda_package: shiny
-      conda_channel: conda-forge
-      badges: pypi, conda
-      sponsors: [posit]
-
-    - repo: h2oai/wave
-      site: https://wave.h2o.ai
-      badges: pypi
-      sponsors: [h2o]
-
-    - repo: datapane/datapane
-      site: https://docs.datapane.com
-      conda_channel: conda-forge
-      badges: pypi, conda, site
-      sponsors: [datapane]
-
-    - repo: wandb/weave
-      site: https://wandb.ai/site/weave
-      badges: pypi
-      sponsors: [wandb]
-
     - repo: reflex-dev/reflex
       site: https://reflex.dev/
       badges: pypi
       sponsors: [reflex]
 
-    - repo: Zen-Reportz/zen_dash
+    - repo: fossasia/visdom
+      site: https://github.com/fossasia/visdom/blob/master/README.md#visdom
+      badges: pypi, conda
+      conda_channel: conda-forge
+      builtons: [plotly]
+
+    - repo: AnswerDotAI/fasthtml
+      pypi_name: python-fasthtml
+      site: https://fastht.ml/
       badges: pypi
+
+    - repo: h2oai/wave
+      site: https://wave.h2o.ai
+      badges: pypi
+      sponsors: [h2o]
 
     - repo: google/mesop
       sponsors: [Google]
@@ -748,14 +744,20 @@
       conda_channel: conda-forge
       sponsors: [mckinsey]
 
-    - repo: pywebio/PyWebIO
-      site: https://www.pyweb.io
-      badges: pypi, site
+    - repo: datapane/datapane
+      site: https://docs.datapane.com
+      conda_channel: conda-forge
+      badges: pypi, conda, site
+      sponsors: [datapane]
 
     - repo: Avaiga/taipy
       site: https://www.taipy.io
       badges: pypi
       sponsors: [taipy]
+
+    - repo: pywebio/PyWebIO
+      site: https://www.pyweb.io
+      badges: pypi, site
 
     - repo: mljar/mercury
       site: https://mljar.com/mercury
@@ -763,22 +765,20 @@
       badges: pypi, conda, site
       sponsors: [mljar]
 
-    - repo: pycob/pyvibe
-      badges: pypi
-
     - repo: danielfrg/jupyter-flex
       site: https://jupyter-flex.extrapolations.dev
-      badges: pypi
-
-    - repo: AnswerDotAI/fasthtml
-      pypi_name: python-fasthtml
-      site: https://fastht.ml/
       badges: pypi
 
     - repo: causalens/dara
       badges: pypi
       site: https://dara.causalens.com
       pypi_name: create-dara-app
+
+    - repo: Zen-Reportz/zen_dash
+      badges: pypi
+
+    - repo: pycob/pyvibe
+      badges: pypi
 
     - repo: trungleduc/ipyflex
       site: https://ipyflex.readthedocs.io
