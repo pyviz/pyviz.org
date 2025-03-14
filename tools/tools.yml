@@ -71,11 +71,6 @@
       badges: travis, codecov, pypi, conda, site
       builtons: [matplotlib]
 
-    - repo: AutoViML/AutoViz
-      site: https://github.com/AutoViML/AutoViz
-      badges: travis, pypi, site
-      builtons: [matplotlib]
-
     - repo: holoviz/holoviews
       sponsors: [anaconda,numfocus]
       badges: coveralls, pypi, conda, site
@@ -92,6 +87,11 @@
       sponsors: [jetbrains]
       site: https://lets-plot.org
       badges: pypi, site
+
+    - repo: AutoViML/AutoViz
+      site: https://github.com/AutoViML/AutoViz
+      badges: travis, pypi, site
+      builtons: [matplotlib]
 
     - repo: finos/perspective
       site: https://perspective.finos.org
@@ -121,6 +121,13 @@
       conda_channel: conda-forge
       badges: travis, pypi, conda, site
 
+    - repo: Marsilea-viz/marsilea
+      pypi_name: marsilea
+      site: https://marsilea.rtfd.io/
+      conda_channel: conda-forge
+      badges: pypi, conda, site, rtd
+      builtons: [matplotlib]
+
     - repo: Technion-Kishony-lab/quibbler
       pypi_name: pyquibbler
       site: https://github.com/Technion-Kishony-lab/quibbler
@@ -128,13 +135,6 @@
       builtons: [matplotlib]
 
     - repo: koonimaru/omniplot
-
-    - repo: Marsilea-viz/marsilea
-      pypi_name: marsilea
-      site: https://marsilea.rtfd.io/
-      conda_channel: conda-forge
-      badges: pypi, conda, site, rtd
-      builtons: [matplotlib]
 
 - name: Native-GUI
   intro: InfoVis Libraries targetting native-desktop GUI interfaces for interactive plots.
@@ -149,10 +149,10 @@
       site: http://www.pyqtgraph.org
       builtons: [qt, opengl]
 
-    - repo: glue-viz/glue
-      site: http://docs.glueviz.org
+    - repo: newville/wxmplot
+      site: https://newville.github.io/wxmplot/
       conda_channel: conda-forge
-      conda_package: glueviz
+      conda_package: wxmplot
       badges: pypi, conda, site
       builtons: [matplotlib]
 
@@ -166,18 +166,17 @@
       site: https://gr-framework.org/python.html
       badges: pypi, site
 
+    - repo: glue-viz/glue
+      site: http://docs.glueviz.org
+      conda_channel: conda-forge
+      conda_package: glueviz
+      badges: pypi, conda, site
+      builtons: [matplotlib]
+
     - repo: veusz/veusz
       conda_channel: conda-forge
       site: https://veusz.github.io
       builtons: [qt]
-
-    - repo: newville/wxmplot
-      site: https://newville.github.io/wxmplot/
-      conda_channel: conda-forge
-      conda_package: wxmplot
-      badges: pypi, conda, site
-      builtons: [matplotlib]
-
 
 - name: Other InfoVis
   intro: InfoVis plotting libraries not fitting into other categories above.
@@ -202,13 +201,13 @@
       conda_channel: conda-forge
       badges: pypi, conda, rtd
 
-    - repo: maxhumber/chart
-
     - repo: flekschas/jupyter-scatter
       badges: pypi, site
       builtons: [webgl]
       pypi_name: jupyter-scatter
       site: https://jupyter-scatter.dev/
+
+    - repo: maxhumber/chart
 
 
 - name: SciVis
@@ -278,17 +277,17 @@
   intro: Tools for working with data in geographic coordinates.
   packages:
 
-    - repo: geopandas/geopandas
-      site: http://geopandas.org
-      conda_channel: conda-forge
-      builtons: [matplotlib]
-
     - repo: pydata/xarray
       sponsors: [numfocus]
       appveyor_project: shoyer/xray
       site: https://xarray.dev/
       conda_channel: conda-forge
       badges: travis, appveyor, coveralls, rtd, pypi, conda, site
+      builtons: [matplotlib]
+
+    - repo: geopandas/geopandas
+      site: http://geopandas.org
+      conda_channel: conda-forge
       builtons: [matplotlib]
 
     - repo: python-visualization/folium
@@ -302,21 +301,21 @@
       badges: pypi, conda, site
       builtons: [bokeh]
 
-    - repo: jupyter-widgets/ipyleaflet
-      conda_channel: conda-forge
-      badges: pypi, conda, rtd
-      builtons: [leaflet]
+    - repo: SciTools/cartopy
+      sponsors: [metoffice]
+      site: https://scitools.org.uk/cartopy
+      badges: travis, appveyor, coveralls, pypi, conda, site
+      builtons: [matplotlib]
 
     - repo: keplergl/kepler.gl
       site: https://docs.kepler.gl/docs/keplergl-jupyter
       badges: pypi
       pypi_name: keplergl
 
-    - repo: SciTools/cartopy
-      sponsors: [metoffice]
-      site: https://scitools.org.uk/cartopy
-      badges: travis, appveyor, coveralls, pypi, conda, site
-      builtons: [matplotlib]
+    - repo: jupyter-widgets/ipyleaflet
+      conda_channel: conda-forge
+      badges: pypi, conda, rtd
+      builtons: [leaflet]
 
     - repo: gboeing/osmnx
       site: https://osmnx.readthedocs.io
@@ -347,12 +346,6 @@
       badges: coveralls, pypi, conda, site
       builtons: [matplotlib]
 
-    - repo: ResidentMario/geoplot
-      site: https://residentmario.github.io/geoplot
-      conda_channel: conda-forge
-      badges: pypi, conda, site
-      builtons: [matplotlib]
-
     - repo: HTenkanen/pyrosm
       site: https://pyrosm.readthedocs.io
       badges: pypi
@@ -369,10 +362,11 @@
       badges: pypi, conda, codecov
       builtons: [gmt]
 
-    - repo: andrea-cuttone/geoplotlib
-      site: https://github.com/andrea-cuttone/geoplotlib/wiki/User-Guide
-      badges: pypi
-      builtons: [opengl]
+    - repo: ResidentMario/geoplot
+      site: https://residentmario.github.io/geoplot
+      conda_channel: conda-forge
+      badges: pypi, conda, site
+      builtons: [matplotlib]
 
     - repo: raphaelquast/eomaps
       site: https://eomaps.readthedocs.io
@@ -384,16 +378,21 @@
       site: https://mapwidget.gishub.org/
       badges: pypi
 
-    - repo: ambeelabs/gspatial_plot
-      site: https://gspatial-plot.readthedocs.io
-      badges: pypi
-      builtons: [matplotlib]
-
     - repo: bjlittle/geovista
       site: https://geovista.readthedocs.io
       conda_channel: conda-forge
       badges: pypi, conda, codecov, site
       builtons: [pyvista]
+
+    - repo: andrea-cuttone/geoplotlib
+      site: https://github.com/andrea-cuttone/geoplotlib/wiki/User-Guide
+      badges: pypi
+      builtons: [opengl]
+
+    - repo: ambeelabs/gspatial_plot
+      site: https://gspatial-plot.readthedocs.io
+      badges: pypi
+      builtons: [matplotlib]
 
 - name: Graphs and networks
   intro: Tools specifically focused on visualizing graphs (networks).  Several of the other plotting libraries listed in other sections can also plot network graphs, including Bokeh, HoloViews, hvPlot, Matplotlib, and Plotly.
@@ -417,6 +416,11 @@
       conda_channel: conda-forge
       builtons: [graphviz]
 
+    - repo: WestHealth/pyvis
+      site: https://pyvis.readthedocs.io
+      conda_channel: conda-forge
+      badges: pypi, conda, site
+
     - repo: pygraphviz/pygraphviz
       site: https://pygraphviz.github.io
       conda_channel: conda-forge
@@ -429,10 +433,13 @@
       appveyor_project: ntamas/python-igraph
       badges: travis, appveyor, pypi, conda, site
 
-    - repo: WestHealth/pyvis
-      site: https://pyvis.readthedocs.io
+    - repo: timkpaine/ipydagred3
       conda_channel: conda-forge
-      badges: pypi, conda, site
+      badges: azure, pypi, conda
+      builtons: [d3]
+
+    - repo: Yomguithereal/ipysigma
+      badges: pypi
 
     - repo: QuantStack/ipycytoscape
       conda_channel: conda-forge
@@ -448,18 +455,14 @@
       conda_channel: conda-forge
       badges: pypi, conda, site
 
+    - repo: benmaier/netwulf
+      site: https://netwulf.readthedocs.io
+      badges: travis, pypi, rtd, site
+
     - repo: cytoscape/py2cytoscape
       site: https://py2cytoscape.readthedocs.io
       conda_channel: conda-forge
       badges: travis, pypi, conda, rtd, site
-
-    - repo: timkpaine/ipydagred3
-      conda_channel: conda-forge
-      badges: azure, pypi, conda
-      builtons: [d3]
-
-    - repo: Yomguithereal/ipysigma
-      badges: pypi
 
     - repo: SkBlaz/Py3Plex
       site: https://py3plex.readthedocs.io
@@ -468,10 +471,6 @@
     - repo: dblarremore/webweb
       site: https://webwebpage.github.io
       badges: pypi, conda, site
-
-    - repo: benmaier/netwulf
-      site: https://netwulf.readthedocs.io
-      badges: travis, pypi, rtd, site
 
     - repo: skewed/graph-tool
       # repo: https://git.skewed.de/count0/graph-tool
@@ -488,13 +487,6 @@
       site: https://mwouts.github.io/itables
       badges: codecov, pypi, site, conda
       conda_package: itables
-      conda_channel: conda-forge
-
-    - repo: finos/perspective
-      pypi_name: perspective-python
-      site: https://perspective.finos.org
-      badges: pypi, conda
-      conda_package: perspective # newer of two conda packages (the other is `perspective-python`)
       conda_channel: conda-forge
 
     - repo: posit-dev/great-tables
@@ -516,6 +508,13 @@
       pypi_name: ipydatagrid
       badges: pypi, conda
       conda_package: ipydatagrid
+      conda_channel: conda-forge
+
+    - repo: finos/perspective
+      pypi_name: perspective-python
+      site: https://perspective.finos.org
+      badges: pypi, conda
+      conda_package: perspective # newer of two conda packages (the other is `perspective-python`)
       conda_channel: conda-forge
 
     - repo: paddymul/buckaroo
@@ -586,6 +585,9 @@
       badges: travis, codecov, pypi, conda, site
       builtons: [matplotlib]
 
+    - repo: moshi4/pyCirclize
+      badges: pypi
+
     - repo: ismms-himc/clustergrammer2
       site: https://clustergrammer.readthedocs.io
       badges: pypi, site
@@ -597,9 +599,6 @@
 
     - repo: PAIR-code/facets
       site: https://pair-code.github.io/facets/
-      badges: pypi
-
-    - repo: moshi4/pyCirclize
       badges: pypi
 
 
@@ -833,13 +832,13 @@
   intro: Collections of colormaps and tools for generating new colormaps.
   packages:
 
-    - repo: jiffyclub/palettable
-      site: https://jiffyclub.github.io/palettable
-
     - repo: holoviz/colorcet
       sponsors: [anaconda,numfocus]
       site: https://colorcet.holoviz.org
       badges: pypi, conda, site
+
+    - repo: jiffyclub/palettable
+      site: https://jiffyclub.github.io/palettable
 
     - repo: matplotlib/cmocean
       site: https://matplotlib.org/cmocean
