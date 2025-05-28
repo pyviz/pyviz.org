@@ -6,6 +6,8 @@ The Python visualization landscape can seem daunting at first. These overviews a
 
 <em>Adaptation of <a href="https://www.youtube.com/watch?v=FytuB8nFHPQ">Jake VanderPlas' graphic</a> about the Python visualization landscape, by Nicolas P. Rougier</em>
 
+- [](https://nathanrosidi.medium.com/matplotlib-alternatives-that-actually-save-you-time-75631616cc4e), 13 May 2025: Nathan Rosidi. Comparing Plotly, Seaborn, Bokeh, Altair, and Plotnine as Matplotlib alternatives.
+
 - [Which Python Dashboard Is Better? Dash, Panel And Streamlit Showdown](https://pub.towardsai.net/which-python-dashboard-is-better-dash-panel-and-streamlit-showdown-8d4f8bf744f9), 5 Feb 2025: John Loewen. Comparing Plotly, Dash, and Streamlit generation from LLMs.
 
 - [The Essential Guide to R and Python Libraries for Data Visualization](https://towardsdatascience.com/the-essential-guide-to-r-and-python-libraries-for-data-visualization-33be8511c976), 16 Dec 2024: Sarah Lea. Comparing Matplotlib, Seaborn, Plotly, Pandas .plot(), Bokeh, Altair, HoloViews, and Folium.
