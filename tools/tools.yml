@@ -828,6 +828,10 @@
       badges: pypi
       site: https://rio.dev
 
+    - repo: davialabs/davia
+      badges: pypi
+      site: https://davia.ai
+
 - name: Colormapping
   intro: Collections of colormaps and tools for generating new colormaps.
   packages:
