@@ -6,6 +6,8 @@ The Python visualization landscape can seem daunting at first. These overviews a
 
 <em>Adaptation of <a href="https://www.youtube.com/watch?v=FytuB8nFHPQ">Jake VanderPlas' graphic</a> about the Python visualization landscape, by Nicolas P. Rougier</em>
 
+- [The Best Python Dashboard Tools: Comparative Analysis With Practical Examples](https://medium.com/data-storytelling-corner/the-best-python-dashboard-tools-comparative-analysis-with-practical-examples-759636cc48ef), 11 Jun 2025: John Loewen. Comparing Streamlit, Dash, Shiny, Voila, and Panel.
+
 - [Matplotlib Alternatives That Actually Save You Time](https://nathanrosidi.medium.com/matplotlib-alternatives-that-actually-save-you-time-75631616cc4e), 13 May 2025: Nathan Rosidi. Comparing Plotly, Seaborn, Bokeh, Altair, and Plotnine as Matplotlib alternatives.
 
 - [Which Python Dashboard Is Better? Dash, Panel And Streamlit Showdown](https://pub.towardsai.net/which-python-dashboard-is-better-dash-panel-and-streamlit-showdown-8d4f8bf744f9), 5 Feb 2025: John Loewen. Comparing Plotly, Dash, and Streamlit generation from LLMs.
