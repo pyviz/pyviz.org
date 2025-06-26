@@ -8,7 +8,7 @@ The Python visualization landscape can seem daunting at first. These overviews a
 
 4ca7f0637
 
-- [Practical Python Dashboards: The Best 5 Frameworks For Interactive Maps](https://medium.com/data-science-collective/practical-python-dashboards-the-best-5-frameworks-for-interactive-maps-083), 12 Jun 2025: John Loewen. Comparing Streamlit, Dash, Shiny, Voila, and Panel for plotting choropleth maps.
+- [Practical Python Dashboards: The Best 5 Frameworks For Interactive Maps](https://medium.com/data-science-collective/practical-python-dashboards-the-best-5-frameworks-for-interactive-maps-0834ca7f0637), 12 Jun 2025: John Loewen. Comparing Streamlit, Dash, Shiny, Voila, and Panel for plotting choropleth maps.
 
 - [The Best Python Dashboard Tools: Comparative Analysis With Practical Examples](https://medium.com/data-storytelling-corner/the-best-python-dashboard-tools-comparative-analysis-with-practical-examples-759636cc48ef), 11 Jun 2025: John Loewen. Comparing Streamlit, Dash, Shiny, Voila, and Panel.
 
