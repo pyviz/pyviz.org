@@ -858,14 +858,15 @@
       conda_channel: conda-forge
       badges: pypi, conda
 
+    - repo: y-sunflower/pypalettes
+      site: https://python-graph-gallery.com/color-palette-finder/
+      conda_channel: conda-forge
+      badges: pypi, conda, site
+      builtons: [matplotlib]
+
     - repo: matplotlib/viscm
       conda_channel: conda-forge
       badges: travis, codecov, pypi, conda
-
-    - repo: y-sunflower/pypalettes
-      site: https://python-graph-gallery.com/color-palette-finder/
-      badges: pypi, conda, site
-      builtons: [matplotlib]
 
 - name: Dormant projects
   intro: Tools no longer developed or endorsed by the authors.
