@@ -6,6 +6,8 @@ The Python visualization landscape can seem daunting at first. These overviews a
 
 <em>Adaptation of <a href="https://www.youtube.com/watch?v=FytuB8nFHPQ">Jake VanderPlas' graphic</a> about the Python visualization landscape, by Nicolas P. Rougier</em>
 
+- [10 Python Libraries That Build Dashboards in Minutes](https://medium.com/@abdur.rahman12/10-python-libraries-that-build-dashboards-in-minutes-f1b6724946fa), 25 Dec 2025: Abdur Rahman. Brief overview of Streamlit, Dash, Panel, Plotly, Bokeh, Voilà, Gradio, Altair, NiceGUI, and Flask + HTMX. 
+
 - [I built the same dashboard 8 times | Which Python framework was best?](https://www.youtube.com/watch?v=k_fWYqCBUCE), 24 Aug 2025: Fanilo Andrianasolo. 1-hour video comparing Streamlit, Gradio, Panel, Dash, Shiny, Solara, NiceGUI and Reflex for building web applications in Python.
 
 - [Practical Python Dashboards: The Best 5 Frameworks For Interactive Maps](https://medium.com/data-science-collective/practical-python-dashboards-the-best-5-frameworks-for-interactive-maps-0834ca7f0637), 12 Jun 2025: John Loewen. Comparing Streamlit, Dash, Shiny, Voila, and Panel for plotting choropleth maps.
