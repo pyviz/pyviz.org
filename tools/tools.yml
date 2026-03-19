@@ -207,8 +207,22 @@
       pypi_name: jupyter-scatter
       site: https://jupyter-scatter.dev/
 
-    - repo: maxhumber/chart
+    - repo: ricklupton/floweaver
+      badges: pypi
+      builtons: [d3]
 
+    - repo: maxhumber/chart
+      badges: pypi
+
+    - repo: gyli/PyWaffle
+      badges: pypi, site
+      builtons: [matplotlib]
+      pypi_name: pywaffle
+      site: https://pywaffle.readthedocs.io/
+
+    - repo: leotac/joypy
+      badges: pypi, site
+      builtons: [matplotlib]
 
 - name: SciVis
   intro: Libraries for visualizing scientific data situated in real-world coordinates, typically using OpenGL, WebGL, or Vulkan.
