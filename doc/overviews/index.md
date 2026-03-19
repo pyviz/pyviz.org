@@ -6,6 +6,9 @@ The Python visualization landscape can seem daunting at first. These overviews a
 
 <em>Adaptation of <a href="https://www.youtube.com/watch?v=FytuB8nFHPQ">Jake VanderPlas' graphic</a> about the Python visualization landscape, by Nicolas P. Rougier</em>
 
+- [7 Python Libraries That Make Visualization Beautiful](https://medium.com/@abdur.rahman12/7-python-libraries-that-make-visualization-beautiful-3d2ffb308611), 
+22 Sep 2025: Abdur Rahman. Brief overview of PyWaffle, Plotnine, Datashader, JoyPy, Sankeyview, PyCirclize, and Weave.
+
 - [10 Python Libraries That Build Dashboards in Minutes](https://medium.com/@abdur.rahman12/10-python-libraries-that-build-dashboards-in-minutes-f1b6724946fa), 25 Dec 2025: Abdur Rahman. Brief overview of Streamlit, Dash, Panel, Plotly, Bokeh, Voilà, Gradio, Altair, NiceGUI, and Flask + HTMX. 
 
 - [I built the same dashboard 8 times | Which Python framework was best?](https://www.youtube.com/watch?v=k_fWYqCBUCE), 24 Aug 2025: Fanilo Andrianasolo. 1-hour video comparing Streamlit, Gradio, Panel, Dash, Shiny, Solara, NiceGUI and Reflex for building web applications in Python.
