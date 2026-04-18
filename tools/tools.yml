@@ -136,6 +136,12 @@
 
     - repo: koonimaru/omniplot
 
+    - repo: pyecharts/pyecharts
+      site: https://pyecharts.org/#/en-us/
+      badges: pypi
+      builtons: [echarts]
+
+
 - name: Native-GUI
   intro: InfoVis Libraries targetting native-desktop GUI interfaces for interactive plots.
   packages:
