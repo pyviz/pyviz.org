@@ -6,6 +6,8 @@ The Python visualization landscape can seem daunting at first. These overviews a
 
 <em>Adaptation of <a href="https://www.youtube.com/watch?v=FytuB8nFHPQ">Jake VanderPlas' graphic</a> about the Python visualization landscape, by Nicolas P. Rougier</em>
 
+- [PyViz: Data Visualization in Python](https://docs.google.com/presentation/d/19PWM-9oKkcKlVHycVg2kBHK84UEA55Df2yi5lFQ_7PQ/), 18 Apr 2026: James A. Bednar. Brief survey of PyViz.org as slides, with examples of each category.
+
 - [7 Python Libraries That Make Visualization Beautiful](https://medium.com/@abdur.rahman12/7-python-libraries-that-make-visualization-beautiful-3d2ffb308611), 
 22 Sep 2025: Abdur Rahman. Brief overview of PyWaffle, Plotnine, Datashader, JoyPy, Sankeyview, PyCirclize, and Weave.
 
