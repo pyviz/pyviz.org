@@ -83,6 +83,11 @@
       badges: coveralls, pypi, conda, site
       builtons: [bokeh, matplotlib, plotly]
 
+    - repo: pyecharts/pyecharts
+      site: https://pyecharts.org/#/en-us/
+      badges: pypi
+      builtons: [echarts]
+
     - repo: JetBrains/lets-plot
       sponsors: [jetbrains]
       site: https://lets-plot.org
@@ -135,11 +140,6 @@
       builtons: [matplotlib]
 
     - repo: koonimaru/omniplot
-
-    - repo: pyecharts/pyecharts
-      site: https://pyecharts.org/#/en-us/
-      badges: pypi
-      builtons: [echarts]
 
 
 - name: Native-GUI
@@ -597,6 +597,10 @@
       badges: travis, codecov, pypi, conda, site
       builtons: [matplotlib]
 
+    - repo: saulpw/visidata
+      site: https://visidata.org/
+      badges: pypi
+
     - repo: leotac/joypy
       badges: pypi, site
       builtons: [matplotlib]
@@ -619,10 +623,6 @@
 
     - repo: PAIR-code/facets
       site: https://pair-code.github.io/facets/
-      badges: pypi
-
-    - repo: saulpw/visidata
-      site: https://visidata.org/
       badges: pypi
 
 - name: Large-data rendering
