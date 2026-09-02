@@ -261,6 +261,11 @@
       badges: pypi, conda, circleci
       builtons: [webgl]
 
+    - repo: K3D-tools/K3D-jupyter
+      site: https://k3d-jupyter.org
+      conda_channel: conda-forge
+      builtons: [webgl]
+
     - repo: enthought/mayavi
       sponsors: [enthought]
       site: https://docs.enthought.com/mayavi/mayavi
