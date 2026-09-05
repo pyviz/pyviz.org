@@ -262,6 +262,8 @@
       builtons: [webgl]
 
     - repo: K3D-tools/K3D-jupyter
+      pypi_name: k3d
+      conda_package: k3d
       site: https://k3d-jupyter.org
       conda_channel: conda-forge
       builtons: [webgl]
