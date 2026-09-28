@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<title>High-level tools — PyViz 0.0.1 documentation</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/alabaster.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/graphviz.css" rel="stylesheet" type="text/css"/>
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<link href="../_static/favicon.ico" rel="shortcut icon"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="../tools.html" rel="next" title="All Tools"/>
+<link href="../overviews/index.html" rel="prev" title="Overviews"/>
+<link href="../_static/custom.css" rel="stylesheet" type="text/css"/>
+<meta content="width=device-width, initial-scale=0.9, maximum-scale=0.9" name="viewport"/>
+</head><body>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body" role="main">
+<section id="high-level-tools">
+<h1>High-level tools<a class="headerlink" href="#high-level-tools" title="Permalink to this headline">¶</a></h1>
+<p>The full list of <a class="reference external" href="../tools.html">Python viz tools</a> is very long and covers a wide range of functionality. Many users share similar needs, and can get very far using a high-level tool that covers the most common tasks succinctly and conveniently, typically by providing a simpler API on top of an existing plotting tool.</p>
+<section id="pandas-plot-api">
+<h2>Pandas .plot() API<a class="headerlink" href="#pandas-plot-api" title="Permalink to this headline">¶</a></h2>
+<p>The longest-established of these tools is the <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html">Pandas .plot() API</a>. This basic plotting interface uses <a class="reference external" href="http://matplotlib.org">Matplotlib</a> to render static PNGs in a Jupyter notebook or for exporting from Python, with a command that can be as simple as <code class="docutils literal notranslate"><span class="pre">df.plot()</span></code> for a DataFrame with two columns.</p>
+<p>The Pandas .plot() API has emerged as a de-facto standard for high-level plotting APIs in Python, and is now supported by many different libraries that use other underlying plotting engines to provide additional power and flexibility. Thus learning this API allows you to access capabilities provided by a wide variety of underlying tools, with relatively little additional effort. The libraries currently supporting this API include:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html">Pandas</a> – Matplotlib-based API included with Pandas. Static PNG output in Jupyter notebooks.</p></li>
+<li><p><a class="reference external" href="https://xarray.pydata.org/en/stable/plotting.html">xarray</a> – Matplotlib-based API included with xarray, based on pandas .plot API. Static PNG output in Jupyter notebooks.</p></li>
+<li><p><a class="reference external" href="https://hvplot.pyviz.org">hvPlot</a> – HoloViews and Bokeh-based interactive plots for Pandas, GeoPandas, xarray, Dask, Intake, and Streamz data.</p></li>
+<li><p><a class="reference external" href="https://github.com/PatrikHlobil/Pandas-Bokeh">Pandas Bokeh</a> – Bokeh-based interactive plots, for Pandas, GeoPandas, and PySpark data.</p></li>
+<li><p><a class="reference external" href="https://github.com/santosjorge/cufflinks">Cufflinks</a> – Plotly-based interactive plots for Pandas data.</p></li>
+<li><p><a class="reference external" href="https://altair-viz.github.io/pdvega">PdVega</a> – Vega-lite-based, JSON-encoded interactive plots for Pandas data.</p></li>
+</ul>
+</section>
+<section id="other-high-level-apis">
+<h2>Other high-level APIs<a class="headerlink" href="#other-high-level-apis" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://seaborn.pydata.org">Seaborn</a> – Matplotlib-based high-level interface for drawing statistical graphics.</p></li>
+<li><p><a class="reference external" href="https://altair-viz.github.io/">Altair</a> – Declarative Vega-lite-based interactive plots.</p></li>
+<li><p><a class="reference external" href="https://holoviews.org">HoloViews</a> – Declarative Bokeh, Matplotlib, or Plotly-based interactive plots for tidy data.</p></li>
+<li><p><a class="reference external" href="https://github.com/spotify/chartify">Chartify</a> – Bokeh-based interactive plots for tidy data.</p></li>
+<li><p><a class="reference external" href="https://www.plotly.express/">Plotly Express</a> – Plotly-based interactive plots.</p></li>
+</ul>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+</section>
+</div>
+</div>
+</div>
+<div aria-label="main navigation" class="sphinxsidebar" role="navigation">
+<div class="sphinxsidebarwrapper">
+<p class="logo">
+<a href="../index.html">
+<img alt="Logo" class="logo" src="../_static/logo.png"/>
+</a>
+</p>
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overviews/index.html">Overviews</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">High-level tools</a><ul>
+<li class="toctree-l2"><a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html">Pandas .plot</a></li>
+<li class="toctree-l2"><a class="reference external" href="http://xarray.pydata.org/en/stable/plotting.html">xarray .plot</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://hvplot.pyviz.org">hvPlot</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://github.com/PatrikHlobil/Pandas-Bokeh">Pandas Bokeh</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://github.com/santosjorge/cufflinks">Cufflinks</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://altair-viz.github.io/pdvega">PdVega</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://seaborn.pydata.org">Seaborn</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://altair-viz.github.io">Altair</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://holoviews.org">HoloViews</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://github.com/spotify/chartify">Chartify</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://www.plotly.express">Plotly Express</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tools.html">All tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dashboarding/index.html">Dashboarding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scivis/index.html">SciVis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials</a></li>
+</ul>
+<hr/>
+<ul>
+<li class="toctree-l1"><a href="https://github.com/pyviz/website">Github</a></li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+<li><a href="../index.html">Documentation overview</a><ul>
+<li>Previous: <a href="../overviews/index.html" title="previous chapter">Overviews</a></li>
+<li>Next: <a href="../tools.html" title="next chapter">All Tools</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="searchbox" role="search" style="display: none">
+<h3 id="searchlabel">Quick search</h3>
+<div class="searchformwrapper">
+<form action="../search.html" class="search" method="get">
+<input aria-labelledby="searchlabel" autocapitalize="off" autocomplete="off" autocorrect="off" name="q" spellcheck="false" type="text"/>
+<input type="submit" value="Go"/>
+</form>
+</div>
+</div>
+<script>$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="footer">
+      © 2019, PyViz authors.
+      
+      |
+      <a href="../_sources/high-level/index.rst.txt" rel="nofollow">Page source</a>
+</div>
+</body>
+</html>
