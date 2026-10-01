@@ -5,86 +5,89 @@ on:
     branches:
       - master
   pull_request:
-    branches:
-      - '*'
   schedule:
-    - cron: "0 8 * 1-12 1"  # Every monday at 8 am
+    - cron: "0 8 * * 1"  # Every Monday at 8 am
   workflow_dispatch:
 
 permissions:
-  # To allow the workflow to push to the origin, when actions/checkout is used.
-  contents: write
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
-  pre_ci:
-    runs-on: 'ubuntu-latest'
+  lint:
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v10.2.0
         with:
-          # required for PRs
-          fetch-depth: 2
-      - name: Get commit message
-        id: get_commit_message
-        run: |
-          if   [[ '${{ github.event_name }}' == 'push' ]]; then
-            echo "commit_message=$(git log --format=%B -n 1 HEAD)" >> $GITHUB_OUTPUT
-          elif [[ '${{ github.event_name }}' == 'pull_request' ]]; then
-            echo "commit_message=$(git log --format=%B -n 1 HEAD^2)" >> $GITHUB_OUTPUT
-          fi
-    outputs:
-      commit_message:
-        echo "${{ steps.get_commit_message.outputs.commit_message }}"
-  build_docs:
-    name: Documentation
-    runs-on: 'ubuntu-latest'
-    needs: pre_ci
-    if: "contains(needs.pre_ci.outputs.commit_message, 'website_dev') || github.ref == 'refs/heads/master'"
-    timeout-minutes: 120
-    defaults:
-      run:
-        shell: bash -l {0}
+          enable-cache: true
+      - run: uv sync --locked
+      - run: uv run ruff check
+      - run: uv run ruff format --check
+
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      # To push the refreshed badges to the cache branch.
+      contents: write
     steps:
-      - uses: actions/checkout@v3
-      - uses: conda-incubator/setup-miniconda@v2
+      - uses: actions/checkout@v7
+      - name: Check out the cache branch
+        uses: actions/checkout@v7
         with:
-          auto-activate-base: true
-          activate-environment: ""
-          miniconda-version: "latest"
-      - name: conda setup
+          ref: cache
+          path: cache-branch
+      - name: Restore cached badges
         run: |
-          conda install anaconda-project
-          anaconda-project prepare
-      - name: Build cache
+          mkdir -p doc/_static/cache
+          cp -r cache-branch/doc/_static/cache/. doc/_static/cache/
+      - uses: astral-sh/setup-uv@v10.2.0
+        with:
+          enable-cache: true
+      - run: uv sync --locked
+      - name: Build badges
+        run: uv run python tools/build_badges.py
+      - name: Push badges to the cache branch
+        if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
+        working-directory: cache-branch
         run: |
-          anaconda-project run build_cache
+          mkdir -p doc/_static/cache
+          cp -r ../doc/_static/cache/. doc/_static/cache/
           git config user.name github-actions
           git config user.email github-actions@github.com
-          mv ./doc/_static/cache ./tmp
-          git fetch origin cache
-          git checkout cache
-          mv ./tmp/* ./doc/_static/cache
-          git add -f ./doc/_static/cache
-          ls ./doc/_static/cache
-          git commit -m "adding cached badges"
-          git push -f origin HEAD:cache
-      - uses: actions/checkout@v3
-        with:
-          clean: false
+          # The cache directory is gitignored.
+          git add -f doc/_static/cache
+          if git diff --cached --quiet; then
+            echo "No badge changed"
+          else
+            git commit -m "adding cached badges"
+            git push origin HEAD:cache
+          fi
       - name: Build website
-        run: |
-          git checkout -b deploy-tmp
-          git fetch origin cache  # all cached badges are in this branch
-          git checkout origin/cache -- ./doc/_static/cache
-          anaconda-project run build_website
-      - name: git status
-        run: |
-          git status
-          git diff
-      - name: Deploy main
-        if: ${{ github.ref == 'refs/heads/master' }}
-        uses: peaceiris/actions-gh-pages@v3
+        run: uv run sphinx-build -W -b html doc builtdocs
+      - uses: actions/upload-artifact@v7
         with:
+          name: site
+          path: builtdocs
+
+  deploy:
+    needs: [lint, build]
+    if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          name: site
+          path: builtdocs
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./builtdocs
           cname: pyviz.org
-          github_token: ${{ secrets.GITHUB_TOKEN }}
           force_orphan: true

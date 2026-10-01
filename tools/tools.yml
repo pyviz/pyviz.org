@@ -39,7 +39,7 @@
       builtons: [matplotlib]
 
     - repo: holoviz/hvplot
-      sponsors: [anaconda,numfocus]
+      sponsors: [anaconda, numfocus]
       site: https://hvplot.holoviz.org
       badges: pypi, conda, site
       builtons: [bokeh]
@@ -79,7 +79,7 @@
       builtons: [plotly]
 
     - repo: holoviz/holoviews
-      sponsors: [anaconda,numfocus]
+      sponsors: [anaconda, numfocus]
       badges: coveralls, pypi, conda, site
       builtons: [bokeh, matplotlib, plotly]
 
@@ -101,6 +101,7 @@
       builtons: [matplotlib]
 
     - repo: finos/perspective
+      pypi_name: perspective-python
       site: https://perspective.finos.org
       conda_channel: conda-forge
       badges: pypi, conda, site
@@ -315,7 +316,7 @@
       builtons: [matplotlib]
 
     - repo: holoviz/hvplot
-      sponsors: [anaconda,numfocus]
+      sponsors: [anaconda, numfocus]
       site: https://hvplot.holoviz.org
       badges: pypi, conda, site
       builtons: [bokeh]
@@ -353,7 +354,7 @@
       badges: pypi
 
     - repo: holoviz/geoviews
-      sponsors: [anaconda,numfocus]
+      sponsors: [anaconda, numfocus]
       site: http://geoviews.org
       badges: pypi, conda, site
       builtons: [bokeh, matplotlib, plotly]
@@ -527,7 +528,7 @@
       pypi_name: perspective-python
       site: https://perspective.finos.org
       badges: pypi, conda
-      conda_package: perspective # newer of two conda packages (the other is `perspective-python`)
+      conda_package: perspective  # newer of two conda packages (the other is `perspective-python`)
       conda_channel: conda-forge
 
     - repo: paddymul/buckaroo
@@ -637,7 +638,7 @@
   packages:
 
     - repo: holoviz/datashader
-      sponsors: [anaconda,numfocus]
+      sponsors: [anaconda, numfocus]
       site: https://datashader.org
       badges: pypi, conda, site
 
@@ -688,7 +689,7 @@
       builtons: [bokeh]
 
     - repo: holoviz/panel
-      sponsors: [anaconda,numfocus]
+      sponsors: [anaconda, numfocus]
       site: https://panel.holoviz.org
       badges: codecov, pypi, conda, site
       builtons: [bokeh]
@@ -870,7 +871,7 @@
   packages:
 
     - repo: holoviz/colorcet
-      sponsors: [anaconda,numfocus]
+      sponsors: [anaconda, numfocus]
       site: https://colorcet.holoviz.org
       badges: pypi, conda, site
 

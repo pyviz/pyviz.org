@@ -11,38 +11,47 @@ Source material to build [pyviz.org](https://pyviz.org).  This site is owned by 
 
 ## Building pyviz.org
 
-Whenever a PR is merged, or a commit is pushed to master, a Github Actions job is triggered that builds pyviz.org.
+A GitHub Actions job builds pyviz.org on every push to master, every Monday (to refresh the badges), and on demand. It deploys the site to the `gh-pages` branch and stores the badges on the `cache` branch.
 
-## Building dev site
-
-To build the [dev site](https://pyviz-dev.github.io/pyviz.org), just push a commit containing the string: `website_dev`. This will start a job on Github Actions that when complete will deploy to the dev site.
-
-**NOTE:** This will work on any branch, so it is recommended that you use it to test builds on PRs, just try not to trample on other people's toes.
+Pull requests are built too but never deployed: download the `site` artifact from the workflow run summary to preview the result.
 
 ## Building website locally
 
-Install anaconda-project:
+Install [uv](https://docs.astral.sh/uv/), then the dependencies:
 
 ```bash
-conda install anaconda-project
+uv sync
 ```
 
-Build the cached badges:
+Optionally, seed the badges with the ones last built by CI. Badges that fail to be fetched locally then fall back to these where possible:
 
 ```bash
-anaconda-project build_cache
+git fetch origin cache && git archive origin/cache doc/_static/cache | tar x
+```
+
+Build the badges (pass e.g. `--kinds stars,conda_downloads` to only build some of them):
+
+```bash
+uv run python tools/build_badges.py
 ```
 
 Build the website:
 
 ```bash
-anaconda-project build_website
+uv run sphinx-build -b html doc builtdocs
 ```
 
 View the website locally:
 
 ```bash
-python -m http.server 8000
+uv run python -m http.server -d builtdocs
+```
+
+Lint the code:
+
+```bash
+uv run ruff check
+uv run ruff format --check
 ```
 
 ## Adding a tool to the "All Tools" page

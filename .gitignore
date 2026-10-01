@@ -7,18 +7,16 @@ __pycache__/
 # Jupyter notebook
 *.ipynb_checkpoints/
 
-# nbsite output
+# Sphinx output
 builtdocs/
-doc/tools.rst
-doc/_static/cache/
 
-# Site building temp output
-tools/pypi_invalid_badges.txt
+# Badges, stored on the cache branch
+doc/_static/cache/
 
 # pytest
 .pytest_cache
 
-# anaconda-project
-envs
+# uv
+.venv/
 
 *~

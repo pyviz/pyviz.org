@@ -4,12 +4,12 @@ This directory is used to generate a tools dashboard for comparing various Pytho
 
 The main configuration of the dashboard is done via the ``tools.yml`` file, which can contain several sections with a list of packages, and a list of services for each section.
 
-The dashboard is created during the website build process on Github Actions and can be seen at [pyviz.org/tools.html](http://pyviz.org/tools.html).
+The dashboard is created during the website build process on Github Actions and can be seen at [pyviz.org/tools.html](https://pyviz.org/tools.html).
 
 
 ### Introductory text
 
-The intro text is located in `doc/tools.md`, whose contents will be included immediately after the title on the page.
+The page title and intro text live in `doc/tools.md`. When the site is built, the tools table is rendered from `template.html` and inserted in place of the `<!-- tools-table -->` placeholder of that page.
 
 Every section can also have an `intro` in `tools.yml`. This text should also be written as markdown.
 
@@ -34,6 +34,10 @@ To include more badges, add a list of sponsors, the site that the documentation 
       conda_channel: conda-forge
       badges: travis, coveralls, pypi, conda
 ```
+
+### Checking your changes
+
+See the [main README](../README.md) to build the badges and the website locally.
 
 ### Adding a sponsor
 
