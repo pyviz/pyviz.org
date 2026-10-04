@@ -29,3 +29,13 @@ There are also other tools that can be used for some aspects of dashboarding as 
 - [Bowtie](https://github.com/jwkvam/bowtie) (from Jacques Kvam) allows users to build dashboards in pure Python.
 
 - [flask](http://flask.pocoo.org/) is a Python-backed web server that can be used to build arbitrary web sites, including those with Python plots that then function as [flask dashboards](https://pusher.com/tutorials/live-dashboard-python), but is not specifically set up to make dashboarding easier.
+
+```{toctree}
+:titlesonly:
+:hidden:
+:maxdepth: 2
+
+Dash <https://plot.ly/products/dash>
+Panel <https://panel.pyviz.org>
+Voila <https://github.com/QuantStack/voila>
+```

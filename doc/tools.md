@@ -1,1 +1,7 @@
-This page lists OSS libraries for visualizing data in Python.  If you see any missing Python tools, please open a [PR](https://help.github.com/en/articles/about-pull-requests) for [tools.yml](https://github.com/pyviz/pyviz.org/blob/master/tools/tools.yml). Tools are sorted in each category according to their total downloads (pypi + conda) per month when added to the list. Note that conda downloads are computed by summing total downloads across the defaults channel, conda-forge, and bioconda; data for other channels is not currently included. Also note that the stars, contributors, license and PyPi downloads badges are cached to prevent users hitting the badges rate limits. Caching fails occasionally for some PyPi downloads badges, in which case their live counterpart is instead displayed (identified by a grey background).
+# All Tools
+
+This page lists OSS libraries for visualizing data in Python.  If you see any missing Python tools, please open a [PR](https://help.github.com/en/articles/about-pull-requests) for [tools.yml](https://github.com/pyviz/pyviz.org/blob/master/tools/tools.yml). Tools are sorted in each category according to their total downloads (pypi + conda) per month when added to the list. Note that conda downloads are computed by summing total downloads across the defaults channel, conda-forge, and bioconda; data for other channels is not currently included. Also note that the stars, contributors, license and downloads badges are generated when the site is built (weekly). A grey badge with a message instead of a value means that fetching it failed, and the contributors and license badges may show the last successfully fetched value.
+
+```{raw} html
+<!-- tools-table -->
+```

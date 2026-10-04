@@ -23,3 +23,19 @@ SciVis libraries supporting Python:
 - [vedo](https://vedo.embl.es) is a lightweight module for scientific analysis and visualization of polygonal meshes, point clouds and volumetric data. It offers an intuitive API which can be combined with VTK seamlessly in a program, whilst mantaining access to the full range of VTK native classes.
 
 - [itk-jupyter-widgets](https://github.com/InsightSoftwareConsortium/itk-jupyter-widgets), based on the Visualization Toolkit for JavaScript [vtk.js](https://kitware.github.io/vtk-js/index.html) and the [Insight Toolkit (ITK)](https://www.itk.org/), provides interactive 3D widgets for Jupyter to visualize and analyze images, point sets, and meshes.
+
+```{toctree}
+:titlesonly:
+:hidden:
+:maxdepth: 2
+
+VTK <https://vtk.org>
+VisPy <http://vispy.org>
+Glumpy <https://glumpy.github.io>
+GR <https://gr-framework.org>
+Mayavi <https://docs.enthought.com/mayavi/mayavi>
+ParaView <https://www.paraview.org>
+yt <https://yt-project.org>
+PyVista <http://www.pyvista.org>
+vedo <http://vedo.embl.es>
+```

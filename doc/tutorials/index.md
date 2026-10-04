@@ -11,4 +11,13 @@ ipywidgets, bqplot, vaex, ipympl, vue, ipysheet, ipyvolume, ipyleaflet, pythreej
 
 - [Matplotlib tutorial](https://github.com/matplotlib/AnatomyOfMatplotlib): Guide to the building blocks of Matplotlib and how to use them to create many different types of plots. [[SciPy 2018 recording](https://www.youtube.com/watch?v=6gdNUDs6QPc)]
 
+```{toctree}
+:titlesonly:
+:hidden:
+:maxdepth: 2
 
+Bokeh tutorial <https://nbviewer.jupyter.org/github/bokeh/bokeh-notebooks/blob/master/tutorial/00%20-%20Introduction%20and%20Setup.ipynb>
+HoloViz <https://holoviz.org/tutorial>
+Jupyter widgets tutorial <https://github.com/jupyter-widgets/tutorial>
+Matplotlib tutorial <https://github.com/matplotlib/AnatomyOfMatplotlib>
+```

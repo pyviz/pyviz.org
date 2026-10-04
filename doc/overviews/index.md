@@ -1,6 +1,6 @@
 # Overviews
 
-The Python visualization landscape can seem daunting at first. These overviews attempt to shine light on common patterns and use cases, comparing or discussing multiple plotting libraries. Note that some of the projects discussed in the overviews are no longer maintained, so be sure to check the list of [dormant projects](../tools.html#dormant-projects) before choosing that library.
+The Python visualization landscape can seem daunting at first. These overviews attempt to shine light on common patterns and use cases, comparing or discussing multiple plotting libraries. Note that some of the projects discussed in the overviews are no longer maintained, so be sure to check the list of <a href="../tools.html#dormant-projects">dormant projects</a> before choosing that library.
 
 <iframe src="https://rougier.github.io/python-visualization-landscape/landscape-colors.html" frameborder="0" allowfullscreen></iframe>
 

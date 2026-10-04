@@ -1,6 +1,6 @@
 # High-level tools
 
-The full list of [Python viz tools](../tools.html) is very long and covers a wide range of functionality. Many users share similar needs, and can get very far using a high-level tool that covers the most common tasks succinctly and conveniently, typically by providing a simpler API on top of an existing plotting tool.
+The full list of [Python viz tools](../tools.md) is very long and covers a wide range of functionality. Many users share similar needs, and can get very far using a high-level tool that covers the most common tasks succinctly and conveniently, typically by providing a simpler API on top of an existing plotting tool.
 
 
 ## Pandas .plot() API
@@ -24,3 +24,21 @@ The Pandas .plot() API has emerged as a de-facto standard for high-level plottin
 - [HoloViews](https://holoviews.org) -- Declarative Bokeh, Matplotlib, or Plotly-based interactive plots for tidy data.
 - [Chartify](https://github.com/spotify/chartify) -- Bokeh-based interactive plots for tidy data.
 - [Plotly Express](https://www.plotly.express/) -- Plotly-based interactive plots.
+
+```{toctree}
+:titlesonly:
+:hidden:
+:maxdepth: 2
+
+Pandas .plot <https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html>
+xarray .plot <http://xarray.pydata.org/en/stable/plotting.html>
+hvPlot <https://hvplot.pyviz.org>
+Pandas Bokeh <https://github.com/PatrikHlobil/Pandas-Bokeh>
+Cufflinks <https://github.com/santosjorge/cufflinks>
+PdVega <https://altair-viz.github.io/pdvega>
+Seaborn <https://seaborn.pydata.org>
+Altair <https://altair-viz.github.io>
+HoloViews <https://holoviews.org>
+Chartify <https://github.com/spotify/chartify>
+Plotly Express <https://www.plotly.express>
+```
