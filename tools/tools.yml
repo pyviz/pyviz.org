@@ -609,6 +609,11 @@
       site: https://visidata.org/
       badges: pypi
 
+    - repo: getmediawall/mpl-mediawall
+      site: https://getmediawall.com/design-your-wall
+      badges: site
+      builtons: [matplotlib]
+
     - repo: leotac/joypy
       badges: pypi, site
       builtons: [matplotlib]
